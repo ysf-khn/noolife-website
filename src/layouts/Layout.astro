@@ -1,6 +1,7 @@
 ---
 // Props interface for page-specific overrides
 import Navbar from '../components/Navbar.astro';
+import '../styles/global.css';
 
 interface Props {
   title?: string;
@@ -42,9 +43,6 @@ const {
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#1C1B1A" />
-
-    <!-- Import Global Styles -->
-    <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body>
     <Navbar />
