@@ -1,7 +1,7 @@
 ---
 // Props interface for page-specific overrides
-import Navbar from '../components/Navbar.astro';
-import '../styles/global.css';
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
 
 interface Props {
   title?: string;
@@ -10,11 +10,11 @@ interface Props {
 
 const {
   title = "NooLife - Your Winter Arc Starts Now | 66 Days to Transform",
-  description = "66 days to separate yourself from everyone settling for average. This winter arc decides if you're a winner or just another resolution that dies in February. Download NooLife and start your transformation."
+  description = "66 days to separate yourself from everyone settling for average. This winter arc decides if you're a winner or just another resolution that dies in February. Download NooLife and start your transformation.",
 } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,17 +32,37 @@ const {
     <meta property="og:url" content="https://noolife.app/" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://noolife.app/NooLifeScreens.png" />
+    <meta
+      property="og:image"
+      content="https://noolife.app/NooLifeScreens.png"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://noolife.app/" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="https://noolife.app/NooLifeScreens.png" />
+    <meta
+      property="twitter:image"
+      content="https://noolife.app/NooLifeScreens.png"
+    />
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#1C1B1A" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LQFEJH5MVX"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-LQFEJH5MVX");
+    </script>
   </head>
   <body>
     <Navbar />
