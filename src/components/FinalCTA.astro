@@ -1,0 +1,60 @@
+---
+// Final CTA Section
+// Last chance conversion with urgency messaging
+import { Image } from "astro:assets";
+import downloadIOS from "../assets/download-ios.svg";
+---
+
+<section
+  class="py-16 md:py-24 px-4 text-center"
+  style="background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-rich-earth) 100%);"
+>
+  <div class="max-w-3xl mx-auto">
+    <div
+      class="p-10 md:p-12 lg:p-16 rounded-3xl border border-[rgba(241,237,233,0.08)]"
+      style="background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(24px);"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight"
+        style="color: var(--color-alabaster);"
+      >
+        Your Future Self Is Watching. Make Them Proud.
+      </h2>
+
+      <p
+        class="text-base md:text-lg mb-8 leading-relaxed"
+        style="color: var(--color-faded-khaki);"
+      >
+        Every day you wait, the gap gets wider. Every day you scroll past this
+        page without downloading, you're choosing average. March 1st is coming
+        whether you're ready or not. The only question: will you be different,
+        or will you be the same?
+      </p>
+
+      <p
+        class="text-xl font-bold italic mb-10"
+        style="color: var(--color-jade);"
+      >
+        66 days. That's all it takes. Or keep making excuses. Your call.
+      </p>
+
+      <!-- CTA Button -->
+      <div class="flex justify-center items-center mb-12">
+        <a
+          href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block transition-transform hover:scale-105"
+          aria-label="Download on the App Store"
+        >
+          <Image
+            src={downloadIOS}
+            alt="Download on the App Store"
+            class="h-14 md:h-16 w-auto"
+            loading="lazy"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

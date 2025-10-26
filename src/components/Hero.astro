@@ -1,0 +1,126 @@
+---
+// Hero Section for NooLife Landing Page
+// Redesigned with two-column layout and improved visual hierarchy
+import { Image } from "astro:assets";
+import downloadIOS from "../assets/download-ios.svg";
+import nooLifeScreens from "../assets/NooLifeScreens.svg";
+---
+
+<section
+  id="hero"
+  class="relative min-h-screen flex items-center justify-center px-4 py-16 sm:py-24 md:py-32"
+>
+  <div class="relative max-w-7xl w-full mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+      <!-- LEFT COLUMN: Copy (40%) -->
+      <div
+        class="lg:col-span-2 text-center lg:text-left flex flex-col justify-center"
+      >
+        <!-- Main Headline -->
+        <h1
+          class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6 hero-fade-in"
+          style="animation-delay: 0.1s; color: var(--color-alabaster);"
+        >
+          This Winter Arc Decides <span
+            class="block mt-3"
+            style="color: var(--color-jade);">Everything.</span
+          >
+        </h1>
+
+        <!-- Subheadline -->
+        <p
+          class="text-xl md:text-xl lg:text-2xl leading-snug sm:leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 hero-fade-in"
+          style="animation-delay: 0.2s; color: var(--color-faded-khaki);"
+        >
+          66 days to separate yourself from everyone settling for average. <span
+            class="font-bold"
+            style="color: var(--color-alabaster);"
+            >10 weeks to your new life.</span
+          >
+        </p>
+
+        <!-- CTA Button -->
+        <div
+          class="flex flex-col items-center lg:items-start gap-2 hero-fade-in"
+          style="animation-delay: 0.3s;"
+        >
+          <a
+            href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+            aria-label="Download on the App Store"
+          >
+            <Image
+              src={downloadIOS}
+              alt="Download on the App Store"
+              class="h-16 md:h-20 w-auto"
+              loading="eager"
+            />
+          </a>
+        </div>
+
+        <!-- Micro-copy -->
+        <p
+          class="text-base md:text-base font-bold italic hero-fade-in"
+          style="animation-delay: 0.4s; color: var(--color-mint);"
+        >
+          Download now. Your move.
+        </p>
+      </div>
+
+      <!-- RIGHT COLUMN: Mockup (60%) -->
+      <div class="lg:col-span-3 hero-fade-in" style="animation-delay: 0.3s;">
+        <div class="relative">
+          <Image
+            src={nooLifeScreens}
+            alt="NooLife app screens showing Assets, Journey, Daily Tasks, Stats, and Rating features"
+            class="w-full h-auto block rounded-2xl transition-all duration-700 hover:scale-[1.02]"
+            style="filter: drop-shadow(0 25px 80px rgba(0, 208, 156, 0.2));"
+            loading="eager"
+          />
+
+          <!-- Glow effect -->
+          <div
+            class="absolute -inset-4 bg-linear-to-r from-jade to-mint opacity-20 blur-3xl -z-10 rounded-3xl"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <svg
+      class="w-6 h-6 md:w-8 md:h-8"
+      style="color: var(--color-jade);"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path d="M12 5v14M19 12l-7 7-7-7"></path>
+    </svg>
+  </div>
+</section>
+
+
+<style>
+  /* Fade-in animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+</style>

@@ -1,0 +1,63 @@
+---
+// Mobile-only countdown section
+// Appears below hero on mobile devices with premium styling
+---
+
+<section class="lg:hidden py-8 px-4 border-b border-[rgba(241,237,233,0.1)]">
+  <div class="max-w-md mx-auto">
+    <div class="premium-countdown-mobile">
+      <div class="flex flex-col items-center gap-4 text-center">
+        <!-- Icon -->
+        <div class="countdown-icon-mobile">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+        </div>
+
+        <!-- Number -->
+        <div class="flex flex-col items-center">
+          <span class="countdown-number font-black text-6xl tabular-nums leading-none mb-2">--</span>
+          <span class="countdown-label-mobile text-sm font-bold uppercase tracking-widest">Days Left</span>
+        </div>
+
+        <!-- Urgency Message -->
+        <p class="text-xs font-semibold italic" style="color: rgba(241, 237, 233, 0.6);">
+          Time's running out. Download now.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Premium Black Glass Countdown Mobile */
+  .premium-countdown-mobile {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(24px);
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(241, 237, 233, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .countdown-icon-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(0, 208, 156, 0.1);
+    color: var(--color-jade);
+  }
+
+  .countdown-number {
+    color: var(--color-alabaster);
+    letter-spacing: -0.03em;
+  }
+
+  .countdown-label-mobile {
+    color: rgba(241, 237, 233, 0.7);
+  }
+</style>

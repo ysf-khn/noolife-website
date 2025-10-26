@@ -1,0 +1,160 @@
+---
+// FAQ Section
+// Collapsible accordion with 6 questions
+---
+
+<section
+  class="py-16 md:py-24 px-4"
+  style="background: linear-gradient(180deg, var(--color-rich-earth) 0%, var(--color-dark) 100%);"
+>
+  <div class="max-w-4xl mx-auto">
+    <h2
+      class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 text-center"
+      style="color: var(--color-alabaster);"
+    >
+      FAQ
+    </h2>
+
+    <div class="flex flex-col gap-4">
+      <!-- Question 1 -->
+      <details
+        class="rounded-xl border border-[rgba(241,237,233,0.08)] hover:border-[rgba(0,208,156,0.15)] [&[open]]:border-[rgba(0,208,156,0.3)] transition-all"
+        style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px);"
+      >
+        <summary
+          class="px-6 py-6 lg:px-8 cursor-pointer flex justify-between items-center gap-4 text-lg font-bold list-none"
+          style="color: var(--color-alabaster);"
+        >
+          <span>Is this another streak-tracking app?</span>
+          <svg
+            class="w-6 h-6 flex-shrink-0 transition-transform [details[open]>&]:rotate-180"
+            style="color: var(--color-jade);"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div
+          class="px-6 pb-6 lg:px-8 text-base leading-relaxed"
+          style="color: var(--color-faded-khaki);"
+        >
+          <p>
+            No. Streak apps make you feel like shit when you miss a day. NooLife
+            tracks your identity transformation. We gamify discipline so it's
+            actually rewarding to show up. Miss a day? Your progress doesn't
+            vanish, but you will see exactly how it affects your rating.
+            Accountability without the guilt trip.
+          </p>
+        </div>
+      </details>
+
+      <!-- Question 2 -->
+      <details
+        class="rounded-xl border border-[rgba(241,237,233,0.08)] hover:border-[rgba(0,208,156,0.15)] [&[open]]:border-[rgba(0,208,156,0.3)] transition-all"
+        style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px);"
+      >
+        <summary
+          class="px-6 py-6 lg:px-8 cursor-pointer flex justify-between items-center gap-4 text-lg font-bold list-none"
+          style="color: var(--color-alabaster);"
+        >
+          <span>What if I miss a day?</span>
+          <svg
+            class="w-6 h-6 flex-shrink-0 transition-transform [details[open]>&]:rotate-180"
+            style="color: var(--color-jade);"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div
+          class="px-6 pb-6 lg:px-8 text-base leading-relaxed"
+          style="color: var(--color-faded-khaki);"
+        >
+          <p>
+            You get back up. That's it. We track momentum, not perfection. One
+            missed day doesn't erase 20 good ones. But here's the deal: your
+            rating will reflect it. Your streak might break. The app doesn't
+            coddle you, but it also doesn't reset you to zero like you're
+            starting over. Real life happens. Winners adapt and keep moving.
+          </p>
+        </div>
+      </details>
+
+      <!-- Question 3 -->
+      <details
+        class="rounded-xl border border-[rgba(241,237,233,0.08)] hover:border-[rgba(0,208,156,0.15)] [&[open]]:border-[rgba(0,208,156,0.3)] transition-all"
+        style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px);"
+      >
+        <summary
+          class="px-6 py-6 lg:px-8 cursor-pointer flex justify-between items-center gap-4 text-lg font-bold list-none"
+          style="color: var(--color-alabaster);"
+        >
+          <span>Can I customize my habits?</span>
+          <svg
+            class="w-6 h-6 flex-shrink-0 transition-transform [details[open]>&]:rotate-180"
+            style="color: var(--color-jade);"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div
+          class="px-6 pb-6 lg:px-8 text-base leading-relaxed"
+          style="color: var(--color-faded-khaki);"
+        >
+          <p>
+            Yes. We recommend 8 core habits based on research, but you control
+            intensity levels, timing, and can add from our library of 16 total
+            options. That said - if you skip the hard ones (cold showers, early
+            wake-ups), you're only cheating yourself. Your rating knows the
+            difference.
+          </p>
+        </div>
+      </details>
+
+      <!-- Question 6 -->
+      <details
+        class="rounded-xl border border-[rgba(241,237,233,0.08)] hover:border-[rgba(0,208,156,0.15)] [&[open]]:border-[rgba(0,208,156,0.3)] transition-all"
+        style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px);"
+      >
+        <summary
+          class="px-6 py-6 lg:px-8 cursor-pointer flex justify-between items-center gap-4 text-lg font-bold list-none"
+          style="color: var(--color-alabaster);"
+        >
+          <span>What happens after 66 days?</span>
+          <svg
+            class="w-6 h-6 flex-shrink-0 transition-transform [details[open]>&]:rotate-180"
+            style="color: var(--color-jade);"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div
+          class="px-6 pb-6 lg:px-8 text-base leading-relaxed"
+          style="color: var(--color-faded-khaki);"
+        >
+          <p>
+            You're a different person. The habits are automatic. Your identity
+            has changed. You can keep tracking, start a new 66-day arc with
+            different habits, or just maintain what you've built. Most people?
+            They start another arc. Because once you see what 66 days of
+            discipline does, you don't want to go back to average.
+          </p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>

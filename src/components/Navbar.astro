@@ -1,0 +1,164 @@
+---
+// Sticky Navbar Component
+// Always-visible download button for conversion funnel
+import { Image } from "astro:assets";
+import downloadIOS from "../assets/download-ios.svg";
+import noolifeLogo from "../assets/noolife_logo.png";
+---
+
+<nav
+  id="navbar"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="grid grid-cols-2 lg:grid-cols-3 items-center gap-4 h-16 md:h-20"
+    >
+      <!-- Logo (Left) -->
+      <a
+        href="/"
+        class="flex items-center gap-3 transition-transform hover:scale-105 justify-self-start"
+      >
+        <Image
+          src={noolifeLogo}
+          alt="NooLife"
+          class="h-8 md:h-10 w-auto rounded-lg"
+          loading="eager"
+        />
+        <span
+          class="text-xl md:text-2xl font-bold tracking-tight"
+          style="color: var(--color-alabaster);">NooLife</span
+        >
+      </a>
+
+      <!-- Premium Countdown Badge (Center - Desktop Only) -->
+      <div class="hidden lg:flex justify-center">
+        <div class="premium-countdown-badge">
+          <div class="flex items-center gap-3">
+            <div class="countdown-icon-wrapper">
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="countdown-number font-black text-3xl tabular-nums"
+                >--</span
+              >
+              <span
+                class="countdown-label text-sm font-semibold uppercase tracking-wide"
+                >days of winter arc left</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download CTA (Right) -->
+      <a
+        href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block transition-transform hover:scale-105 justify-self-end"
+        aria-label="Download on the App Store"
+      >
+        <Image
+          src={downloadIOS}
+          alt="Download on the App Store"
+          class="h-10 md:h-12 w-auto"
+          loading="eager"
+        />
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Client-side scripts -->
+<script>
+  // Navbar scroll behavior
+  function handleNavbarScroll() {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) return;
+
+    const scrolled = window.scrollY > 100;
+
+    if (scrolled) {
+      // Solid background when scrolled
+      navbar.style.backgroundColor = "rgba(0, 0, 0, 0.95)";
+      navbar.style.backdropFilter = "blur(20px)";
+      navbar.style.boxShadow = "0 4px 20px rgba(0, 0, 0, 0.4)";
+    } else {
+      // Transparent with blur when at top
+      navbar.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+      navbar.style.backdropFilter = "blur(10px)";
+      navbar.style.boxShadow = "none";
+    }
+  }
+
+  // Winter arc countdown
+  function updateCountdown() {
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    let targetDate = new Date(currentYear, 2, 1); // March 1st
+
+    if (now > targetDate) {
+      targetDate = new Date(currentYear + 1, 2, 1);
+    }
+
+    const timeDiff = targetDate.getTime() - now.getTime();
+    const daysRemaining = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+    // Update all countdown elements (navbar + mobile)
+    const countdownElements = document.querySelectorAll(".countdown-number");
+    countdownElements.forEach((el) => {
+      el.textContent = daysRemaining.toString();
+    });
+  }
+
+  // Initialize
+  handleNavbarScroll();
+  updateCountdown();
+
+  // Event listeners
+  window.addEventListener("scroll", handleNavbarScroll, { passive: true });
+</script>
+
+<style>
+  /* Premium Black Glass Countdown Badge */
+  .premium-countdown-badge {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(24px);
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(241, 237, 233, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .premium-countdown-badge:hover {
+    transform: scale(1.02);
+    border-color: rgba(241, 237, 233, 0.12);
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .countdown-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-jade);
+  }
+
+  .countdown-number {
+    color: var(--color-alabaster);
+    letter-spacing: -0.02em;
+  }
+
+  .countdown-label {
+    color: rgba(241, 237, 233, 0.7);
+  }
+</style>
