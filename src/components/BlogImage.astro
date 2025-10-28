@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  class?: string;
+}
+
+const { src, alt, width = 1200, height = 630, class: className } = Astro.props;
+---
+
+<div class={`blog-image-wrapper ${className || ''}`}>
+  <Image
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    format="webp"
+    loading="lazy"
+    class="blog-image"
+  />
+</div>
+
+<style>
+  .blog-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .blog-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in forwards;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .blog-image-wrapper:hover .blog-image {
+    transform: scale(1.02);
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .blog-image {
+      animation: none;
+      opacity: 1;
+    }
+
+    .blog-image-wrapper:hover .blog-image {
+      transform: none;
+    }
+  }
+</style>

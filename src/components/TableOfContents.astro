@@ -1,0 +1,182 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+
+// Only show h2 and h3 headings
+const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+{tocHeadings.length > 0 && (
+  <nav class="table-of-contents" aria-label="Table of contents">
+    <h2 class="toc-title">On this page</h2>
+    <ul class="toc-list">
+      {tocHeadings.map((heading) => (
+        <li class={`toc-item depth-${heading.depth}`}>
+          <a href={`#${heading.slug}`} class="toc-link">
+            {heading.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
+
+<style>
+  .table-of-contents {
+    display: none;
+  }
+
+  /* Desktop only - sidebar navigation */
+  @media (min-width: 1280px) {
+    .table-of-contents {
+      display: block;
+      position: sticky;
+      top: 100px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      padding: 24px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      border: 1px solid rgba(241, 237, 233, 0.1);
+      width: 280px;
+    }
+
+    .toc-title {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #918B85;
+      margin: 0 0 16px 0;
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc-item {
+      margin-bottom: 8px;
+    }
+
+    .toc-item.depth-3 {
+      margin-left: 16px;
+    }
+
+    .toc-link {
+      display: block;
+      padding: 8px 12px;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #918B85;
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .toc-link:hover {
+      color: #6BFFD8;
+      border-left-color: #6BFFD8;
+      background: rgba(107, 255, 216, 0.05);
+    }
+
+    .toc-link.active {
+      color: #00D09C;
+      border-left-color: #00D09C;
+      background: rgba(0, 208, 156, 0.1);
+      font-weight: 600;
+    }
+
+    /* Custom scrollbar */
+    .table-of-contents::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .table-of-contents::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .table-of-contents::-webkit-scrollbar-thumb {
+      background: #918B85;
+      border-radius: 3px;
+    }
+
+    .table-of-contents::-webkit-scrollbar-thumb:hover {
+      background: #00D09C;
+    }
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .toc-link {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  // Add active class to current section
+  document.addEventListener('DOMContentLoaded', () => {
+    const toc = document.querySelector('.table-of-contents');
+    if (!toc) return;
+
+    const links = toc.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.post-content h2, .post-content h3');
+
+    if (links.length === 0 || headings.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            links.forEach((link) => {
+              if (link.getAttribute('href') === `#${id}`) {
+                links.forEach((l) => l.classList.remove('active'));
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      },
+      {
+        rootMargin: '-100px 0px -66%',
+        threshold: 0,
+      }
+    );
+
+    headings.forEach((heading) => {
+      observer.observe(heading);
+    });
+
+    // Smooth scroll to section
+    links.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href')?.slice(1);
+        if (!targetId) return;
+
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+
+          // Update URL without jumping
+          history.pushState(null, '', `#${targetId}`);
+        }
+      });
+    });
+  });
+</script>

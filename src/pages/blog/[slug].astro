@@ -1,0 +1,181 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import BlogPost from '../../components/BlogPost.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+
+export const getStaticPaths = (async () => {
+  const now = new Date();
+  const posts = await getCollection('blog', ({ data }) => {
+    return data.draft === false && data.pubDate <= now;
+  });
+
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content, headings } = await post.render();
+
+// Get related posts (same tags, exclude current post, max 3)
+const now = new Date();
+const allPosts = await getCollection('blog', ({ data }) => {
+  return data.draft === false && data.pubDate <= now;
+});
+
+const relatedPosts = allPosts
+  .filter(p => p.slug !== post.slug)
+  .filter(p => {
+    // Check if any tags match
+    const postTags = post.data.tags || [];
+    const otherTags = p.data.tags || [];
+    return postTags.some(tag => otherTags.includes(tag));
+  })
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<Layout
+  title={`${post.data.title} - NooLife Blog`}
+  description={post.data.description}
+  image={post.data.heroImage}
+  type="article"
+  pubDate={post.data.pubDate}
+  updatedDate={post.data.updatedDate}
+  author={post.data.author}
+  tags={post.data.tags}
+>
+  <div class="post-page-wrapper">
+    {headings.length > 0 && (
+      <aside class="toc-sidebar">
+        <TableOfContents headings={headings} />
+      </aside>
+    )}
+
+    <div class="post-page-content">
+      <BlogPost
+        title={post.data.title}
+        description={post.data.description}
+        pubDate={post.data.pubDate}
+        updatedDate={post.data.updatedDate}
+        heroImage={post.data.heroImage}
+        author={post.data.author}
+        tags={post.data.tags}
+      >
+        <Content />
+      </BlogPost>
+
+      {relatedPosts.length > 0 && (
+        <section class="related-posts">
+          <div class="related-container">
+            <h2 class="related-title">Related Posts</h2>
+            <div class="related-grid">
+              {relatedPosts.map((relatedPost) => (
+                <BlogCard
+                  title={relatedPost.data.title}
+                  description={relatedPost.data.description}
+                  pubDate={relatedPost.data.pubDate}
+                  heroImage={relatedPost.data.heroImage}
+                  slug={relatedPost.slug}
+                  tags={relatedPost.data.tags}
+                  featured={relatedPost.data.featured || false}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .post-page-wrapper {
+    display: flex;
+    gap: 64px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #000000;
+  }
+
+  .toc-sidebar {
+    display: none;
+  }
+
+  .post-page-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* Related Posts Section */
+  .related-posts {
+    background: #000000;
+    padding: 80px 24px;
+    border-top: 1px solid rgba(241, 237, 233, 0.1);
+  }
+
+  .related-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .related-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00D09C;
+    margin: 0 0 32px 0;
+    text-align: center;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .related-posts {
+      padding: 100px 48px;
+    }
+
+    .related-title {
+      font-size: 36px;
+      margin-bottom: 48px;
+    }
+
+    .related-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+  }
+
+  /* Desktop - show TOC sidebar */
+  @media (min-width: 1280px) {
+    .toc-sidebar {
+      display: block;
+      flex: 0 0 280px;
+      padding: 100px 24px 0 48px;
+    }
+
+    .post-page-content {
+      flex: 1;
+    }
+
+    .related-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+    }
+  }
+
+  /* Large desktop - more space for TOC */
+  @media (min-width: 1536px) {
+    .toc-sidebar {
+      padding-left: 64px;
+    }
+  }
+</style>

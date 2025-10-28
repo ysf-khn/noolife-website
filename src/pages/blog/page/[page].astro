@@ -1,0 +1,286 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../../layouts/Layout.astro';
+import BlogCard from '../../../components/BlogCard.astro';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const now = new Date();
+  const allPosts = (await getCollection('blog', ({ data }) => {
+    return data.draft === false && data.pubDate <= now;
+  }))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+  // Paginate with 20 posts per page
+  return paginate(allPosts, {
+    pageSize: 20,
+  });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<Layout
+  title={`NooLife Blog - Page ${page.currentPage}`}
+  description="Science-backed insights on habit formation, the Winter Arc transformation, and building a better life through 66-day habit tracking."
+>
+  <main class="blog-page">
+    <!-- Hero Section -->
+    <section class="blog-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">NooLife Blog</h1>
+        <p class="hero-description">
+          Science-backed insights on habit formation, behavioral change, and building
+          the life you want through the 66-day Winter Arc transformation.
+        </p>
+        <div class="hero-accent"></div>
+      </div>
+    </section>
+
+    <!-- Posts Grid -->
+    <section class="posts-section">
+      <div class="posts-container">
+        <div class="posts-grid">
+          {page.data.map((post) => (
+            <BlogCard
+              title={post.data.title}
+              description={post.data.description}
+              pubDate={post.data.pubDate}
+              heroImage={post.data.heroImage}
+              slug={post.slug}
+              tags={post.data.tags}
+              featured={post.data.featured || false}
+            />
+          ))}
+        </div>
+
+        <!-- Pagination -->
+        <nav class="pagination" aria-label="Blog pagination">
+          {page.url.prev && (
+            <a href={page.url.prev} class="pagination-button pagination-prev">
+              ← Previous
+            </a>
+          )}
+
+          <div class="pagination-numbers">
+            {page.currentPage > 2 && (
+              <a href="/blog/" class="page-number">
+                1
+              </a>
+            )}
+
+            {page.currentPage > 3 && (
+              <span class="pagination-ellipsis">...</span>
+            )}
+
+            {page.url.prev && page.currentPage > 1 && (
+              <a href={page.url.prev} class="page-number">
+                {page.currentPage - 1}
+              </a>
+            )}
+
+            <span class="page-number page-number-current">
+              {page.currentPage}
+            </span>
+
+            {page.url.next && page.currentPage < page.lastPage && (
+              <a href={page.url.next} class="page-number">
+                {page.currentPage + 1}
+              </a>
+            )}
+
+            {page.currentPage < page.lastPage - 2 && (
+              <span class="pagination-ellipsis">...</span>
+            )}
+
+            {page.currentPage < page.lastPage - 1 && (
+              <a href={`/blog/page/${page.lastPage}`} class="page-number">
+                {page.lastPage}
+              </a>
+            )}
+          </div>
+
+          {page.url.next && (
+            <a href={page.url.next} class="pagination-button pagination-next">
+              Next →
+            </a>
+          )}
+        </nav>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .blog-page {
+    min-height: 100vh;
+    background: #000000;
+    color: #F1EDE9;
+  }
+
+  /* Hero Section */
+  .blog-hero {
+    padding: 80px 24px 48px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #00D09C;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #918B85;
+    margin: 0 0 32px 0;
+  }
+
+  .hero-accent {
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #00D09C, #6BFFD8);
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+
+  /* Posts Section */
+  .posts-section {
+    padding: 48px 24px 80px;
+  }
+
+  .posts-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+  }
+
+  .pagination-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #1a1a1a;
+    color: #F1EDE9;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(241, 237, 233, 0.1);
+  }
+
+  .pagination-button:hover {
+    background: linear-gradient(135deg, #00D09C, #6BFFD8);
+    color: #000000;
+    border-color: transparent;
+    transform: translateY(-2px);
+  }
+
+  .pagination-numbers {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .page-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #1a1a1a;
+    color: #918B85;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(241, 237, 233, 0.1);
+  }
+
+  .page-number:hover {
+    color: #6BFFD8;
+    border-color: #6BFFD8;
+    background: rgba(107, 255, 216, 0.1);
+  }
+
+  .page-number-current {
+    background: linear-gradient(135deg, #00D09C, #6BFFD8);
+    color: #000000;
+    border-color: transparent;
+    cursor: default;
+  }
+
+  .pagination-ellipsis {
+    color: #918B85;
+    padding: 0 8px;
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .blog-hero {
+      padding: 120px 48px 64px;
+    }
+
+    .hero-title {
+      font-size: 60px;
+    }
+
+    .hero-description {
+      font-size: 22px;
+    }
+
+    .posts-section {
+      padding: 64px 48px 100px;
+    }
+
+    .posts-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .posts-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+    }
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .pagination-button,
+    .page-number {
+      transition: none;
+    }
+
+    .pagination-button:hover {
+      transform: none;
+    }
+  }
+</style>

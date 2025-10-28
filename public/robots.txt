@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noolife.app/sitemap-index.xml

@@ -1,0 +1,261 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../../layouts/Layout.astro';
+import BlogCard from '../../../components/BlogCard.astro';
+
+export const getStaticPaths = (async () => {
+  const now = new Date();
+  const allPosts = await getCollection('blog', ({ data }) => {
+    return data.draft === false && data.pubDate <= now;
+  });
+
+  // Get all unique tags
+  const allTags = [...new Set(allPosts.flatMap(post => post.data.tags || []))];
+
+  // Generate page for each tag
+  return allTags.map(tag => {
+    const filteredPosts = allPosts
+      .filter(post => post.data.tags?.includes(tag))
+      .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+    return {
+      params: { tag },
+      props: {
+        tag,
+        posts: filteredPosts
+      },
+    };
+  });
+}) satisfies GetStaticPaths;
+
+const { tag, posts } = Astro.props;
+const postCount = posts.length;
+---
+
+<Layout
+  title={`Posts tagged "${tag}" - NooLife Blog`}
+  description={`Browse all ${postCount} blog posts tagged with "${tag}" on NooLife. Science-backed insights on habit formation and transformation.`}
+>
+  <main class="tag-page">
+    <!-- Navigation -->
+    <div class="tag-nav">
+      <a href="/blog/" class="back-link">
+        ← View All Posts
+      </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="tag-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="hash">#</span>{tag}
+        </h1>
+        <p class="post-count">
+          {postCount} {postCount === 1 ? 'post' : 'posts'}
+        </p>
+        <div class="hero-accent"></div>
+      </div>
+    </section>
+
+    <!-- Posts Grid -->
+    <section class="posts-section">
+      <div class="posts-container">
+        {posts.length > 0 ? (
+          <div class="posts-grid">
+            {posts.map((post) => (
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                pubDate={post.data.pubDate}
+                heroImage={post.data.heroImage}
+                slug={post.slug}
+                tags={post.data.tags}
+                featured={post.data.featured || false}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="no-posts">
+            <p>No posts found with this tag.</p>
+            <a href="/blog/" class="back-button">
+              Go to Blog
+            </a>
+          </div>
+        )}
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .tag-page {
+    min-height: 100vh;
+    background: #000000;
+    color: #F1EDE9;
+  }
+
+  /* Navigation */
+  .tag-nav {
+    padding: 24px 24px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6BFFD8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .back-link:hover {
+    color: #00D09C;
+  }
+
+  /* Hero Section */
+  .tag-hero {
+    padding: 48px 24px 48px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #00D09C;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .hash {
+    font-size: 0.8em;
+    color: #6BFFD8;
+    opacity: 0.8;
+  }
+
+  .post-count {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #918B85;
+    margin: 0 0 32px 0;
+  }
+
+  .hero-accent {
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #00D09C, #6BFFD8);
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+
+  /* Posts Section */
+  .posts-section {
+    padding: 48px 24px 80px;
+  }
+
+  .posts-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* No Posts State */
+  .no-posts {
+    text-align: center;
+    padding: 80px 24px;
+  }
+
+  .no-posts p {
+    font-size: 18px;
+    color: #918B85;
+    margin: 0 0 24px 0;
+  }
+
+  .back-button {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #00D09C, #6BFFD8);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 208, 156, 0.3);
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .tag-nav {
+      padding: 32px 48px 0;
+    }
+
+    .back-link {
+      font-size: 18px;
+    }
+
+    .tag-hero {
+      padding: 80px 48px 64px;
+    }
+
+    .hero-title {
+      font-size: 60px;
+    }
+
+    .post-count {
+      font-size: 20px;
+    }
+
+    .posts-section {
+      padding: 64px 48px 100px;
+    }
+
+    .posts-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .posts-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+    }
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .back-link,
+    .back-button {
+      transition: none;
+    }
+
+    .back-button:hover {
+      transform: none;
+    }
+  }
+</style>
