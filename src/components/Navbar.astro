@@ -14,22 +14,31 @@ import noolifeLogo from "../assets/noolife_logo.png";
     <div
       class="grid grid-cols-2 lg:grid-cols-3 items-center gap-4 h-16 md:h-20"
     >
-      <!-- Logo (Left) -->
-      <a
-        href="/"
-        class="flex items-center gap-3 transition-transform hover:scale-105 justify-self-start"
-      >
-        <Image
-          src={noolifeLogo}
-          alt="NooLife"
-          class="h-8 md:h-10 w-auto rounded-lg"
-          loading="eager"
-        />
-        <span
-          class="text-xl md:text-2xl font-bold tracking-tight"
-          style="color: var(--color-alabaster);">NooLife</span
+      <!-- Logo & Navigation (Left) -->
+      <div class="flex items-center gap-6 justify-self-start">
+        <a
+          href="/"
+          class="flex items-center gap-3 transition-transform hover:scale-105"
         >
-      </a>
+          <Image
+            src={noolifeLogo}
+            alt="NooLife"
+            class="h-8 md:h-10 w-auto rounded-lg"
+            loading="eager"
+          />
+          <span
+            class="text-xl md:text-2xl font-bold tracking-tight"
+            style="color: var(--color-alabaster);">NooLife</span
+          >
+        </a>
+        <a
+          href="/blog"
+          class="text-base md:text-lg font-semibold transition-colors nav-link"
+          style="color: var(--color-alabaster);"
+        >
+          Blog
+        </a>
+      </div>
 
       <!-- Premium Countdown Badge (Center - Desktop Only) -->
       <div class="hidden lg:flex justify-center">
@@ -130,6 +139,11 @@ import noolifeLogo from "../assets/noolife_logo.png";
 </script>
 
 <style>
+  /* Navigation Link */
+  .nav-link:hover {
+    color: var(--color-jade) !important;
+  }
+
   /* Premium Black Glass Countdown Badge */
   .premium-countdown-badge {
     background: rgba(0, 0, 0, 0.8);

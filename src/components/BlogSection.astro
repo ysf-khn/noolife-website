@@ -1,0 +1,187 @@
+---
+import { getCollection } from 'astro:content';
+import BlogCard from './BlogCard.astro';
+
+// Get latest published posts (limit to 6)
+const now = new Date();
+const latestPosts = (await getCollection('blog', ({ data }) => {
+  return data.draft === false && data.pubDate <= now;
+}))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
+---
+
+{latestPosts.length > 0 && (
+  <section class="blog-section">
+    <div class="blog-container">
+      <!-- Section Header -->
+      <div class="blog-header">
+        <h2 class="blog-title">Latest from the Blog</h2>
+        <p class="blog-description">
+          Science-backed insights on habit formation and transformation
+        </p>
+      </div>
+
+      <!-- Posts Grid -->
+      <div class="blog-grid">
+        {latestPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            pubDate={post.data.pubDate}
+            heroImage={post.data.heroImage}
+            slug={post.slug}
+            tags={post.data.tags}
+            featured={post.data.featured || false}
+          />
+        ))}
+      </div>
+
+      <!-- CTA Button -->
+      <div class="blog-cta">
+        <a href="/blog" class="blog-button">
+          View All Posts
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .blog-section {
+    background: #000000;
+    padding: 80px 24px;
+    position: relative;
+  }
+
+  .blog-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .blog-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .blog-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #F1EDE9;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.02em;
+  }
+
+  .blog-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #918B85;
+    margin: 0;
+  }
+
+  /* Posts Grid */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+
+  /* CTA Button */
+  .blog-cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .blog-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #00D09C;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid #6BFFD8;
+    box-shadow: 4px 4px 0 #005C42;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .blog-button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #005C42;
+  }
+
+  .blog-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #005C42;
+  }
+
+  .arrow {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+  }
+
+  .blog-button:hover .arrow {
+    transform: translateX(4px);
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .blog-section {
+      padding: 100px 48px;
+    }
+
+    .blog-title {
+      font-size: 48px;
+    }
+
+    .blog-description {
+      font-size: 20px;
+    }
+
+    .blog-header {
+      margin-bottom: 64px;
+    }
+
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin-bottom: 64px;
+    }
+
+    .blog-button {
+      font-size: 18px;
+      padding: 18px 36px;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .blog-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+    }
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .blog-button,
+    .arrow {
+      transition: none;
+    }
+
+    .blog-button:hover {
+      transform: none;
+    }
+
+    .blog-button:hover .arrow {
+      transform: none;
+    }
+  }
+</style>
