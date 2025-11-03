@@ -1,0 +1,102 @@
+{
+  "problem": "Can't Focus for More Than 5 Minutes",
+  "problemSlug": "cant-focus",
+  "commonSymptoms": [
+    "Reading same paragraph 3 times without retaining anything",
+    "Starting task, immediately checking phone/email/Slack",
+    "Mind wandering during conversations, meetings, lectures",
+    "Can't watch movie without scrolling phone simultaneously",
+    "Needing music/TV as 'background noise' to work (can't handle silence)",
+    "Forgetting why you opened browser tab 10 seconds ago"
+  ],
+  "rootCauses": [
+    "Attention span decimated by infinite scroll and short-form content (TikTok/Reels)",
+    "Dopamine system overstimulated (baseline attention feels boring)",
+    "Multitasking normalized (brain lost ability to sustain single focus)",
+    "Sleep deprivation (cognitive function requires 7-8 hours)",
+    "Diet/hydration deficits (brain fog from dehydration, blood sugar crashes)",
+    "No meditation/mindfulness training (attention is muscle that atrophies)"
+  ],
+  "scientificExplanation": "Attention span is trainable like muscle strength—but modern life atrophies it. Research from Dr. Gloria Mark (UC Irvine) shows average attention span dropped from 2.5 minutes (2004) to 47 seconds (2021). Cause: context-switching and variable dopamine rewards (phone notifications, infinite scroll). Each distraction requires 23 minutes to regain deep focus (Gloria Mark study). Your prefrontal cortex (sustained attention) weakens while limbic system (novelty-seeking) strengthens. Fixing requires: dopamine detox + attention training (meditation) + environmental design (remove distractions).",
+  "failedSolutions": [
+    "Trying to 'just focus harder' (attention is skill, not willpower)",
+    "Working in high-distraction environment (phone on desk, notifications on)",
+    "Multitasking to 'save time' (actually destroys focus and increases errors)",
+    "Relying on coffee to compensate for poor sleep (temporary bandaid)",
+    "Productivity hacks without addressing phone addiction or sleep habits"
+  ],
+  "whyTheyFail": "Willpower can't override distraction-saturated environment. Multitasking fragments attention permanently if unchecked. Coffee masks sleep deprivation without fixing root cause. These approaches ignore that attention span is trainable skill requiring: 1) Dopamine detox (reduce phone), 2) Attention training (meditation), 3) Environment design (remove distractions), 4) Biological foundation (sleep, hydration). Band-aids don't work—need systematic rebuild.",
+  "actualSolution": "66-day attention rebuild: Daily meditation (trains sustained attention), progressive phone reduction (lowers dopamine threshold), sleep optimization (7-8 hours non-negotiable), hydration tracking (2-3L water daily). NooLife's Focus Rating measures improvement. Week 1-2: Meditation feels impossible (mind wanders constantly). Week 4-6: Can focus 15-20 min continuously. Week 8-10: Deep focus for 60+ min, phone distractions lose power. You're rebuilding attention span from scratch.",
+  "nooLifeApproach": "NooLife tracks 4 focus-building habits: meditation (attention training), social media control (dopamine detox), water intake (cognitive function), sleep (wake time tracking). Your Focus Rating climbs daily as habits stack. Meditation timer built into app (5/10/15/20 min guided sessions). Pomodoro timers in Assets screen for deep work. You're not 'trying to focus'—you're building measurable attention capacity. Day 1 Focus Rating: 35/100. Day 66: 82/100. Data proves transformation.",
+  "expectedTimeline": "Week 1-2: Meditation difficult (mind wanders every 10 seconds). Focus still scattered. BUT: Attention training begins. Week 3-4: Can meditate 10 min with less mind wandering. Focus improving 20-30%. Week 5-6: Phone usage down, dopamine baseline recovering. Can focus 20-30 min continuously. Week 8-10: Focus Rating 75-85/100. Deep work for 60+ min feels natural. Distractions lose power.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Start meditation daily (5 min minimum). Track phone usage. Notice when you lose focus (trigger awareness).",
+      "expectedProgress": "Meditation feels impossible (mind wanders constantly). This is normal—attention muscle is weak. Keep showing up."
+    },
+    {
+      "week": 3,
+      "focus": "Meditation 10 min daily. Mind wandering decreasing. Reduce phone time 30 min/day. Notice: focus slightly better.",
+      "expectedProgress": "Can focus 10-15 min on single task (up from 3-5 min). Attention muscle strengthening."
+    },
+    {
+      "week": 6,
+      "focus": "Meditation 15-20 min. Phone usage 1-2 hours less daily. Focus Rating climbing measurably.",
+      "expectedProgress": "Deep focus sessions 30-45 min possible. Reading retention improving. Conversations feel easier to follow."
+    },
+    {
+      "week": 10,
+      "focus": "Meditation automatic (20 min feels effortless). Phone distractions minimal. Focus Rating 75-85/100.",
+      "expectedProgress": "Can work/read/study 60+ min without distraction. Compare Day 1 scattered attention vs Day 66 laser focus."
+    }
+  ],
+  "relatedHabits": [
+    "meditation",
+    "social-media-control",
+    "water",
+    "waking-early"
+  ],
+  "relatedChallenges": ["66-day-meditation", "66-day-focus"],
+  "relatedProblems": ["phone-addiction", "procrastination", "cant-read-daily"],
+  "testimonial": "\"Couldn't focus for 5 minutes. Constantly checking phone, mind always wandering. NooLife's meditation + phone reduction approach worked. Day 66: can read/work for 90 min straight. Focus Rating 38 → 84. Brain feels completely different.\" - Marcus J.",
+  "ctaAngle": "Rebuild attention span with meditation + dopamine detox. Free 3-day trial.",
+  "trustSignal": "Join 50,000+ users who've rebuilt focus with NooLife's attention training system",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": [
+    "focus",
+    "concentration",
+    "attention span",
+    "meditation",
+    "dopamine detox"
+  ],
+  "metaKeywords": [
+    "how to improve focus",
+    "can't concentrate",
+    "improve attention span",
+    "focus problems",
+    "concentration exercises"
+  ],
+  "faqs": [
+    {
+      "question": "Why can't I focus anymore when I used to be able to?",
+      "answer": "Your attention span is trainable muscle that atrophied. Years of phone use, multitasking, and short-form content (TikTok/Reels) weakened sustained attention circuits. Good news: attention rebuilds with training. Meditation = attention gym. 66 days of daily practice restores focus capacity."
+    },
+    {
+      "question": "How does meditation improve focus?",
+      "answer": "Meditation trains attention muscles. When mind wanders (it will constantly), you notice and return to breath. That 'notice and return' action = attention rep. 1,000 reps over 66 days = significantly stronger sustained attention. Research shows 8 weeks of meditation thickens prefrontal cortex (focus region). You're literally growing brain matter."
+    },
+    {
+      "question": "What if I can't meditate because my mind wanders too much?",
+      "answer": "Mind wandering IS the meditation. Expecting zero thoughts is like expecting zero heartbeats. Meditation is noticing mind wandered and bringing attention back. A session where you noticed wandering 100 times = successful session. You trained attention 100 times. Use NooLife's guided meditations (5 min to start)—structure helps enormously."
+    },
+    {
+      "question": "Can I improve focus without giving up my phone?",
+      "answer": "You don't eliminate phone—you reduce compulsive usage. Target: reduce screen time 1-2 hours/day over 66 days. This lowers dopamine overstimulation, making normal tasks (reading, work) feel engaging again. You keep phone for legitimate uses, lose distraction addiction. NooLife tracks social media reduction alongside meditation."
+    },
+    {
+      "question": "How long before I see focus improvement?",
+      "answer": "Subtle improvements: Week 2-3 (can focus 10-15 min vs 3-5 min). Noticeable improvements: Week 4-6 (30-45 min deep focus possible, reading retention better). Major improvements: Week 8-10 (60-90 min deep work, distractions lose power). Your Focus Rating shows exact progress. Day 66 you vs Day 1 you = night and day difference."
+    }
+  ]
+}

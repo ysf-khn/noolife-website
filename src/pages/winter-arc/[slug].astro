@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import WinterArcTemplate from '../../components/templates/WinterArcTemplate.astro';
+
+export const getStaticPaths = (async () => {
+  const winterArcChallenges = await getCollection('winter-arc');
+
+  return winterArcChallenges.map(challenge => ({
+    params: { slug: challenge.data.focusSlug },
+    props: { challenge },
+  }));
+}) satisfies GetStaticPaths;
+
+const { challenge } = Astro.props;
+const challengeData = challenge.data;
+
+// Generate SEO title and description with Winter Arc branding
+const seoTitle = `Winter Arc ${challengeData.focus} | 66-Day Transformation | NooLife`;
+const seoDescription = `Join the Winter Arc ${challengeData.focus.toLowerCase()} challenge. ${challengeData.targetAudience} Transform this winter with NooLife's 66-day science-backed plan.`;
+
+// Generate structured data for Winter Arc page (HowTo + Event + SoftwareApplication)
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": `Winter Arc ${challengeData.focus}`,
+      "description": challengeData.targetAudience,
+      "totalTime": `P${challengeData.duration}D`,
+      "step": challengeData.weekByWeekBreakdown.map((week) => ({
+        "@type": "HowToStep",
+        "name": `Week ${week.week}`,
+        "text": week.focus
+      }))
+    },
+    {
+      "@type": "Event",
+      "name": "Winter Arc Challenge",
+      "description": "66-day winter transformation challenge",
+      "startDate": "2025-11-01",
+      "endDate": "2026-03-01",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "VirtualLocation",
+        "url": "https://noolife.app"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "NooLife",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free 3-day trial, then subscription required"
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={challengeData.heroImage}
+  type="website"
+  jsonLd={structuredData}
+>
+  <WinterArcTemplate challenge={challengeData} />
+</Layout>

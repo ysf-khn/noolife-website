@@ -1,0 +1,572 @@
+---
+// WinterArcTemplate.astro - Template for Winter Arc seasonal transformation pages
+// Pattern from pseo-strategy.md lines 432-493 (Template 5: Winter Arc Page)
+import { Image } from "astro:assets";
+import downloadIOS from "../../assets/download-ios.svg";
+
+interface Props {
+  challenge: {
+    challengeName: string;
+    challengeSlug: string;
+    duration: number;
+    focus: string;
+    focusSlug: string;
+    winterArcDefinition: string;
+    whyWinterWorks: string;
+    coreHabits: string[];
+    targetAudience: string;
+    scientificRationale: string;
+    weekByWeekBreakdown: Array<{
+      week: number;
+      focus: string;
+      expectedDifficulty: string;
+    }>;
+    expectedTransformation: string;
+    commonExcuses: string[];
+    excuseRebuttals: string[];
+    winterArcTimeline: string;
+    commonPitfalls: string[];
+    nooLifeIntegration: string;
+    heroImage: string;
+    tags: string[];
+    metaKeywords: string[];
+    ctaAngle: string;
+    testimonial?: string;
+  };
+}
+
+const { challenge } = Astro.props;
+
+// Calculate days until Feb 28, 2026 for countdown
+const winterArcEnd = new Date('2026-02-28');
+const today = new Date();
+const daysUntilEnd = Math.max(0, Math.ceil((winterArcEnd.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)));
+---
+
+<!-- HERO SECTION - Winter Arc-specific with seasonal countdown (CTA #1) -->
+<section
+  id="winter-arc-hero"
+  class="relative min-h-screen flex items-center justify-center"
+  style={`background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('${challenge.heroImage}') center/cover no-repeat;`}
+>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 py-16 text-center">
+    <!-- Winter Arc Badge -->
+    <div class="flex justify-center mb-6 hero-fade-in" style="animation-delay: 0.05s;">
+      <span class="px-4 py-2 text-sm font-bold rounded-full uppercase" style="background: rgba(0, 208, 156, 0.15); color: var(--color-jade); border: 1px solid rgba(0, 208, 156, 0.4);">
+        Winter Arc {challenge.focus}
+      </span>
+    </div>
+
+    <!-- Main Headline -->
+    <h1
+      class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] tracking-tight mb-6 hero-fade-in"
+      style="animation-delay: 0.1s; color: var(--color-alabaster);"
+    >
+      The <span style="color: var(--color-jade);">Winter Arc</span><br>
+      {challenge.focus}
+    </h1>
+
+    <!-- Winter Arc Countdown -->
+    <div class="mb-8 hero-fade-in" style="animation-delay: 0.15s;">
+      <div class="inline-flex items-center gap-3 px-8 py-4 rounded-lg" style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(0, 208, 156, 0.3);">
+        <svg class="w-6 h-6" style="color: var(--color-jade);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span class="text-2xl font-bold" style="color: var(--color-alabaster);">
+          {daysUntilEnd > 0 ? `${daysUntilEnd} Days Until Winter Arc Ends` : 'Winter Arc Season'}
+        </span>
+      </div>
+    </div>
+
+    <!-- Target Audience -->
+    <p
+      class="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-8 hero-fade-in"
+      style="animation-delay: 0.2s; color: var(--color-faded-khaki);"
+    >
+      {challenge.targetAudience}
+    </p>
+
+    <!-- CTA Button -->
+    <div class="flex flex-col items-center gap-3 hero-fade-in" style="animation-delay: 0.25s;">
+      <a
+        href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+        aria-label="Download on the App Store"
+      >
+        <Image
+          src={downloadIOS}
+          alt="Download on the App Store"
+          class="h-16 md:h-20 w-auto"
+          loading="eager"
+        />
+      </a>
+      <p class="text-sm font-medium italic" style="color: var(--color-mint);">
+        {challenge.ctaAngle}
+      </p>
+    </div>
+
+    <!-- Social Proof with Winter Arc Hashtag -->
+    <p class="mt-8 text-sm font-medium hero-fade-in" style="animation-delay: 0.3s; color: var(--color-faded-khaki);">
+      <span style="color: var(--color-jade); font-bold;">#WinterArc - 127,000+ users</span> transforming this season
+    </p>
+  </div>
+</section>
+
+<!-- WHAT IS WINTER ARC? SECTION (NEW) -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12" style="color: var(--color-alabaster);">
+      What Is Winter Arc?
+    </h2>
+    <div class="prose prose-lg max-w-none mb-12" style="color: var(--color-faded-khaki);">
+      <p class="text-lg md:text-xl leading-relaxed">
+        {challenge.winterArcDefinition}
+      </p>
+    </div>
+
+    <!-- Winter Arc Timeline Visual -->
+    <div class="flex items-center justify-center gap-2 px-6 py-4 rounded-lg mx-auto max-w-2xl" style="background: rgba(0, 208, 156, 0.05); border: 1px solid rgba(0, 208, 156, 0.2);">
+      <svg class="w-5 h-5 flex-shrink-0" style="color: var(--color-jade);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      <span class="text-lg font-bold" style="color: var(--color-alabaster);">
+        {challenge.winterArcTimeline}
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY WINTER WORKS SECTION (NEW) -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      Why Winter Is Perfect for Transformation
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      While they hibernate, you dominate
+    </p>
+
+    <div class="prose prose-lg max-w-none" style="color: var(--color-faded-khaki);">
+      <p class="text-lg md:text-xl leading-relaxed">
+        {challenge.whyWinterWorks}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WINTER ARC TIMELINE SECTION (NEW) - Detailed Calendar -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      The {challenge.duration}-Day Winter Timeline
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      Your transformation journey through winter's darkest days
+    </p>
+
+    <!-- Timeline Milestones -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
+      <div class="p-6 rounded-lg text-center border" style="background: var(--color-charcoal); border: 1px solid rgba(0, 208, 156, 0.2);">
+        <div class="text-3xl font-bold mb-2" style="color: var(--color-jade);">Nov 1</div>
+        <div class="text-sm font-medium" style="color: var(--color-faded-khaki);">Winter Arc Begins</div>
+      </div>
+      <div class="p-6 rounded-lg text-center border" style="background: var(--color-charcoal); border: 1px solid rgba(0, 208, 156, 0.2);">
+        <div class="text-3xl font-bold mb-2" style="color: var(--color-jade);">Nov 28</div>
+        <div class="text-sm font-medium" style="color: var(--color-faded-khaki);">Thanksgiving Test</div>
+      </div>
+      <div class="p-6 rounded-lg text-center border" style="background: var(--color-charcoal); border: 1px solid rgba(0, 208, 156, 0.2);">
+        <div class="text-3xl font-bold mb-2" style="color: var(--color-jade);">Dec 25</div>
+        <div class="text-sm font-medium" style="color: var(--color-faded-khaki);">Holiday Gauntlet</div>
+      </div>
+      <div class="p-6 rounded-lg text-center border" style="background: var(--color-charcoal); border: 1px solid rgba(0, 208, 156, 0.2);">
+        <div class="text-3xl font-bold mb-2" style="color: var(--color-jade);">Jan 5</div>
+        <div class="text-sm font-medium" style="color: var(--color-faded-khaki);">Day 66 Complete</div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <p class="text-lg leading-relaxed" style="color: var(--color-faded-khaki);">
+        Core 66 days: November 1 → January 5. Extended Winter Arc continues through February 28 for sustained momentum into spring.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CORE WINTER ARC HABITS SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      Core Winter Arc Habits
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      The foundational habits you'll build this winter
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      {challenge.coreHabits.map((habitSlug) => {
+        const habitName = habitSlug.split('-').map(word =>
+          word.charAt(0).toUpperCase() + word.slice(1)
+        ).join(' ');
+
+        return (
+          <a
+            href={`/habit/${habitSlug}`}
+            class="p-4 rounded-lg border text-center transition-all duration-300 hover:scale-105 hover:border-jade"
+            style="background: var(--color-dark-charcoal); border: 1px solid rgba(241, 237, 233, 0.1);"
+          >
+            <p class="font-semibold text-sm" style="color: var(--color-alabaster);">
+              {habitName}
+            </p>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+<!-- WEEK-BY-WEEK BREAKDOWN SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      Your {challenge.duration}-Day Winter Journey
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      Week-by-week breakdown through winter's challenges
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {challenge.weekByWeekBreakdown.map((weekData) => (
+        <div
+          class="p-6 rounded-lg border transition-all duration-300 hover:scale-105"
+          style="background: var(--color-charcoal); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl font-bold" style="color: var(--color-jade);">
+              Week {weekData.week}
+            </span>
+            <span
+              class="px-2 py-1 text-xs font-bold rounded uppercase"
+              style="background: rgba(241, 237, 233, 0.1); color: var(--color-faded-khaki);"
+            >
+              {weekData.expectedDifficulty}
+            </span>
+          </div>
+          <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+            {weekData.focus}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- EXPECTED TRANSFORMATION SECTION (NEW) - Before/After -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      Your Winter Arc Transformation
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      November 1 You → March 1 You
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Before - November 1 -->
+      <div class="p-8 rounded-lg border" style="background: var(--color-dark-charcoal); border: 1px solid rgba(239, 83, 80, 0.3);">
+        <div class="flex items-center gap-2 mb-4">
+          <svg class="w-6 h-6" style="color: #ef5350;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+          <h3 class="text-2xl font-bold" style="color: var(--color-alabaster);">November 1</h3>
+        </div>
+        <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+          Average habits, inconsistent discipline, reactive to cold/darkness, social media dependence, no clear direction.
+        </p>
+      </div>
+
+      <!-- After - March 1 -->
+      <div class="p-8 rounded-lg border" style="background: var(--color-dark-charcoal); border: 1px solid rgba(0, 208, 156, 0.3);">
+        <div class="flex items-center gap-2 mb-4">
+          <svg class="w-6 h-6" style="color: var(--color-jade);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <h3 class="text-2xl font-bold" style="color: var(--color-alabaster);">March 1</h3>
+        </div>
+        <div class="prose prose-sm max-w-none" style="color: var(--color-faded-khaki);">
+          <p class="text-base leading-relaxed">
+            {challenge.expectedTransformation}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MID-CONTENT CTA #2 - Winter Arc Branding -->
+<section class="py-16 px-4" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl sm:text-4xl font-bold mb-6" style="color: var(--color-alabaster);">
+      Track Your Entire Winter Arc Journey with NooLife
+    </h3>
+    <p class="text-lg mb-8" style="color: var(--color-faded-khaki);">
+      {challenge.nooLifeIntegration}
+    </p>
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      aria-label="Download on the App Store"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-16 md:h-20 w-auto mx-auto"
+      />
+    </a>
+    <p class="text-sm font-medium italic mt-3" style="color: var(--color-mint);">
+      Start your free 3-day trial. Join the Winter Arc.
+    </p>
+  </div>
+</section>
+
+<!-- OVERCOMING WINTER EXCUSES SECTION (NEW) - Excuse/Rebuttal Cards -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      Overcoming Winter Excuses
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      The excuses that separate 97% from the 3% who dominate
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {challenge.commonExcuses.map((excuse, index) => (
+        <div class="rounded-lg overflow-hidden border" style="border: 1px solid rgba(0, 208, 156, 0.2);">
+          <!-- Excuse -->
+          <div class="p-6" style="background: rgba(239, 83, 80, 0.1);">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 flex-shrink-0 mt-1" style="color: #ef5350;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <h4 class="text-lg font-bold mb-2" style="color: #ef5350;">Excuse</h4>
+                <p class="text-base" style="color: var(--color-faded-khaki);">{excuse}</p>
+              </div>
+            </div>
+          </div>
+          <!-- Rebuttal -->
+          <div class="p-6" style="background: var(--color-dark-charcoal);">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 flex-shrink-0 mt-1" style="color: var(--color-jade);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <div>
+                <h4 class="text-lg font-bold mb-2" style="color: var(--color-jade);">Reality</h4>
+                <p class="text-base" style="color: var(--color-faded-khaki);">{challenge.excuseRebuttals[index]}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- SCIENTIFIC RATIONALE SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12" style="color: var(--color-alabaster);">
+      The Science Behind Winter Arc
+    </h2>
+    <div class="prose prose-lg max-w-none" style="color: var(--color-faded-khaki);">
+      <p class="text-lg md:text-xl leading-relaxed">
+        {challenge.scientificRationale}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMON PITFALLS SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      Common Pitfalls to Avoid
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      Don't let these mistakes derail your Winter Arc
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {challenge.commonPitfalls.map((pitfall, index) => (
+        <div
+          class="flex gap-4 p-6 rounded-lg"
+          style="background: var(--color-dark-charcoal);"
+        >
+          <div
+            class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm"
+            style="background: rgba(239, 83, 80, 0.15); color: #ef5350;"
+          >
+            {index + 1}
+          </div>
+          <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+            {pitfall}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL SECTION (if exists) -->
+{challenge.testimonial && (
+  <section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+    <div class="max-w-4xl mx-auto text-center">
+      <svg class="w-12 h-12 mx-auto mb-6 opacity-30" style="color: var(--color-jade);" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+      </svg>
+      <blockquote class="text-xl md:text-2xl font-medium mb-6 leading-relaxed" style="color: var(--color-alabaster);">
+        {challenge.testimonial}
+      </blockquote>
+    </div>
+  </section>
+)}
+
+<!-- FAQ SECTION - Winter Arc Specific -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12" style="color: var(--color-alabaster);">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-6">
+      <details class="group p-6 rounded-lg" style="background: var(--color-dark-charcoal);">
+        <summary class="cursor-pointer text-lg font-semibold flex justify-between items-center" style="color: var(--color-alabaster);">
+          <span>When should I start Winter Arc?</span>
+          <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </summary>
+        <p class="mt-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+          Ideal start: November 1 (core 66 days end January 5). But you can start anytime through December—better to begin mid-winter than wait until next year. The Winter Arc philosophy works whenever winter conditions exist (cold, darkness, fewer social obligations).
+        </p>
+      </details>
+
+      <details class="group p-6 rounded-lg" style="background: var(--color-dark-charcoal);">
+        <summary class="cursor-pointer text-lg font-semibold flex justify-between items-center" style="color: var(--color-alabaster);">
+          <span>What if I'm in the Southern Hemisphere?</span>
+          <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </summary>
+        <p class="mt-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+          Run your Winter Arc during your winter (June-August). The principles remain: leverage seasonal conditions (whatever they are in your region) for focused transformation. Winter Arc is about using environmental adversity as competitive advantage.
+        </p>
+      </details>
+
+      <details class="group p-6 rounded-lg" style="background: var(--color-dark-charcoal);">
+        <summary class="cursor-pointer text-lg font-semibold flex justify-between items-center" style="color: var(--color-alabaster);">
+          <span>Is Winter Arc harder than regular challenges?</span>
+          <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </summary>
+        <p class="mt-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+          Yes. Winter conditions (cold, darkness, holidays) add difficulty. But that's the point—building habits in adversity creates unshakeable discipline. NooLife's progressive plan accounts for this, scaling intensity appropriately. If you complete Winter Arc, you're elite.
+        </p>
+      </details>
+
+      <details class="group p-6 rounded-lg" style="background: var(--color-dark-charcoal);">
+        <summary class="cursor-pointer text-lg font-semibold flex justify-between items-center" style="color: var(--color-alabaster);">
+          <span>What happens after Day 66?</span>
+          <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </summary>
+        <p class="mt-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+          By Day 66 (early January), your habits are automated. Continue through February 28 to cement them permanently. Then spring arrives—you're maintaining established systems, not building from scratch. You emerge transformed, ready to dominate while others are still "trying to get motivated."
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA #3 - Winter Arc Seasonal Urgency -->
+<section class="py-16 sm:py-20 md:py-24 px-4 text-center" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6" style="color: var(--color-alabaster);">
+      While They Hibernate,<br><span style="color: var(--color-jade);">You Transform.</span>
+    </h2>
+    <p class="text-xl mb-8 leading-relaxed" style="color: var(--color-faded-khaki);">
+      Join 127,000+ users dominating their Winter Arc. Download NooLife and start your {challenge.duration}-day transformation today.
+    </p>
+
+    <!-- Countdown reminder -->
+    {daysUntilEnd > 0 && (
+      <div class="mb-8 inline-flex items-center gap-2 px-6 py-3 rounded-lg" style="background: rgba(0, 208, 156, 0.1); border: 1px solid rgba(0, 208, 156, 0.3);">
+        <svg class="w-5 h-5" style="color: var(--color-jade);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span class="font-bold" style="color: var(--color-jade);">
+          Winter Arc ends in {daysUntilEnd} days
+        </span>
+      </div>
+    )}
+
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95 mb-4"
+      aria-label="Download on the App Store"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-16 md:h-20 w-auto mx-auto"
+      />
+    </a>
+    <p class="text-sm font-medium" style="color: var(--color-faded-khaki);">
+      Free 3-day trial. #WinterArc starts now.
+    </p>
+  </div>
+</section>
+
+<style>
+  @keyframes hero-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade-in {
+    animation: hero-fade-in 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] summary ~ * {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

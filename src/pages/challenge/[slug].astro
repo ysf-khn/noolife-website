@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import ChallengeTemplate from '../../components/templates/ChallengeTemplate.astro';
+
+export const getStaticPaths = (async () => {
+  const challenges = await getCollection('challenges');
+
+  return challenges.map(challenge => ({
+    params: { slug: challenge.data.challengeSlug },
+    props: { challenge },
+  }));
+}) satisfies GetStaticPaths;
+
+const { challenge } = Astro.props;
+const challengeData = challenge.data;
+
+// Generate SEO title and description
+const seoTitle = `${challengeData.duration}-Day ${challengeData.goal} Challenge | NooLife`;
+const seoDescription = `Join the ${challengeData.duration}-day ${challengeData.goal.toLowerCase()} challenge. ${challengeData.targetAudience} Track your progress with NooLife's science-backed transformation plan.`;
+
+// Generate structured data for challenge page (HowTo + Event)
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": `${challengeData.duration}-Day ${challengeData.goal} Challenge`,
+      "description": challengeData.targetAudience,
+      "totalTime": `P${challengeData.duration}D`,
+      "step": challengeData.weekByWeekBreakdown.map((week) => ({
+        "@type": "HowToStep",
+        "name": `Week ${week.week}`,
+        "text": week.focus
+      }))
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "NooLife",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free 3-day trial, then subscription required"
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={challengeData.heroImage}
+  type="website"
+  jsonLd={structuredData}
+>
+  <ChallengeTemplate challenge={challengeData} />
+</Layout>

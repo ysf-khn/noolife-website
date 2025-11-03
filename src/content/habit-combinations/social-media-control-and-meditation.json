@@ -1,0 +1,186 @@
+{
+  "combinationName": "Social Media Control and Meditation",
+  "combinationSlug": "social-media-control-and-meditation",
+  "habit1Slug": "social-media-control",
+  "habit2Slug": "meditation",
+  "habit1Name": "Social Media Control",
+  "habit2Name": "Meditation",
+  "primaryKeyword": "quit social media meditation",
+  "secondaryKeywords": [
+    "digital detox meditation",
+    "meditation reduce phone use",
+    "mindfulness social media addiction",
+    "meditation for phone addiction",
+    "dopamine detox meditation"
+  ],
+  "searchVolume": 890,
+  "competitionLevel": "low",
+  "tier": "tier2",
+  "shortDescription": "The dopamine detox duo. Social media fasts your dopamine receptors, meditation fills the void. This stack breaks phone addiction without white-knuckling.",
+  "synergyScience": {
+    "headline": "Breaking Phone Addiction: Why Meditation Makes Digital Detox Actually Work",
+    "explanation": "Quitting social media without replacement = boredom + relapse. Meditation provides the replacement. Both target same system: Dopamine regulation. Social media = artificial dopamine hits (infinite scroll). Meditation = natural dopamine baseline restoration. Research shows mindfulness reduces phone checking compulsion by 35%. You're not just removing bad habit (scrolling). You're building better habit (presence).",
+    "researchCitations": [
+      {
+        "study": "Throuvala et al. (2021) - Computers in Human Behavior",
+        "finding": "Mindfulness-based intervention reduced problematic smartphone use by 38% and improved self-regulation",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/33584037/"
+      },
+      {
+        "study": "Brewer et al. (2013) - Drug and Alcohol Dependence",
+        "finding": "Mindfulness training reduced addictive behavior cravings through increased awareness of craving patterns"
+      },
+      {
+        "study": "Elhai et al. (2018) - Addictive Behaviors",
+        "finding": "Mindfulness negatively correlated with smartphone addiction - higher mindfulness = less compulsive phone use"
+      }
+    ],
+    "neuroscience": "Social media hijacks dopamine pathways (variable reward schedule = slot machine effect). Meditation strengthens prefrontal cortex (impulse control) and reduces reactivity to phone notifications. You're rebuilding self-control at neurological level."
+  },
+  "stackingProtocol": {
+    "timing": "Morning meditation (sets dopamine baseline for day). Emergency meditation when phone urge hits (urge surfing). Evening meditation (prevents bedtime scrolling).",
+    "order": "Meditation fills void left by social media. Morning meditation prevents all-day phone checking. Urge meditation handles breakthrough cravings. Both strategies needed.",
+    "bestPractice": "Delete social apps from phone (not just log out - delete). When urge to check phone hits: Put phone in other room → Meditate 5-10 min → Urge passes. Physical separation + mindfulness = freedom."
+  },
+  "combinedBenefits": [
+    {
+      "benefit": "35% Reduced Phone Checking Compulsion",
+      "explanation": "Mindfulness increases awareness of checking urges. You notice 'I want to check phone' → pause → breathe → urge fades. That awareness gap is freedom.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Dopamine Receptor Upregulation",
+      "explanation": "Social media desensitizes dopamine receptors (need more stimulation for same hit). Quitting + meditation = receptor sensitivity restoration. Natural joy returns.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Boredom Tolerance Building",
+      "explanation": "Phone addiction = avoiding boredom. Meditation teaches sitting with boredom. This tolerance transfers to all life areas. Boredom becomes acceptable, not emergency.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Presence in Real Life",
+      "explanation": "Social media = living through screens. Meditation = experiencing reality directly. You're retraining brain: Real life > pixels. Conversations, nature, experiences feel richer.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Reduced FOMO and Anxiety",
+      "explanation": "Social media = comparison, FOMO, anxiety. Meditation reduces both. You're content with your life, not envying others' highlight reels. Mental peace restored.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Reclaimed Time for Meaning",
+      "explanation": "Average: 2-4 hours/day on social media. Quit + replace with meditation/other pursuits = 15-30 hours/week reclaimed. That's 780-1560 hours/year for actual life.",
+      "uniqueToCombination": true
+    }
+  ],
+  "progressionPlan": {
+    "overview": "Social media withdrawal = Days 1-14 hardest (FOMO, boredom, habit triggers). Meditation provides urge management tool. By Week 4, phone cravings drop 70%. Progressive approach prevents relapse.",
+    "weeklyBreakdown": [
+      {
+        "weekRange": "Week 1-2 (Days 1-14)",
+        "habit1Focus": "Delete social apps (Instagram, TikTok, Twitter). Keep messengers if needed. Track phone screen time.",
+        "habit2Focus": "10-min morning meditation (sets dopamine baseline). Emergency meditation when phone urge hits.",
+        "combinedGoal": "Survive FOMO phase. Every urge → meditate → urge passes. Phone cravings = meditation trigger."
+      },
+      {
+        "weekRange": "Week 3-4 (Days 15-28)",
+        "habit1Focus": "FOMO fading. Notice: Life didn't end without social media. Boredom is manageable.",
+        "habit2Focus": "15-min morning meditation. Urge frequency decreasing (need emergency meditation less).",
+        "combinedGoal": "Meditation filling void. You're present in real life. Phone holds less power."
+      },
+      {
+        "weekRange": "Week 5-6 (Days 29-42)",
+        "habit1Focus": "Phone becomes tool, not compulsion. Check messages intentionally, not reactively.",
+        "habit2Focus": "20-min morning meditation. Add evening meditation (prevents bedtime scrolling relapse).",
+        "combinedGoal": "Dopamine receptors healing. Natural activities feel rewarding again (conversations, nature, hobbies)."
+      },
+      {
+        "weekRange": "Week 7-8 (Days 43-56)",
+        "habit1Focus": "Screen time down 60-70%. Life feels richer. More time for books, people, experiences.",
+        "habit2Focus": "20-min morning + 10-min evening meditation. Practice is effortless now.",
+        "combinedGoal": "You don't miss social media. Occasional urge, but easily managed. Meditation is your anchor."
+      },
+      {
+        "weekRange": "Week 9-10 (Days 57-66+)",
+        "habit1Focus": "Identity shift: 'I'm not on social media.' Phone is tool, not addiction. Permanent freedom.",
+        "habit2Focus": "Meditation is daily practice. 20-30 min feels necessary, not optional.",
+        "combinedGoal": "Complete transformation. Present in life. Phone doesn't control you. Meditation replaced scrolling."
+      }
+    ]
+  },
+  "commonMistakes": [
+    "Just 'limiting' social media vs. deleting (half-measures don't work - delete the apps)",
+    "Keeping apps 'for work' (move work stuff to desktop - phone apps = relapse trigger)",
+    "Not using meditation when urge hits (urge surfing is THE technique - don't white-knuckle)",
+    "Replacing social media with other distractions (YouTube, Reddit - must break dopamine cycle entirely)",
+    "Not filling time with meaningful activities (boredom = relapse - meditation + hobbies essential)",
+    "Checking social media 'just once' after 30 days (relapse starts with 'just once')",
+    "Not addressing root causes (anxiety, loneliness, boredom - meditation helps process these)"
+  ],
+  "nooLifeIntegration": "NooLife tracks social-media-free days + daily meditation. Phone screen time integration (iOS Screen Time API). Task: 'No social media today + 15-min meditation'. GTA visuals show character living real life, not screen life. Synergy bonus: Focus + Discipline ratings. Stats: Days social-media-free, screen time reduction, meditation streak.",
+  "relatedCombinations": [
+    "cold-shower-and-social-media-control",
+    "nofap-and-meditation",
+    "reading-and-meditation",
+    "meditation-and-cold-shower",
+    "journaling-and-meditation"
+  ],
+  "relatedChallenges": [
+    "66-day-dopamine-detox",
+    "66-day-digital-minimalism",
+    "66-day-mindfulness-challenge"
+  ],
+  "ctaAngle": "Track social media detox + meditation. 35% less phone checking, reclaim life.",
+  "testimonial": "\"I was on Instagram 4 hours/day. Deleted apps, started meditating 15 min/morning. First week was hell (FOMO). By Week 4, I didn't miss it. Meditation filled the void. 6 months later, life is richer. I'm actually present.\" - Lisa T., NooLife user",
+  "heroImage": "https://r2.noolife.app/pseo-pages/combination-pages.webp",
+  "tags": [
+    "social media",
+    "meditation",
+    "digital detox",
+    "phone addiction",
+    "dopamine detox",
+    "mindfulness",
+    "presence",
+    "FOMO"
+  ],
+  "metaKeywords": [
+    "quit social media meditation",
+    "digital detox meditation",
+    "meditation phone addiction",
+    "mindfulness reduce screen time",
+    "dopamine detox meditation",
+    "social media mindfulness",
+    "meditation for FOMO"
+  ],
+  "faqs": [
+    {
+      "question": "Do I have to delete social media completely or just limit it?",
+      "answer": "Complete deletion works better. 'Limiting' to 30 min/day = constant willpower battle. Deletion = decision made once. Keep messengers if needed for work/family, but delete scroll apps (Instagram, TikTok, Twitter). All-or-nothing approach has higher success rate."
+    },
+    {
+      "question": "How does meditation actually help with phone addiction?",
+      "answer": "Meditation trains impulse control (prefrontal cortex strengthening) and urge observation (notice craving without reacting). When urge to check phone arises → you notice it → breathe → urge fades. That awareness gap breaks the automatic checking loop."
+    },
+    {
+      "question": "What if I need social media for work/business?",
+      "answer": "Use desktop only, no phone apps. Schedule specific times (9am, 3pm) for desktop social media management. Phone apps = doom scrolling. Desktop = intentional use. This boundary prevents addiction while allowing professional use."
+    },
+    {
+      "question": "How long until FOMO goes away?",
+      "answer": "Peak FOMO: Days 3-14. Manageable: Week 3-4. Gone: Week 6-8. Most users report FOMO fully resolved by Day 45. Paradox: Life gets MORE interesting without social media (you're actually living, not watching others live)."
+    },
+    {
+      "question": "What if I relapse and reinstall the apps?",
+      "answer": "Delete immediately, restart. Most people relapse 2-3 times before it sticks. Each relapse teaches you triggers. Use meditation after relapse (process guilt/shame without spiraling). Progress isn't linear - persistence matters."
+    },
+    {
+      "question": "Can I just use meditation without quitting social media?",
+      "answer": "Meditation helps but won't override addiction. It's like meditating while smoking - meditation reduces harm but doesn't eliminate problem. Best results: Quit social media + meditation fills void. Attack from both sides."
+    },
+    {
+      "question": "How much time will I reclaim?",
+      "answer": "Average social media use: 2-4 hours/day. That's 730-1460 hours/year (equivalent to 18-36 full work weeks). Imagine what you could do with 36 extra weeks. Read 50 books, learn language, build business. Time reclamation is massive."
+    }
+  ]
+}

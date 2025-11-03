@@ -1,0 +1,58 @@
+{
+  "habitName": "Meditation",
+  "habitSlug": "meditation",
+  "category": "core",
+  "difficulty": "easy",
+  "typicalDaysToAutomate": "30-45",
+  "shortDescription": "Daily mindfulness practice for mental clarity, focus, and emotional regulation",
+  "scientificBenefits": [
+    "Reduced stress and anxiety levels",
+    "Improved focus and attention span",
+    "Enhanced emotional regulation and self-awareness",
+    "Better sleep quality",
+    "Increased gray matter density in brain regions linked to memory and learning"
+  ],
+  "researchCitations": [
+    {
+      "study": "Hölzel et al. (2011) - Psychiatry Research",
+      "finding": "8 weeks of mindfulness meditation increased gray matter density in hippocampus by 5%",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S092549271000288X"
+    },
+    {
+      "study": "Goyal et al. (2014) - JAMA Internal Medicine",
+      "finding": "Meditation programs show moderate evidence for reducing anxiety and depression",
+      "link": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1809754"
+    },
+    {
+      "study": "MacLean et al. (2010) - Psychological Science",
+      "finding": "3-month meditation training improved sustained attention performance by 16%"
+    }
+  ],
+  "relatedHabits": ["waking-early", "reading", "journaling"],
+  "commonBarriers": [
+    "Restless mind, can't 'turn off' thoughts",
+    "Feeling like you're doing it wrong",
+    "Lack of immediate results",
+    "Difficulty finding consistent time/place",
+    "Discomfort sitting still"
+  ],
+  "progressionPlan": "Week 1: 2 minutes guided breathing. Week 2: 5 minutes daily. Week 3-4: 10 minutes. Week 5-8: 15-20 minutes, experiment with different styles (body scan, loving-kindness, breath focus).",
+  "nooLifeFeatureHighlight": "Built-in guided meditation sessions (5/10/15/20 min) in Assets screen. Track daily practice with streak system. Meditation task cards show serene GTA-style visuals. Progress contributes to Focus and Wisdom ratings.",
+  "testimonial": "\"I tried meditation apps before but never stuck with it. NooLife's streak system and short guided sessions made it finally click. Day 44 now.\" - Sam K.",
+  "ctaAngle": "Build a daily meditation habit with guided sessions and 66-day tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/meditation.webp",
+  "tags": [
+    "meditation",
+    "mindfulness",
+    "stress reduction",
+    "focus",
+    "mental health"
+  ],
+  "metaKeywords": [
+    "meditation habit",
+    "how to meditate daily",
+    "meditation benefits",
+    "mindfulness practice",
+    "daily meditation routine"
+  ]
+}

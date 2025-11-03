@@ -1,0 +1,59 @@
+{
+  "challengeName": "30-Day Reading Challenge",
+  "challengeSlug": "30-day-reading-challenge",
+  "duration": 30,
+  "goal": "Reading Habit",
+  "goalSlug": "reading",
+  "includedHabits": ["reading", "social-media-control"],
+  "targetAudience": "Read 3-5 books in 30 days. Perfect for those who 'want to read more' but spend hours scrolling instead.",
+  "scientificRationale": "The average person reads less than 1 book per year, yet spends 2.5 hours daily on social media. By swapping 30 minutes of scrolling for reading for 30 days, you'll complete 3-5 books and experience measurable cognitive benefits: improved vocabulary, focus, empathy, and reduced stress. Research shows that just 6 minutes of reading reduces stress by 68%. This is simple habit substitution with massive ROI.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "15 pages daily (20-30 min). Replace evening scrolling with reading. Social media limit: 1 hour. Track daily completion.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "20 pages daily. Social media down to 45 min. Notice improved focus and sleep (reading before bed vs scrolling).",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 3,
+      "focus": "25 pages daily. First book completed (~200-250 pages). Sense of accomplishment. Pick next book immediately.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 4,
+      "focus": "30 pages daily. Social media optional, not compulsive. 2nd book done. Reading is now favorite part of day.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 30, you'll have read 3-5 books (600-900 pages), read 20-30 pages daily automatically, reduced social media use by 50-75%, experience measurably improved focus and vocabulary, sleep better, and genuinely identify as 'a reader.' NooLife 30-day reading finishers report an average of 4.2 books completed and 68% reduction in social media time.",
+  "commonPitfalls": [
+    "Starting with dense, boring books (pick what genuinely interests you)",
+    "Not tracking pages (seeing progress motivates continuation)",
+    "Replacing reading time with other distractions (protect your reading window)",
+    "Quitting when book is boring (switch books—just keep reading)",
+    "Not limiting social media (you can't add reading time without removing scrolling time)",
+    "Reading only non-fiction (fiction reduces stress differently and builds empathy)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily reading completion and page count. Log books finished. Your Wisdom and Focus ratings climb daily. GTA-style library visuals make every reading session feel like intelligence building. Pair with social media limits to reclaim time. See your 30-day reading heatmap and book count prove transformation.",
+  "testimonial": "\"Read zero books in 2023, scrolled 3+ hours daily. NooLife's 30-day reading challenge changed everything. Day 30: 5 books finished, social media down to 20 min/day. I'm smarter, calmer, more interesting. Reading is my new scroll.\" - Maya L.",
+  "ctaAngle": "Read 3-5 books in 30 days by tracking daily progress. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "reading challenge",
+    "30 day reading",
+    "book challenge",
+    "read more books",
+    "reading habit"
+  ],
+  "metaKeywords": [
+    "30 day reading challenge",
+    "how to read more books",
+    "reading habit tracker",
+    "book reading challenge",
+    "reading goals"
+  ]
+}

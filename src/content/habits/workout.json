@@ -1,0 +1,57 @@
+{
+  "habitName": "Workout",
+  "habitSlug": "workout",
+  "category": "core",
+  "difficulty": "medium",
+  "typicalDaysToAutomate": "45-66",
+  "shortDescription": "Consistent strength and resistance training for physical transformation and mental discipline",
+  "scientificBenefits": [
+    "Increased muscle mass and strength",
+    "Improved bone density and joint health",
+    "Enhanced metabolic rate and fat loss",
+    "Better mood through endorphin release",
+    "Improved self-confidence and body image"
+  ],
+  "researchCitations": [
+    {
+      "study": "O'Connor et al. (2010) - Psychology of Sport and Exercise",
+      "finding": "Regular resistance training reduces anxiety symptoms by 20% and improves self-esteem",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S1469029209001234"
+    },
+    {
+      "study": "Westcott (2012) - Current Sports Medicine Reports",
+      "finding": "Strength training increases resting metabolic rate by 7% on average"
+    },
+    {
+      "study": "Liu et al. (2019) - JAMA Network",
+      "finding": "30-60 minutes of strength training per week reduces all-cause mortality by 10-20%"
+    }
+  ],
+  "relatedHabits": ["running", "water-intake", "pushups"],
+  "commonBarriers": [
+    "Don't know where to start or what exercises to do",
+    "Gym intimidation or lack of equipment",
+    "Soreness after first few sessions",
+    "Lack of visible results in first weeks",
+    "Inconsistent schedule makes routine hard"
+  ],
+  "progressionPlan": "Week 1-2: 20-min bodyweight workouts 3x/week (pushups, squats, planks). Week 3-4: Add resistance bands or light weights. Week 5-8: 30-40min sessions, progressive overload, establish preferred workout split (full body, upper/lower, etc).",
+  "nooLifeFeatureHighlight": "Dedicated workout tracker in Assets screen. Log exercises, sets, reps. Main workout task with GTA-style gym visuals. Progress contributes heavily to Strength and Discipline ratings. Track workout consistency across 66 days.",
+  "testimonial": "\"Started with zero gym confidence. NooLife kept me accountable. 55 days later, I'm stronger than I've ever been. The streak system works.\" - Marcus R.",
+  "ctaAngle": "Build an unbreakable workout habit with progressive 66-day plans. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/workout.webp",
+  "tags": [
+    "workout",
+    "strength training",
+    "fitness habit",
+    "gym routine",
+    "muscle building"
+  ],
+  "metaKeywords": [
+    "workout habit",
+    "daily workout routine",
+    "strength training benefits",
+    "how to build workout habit",
+    "gym consistency"
+  ]
+}

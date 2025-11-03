@@ -1,0 +1,94 @@
+{
+  "challengeName": "66-Day Focus Challenge",
+  "challengeSlug": "66-day-focus-challenge",
+  "duration": 66,
+  "goal": "Laser Focus",
+  "goalSlug": "focus",
+  "includedHabits": [
+    "meditation",
+    "social-media-control",
+    "reading",
+    "studying"
+  ],
+  "targetAudience": "Train your attention span to superhuman levels. Perfect for those with ADHD tendencies, constant distractions, or scattered focus.",
+  "scientificRationale": "Attention is trainable. Research shows that meditation increases gray matter in attention-related brain regions, while social media decreases it. By combining daily meditation (attention training), social media limits (dopamine detox), deep reading (sustained focus practice), and studying (deliberate concentration) for 66 days, you rebuild attention span from scattered to laser-focused. This is neuroscience-backed focus training.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Meditation 5 min daily (breath focus). Social media limit: 1 hour. Reading 10 pages. Notice how often mind wanders.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "Meditation 10 min. Social media down to 45 min. Reading 15 pages. Studying/deep work 20 min. Focus slightly improving.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Meditation 15 min. Social media 30 min max. Reading 20 pages. Notice ability to sustain focus improving.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Meditation 20 min feels effortless. Mind wanders less. Reading comprehension measurably better. Attention span growing.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Add deep work sessions (60-90 min). Use phone in another room. Notice how rare distractions become.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Social media optional, not compulsive. Reading 30+ pages feels easy. Deep work sessions hit 2 hours. Focus is superpower.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "Meditation 20-30 min. Mind is calm, focused. Notice how people comment on your presence and listening.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Focus is now core identity. Distractions feel uncomfortable. You enter flow states easily.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Maintain discipline even during chaos. Your focus is your competitive advantage in distracted world.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: Attention span fully rebuilt. Compare Day 1 vs Day 66 focus capacity. You're in the top 1%.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll meditate 20-30 min daily with minimal mind-wandering, limit social media to <30 min, read 20-30 pages with full comprehension, sustain deep work for 90-120 min, and operate with laser focus. NooLife focus finishers report an average 84% improvement in sustained attention and 72% reduction in distractibility.",
+  "commonPitfalls": [
+    "Not removing phone during focus sessions (phone proximity reduces cognitive capacity even when off)",
+    "Multitasking instead of monotasking (focus means one thing at a time)",
+    "Skipping meditation on 'busy' days (5 min matters more than 0 min)",
+    "Replacing Instagram with TikTok (all dopamine-loop platforms damage focus)",
+    "Not tracking progress (seeing focus improvements in data motivates continuation)",
+    "Giving up during ADHD-like scatter periods (these pass—consistency wins)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily meditation minutes, social media usage limits, reading pages, study/deep work duration. Built-in Pomodoro timer for focus sessions. Your Focus and Wisdom ratings climb daily. GTA-style zen-focused visuals make every logged session feel like mental training. See your 66-day focus heatmap prove you can train attention like a muscle.",
+  "testimonial": "\"ADHD-coded since childhood. Couldn't focus for 10 minutes. NooLife's 66-day focus challenge rebuilt my brain. Day 66: meditate 30 min, read 2 hours straight, deep work 90 min. Focus is my superpower now.\" - Jordan P.",
+  "ctaAngle": "Train laser focus with meditation and deep work tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "focus challenge",
+    "66 day focus",
+    "attention span",
+    "meditation",
+    "deep work"
+  ],
+  "metaKeywords": [
+    "how to improve focus",
+    "66 day focus challenge",
+    "increase attention span",
+    "focus training",
+    "ADHD productivity"
+  ]
+}

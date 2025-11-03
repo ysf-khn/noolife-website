@@ -1,0 +1,57 @@
+{
+  "habitName": "Social Media Control",
+  "habitSlug": "social-media-control",
+  "category": "core",
+  "difficulty": "hard",
+  "typicalDaysToAutomate": "60-75",
+  "shortDescription": "Intentional social media usage limits for reclaimed time, focus, and mental health",
+  "scientificBenefits": [
+    "Improved focus and attention span",
+    "Reduced anxiety and comparison stress",
+    "Better sleep quality (less blue light exposure)",
+    "Increased productivity and time for meaningful activities",
+    "Enhanced real-world social connections"
+  ],
+  "researchCitations": [
+    {
+      "study": "Hunt et al. (2018) - Journal of Social and Clinical Psychology",
+      "finding": "Limiting social media to 30 min/day significantly reduced depression and loneliness",
+      "link": "https://guilfordjournals.com/doi/abs/10.1521/jscp.2018.37.10.751"
+    },
+    {
+      "study": "Twenge et al. (2018) - Emotion",
+      "finding": "Heavy social media use (5+ hours/day) increases suicide risk indicators by 71%"
+    },
+    {
+      "study": "Mark et al. (2016) - CHI Conference",
+      "finding": "People check phones average 85 times/day; each context switch costs 23 minutes of focus"
+    }
+  ],
+  "relatedHabits": ["reading", "meditation", "studying"],
+  "commonBarriers": [
+    "Automatic muscle-memory phone grabbing",
+    "FOMO (fear of missing out) on updates",
+    "Social media tied to work/networking",
+    "Boredom triggers mindless scrolling",
+    "No clear boundaries or daily limits set"
+  ],
+  "progressionPlan": "Week 1: Track current usage (awareness). Week 2-3: Set 2-hour daily limit, remove from home screen. Week 4-5: Reduce to 90 minutes, designate scroll-free zones (bed, meals). Week 6-8: Target 30-60 min/day, intentional-only usage.",
+  "nooLifeFeatureHighlight": "Track social media minutes daily. Set personal limits. GTA-style phone-away visuals. Contributes heavily to Focus and Discipline ratings. Inverse tracking: less usage = higher rating gains.",
+  "testimonial": "\"Was on Instagram 4+ hours daily. NooLife helped me cut to 45 min. Got 3 hours back every day. Mental clarity is unreal.\" - Sophia K.",
+  "ctaAngle": "Take control of your screen time with accountability tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/social_media.webp",
+  "tags": [
+    "social media",
+    "digital detox",
+    "screen time",
+    "focus",
+    "productivity"
+  ],
+  "metaKeywords": [
+    "reduce social media usage",
+    "social media detox",
+    "screen time limit",
+    "phone addiction",
+    "digital minimalism"
+  ]
+}

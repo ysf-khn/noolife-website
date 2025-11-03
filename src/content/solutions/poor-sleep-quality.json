@@ -1,0 +1,100 @@
+{
+  "problem": "Poor Sleep Quality",
+  "problemSlug": "poor-sleep-quality",
+  "commonSymptoms": [
+    "You sleep 7-8 hours but wake up exhausted",
+    "You toss and turn for 30-60 minutes before falling asleep",
+    "You wake up multiple times during the night",
+    "You rely on caffeine to function but it makes sleep worse",
+    "Your sleep schedule is chaotic—different bedtimes nightly",
+    "You scroll your phone in bed for hours before sleeping"
+  ],
+  "rootCauses": [
+    "**Blue light exposure**: Screens before bed suppress melatonin, delaying sleep onset by 1-2 hours",
+    "**Inconsistent sleep schedule**: Variable bedtimes confuse your circadian rhythm, destroying sleep architecture",
+    "**Caffeine mismanagement**: Drinking coffee after 2pm leaves caffeine in your system at bedtime (6-8 hour half-life)",
+    "**Stress and cortisol**: Unmanaged anxiety keeps cortisol elevated, preventing deep sleep cycles",
+    "**Lack of sleep pressure**: No physical activity during day = insufficient adenosine buildup for quality sleep",
+    "**Poor sleep environment**: Light pollution, temperature too warm, or noise disrupting REM/deep sleep"
+  ],
+  "scientificExplanation": "Research from Stanford's Sleep Lab shows sleep quality depends on **circadian rhythm alignment** and **sleep pressure accumulation**. Your circadian rhythm is controlled by light exposure: blue light from screens signals \"daytime\" to your brain, suppressing melatonin production for 1-3 hours. This delays sleep onset and reduces REM sleep. Additionally, **sleep pressure** builds through adenosine accumulation during wakefulness—but sedentary lifestyles don't build enough pressure, causing shallow sleep. Inconsistent bedtimes create **social jet lag**: your body never fully adapts to a schedule. The solution is **systematic sleep hygiene**: consistent sleep/wake times, no screens 60+ mins before bed, caffeine cutoff at 2pm, physical activity during day, and wind-down ritual.",
+  "failedSolutions": [
+    "Taking melatonin supplements but still using screens before bed",
+    "Trying to \"catch up\" on sleep during weekends",
+    "Relying on sleep tracking apps without changing behaviors",
+    "Using alcohol to fall asleep (destroys REM sleep)",
+    "Going to bed early when not tired, creating sleep anxiety"
+  ],
+  "whyTheyFail": "These fail because they treat **symptoms, not causes**. Melatonin supplements don't override blue light suppression—you're fighting biology. Weekend sleep-ins create circadian misalignment, making weekday sleep worse. Sleep trackers provide data but no behavior change. Alcohol induces sedation (not sleep), fragmenting sleep architecture and blocking REM. Forcing bedtime without sleep pressure creates frustration and sleep anxiety. The real fix is **systematic circadian alignment**: consistent schedule, light management (dark evenings, bright mornings), adenosine buildup through activity, stress management through meditation/exercise, and screen-free wind-down ritual.",
+  "actualSolution": "Science-backed sleep quality improvement requires five components: (1) **Consistent sleep/wake times**: Same time daily, even weekends, to lock circadian rhythm (21-day adaptation period). (2) **Screen curfew**: No screens 60-90 mins before bed. Read, stretch, journal instead. (3) **Caffeine cutoff**: Last coffee by 2pm (6hr half-life means it's mostly cleared by bedtime). (4) **Daily physical activity**: Workout, running, or walking to build adenosine sleep pressure. (5) **Wind-down ritual**: 30-min pre-bed routine (dim lights, reading, stretching, meditation) signals sleep transition. Over 4-6 weeks, sleep architecture normalizes: faster onset, fewer wake-ups, more deep/REM sleep.",
+  "nooLifeApproach": "NooLife fixes sleep through **comprehensive circadian management**. You track wake time and sleep time daily—the app flags inconsistencies that wreck your rhythm. Prescribed habits directly improve sleep: **morning workouts** (build adenosine pressure), **meditation** (reduce cortisol), **reading before bed** (screen-free wind-down), **social media limits** (reduce late-night scrolling). Your **Discipline rating** drops if you break sleep schedule. Additionally, the app creates **forced accountability**: maintaining your streak requires completing morning tasks, which requires waking at consistent time, which requires sleeping well. By Week 4-6, your circadian rhythm locks, sleep quality improves, and energy skyrockets.",
+  "expectedTimeline": "Weeks 1-2: rhythm adjustment, sleep improving. Weeks 3-4: circadian lock, quality sleep. Weeks 6-8: deep/REM maximized. Weeks 10+: sleep optimized, energy high.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Circadian Baseline + Screen Curfew",
+      "expectedProgress": "Set consistent sleep time (e.g., 11pm nightly) and wake time (e.g., 6:30am). Track both daily. No screens 60 mins before bed—read or stretch instead. Cut caffeine after 2pm. First few nights feel hard (schedule adjusting), but you're building the foundation. Sleep quality inconsistent but you're creating the conditions. Discipline rating: 45-55."
+    },
+    {
+      "week": 3,
+      "focus": "Adenosine Building + Rhythm Locking",
+      "expectedProgress": "Consistent sleep/wake for 21 days—your circadian rhythm is locking. Morning workouts build sleep pressure (adenosine). You fall asleep faster (15-20 mins vs 60 mins). Wake-ups during night reduce. Energy during day improving. Pre-bed ritual feels automatic: 10:30pm → lights dim, phone away, read 10 pages → 11pm sleep. Discipline rating: 60-70."
+    },
+    {
+      "week": 6,
+      "focus": "Sleep Architecture Optimization",
+      "expectedProgress": "Sleep quality dramatically better: falling asleep in <10 mins, sleeping through night, waking refreshed. Deep sleep and REM cycles maximized (trackable if you use sleep monitor). Morning tasks easier because you're actually rested. Caffeine dependency dropping—you need less to function. Friends notice you have more energy. Discipline rating: 75-85."
+    },
+    {
+      "week": 10,
+      "focus": "Permanent Sleep Excellence",
+      "expectedProgress": "Sleep is dialed: same time nightly, 7-8 hrs, high quality. You wake without alarm feeling rested. Sleep is no longer something you struggle with—it's automatic. You notice immediately when something disrupts it (late caffeine, screen before bed) because your baseline is so good. Energy levels consistent and high. Discipline rating: 85+. Sleep is now a competitive advantage."
+    }
+  ],
+  "relatedHabits": ["wake-time", "workout", "meditation", "reading"],
+  "relatedChallenges": ["winter-arc", "no-fap-challenge"],
+  "relatedProblems": ["cant-wake-up-early", "no-motivation", "cant-focus"],
+  "testimonial": "I slept 8 hours nightly but woke up destroyed. NooLife forced consistent sleep/wake times, cut my evening screens, and added morning workouts. By Week 5, I was falling asleep in 10 minutes and waking up energized. Sleep quality changed everything. Discipline: 44 → 79.",
+  "ctaAngle": "Stop fighting poor sleep with supplements. Fix your circadian rhythm through consistent schedule, screen management, and sleep pressure building.",
+  "trustSignal": "50,000+ users improved sleep quality and energy using NooLife's circadian alignment system.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": [
+    "sleep-quality",
+    "circadian-rhythm",
+    "insomnia",
+    "wake-time",
+    "energy",
+    "recovery"
+  ],
+  "metaKeywords": [
+    "improve sleep quality",
+    "poor sleep quality solution",
+    "can't sleep well",
+    "fix circadian rhythm",
+    "sleep better naturally",
+    "wake up refreshed",
+    "insomnia solution"
+  ],
+  "faqs": [
+    {
+      "question": "Why do I sleep 8 hours but still feel exhausted?",
+      "answer": "**Duration doesn't equal quality**. You might be getting 8 hours but spending too much time in light sleep and not enough in deep/REM sleep. Common causes: (1) **Inconsistent schedule**—your circadian rhythm never stabilizes, fragmenting sleep architecture. (2) **Blue light exposure**—screens before bed suppress melatonin and delay REM onset. (3) **Caffeine too late**—6-8 hour half-life means afternoon coffee disrupts deep sleep even if you fall asleep. (4) **Stress/cortisol**—elevated cortisol prevents deep sleep cycles. (5) **No sleep pressure**—sedentary days don't build adenosine, causing shallow sleep. NooLife fixes this systematically: consistent schedule locks rhythm, screen curfew optimizes melatonin, workouts build pressure, meditation reduces cortisol. By Week 4-6, same 8 hours yields 2x better quality."
+    },
+    {
+      "question": "Is it okay to have different sleep schedules on weekdays vs weekends?",
+      "answer": "**No—this creates social jet lag** and is one of the worst things for sleep quality. When you sleep 11pm-6am weekdays then 1am-9am weekends, you're essentially flying to a different time zone every Friday and back every Monday. Your circadian rhythm never stabilizes. Research shows this: (1) Fragments sleep architecture (less deep/REM sleep). (2) Causes Monday grogginess (circadian misalignment). (3) Increases cortisol and reduces insulin sensitivity. The fix: **same sleep/wake time daily for 21+ days** to lock your rhythm. Yes, even weekends. After Week 6-8 when rhythm is solid, you can add 30-60 min flexibility on weekends, but during adaptation, consistency is non-negotiable. NooLife tracks this: weekend inconsistency drops your Discipline rating."
+    },
+    {
+      "question": "How late can I have caffeine without affecting sleep?",
+      "answer": "**Caffeine has a 6-hour half-life**, meaning if you drink coffee at 4pm, 50% is still in your system at 10pm. Even if you fall asleep, caffeine blocks adenosine receptors, reducing deep sleep quality. Research-backed cutoff: **last caffeine by 2pm** for 10pm-11pm bedtime. If you sleep later (midnight), you can extend to 3pm, but not later. Additionally, **total daily caffeine matters**: 400mg+ daily (4 cups) can disrupt sleep even with early cutoff. NooLife tracks this through your daily habits. If your sleep quality is poor and you're drinking afternoon coffee, the app flags it. By Week 3-4 of 2pm cutoff, you'll notice: faster sleep onset, deeper sleep, better morning energy. Caffeine works better when your sleep is optimized—you need less of it."
+    },
+    {
+      "question": "What's the best wind-down routine before bed?",
+      "answer": "The ideal wind-down ritual signals to your body that sleep is approaching. Research-backed components: (1) **Screen curfew (60-90 mins before bed)**: Blue light suppresses melatonin for 1-3 hours—this is non-negotiable. (2) **Dim lighting**: Bright lights delay melatonin. Use lamps, not overhead lights, after 9pm. (3) **Low-stimulation activities**: Reading (physical books), stretching, journaling, meditation. Avoid work, intense conversations, or news (cortisol spikes). (4) **Consistent timing**: Same routine, same time nightly (e.g., 10pm-11pm every night). (5) **Temperature drop**: Hot shower 90 mins before bed causes core temp drop afterward, signaling sleep. NooLife prescribes this: reading (screen-free), meditation (stress reduction), consistent sleep time (rhythm lock). By Week 3-4, the ritual becomes automatic—your body starts producing melatonin when you begin the routine."
+    },
+    {
+      "question": "Should I use sleep trackers or apps?",
+      "answer": "**Sleep trackers are useful for data, not solutions**. They can show you: sleep duration, restlessness, potential sleep debt. But they can't fix your circadian rhythm or sleep hygiene—behavioral change does that. Additionally, some people develop **orthosomnia** (obsession with perfect sleep data) causing sleep anxiety. Use trackers to: (1) Establish baseline (how much deep/REM you're getting). (2) Measure improvement after behavior changes. (3) Identify patterns (caffeine days = worse sleep). But don't rely on them for solutions. NooLife is different: it **prescribes the behaviors** that improve sleep (consistent schedule, workouts, meditation, screen curfew) and tracks your compliance. You're changing the inputs (behaviors), which changes the output (sleep quality). By Week 6, you'll feel the difference without needing a tracker."
+    }
+  ]
+}

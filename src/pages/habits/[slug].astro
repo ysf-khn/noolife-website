@@ -1,0 +1,95 @@
+---
+// Dynamic route for habit combination pages
+// URL pattern: /habits/[habit1-slug]-and-[habit2-slug]
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import HabitCombinationTemplate from '../../components/templates/HabitCombinationTemplate.astro';
+
+export async function getStaticPaths() {
+  const combinations = await getCollection('habit-combinations');
+
+  return combinations.map((combination) => ({
+    params: { slug: combination.data.combinationSlug },
+    props: { combination }
+  }));
+}
+
+type Props = {
+  combination: CollectionEntry<'habit-combinations'>;
+};
+
+const { combination } = Astro.props;
+const { data } = combination;
+
+// SEO metadata - Title pattern from seo-guy analysis
+const title = `${data.habit1Name} and ${data.habit2Name}: The ${getStackName(data)} Stack | NooLife`;
+const description = `Why ${data.habit1Name.toLowerCase()} + ${data.habit2Name.toLowerCase()} = 3x benefit. Science-backed synergy guide. Track both with NooLife's 66-day plan. Free trial.`;
+
+// Helper function to generate stack name
+function getStackName(data: any): string {
+  // Try to infer stack name from tags or use generic
+  if (data.tags.includes('discipline')) return 'Discipline';
+  if (data.tags.includes('knowledge')) return 'Knowledge';
+  if (data.tags.includes('dopamine')) return 'Dopamine Reset';
+  if (data.tags.includes('recovery')) return 'Recovery';
+  if (data.tags.includes('focus')) return 'Focus';
+  if (data.tags.includes('transformation')) return 'Transformation';
+  return 'Synergy';
+}
+
+// Schema markup - HowTo schema for habit stacking
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  'name': `How to Build ${data.habit1Name} and ${data.habit2Name} Together`,
+  'description': data.shortDescription,
+  'totalTime': 'P66D',
+  'step': data.progressionPlan.weeklyBreakdown.map((week, index) => ({
+    '@type': 'HowToStep',
+    'position': index + 1,
+    'name': week.weekRange,
+    'text': `${data.habit1Name}: ${week.habit1Focus}. ${data.habit2Name}: ${week.habit2Focus}. Goal: ${week.combinedGoal}`
+  })),
+  'tool': {
+    '@type': 'SoftwareApplication',
+    'name': 'NooLife',
+    'applicationCategory': 'HealthApplication',
+    'operatingSystem': 'iOS',
+    'offers': {
+      '@type': 'Offer',
+      'price': '0',
+      'priceCurrency': 'USD'
+    }
+  }
+};
+
+// FAQ schema
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': data.faqs.map((faq) => ({
+    '@type': 'Question',
+    'name': faq.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': faq.answer
+    }
+  }))
+};
+
+// Open Graph metadata
+const ogImage = data.heroImage || `https://noolife.app/og-images/habits/${data.combinationSlug}.png`;
+---
+
+<Layout
+  title={title}
+  description={description}
+  image={ogImage}
+>
+  <!-- Schema markup -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- Main content -->
+  <HabitCombinationTemplate combination={data} />
+</Layout>

@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import SolutionTemplate from '../../components/templates/SolutionTemplate.astro';
+
+export const getStaticPaths = (async () => {
+  const solutions = await getCollection('solutions');
+
+  return solutions.map(solution => ({
+    params: { slug: solution.data.problemSlug },
+    props: { solution },
+  }));
+}) satisfies GetStaticPaths;
+
+const { solution } = Astro.props;
+const solutionData = solution.data;
+
+// Generate SEO title and description
+const seoTitle = `${solutionData.problem}? Here's the Science-Backed Solution | NooLife`;
+const seoDescription = `Struggling with ${solutionData.problem.toLowerCase()}? Willpower isn't the answer. Here's the 66-day progressive solution backed by research. Track with NooLife's habit system.`;
+
+// Generate structured data for solution page
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": ["HowTo", "FAQPage"],
+  "name": `How to Fix: ${solutionData.problem}`,
+  "description": solutionData.scientificExplanation,
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Understand the Root Cause",
+      "text": solutionData.scientificExplanation
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Implement the Solution",
+      "text": solutionData.actualSolution
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Track with NooLife",
+      "text": solutionData.nooLifeApproach
+    }
+  ],
+  "mainEntity": solutionData.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={solutionData.heroImage}
+  type="article"
+  jsonLd={structuredData}
+>
+  <SolutionTemplate solution={solutionData} />
+</Layout>

@@ -1,0 +1,172 @@
+{
+  "demographicName": "Athletes",
+  "demographicSlug": "athletes",
+  "primaryKeyword": "habit tracker for athletes",
+  "secondaryKeywords": [
+    "athlete habit tracking",
+    "fitness routine tracker",
+    "workout consistency habits",
+    "athlete recovery habits",
+    "sports performance habits"
+  ],
+  "searchVolume": 3600,
+  "competitionLevel": "medium",
+  "tier": "tier1",
+  "shortDescription": "Track training consistency, recovery, and performance habits with NooLife's 66-day athlete plan. Join 9M+ athletes who know: consistency beats talent.",
+
+  "keyPainPoints": [
+    "Inconsistent training leads to performance plateaus",
+    "Recovery neglect causes preventable injuries",
+    "Sleep quality directly impacts athletic performance",
+    "Nutrition tracking feels overwhelming",
+    "Mental toughness gaps during competition",
+    "Motivation fluctuation between seasons",
+    "Overtraining without awareness of limits"
+  ],
+
+  "nooLifeSolutions": [
+    {
+      "habitSlug": "workout",
+      "habitName": "Workout",
+      "whyRelevant": "Track sessions, build consistency. 9M+ users on Hevy prove athletes need systematic tracking. NooLife adds accountability layer."
+    },
+    {
+      "habitSlug": "running",
+      "habitName": "Running",
+      "whyRelevant": "Distance tracking, progressive improvement. Whether sprinter or marathoner, daily runs = cardio baseline for all sports."
+    },
+    {
+      "habitSlug": "cold-shower",
+      "habitName": "Cold Shower",
+      "whyRelevant": "Recovery, mental toughness, inflammation reduction. Pro athletes swear by ice baths—cold showers = accessible version."
+    },
+    {
+      "habitSlug": "meditation",
+      "habitName": "Meditation",
+      "whyRelevant": "Focus, visualization, performance anxiety management. Mental game separates good from elite athletes."
+    },
+    {
+      "habitSlug": "waking-early",
+      "habitName": "Waking Early",
+      "whyRelevant": "Circadian rhythm optimization for recovery. Consistent sleep schedule = better performance, injury prevention."
+    },
+    {
+      "habitSlug": "water-intake",
+      "habitName": "Water Intake",
+      "whyRelevant": "Hydration critical for performance. Even 2% dehydration = 10% performance drop. Track intake religiously."
+    }
+  ],
+
+  "targetAudience": {
+    "ageRange": "All ages (youth sports to masters)",
+    "psychographics": [
+      "Value data and metrics heavily",
+      "Community-driven (Strava has 100M+ users)",
+      "Consistency is #1 priority",
+      "Performance-focused mindset",
+      "Embrace discomfort for gains",
+      "Competitive by nature"
+    ],
+    "painPointIntensity": "high",
+    "conversionLikelihood": "very-high"
+  },
+
+  "featuredHabits": [
+    {
+      "habitSlug": "workout",
+      "habitName": "Workout",
+      "demographicRelevance": "Primary training tracking. Consistency beats intensity—66 days of showing up > sporadic heroics. Track every session.",
+      "expectedImpact": "35% improvement in training consistency, measurable strength gains"
+    },
+    {
+      "habitSlug": "running",
+      "habitName": "Running",
+      "demographicRelevance": "Cardio/endurance base for all sports. Distance tracked daily. Progressive overload = injury prevention.",
+      "expectedImpact": "40% better cardio endurance, 25% reduced injury risk"
+    },
+    {
+      "habitSlug": "cold-shower",
+      "habitName": "Cold Shower",
+      "demographicRelevance": "Recovery tool + mental toughness training. Daily cold exposure = reduced inflammation, faster recovery.",
+      "expectedImpact": "30% faster recovery, 50% better mental resilience"
+    },
+    {
+      "habitSlug": "water-intake",
+      "habitName": "Water Intake",
+      "demographicRelevance": "Hydration = performance. Track intake during training. Dehydration kills gains—most athletes under-hydrate.",
+      "expectedImpact": "10-15% performance improvement from proper hydration alone"
+    },
+    {
+      "habitSlug": "meditation",
+      "habitName": "Meditation",
+      "demographicRelevance": "Mental game training. Visualization, focus under pressure, performance anxiety management. Elite secret.",
+      "expectedImpact": "25% better focus, 40% reduced performance anxiety"
+    },
+    {
+      "habitSlug": "waking-early",
+      "habitName": "Waking Early",
+      "demographicRelevance": "Consistent training schedule = consistent wake time. Circadian rhythm optimization for recovery, injury prevention.",
+      "expectedImpact": "30% better sleep quality, 20% improved recovery"
+    }
+  ],
+
+  "ratingAppeals": [
+    {
+      "ratingType": "strength",
+      "demographicAngle": "Physical performance metrics. Track how training consistency impacts your strength rating—see objective progress."
+    },
+    {
+      "ratingType": "discipline",
+      "demographicAngle": "Training consistency metric. Your discipline rating shows if you're showing up when it's hard—separates pros from amateurs."
+    },
+    {
+      "ratingType": "confidence",
+      "demographicAngle": "Athletic identity, performance gains. Confidence rating reflects daily wins—momentum builds through consistency."
+    }
+  ],
+
+  "socialProof": {
+    "testimonial": "I was inconsistent—trained hard 3 days, then skipped 4. NooLife's streak system changed that. 66 days straight, PRs in all lifts. Consistency is everything.",
+    "statistic": "9M+ athletes use habit tracking for consistency. Professional athletes and Olympians rely on systematic training.",
+    "userCount": "9M+ athletes"
+  },
+
+  "relatedHabits": ["workout", "running", "cold-shower", "water-intake", "meditation", "waking-early"],
+  "relatedChallenges": ["66-day-fitness-transformation", "winter-arc-transformation", "66-day-morning-routine"],
+  "relatedSolutions": ["cant-stay-consistent", "no-discipline", "burnout"],
+
+  "heroImage": "https://r2.noolife.app/pseo-pages/demographic-pages.webp",
+  "tags": ["athletes", "fitness", "sports", "training", "performance", "recovery"],
+  "metaKeywords": [
+    "habit tracker for athletes",
+    "athlete habit tracking",
+    "fitness routine tracker",
+    "workout consistency",
+    "athlete recovery",
+    "sports performance habits"
+  ],
+  "ctaAngle": "Track training like a pro. Consistency beats talent. Free athlete plan.",
+
+  "faqs": [
+    {
+      "question": "How does NooLife differ from fitness apps like Hevy or Strong?",
+      "answer": "Hevy/Strong = workout tracking only. NooLife = holistic athlete habits (training, recovery, sleep, nutrition, mental game). You're not just tracking reps—you're tracking the full system that creates performance."
+    },
+    {
+      "question": "Can I sync NooLife with my current fitness tracker (Apple Watch, Garmin)?",
+      "answer": "Not yet, but on roadmap. Currently, NooLife tracks habit completion (did you workout today?), not detailed workout metrics. Use your fitness tracker for reps/sets, use NooLife for consistency accountability."
+    },
+    {
+      "question": "What if I miss training due to injury?",
+      "answer": "Injury = active recovery phase. Track recovery habits (cold shower, sleep, stretching). Streak adjusts to your reality. Elite athletes know: recovery IS training."
+    },
+    {
+      "question": "Do I need to track every single workout?",
+      "answer": "Yes. Consistency is the metric that matters. Even light sessions count. 66 days of showing up > sporadic intensity. Your discipline rating reflects this."
+    },
+    {
+      "question": "How does meditation help athletic performance?",
+      "answer": "Mental game = 50% of performance. Meditation trains focus, visualization, anxiety management. Olympians use this. You're leaving gains on table without mental training."
+    }
+  ]
+}

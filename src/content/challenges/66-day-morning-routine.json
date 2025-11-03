@@ -1,0 +1,200 @@
+{
+  "challengeName": "66-Day Morning Routine Challenge",
+  "challengeSlug": "66-day-morning-routine",
+  "duration": 66,
+  "goal": "Morning Routine",
+  "goalSlug": "morning-routine",
+  "includedHabits": ["waking-early", "cold-shower", "meditation", "workout"],
+  "targetAudience": "Transform your mornings, transform your life. Perfect for professionals, students, and anyone tired of hitting snooze.",
+  "scientificRationale": "Research from University College London found that habit formation takes an average of 66 days, not the commonly cited 21. Mornings are the highest-leverage time window for behavior change—willpower is strongest, distractions are minimal, and early wins create momentum for the rest of your day. By consistently executing a morning routine for 66 days, you're not just building habits—you're rewiring your identity as a morning person.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Establish wake time, eliminate snooze button. Start with 5-min morning routine (stretch, water, phone in another room).",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "Add cold shower (30 seconds). Lock in consistent wake time within 15-min window. Track mood improvements.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Introduce 5-min meditation. Morning routine now 15-20 min total. Notice reduced decision fatigue.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Add light workout (10-min bodyweight). Morning routine hits 30 min. Energy levels noticeably higher.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Refine timing—identify friction points. Prep night before (clothes, water bottle). Consistency feels easier.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Increase workout to 20 min, meditation to 10 min. Cold shower feels normal. Identity shift begins.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "Experiment with order—find your ideal sequence. Notice how routine impacts entire day's productivity.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Morning routine feels automatic. Willpower no longer required. Track long-term benefits (focus, mood).",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Maintain consistency even on weekends. Morning routine is now non-negotiable identity marker.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Celebrate 66 days. Reflect on transformation. Plan next 66-day challenge to stack on this foundation.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll wake at your target time without an alarm (or with one snooze max), complete a 30-45 minute morning routine automatically, experience measurably higher energy and focus throughout the day, and feel genuine discomfort when you skip it. NooLife users report an average 40% increase in daily productivity and 67% improvement in morning mood after completing this challenge.",
+  "commonPitfalls": [
+    "Going to bed too late—sleep quality matters more than wake time",
+    "Overloading Week 1 with a 90-min routine (start small, build incrementally)",
+    "Skipping weekends (consistency matters more than perfection)",
+    "Not preparing the night before (friction kills morning motivation)",
+    "Checking phone immediately (dopamine spike derails focus)",
+    "Quitting during the 'Week 3 dip' when novelty wears off but automation hasn't kicked in yet"
+  ],
+  "nooLifeFeatureHighlight": "NooLife breaks your 66-day morning routine into daily micro-tasks. Track wake time, cold shower completion, meditation minutes, and workout check-ins. Your Discipline and Focus ratings improve daily. GTA-style morning visuals make tracking feel like leveling up, not logging chores. See your streak build and watch consistency heatmaps prove you're becoming a morning person.",
+  "testimonial": "\"I was a snooze-button addict for 10 years. NooLife's 66-day morning routine challenge changed everything. Day 40, I woke up before my alarm. Day 66, mornings are my favorite part of the day. No willpower required anymore—it's just who I am now.\" - Sarah K.",
+  "ctaAngle": "Build an unbreakable morning routine with 66-day tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "morning routine",
+    "66 day challenge",
+    "wake up early",
+    "productivity",
+    "habit stacking"
+  ],
+  "metaKeywords": [
+    "66 day morning routine challenge",
+    "how to build morning routine",
+    "wake up early challenge",
+    "morning habits",
+    "66 day challenge"
+  ],
+  "phaseBreakdowns": [
+    {
+      "phase": 1,
+      "phaseLabel": "Foundation",
+      "dayRange": "Days 1-21",
+      "phaseGoal": "Build baseline consistency, overcome initial resistance, establish morning identity",
+      "keyMilestones": [
+        "Complete first full week without missing a day",
+        "Wake within 15-min window consistently",
+        "Notice first mood/energy improvements",
+        "Routine feels intentional, not forced"
+      ],
+      "expectedProgress": "You'll establish the foundational morning loop. Expect struggle—alarm resistance, cold shower shock, mental pushback. By day 21, waking feels less painful and you'll notice genuine energy improvements. The habit loop is forming."
+    },
+    {
+      "phase": 2,
+      "phaseLabel": "Acceleration",
+      "dayRange": "Days 22-45",
+      "phaseGoal": "Lock in identity shift, expand routine complexity, build non-negotiable consistency",
+      "keyMilestones": [
+        "Wake before alarm at least once per week",
+        "Identity shift: you now see yourself as 'a morning person'",
+        "Expand routine to 30-45 minutes naturally",
+        "Weekends feel wrong without routine"
+      ],
+      "expectedProgress": "This is where transformation accelerates. Willpower requirements drop sharply. You'll start optimizing your sequence, prepping the night before automatically. Skipping feels uncomfortable—the habit has become part of your identity."
+    },
+    {
+      "phase": 3,
+      "phaseLabel": "Mastery",
+      "dayRange": "Days 46-66",
+      "phaseGoal": "Cement permanent identity, exceed initial expectations, plan next-level habits",
+      "keyMilestones": [
+        "Wake without alarm resistance (it feels natural)",
+        "Morning routine is core identity marker",
+        "Productivity and mood gains are undeniable",
+        "Natural desire to continue beyond 66 days"
+      ],
+      "expectedProgress": "Full transformation locked in. You're now 'a morning person'—not aspirational, actual. Routine runs automatically. You'll start planning how to layer additional habits (journaling, reading) onto this foundation. This is permanent lifestyle change."
+    }
+  ],
+  "transformationMetrics": [
+    {
+      "metric": "Wake Time Consistency",
+      "baseline": "Alarm at 7:30am, snooze 3-5 times, actual wake 8:15am",
+      "expected": "Wake at 6:00am within 5-min window, no snooze"
+    },
+    {
+      "metric": "Morning Routine Duration",
+      "baseline": "5 minutes (shower, dress, rush out)",
+      "expected": "45 minutes (workout, meditation, cold shower, intentional start)"
+    },
+    {
+      "metric": "Discipline Rating",
+      "baseline": "32 / 100",
+      "expected": "78 / 100"
+    },
+    {
+      "metric": "Daily Productivity",
+      "baseline": "4-5 focused hours, constant distraction",
+      "expected": "7-8 focused hours, 40% productivity increase"
+    }
+  ],
+  "customizationOptions": [
+    {
+      "area": "Wake Time Target",
+      "options": [
+        "Early Bird (5:00-6:00am): Maximum quiet time, hardest adjustment",
+        "Standard (6:00-7:00am): Balanced approach, works for most schedules",
+        "Moderate (7:00-8:00am): Easier transition, still creates morning advantage"
+      ]
+    },
+    {
+      "area": "Routine Intensity",
+      "options": [
+        "Minimal (15-20 min): Wake, stretch, cold shower, meditation—essentials only",
+        "Balanced (30-45 min): Add 20-min workout, reading, journaling",
+        "Comprehensive (60-90 min): Full workout, extended meditation, planning, learning"
+      ]
+    },
+    {
+      "area": "Priority Focus",
+      "options": [
+        "Physical: Emphasize workout and cold shower for energy/physique",
+        "Mental: Prioritize meditation and journaling for clarity/focus",
+        "Balanced: Equal time across physical, mental, and planning activities"
+      ]
+    }
+  ],
+  "challengeFAQs": [
+    {
+      "question": "What if I'm not a morning person?",
+      "answer": "'Not a morning person' is learned identity, not genetics. This challenge rewrites that identity through 66 days of consistent evidence. Start with a realistic wake time (don't jump from 9am to 5am overnight), and let NooLife's progressive plan shift your circadian rhythm gradually."
+    },
+    {
+      "question": "Can I modify the routine for night shift workers?",
+      "answer": "Absolutely. The principles apply to any consistent wake time. If you wake at 3pm for a night shift, your '66-day morning routine' starts then. NooLife tracks your personal baseline—consistency matters more than clock time."
+    },
+    {
+      "question": "What if I miss a day during the challenge?",
+      "answer": "Your streak resets, but progress doesn't zero out. NooLife tracks cumulative improvements even after missed days. The goal is 66 consecutive days, but if you break streak on day 40, you've still built 40 days of neural pathways. Resume immediately—don't let one miss become two."
+    },
+    {
+      "question": "How do I handle weekends?",
+      "answer": "Weekends are non-negotiable. Sleeping in 'just on Saturday' resets your circadian rhythm and costs you 2-3 days of progress. You can adjust routine length (shorter workout is fine), but wake time must stay consistent. This is where real transformation happens."
+    },
+    {
+      "question": "What about travel or emergencies?",
+      "answer": "Travel: Maintain wake time in your destination timezone. Hotel room workouts, quick cold showers—adaptability is key. Emergencies: Life happens. NooLife tracks your bounce-back time. Elite performers resume immediately after disruptions, not 'next Monday.'"
+    }
+  ]
+}

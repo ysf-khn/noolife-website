@@ -1,0 +1,57 @@
+{
+  "habitName": "Journaling",
+  "habitSlug": "journaling",
+  "category": "optional",
+  "difficulty": "easy",
+  "typicalDaysToAutomate": "25-35",
+  "shortDescription": "Daily journaling practice for self-reflection, emotional processing, and mental clarity",
+  "scientificBenefits": [
+    "Reduced stress and anxiety through emotional processing",
+    "Improved self-awareness and emotional intelligence",
+    "Enhanced problem-solving and decision-making",
+    "Better memory retention and learning",
+    "Increased gratitude and life satisfaction"
+  ],
+  "researchCitations": [
+    {
+      "study": "Pennebaker & Smyth (2016) - Opening Up by Writing It Down",
+      "finding": "Expressive writing about emotions reduces stress and improves physical health markers",
+      "link": "https://www.guilford.com/books/Opening-Up-by-Writing-It-Down/Pennebaker-Smyth/9781462524914"
+    },
+    {
+      "study": "Emmons & McCullough (2003) - Journal of Personality and Social Psychology",
+      "finding": "Gratitude journaling increases happiness by 25% and improves sleep quality"
+    },
+    {
+      "study": "Lepore & Smyth (2002) - Journal of Clinical Psychology",
+      "finding": "Journaling for 15-20 minutes, 3-4 times/week reduces anxiety and depression symptoms"
+    }
+  ],
+  "relatedHabits": ["meditation", "reading", "praying"],
+  "commonBarriers": [
+    "Don't know what to write about",
+    "Feeling like thoughts aren't 'important enough'",
+    "Perfectionism blocks starting",
+    "Inconsistent time/place for practice",
+    "Evening tiredness makes it feel like a chore"
+  ],
+  "progressionPlan": "Week 1-2: 5 minutes daily, simple prompts (3 gratitudes, biggest win/challenge). Week 3-4: 10 minutes, free-form writing. Week 5-8: 10-20 minutes, establish routine (morning reflection or evening review), experiment with formats (bullet journal, stream-of-consciousness).",
+  "nooLifeFeatureHighlight": "Built-in Journey screen with 4 daily journal cards (mood, tasks, visual, text). Track journaling consistency. GTA-style reflective visuals. Contributes to Wisdom, Confidence, and Focus ratings.",
+  "testimonial": "\"Never journaled before NooLife. The daily prompts made it easy. 48-day streak, it's my mental reset button now.\" - Priya N.",
+  "ctaAngle": "Build a daily journaling habit with prompts and tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/journaling_male.webp",
+  "tags": [
+    "journaling",
+    "self reflection",
+    "mental health",
+    "gratitude",
+    "mindfulness"
+  ],
+  "metaKeywords": [
+    "daily journaling",
+    "journaling benefits",
+    "how to start journaling",
+    "gratitude journal",
+    "journaling habit"
+  ]
+}

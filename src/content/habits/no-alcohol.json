@@ -1,0 +1,57 @@
+{
+  "habitName": "No Alcohol",
+  "habitSlug": "no-alcohol",
+  "category": "optional",
+  "difficulty": "medium",
+  "typicalDaysToAutomate": "60-66",
+  "shortDescription": "Alcohol abstinence for improved sleep, mental clarity, physical health, and performance",
+  "scientificBenefits": [
+    "Dramatically improved sleep quality and REM cycles",
+    "Better cognitive function and memory",
+    "Improved mood stability and reduced anxiety",
+    "Enhanced physical recovery and performance",
+    "Weight loss and better skin health"
+  ],
+  "researchCitations": [
+    {
+      "study": "Ebrahim et al. (2013) - Alcoholism: Clinical and Experimental Research",
+      "finding": "Alcohol before bed reduces REM sleep by 39%, impairing memory consolidation",
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/acer.12006"
+    },
+    {
+      "study": "Richard et al. (2018) - BMJ Open",
+      "finding": "One month alcohol abstinence improves insulin resistance, blood pressure, and cancer-related growth factors"
+    },
+    {
+      "study": "Sabia et al. (2018) - The Lancet",
+      "finding": "Moderate drinking (7+ drinks/week) accelerates cognitive decline by 1.5 years"
+    }
+  ],
+  "relatedHabits": ["waking-early", "workout", "meditation"],
+  "commonBarriers": [
+    "Social pressure in drinking environments",
+    "Using alcohol as stress relief mechanism",
+    "Friday/weekend celebration rituals",
+    "Boredom in social situations without alcohol",
+    "Initial sleep adjustment period"
+  ],
+  "progressionPlan": "Week 1-2: Complete abstinence, track sleep quality improvements. Week 3-4: Navigate first social events sober, find non-alcohol rituals. Week 5-8: Cement identity shift (\"I don't drink\" vs \"I'm trying not to\"), track energy/mood gains.",
+  "nooLifeFeatureHighlight": "Daily alcohol-free tracking with streak counter. Log sleep quality and energy improvements. GTA-style clear-headed morning visuals. Contributes to Discipline, Strength, and Confidence ratings.",
+  "testimonial": "\"60 days alcohol-free thanks to NooLife tracking. Sleep is incredible, mornings are productive, brain fog gone. Best decision.\" - Chris D.",
+  "ctaAngle": "Track your alcohol-free days and watch your life improve. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/noalcohol_male.webp",
+  "tags": [
+    "no alcohol",
+    "sobriety",
+    "alcohol free",
+    "health",
+    "self improvement"
+  ],
+  "metaKeywords": [
+    "quit drinking",
+    "alcohol free benefits",
+    "sober curious",
+    "no alcohol challenge",
+    "sobriety tracker"
+  ]
+}

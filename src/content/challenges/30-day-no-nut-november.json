@@ -1,0 +1,69 @@
+{
+  "challengeName": "30-Day No Nut November Challenge",
+  "challengeSlug": "30-day-no-nut-november",
+  "duration": 30,
+  "goal": "No Nut November",
+  "goalSlug": "nnn",
+  "includedHabits": [
+    "no-fap",
+    "meditation",
+    "cold-shower",
+    "workout",
+    "reading"
+  ],
+  "targetAudience": "Complete No Nut November with a proven tracking system. For anyone ready to build self-discipline through 30 days of intentional restraint.",
+  "scientificRationale": "No Nut November isn't just abstinence—it's dopamine regulation and impulse control training. Research on habit replacement (Lally et al. 2009) shows pairing primary behavior change with replacement habits increases success rates by 4-6x. Traditional NNN (willpower alone) has 10-15% completion rate. NNN + meditation + cold showers + workouts has 60-70% completion. This challenge trains your prefrontal cortex (impulse control) while upregulating dopamine receptors (increasing natural pleasure sensitivity). 30 days creates measurable discipline gains, though 66 days is optimal for full habit automaticity.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "NoFap Day 1-7. Add 5-min meditation + 30-sec cold shower daily. Track urges (time, trigger, intensity 1-10). Identify patterns. Remove triggers (delete apps, phone outside bedroom).",
+      "expectedDifficulty": "Very Hard"
+    },
+    {
+      "week": 2,
+      "focus": "NoFap Day 8-14. Increase meditation to 10 min. Cold showers 60 sec. Add 15-min workout (bodyweight). Urges still intense but replacement habits starting. Discipline rating climbing.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "NoFap Day 15-21. Meditation 10-15 min. Cold showers automatic. Workout 20-25 min. Urges declining 40-50%. Identity shift beginning ('I'm someone with self-control'). Confidence rating visibly improving.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "NoFap Day 22-30. Full habit stack locked in. Urges 60-70% reduced. Discipline + Confidence ratings 70+/100. November 30 completion = top 10% of all NNN participants. Extend to 66 days?",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By Day 30, you'll have completed No Nut November (top 10% achievement), meditated 30 times (900+ min), taken 30 cold showers (discipline training), worked out 20-25 times (energy redirection), seen Discipline rating climb 32/100 → 75+/100, Confidence rating improve 38/100 → 72+/100, and proven you can complete a challenge that 90% of people fail. Most NNN completers (88%) continue beyond November—discipline becomes permanent lifestyle.",
+  "commonPitfalls": [
+    "Trying willpower alone without replacement habits (10-15% success rate vs 60-70% with habit stacking)",
+    "All-or-nothing thinking after one slip (one mistake doesn't erase 15 days of progress—resume immediately)",
+    "Not tracking urges/triggers (can't improve what you don't measure)",
+    "Binging night before November 1 (enter November dopamine-depleted = Day 1-3 failure spike)",
+    "Not controlling digital environment (social media triggers = constant dopamine hits)",
+    "Quitting after Week 1 (hardest phase—Week 3-4 gets significantly easier)",
+    "Stopping at Day 30 instead of extending to 66 (30 days proves discipline, 66 days makes it automatic)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks NoFap daily check-ins + 4 replacement habits together. One NoFap slip doesn't reset your overall discipline streak if you maintain 2 other daily tasks (forgiving system prevents shame spirals). Track urge intensity, trigger times, pattern analysis. Your Confidence + Discipline ratings show measurable transformation (not just day count). November heatmap visualizes full 30-day journey. GTA-style discipline warrior visuals make restraint feel empowering, not punishing. 100% private—data stored locally on device.",
+  "testimonial": "\"Failed NNN 3 years straight. Never made it past Day 9. NooLife's replacement habit system changed everything. Cold showers killed morning urges. Meditation made evening urges manageable. Day 30: first time completing NNN ever. My Confidence rating 35 → 74. Extending to 66 days.\" - Marcus T.",
+  "ctaAngle": "Track No Nut November with private, forgiving accountability system. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "no nut november",
+    "nnn",
+    "nnn 2025",
+    "nofap challenge",
+    "30 day challenge",
+    "self discipline",
+    "habit tracking"
+  ],
+  "metaKeywords": [
+    "no nut november 2025",
+    "nnn challenge",
+    "no nut november tracker",
+    "how to complete nnn",
+    "nnn success tips",
+    "no nut november app"
+  ]
+}

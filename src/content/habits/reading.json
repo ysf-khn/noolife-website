@@ -1,0 +1,51 @@
+{
+  "habitName": "Reading",
+  "habitSlug": "reading",
+  "category": "core",
+  "difficulty": "easy",
+  "typicalDaysToAutomate": "30-40",
+  "shortDescription": "Daily reading practice for knowledge expansion, focus training, and cognitive growth",
+  "scientificBenefits": [
+    "Improved vocabulary and verbal intelligence",
+    "Enhanced focus and attention span",
+    "Increased empathy and emotional intelligence",
+    "Better memory and cognitive function",
+    "Reduced stress levels (68% reduction in stress)"
+  ],
+  "researchCitations": [
+    {
+      "study": "University of Sussex (2009)",
+      "finding": "Reading for just 6 minutes reduces stress levels by 68%, more than music or tea",
+      "link": "https://www.sussex.ac.uk/research/features/reading-reduces-stress"
+    },
+    {
+      "study": "Stanovich & Cunningham (1993) - Reading Research Quarterly",
+      "finding": "Reading exposure predicts vocabulary growth even controlling for IQ"
+    },
+    {
+      "study": "Wilson et al. (2013) - Neurology",
+      "finding": "Lifelong reading habits slow cognitive decline by up to 32% in later years"
+    }
+  ],
+  "relatedHabits": ["meditation", "journaling", "studying"],
+  "commonBarriers": [
+    "Phone and social media distractions",
+    "Picking boring or overly difficult books",
+    "Reading before bed leads to falling asleep",
+    "Feeling like there's no time in the day",
+    "Loss of momentum after finishing a book"
+  ],
+  "progressionPlan": "Week 1: 10 minutes daily (any time, any book). Week 2-3: 15-20 minutes. Week 4-6: 30 minutes, establish preferred time (morning/evening). Week 7-8: 30-60 minutes, track books completed, build reading list pipeline.",
+  "nooLifeFeatureHighlight": "Reading task with aesthetic library visuals. Track pages/time read daily. Contributes to Wisdom and Focus ratings. Streaks for consistency. Suggested reading times based on your schedule.",
+  "testimonial": "\"Hadn't finished a book in 3 years. NooLife's 10-minute start made it manageable. On my 4th book, day 58.\" - Ryan L.",
+  "ctaAngle": "Build a daily reading habit that actually sticks. Track minutes, pages, books. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/reading_male.webp",
+  "tags": ["reading", "books", "knowledge", "self improvement", "learning"],
+  "metaKeywords": [
+    "reading habit",
+    "how to read more books",
+    "daily reading routine",
+    "reading benefits",
+    "reading habit tracker"
+  ]
+}

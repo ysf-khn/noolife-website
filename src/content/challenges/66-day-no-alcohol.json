@@ -1,0 +1,95 @@
+{
+  "challengeName": "66-Day Alcohol-Free Challenge",
+  "challengeSlug": "66-day-no-alcohol",
+  "duration": 66,
+  "goal": "Alcohol-Free Living",
+  "goalSlug": "no-alcohol",
+  "includedHabits": [
+    "no-alcohol",
+    "workout",
+    "meditation",
+    "reading",
+    "journaling"
+  ],
+  "targetAudience": "Experience life without alcohol for 66 days. Perfect for those curious about sober living or ready to quit for good.",
+  "scientificRationale": "Alcohol disrupts sleep architecture, impairs cognitive function, and creates dependence cycles. Research shows that 66 days alcohol-free produces measurable improvements: REM sleep increases 40-60%, liver enzymes normalize, mental clarity improves, and psychological dependence breaks. By replacing drinking rituals with healthy habits (workout, meditation, reading), you rewire reward pathways. This isn't just abstinence—it's neurological reset.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Complete abstinence begins. Track sleep quality improvements. Notice cravings during usual drinking times. Log them.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "First weekend sober. Replace Friday drinks with workout or reading. Notice improved Saturday morning energy.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Sleep quality measurably better. Add meditation (10 min) for stress management. Skin/eyes look clearer.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "First social event sober. Navigate without alcohol. Notice you don't need it to have fun. Identity shift begins.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Energy levels at all-time high. Mental clarity improved. Add journaling to process emotions without numbing.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Alcohol-free feels normal. Notice weight loss, better skin, improved mood stability. Track measurable benefits.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "Social situations feel comfortable sober. You say 'I don't drink' confidently, not 'I'm trying not to.'",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Physical transformation visible. Mental fog gone. Sleep is restorative. Reflect on before/after differences.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Navigate holidays/celebrations sober. Prove you don't need alcohol to celebrate or relax. Rituals replaced.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: Alcohol-free identity cemented. Decide if you'll continue (most do). Life is better without it.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll have saved 60+ drinking occasions, experience measurably better sleep quality (REM increase), mental clarity, energy levels, and physical appearance (weight loss, skin quality). NooLife alcohol-free finishers report an average 68% improvement in sleep quality, 54% improvement in energy, and 82% continue abstinence beyond 66 days.",
+  "commonPitfalls": [
+    "Not replacing drinking rituals (Friday beer → Friday workout/movie)",
+    "Keeping alcohol in the house ('for guests'—get rid of it)",
+    "Justifying 'just one drink' (one always becomes more)",
+    "Not tracking progress (seeing benefits in NooLife data prevents relapse)",
+    "Isolating from social events (you can still go out—just don't drink)",
+    "Underestimating withdrawal symptoms in Week 1-2 (sleep may worsen briefly before improving)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily alcohol-free completion with streak counters. Log sleep quality (1-10), energy levels, mood improvements. Your Discipline, Strength, and Confidence ratings climb daily. GTA-style clear-minded morning visuals make every sober day feel like leveling up. See your 66-day heatmap prove you can thrive without alcohol.",
+  "testimonial": "\"Drank 4-5 nights/week for 8 years. NooLife's 66-day challenge changed everything. Day 66: sleep is incredible, lost 18 lbs, mental clarity is insane. I'm never going back. Best decision of my life.\" - Chris D.",
+  "ctaAngle": "Track your alcohol-free journey and watch your life improve. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "no alcohol",
+    "sober challenge",
+    "alcohol free",
+    "66 day sobriety",
+    "quit drinking"
+  ],
+  "metaKeywords": [
+    "66 day no alcohol challenge",
+    "quit drinking",
+    "sober curious challenge",
+    "alcohol free benefits",
+    "sobriety tracker"
+  ]
+}

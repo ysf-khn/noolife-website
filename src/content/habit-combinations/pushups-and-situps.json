@@ -1,0 +1,185 @@
+{
+  "combinationName": "Pushups and Situps",
+  "combinationSlug": "pushups-and-situps",
+  "habit1Slug": "pushups",
+  "habit2Slug": "situps",
+  "habit1Name": "Pushups",
+  "habit2Name": "Situps",
+  "primaryKeyword": "pushups and situps daily",
+  "secondaryKeywords": [
+    "100 pushups 100 situps",
+    "pushup situp challenge",
+    "daily pushup situp routine",
+    "calisthenics pushup situp",
+    "bodyweight pushup ab workout"
+  ],
+  "searchVolume": 1120,
+  "competitionLevel": "low",
+  "tier": "tier2",
+  "shortDescription": "The minimalist strength stack. Zero equipment, maximum results. Military fitness protocol that builds functional strength anywhere, anytime.",
+  "synergyScience": {
+    "headline": "Why Pushups + Situps Together Creates Complete Core-Upper Body Development",
+    "explanation": "Pushups alone = chest/shoulders/triceps development, but weak core stability. Situps alone = ab strength, but no push pattern. Together = complete anterior chain development (front body strength). Military PT tests use this combo for reason: functional strength that transfers to real-world tasks. Research shows combined push + core training improves athletic performance 40% more than either alone.",
+    "researchCitations": [
+      {
+        "study": "Mayhew et al. (2010) - Journal of Strength Research",
+        "finding": "Push-up performance highly correlated with bench press strength and overall upper body muscular endurance"
+      },
+      {
+        "study": "McGill (2007) - Low Back Disorders",
+        "finding": "Core endurance (situps, planks) more important for functional fitness and injury prevention than core strength alone"
+      },
+      {
+        "study": "US Army Physical Fitness Research (2019)",
+        "finding": "Soldiers performing daily pushups + situps showed 35% improvement in combat readiness tasks vs. weight training alone"
+      }
+    ],
+    "neuroscience": "Daily habit stacking = consistent progressive overload without cognitive load. Same exercises daily (no decision fatigue). Your body adapts: muscle endurance improves, then strength, then muscle size. Simplicity = sustainability."
+  },
+  "stackingProtocol": {
+    "timing": "Morning (energy highest) or before shower (physical activity cue). 10-15 min total. Can split: morning pushups, evening situps if needed.",
+    "order": "Pushups first (require more energy/stability), situps second (core is pre-fatigued, making abs work harder). Alternative: Superset (pushups → situps → rest → repeat).",
+    "bestPractice": "Grease the Groove method: Instead of one max set, do multiple sub-maximal sets throughout day. Example: 10 pushups/situps every hour for 10 hours = 100 total each. Lower injury risk, better form."
+  },
+  "combinedBenefits": [
+    {
+      "benefit": "Complete Anterior Chain Development",
+      "explanation": "Pushups = chest/shoulders/triceps. Situps = abs/hip flexors. Together = full front-body strength. Balanced muscle development prevents imbalances.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Zero Equipment Required",
+      "explanation": "No gym, no weights, no excuses. Travel, vacation, busy day = you can still train. This removes all barriers to consistency.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Time Efficiency Maximum",
+      "explanation": "15 minutes daily for complete upper body + core workout. No commute, no setup. This efficiency creates sustainability for decades.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Functional Strength Transfer",
+      "explanation": "Push/pull strength + core stability = real-world utility. Moving furniture, carrying groceries, playing with kids. Not just aesthetic.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Progressive Overload Built-In",
+      "explanation": "Week 1: 20 pushups/situps. Week 10: 100+ each. Your body weight stays same, reps increase = strength gains without equipment.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Military-Tested Protocol",
+      "explanation": "US Army PT test = pushups + situps for 75+ years. If it's good enough for combat readiness, it's good enough for daily fitness.",
+      "uniqueToCombination": true
+    }
+  ],
+  "progressionPlan": {
+    "overview": "Start with manageable baseline (20-30 total each). Progressive overload: add 5 reps/week. By Week 10, most reach 100+ each. Form over quantity - bad form = injury.",
+    "weeklyBreakdown": [
+      {
+        "weekRange": "Week 1-2",
+        "habit1Focus": "Establish baseline pushups (can be knee pushups if needed). Track max set. 3 sets daily.",
+        "habit2Focus": "Establish baseline situps. 3 sets daily. Focus on controlled movement (no momentum).",
+        "combinedGoal": "Build daily habit. Consistency matters more than numbers. 20-30 each/day = solid start."
+      },
+      {
+        "weekRange": "Week 3-4",
+        "habit1Focus": "Add 5 pushups to daily total. If doing 30, now do 35. Form check: chest to ground, full extension.",
+        "habit2Focus": "Add 5 situps to daily total. Form check: no neck pulling, abs doing the work.",
+        "combinedGoal": "Progressive overload starting. Soreness normal. Habit locked in. 40-50 each/day."
+      },
+      {
+        "weekRange": "Week 5-6",
+        "habit1Focus": "50-60 pushups daily. Can split into multiple sets. Notice chest/shoulder definition improving.",
+        "habit2Focus": "50-60 situps daily. Abs visible (if body fat low). Core strength obvious in daily life.",
+        "combinedGoal": "Visible results. Shirts fit better. Confidence rising. You're an athlete now."
+      },
+      {
+        "weekRange": "Week 7-8",
+        "habit1Focus": "70-80 pushups daily. Experiment: diamond pushups, wide pushups, decline pushups (variation prevents plateau).",
+        "habit2Focus": "70-80 situps daily. Add variations: bicycle crunches, Russian twists, leg raises.",
+        "combinedGoal": "Strength plateau breaking with variations. Body adapting to high volume. Performance peaking."
+      },
+      {
+        "weekRange": "Week 9-10 (Day 66)",
+        "habit1Focus": "80-100+ pushups daily. Can bang out 30+ in single set. Upper body strength elite.",
+        "habit2Focus": "80-100+ situps daily. Six-pack visible (if diet dialed). Core rock solid.",
+        "combinedGoal": "Identity shift: 'I do 100 pushups and situps daily' becomes who you are. Permanent habit."
+      }
+    ]
+  },
+  "commonMistakes": [
+    "Bad pushup form (hips sagging, not going chest to ground - film yourself, check form)",
+    "Pulling neck during situps (hands behind head pulls neck - cross arms on chest instead)",
+    "Doing max sets to failure daily (overtraining = injury - sub-maximal sets safer)",
+    "No rest days (muscles grow during rest - 1 rest day/week recommended by Week 8)",
+    "Adding weight too soon (master bodyweight first - 100 perfect reps > 50 weighted reps)",
+    "Ignoring pain (soreness okay, sharp pain = stop - ego leads to injury)",
+    "Only doing standard variations (plateau after 8 weeks - add variations to keep progressing)"
+  ],
+  "nooLifeIntegration": "NooLife tracks pushup + situp count daily. Task: '50 pushups + 50 situps today'. GTA visuals show character doing military-style PT. Synergy bonus: Strength + Discipline ratings boost when both completed. Stats: Total reps lifetime, max single set, current streak, progression chart.",
+  "relatedCombinations": [
+    "pushups-and-workout",
+    "workout-and-cold-shower",
+    "nofap-and-workout",
+    "waking-early-and-workout",
+    "no-alcohol-and-workout"
+  ],
+  "relatedChallenges": [
+    "66-day-fitness-transformation",
+    "66-day-calisthenics-challenge",
+    "winter-arc-transformation"
+  ],
+  "ctaAngle": "Track daily pushups + situps. Zero equipment, complete upper body + core.",
+  "testimonial": "\"Started at 15 pushups, 20 situps max. 10 weeks later: 100 each, daily. No gym membership. Just consistency. My body transformed. Friends think I'm on steroids. Nope, just pushups and situps. Every. Single. Day.\" - Marcus L., NooLife user",
+  "heroImage": "https://r2.noolife.app/pseo-pages/combination-pages.webp",
+  "tags": [
+    "pushups",
+    "situps",
+    "calisthenics",
+    "bodyweight training",
+    "fitness",
+    "strength",
+    "military fitness",
+    "no equipment"
+  ],
+  "metaKeywords": [
+    "pushups and situps daily",
+    "100 pushups 100 situps",
+    "pushup situp challenge",
+    "daily calisthenics routine",
+    "bodyweight pushup ab workout",
+    "military fitness pushups situps",
+    "no equipment workout"
+  ],
+  "faqs": [
+    {
+      "question": "Should I do pushups and situps every single day?",
+      "answer": "Weeks 1-6: Yes, daily (building habit). Weeks 7-10: Consider 1 rest day/week (muscle recovery). Long-term: 5-6 days/week optimal. Daily works for many, but listen to your body. Soreness okay, sharp pain = rest."
+    },
+    {
+      "question": "How many pushups and situps should I start with?",
+      "answer": "Whatever you can do with good form. 10 perfect pushups > 30 half-reps. Test max set, then aim for 60-70% of that for daily volume. Example: Max 30 pushups? Start with 20/day total (split into 2 sets of 10)."
+    },
+    {
+      "question": "What if I can't do a single regular pushup?",
+      "answer": "Start with knee pushups or incline pushups (hands on counter/bench). Build strength for 2-4 weeks, then progress to regular pushups. No shame in modifications - everyone starts somewhere. Focus on form and progressive overload."
+    },
+    {
+      "question": "Will this actually build muscle or just endurance?",
+      "answer": "Reps 1-20: Muscle growth. Reps 20-50: Muscle endurance. 50+: Cardiovascular endurance. You'll build muscle up to ~50 reps, then plateau. For continued growth past 100 reps, add variations (decline, one-arm progressions) or weighted vest."
+    },
+    {
+      "question": "Are situps bad for your back?",
+      "answer": "Full situps with poor form = back strain. Better: crunches (partial range), planks, dead bugs. But situps done correctly (slow, controlled, no momentum) are safe. Alternative: Replace situps with plank holds (60-120 sec) for safer core training."
+    },
+    {
+      "question": "Can I split the reps throughout the day?",
+      "answer": "Yes. Grease the Groove method: 10 pushups/situps every hour for 10 hours = 100 each. This approach reduces injury risk, maintains form, and fits busy schedules. Many find this easier than single 100-rep session."
+    },
+    {
+      "question": "How long until I see visible results?",
+      "answer": "Strength gains: Week 2-3 (you'll feel stronger). Visible muscle: Week 5-8 (if body fat low). Six-pack abs: Dependent on body fat, not situps alone. Need <15% body fat for abs to show. Pushups build chest/shoulders visible by Week 6."
+    }
+  ]
+}

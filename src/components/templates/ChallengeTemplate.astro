@@ -1,0 +1,611 @@
+---
+// ChallengeTemplate.astro - Template for duration-based challenge landing pages
+// Pattern from pseo-strategy.md lines 27-241
+import { Image } from "astro:assets";
+import downloadIOS from "../../assets/download-ios.svg";
+
+interface Props {
+  challenge: {
+    challengeName: string;
+    challengeSlug: string;
+    duration: number;
+    goal: string;
+    goalSlug: string;
+    includedHabits: string[];
+    targetAudience: string;
+    scientificRationale: string;
+    weekByWeekBreakdown: Array<{
+      week: number;
+      focus: string;
+      expectedDifficulty: string;
+    }>;
+    successMetrics: string;
+    commonPitfalls: string[];
+    nooLifeFeatureHighlight: string;
+    heroImage: string;
+    tags: string[];
+    metaKeywords: string[];
+    ctaAngle: string;
+    testimonial?: string;
+    phaseBreakdowns?: Array<{
+      phase: number;
+      phaseLabel: string;
+      dayRange: string;
+      phaseGoal: string;
+      keyMilestones: string[];
+      expectedProgress: string;
+    }>;
+    transformationMetrics?: Array<{
+      metric: string;
+      baseline: string;
+      expected: string;
+    }>;
+    customizationOptions?: Array<{
+      area: string;
+      options: string[];
+    }>;
+    challengeFAQs?: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+}
+
+const { challenge } = Astro.props;
+---
+
+<!-- HERO SECTION - Full-width background with centered text (CTA #1) -->
+<section
+  id="challenge-hero"
+  class="relative min-h-screen flex items-center justify-center"
+  style={`background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('${challenge.heroImage}') center/cover no-repeat;`}
+>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 py-16 text-center">
+    <!-- Challenge Badge -->
+    <div class="flex justify-center mb-6 hero-fade-in" style="animation-delay: 0.05s;">
+      <span class="px-4 py-2 text-sm font-bold rounded-full uppercase" style="background: rgba(0, 208, 156, 0.15); color: var(--color-jade); border: 1px solid rgba(0, 208, 156, 0.4);">
+        {challenge.duration}-Day Challenge
+      </span>
+    </div>
+
+    <!-- Main Headline -->
+    <h1
+      class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] tracking-tight mb-6 hero-fade-in"
+      style="animation-delay: 0.1s; color: var(--color-alabaster);"
+    >
+      The <span style="color: var(--color-jade);">{challenge.duration}-Day</span><br>
+      {challenge.goal} Challenge
+    </h1>
+
+    <!-- Countdown Timer Display -->
+    <div class="mb-8 hero-fade-in" style="animation-delay: 0.15s;">
+      <div class="inline-flex items-center gap-3 px-8 py-4 rounded-lg" style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(0, 208, 156, 0.3);">
+        <svg class="w-6 h-6" style="color: var(--color-jade);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span class="text-2xl font-bold" style="color: var(--color-alabaster);">{challenge.duration} Days</span>
+        <span class="text-lg" style="color: var(--color-faded-khaki);">to Transform Your Life</span>
+      </div>
+    </div>
+
+    <!-- Target Audience -->
+    <p
+      class="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-8 hero-fade-in"
+      style="animation-delay: 0.2s; color: var(--color-faded-khaki);"
+    >
+      {challenge.targetAudience}
+    </p>
+
+    <!-- CTA Button -->
+    <div class="flex flex-col items-center gap-3 hero-fade-in" style="animation-delay: 0.25s;">
+      <a
+        href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+        aria-label="Download on the App Store"
+      >
+        <Image
+          src={downloadIOS}
+          alt="Download on the App Store"
+          class="h-16 md:h-20 w-auto"
+          loading="eager"
+        />
+      </a>
+      <p class="text-sm font-medium italic" style="color: var(--color-mint);">
+        {challenge.ctaAngle}
+      </p>
+    </div>
+
+    <!-- Social Proof Counter -->
+    <p class="mt-8 text-sm font-medium hero-fade-in" style="animation-delay: 0.3s; color: var(--color-faded-khaki);">
+      <span style="color: var(--color-jade); font-bold;">12,439 people</span> have started this challenge
+    </p>
+  </div>
+</section>
+
+<!-- SCIENTIFIC RATIONALE SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12" style="color: var(--color-alabaster);">
+      Why {challenge.duration} Days?
+    </h2>
+    <div class="prose prose-lg max-w-none" style="color: var(--color-faded-khaki);">
+      <p class="text-lg md:text-xl leading-relaxed">
+        {challenge.scientificRationale}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WEEK-BY-WEEK BREAKDOWN SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      Your {challenge.duration}-Day Journey
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      Week-by-week breakdown of what to expect
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {challenge.weekByWeekBreakdown.map((weekData) => (
+        <div
+          class="p-6 rounded-lg border transition-all duration-300 hover:scale-105"
+          style="background: var(--color-dark-charcoal); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl font-bold" style="color: var(--color-jade);">
+              Week {weekData.week}
+            </span>
+            <span
+              class="px-2 py-1 text-xs font-bold rounded uppercase"
+              style="background: rgba(241, 237, 233, 0.1); color: var(--color-faded-khaki);"
+            >
+              {weekData.expectedDifficulty}
+            </span>
+          </div>
+          <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+            {weekData.focus}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- PHASE BREAKDOWNS SECTION (Days 1-21, 22-45, 46-66) -->
+{challenge.phaseBreakdowns && challenge.phaseBreakdowns.length > 0 && (
+  <section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+        The 3-Phase Transformation
+      </h2>
+      <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+        Understanding the psychological journey: Foundation → Acceleration → Mastery
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {challenge.phaseBreakdowns.map((phase) => (
+          <div
+            class="p-6 rounded-lg border transition-all duration-300 hover:scale-105"
+            style={`background: rgba(0, 208, 156, ${0.03 + phase.phase * 0.02}); border: 1px solid rgba(0, 208, 156, ${0.2 + phase.phase * 0.1});`}
+          >
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-sm font-bold uppercase" style="color: var(--color-jade);">
+                Phase {phase.phase}
+              </span>
+              <span class="text-xs font-medium" style="color: var(--color-faded-khaki);">
+                {phase.dayRange}
+              </span>
+            </div>
+
+            <h3 class="text-xl font-bold mb-3" style="color: var(--color-alabaster);">
+              {phase.phaseLabel}
+            </h3>
+
+            <p class="text-sm mb-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+              {phase.phaseGoal}
+            </p>
+
+            <div class="mb-4">
+              <p class="text-xs font-bold uppercase mb-2" style="color: var(--color-jade);">Key Milestones:</p>
+              <ul class="space-y-1">
+                {phase.keyMilestones.map((milestone) => (
+                  <li class="text-sm flex items-start gap-2" style="color: var(--color-faded-khaki);">
+                    <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color: var(--color-jade);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    {milestone}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t" style="border-color: rgba(0, 208, 156, 0.2);">
+              <p class="text-xs font-bold uppercase mb-1" style="color: var(--color-jade);">Expected Progress:</p>
+              <p class="text-sm leading-relaxed" style="color: var(--color-alabaster);">
+                {phase.expectedProgress}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- INCLUDED HABITS SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      Habits You'll Build
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      This challenge combines multiple habit-tracking features
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      {challenge.includedHabits.map((habitSlug) => {
+        const habitName = habitSlug.split('-').map(word =>
+          word.charAt(0).toUpperCase() + word.slice(1)
+        ).join(' ');
+
+        return (
+          <a
+            href={`/habit/${habitSlug}`}
+            class="p-4 rounded-lg border text-center transition-all duration-300 hover:scale-105 hover:border-jade"
+            style="background: var(--color-charcoal); border: 1px solid rgba(241, 237, 233, 0.1);"
+          >
+            <p class="font-semibold text-sm" style="color: var(--color-alabaster);">
+              {habitName}
+            </p>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO CUSTOMIZE SECTION -->
+{challenge.customizationOptions && challenge.customizationOptions.length > 0 && (
+  <section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+        Customize to Your Life
+      </h2>
+      <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+        Adjust intensity, time commitment, and focus to match your current lifestyle
+      </p>
+
+      <div class="space-y-6">
+        {challenge.customizationOptions.map((customization) => (
+          <div
+            class="p-6 rounded-lg border"
+            style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 208, 156, 0.2);"
+          >
+            <h3 class="text-xl font-bold mb-4" style="color: var(--color-jade);">
+              {customization.area}
+            </h3>
+            <div class="space-y-3">
+              {customization.options.map((option) => (
+                <div class="flex items-start gap-3 p-3 rounded" style="background: rgba(241, 237, 233, 0.03);">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: var(--color-jade);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="3" fill="currentColor"></circle>
+                  </svg>
+                  <p class="text-base leading-relaxed" style="color: var(--color-alabaster);">
+                    {option}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p class="mt-8 text-center text-sm leading-relaxed" style="color: var(--color-faded-khaki);">
+        NooLife adapts task distribution based on your selected intensity. Choose your path, and the app adjusts your 66-day plan accordingly.
+      </p>
+    </div>
+  </section>
+)}
+
+<!-- SUCCESS METRICS SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12" style="color: var(--color-alabaster);">
+      What You'll Achieve
+    </h2>
+    <div class="prose prose-lg max-w-none" style="color: var(--color-faded-khaki);">
+      <p class="text-lg md:text-xl leading-relaxed">
+        {challenge.successMetrics}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE/AFTER TRANSFORMATION SECTION -->
+{challenge.transformationMetrics && challenge.transformationMetrics.length > 0 && (
+  <section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+        Your Transformation: Before → After
+      </h2>
+      <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+        See exactly where you'll be on day {challenge.duration}
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <!-- BASELINE Column -->
+        <div class="space-y-4">
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold mb-2" style="color: rgba(239, 83, 80, 0.8);">
+              Day 1 Baseline
+            </h3>
+            <p class="text-sm" style="color: var(--color-faded-khaki);">Where you start</p>
+          </div>
+          {challenge.transformationMetrics.map((metric) => (
+            <div
+              class="p-4 rounded-lg border"
+              style="background: rgba(239, 83, 80, 0.05); border: 1px solid rgba(239, 83, 80, 0.2);"
+            >
+              <p class="text-xs font-bold uppercase mb-1" style="color: rgba(239, 83, 80, 0.7);">
+                {metric.metric}
+              </p>
+              <p class="text-lg font-semibold" style="color: var(--color-faded-khaki);">
+                {metric.baseline}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <!-- EXPECTED Column -->
+        <div class="space-y-4">
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold mb-2" style="color: var(--color-jade);">
+              Day {challenge.duration} Expected
+            </h3>
+            <p class="text-sm" style="color: var(--color-faded-khaki);">Where you'll be</p>
+          </div>
+          {challenge.transformationMetrics.map((metric) => (
+            <div
+              class="p-4 rounded-lg border"
+              style="background: rgba(0, 208, 156, 0.05); border: 1px solid rgba(0, 208, 156, 0.3);"
+            >
+              <p class="text-xs font-bold uppercase mb-1" style="color: var(--color-jade);">
+                {metric.metric}
+              </p>
+              <p class="text-lg font-semibold" style="color: var(--color-alabaster);">
+                {metric.expected}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="text-center p-6 rounded-lg" style="background: rgba(0, 208, 156, 0.05); border: 1px solid rgba(0, 208, 156, 0.2);">
+        <p class="text-base leading-relaxed" style="color: var(--color-alabaster);">
+          <strong style="color: var(--color-jade);">This is your path.</strong> {challenge.duration} days of consistent action separates baseline from transformation. NooLife tracks every milestone.
+        </p>
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- MID-CONTENT CTA #2 -->
+<section class="py-16 px-4" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl sm:text-4xl font-bold mb-6" style="color: var(--color-alabaster);">
+      Track Every Step of Your {challenge.duration}-Day Journey with NooLife
+    </h3>
+    <p class="text-lg mb-8" style="color: var(--color-faded-khaki);">
+      {challenge.nooLifeFeatureHighlight}
+    </p>
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      aria-label="Download on the App Store"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-16 md:h-20 w-auto mx-auto"
+      />
+    </a>
+    <p class="text-sm font-medium italic mt-3" style="color: var(--color-mint);">
+      Start your free 3-day trial today.
+    </p>
+  </div>
+</section>
+
+<!-- COMMON PITFALLS SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4" style="color: var(--color-alabaster);">
+      Common Pitfalls to Avoid
+    </h2>
+    <p class="text-center text-lg mb-12" style="color: var(--color-faded-khaki);">
+      Don't let these mistakes derail your challenge
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {challenge.commonPitfalls.map((pitfall, index) => (
+        <div
+          class="flex gap-4 p-6 rounded-lg"
+          style="background: var(--color-dark-charcoal);"
+        >
+          <div
+            class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm"
+            style="background: rgba(239, 83, 80, 0.15); color: #ef5350;"
+          >
+            {index + 1}
+          </div>
+          <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+            {pitfall}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL SECTION (if exists) -->
+{challenge.testimonial && (
+  <section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-dark-charcoal);">
+    <div class="max-w-4xl mx-auto text-center">
+      <svg class="w-12 h-12 mx-auto mb-6 opacity-30" style="color: var(--color-jade);" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+      </svg>
+      <blockquote class="text-xl md:text-2xl font-medium mb-6 leading-relaxed" style="color: var(--color-alabaster);">
+        {challenge.testimonial}
+      </blockquote>
+    </div>
+  </section>
+)}
+
+<!-- FAQ SECTION -->
+<section class="py-16 sm:py-20 md:py-24 px-4" style="background: var(--color-charcoal);">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12" style="color: var(--color-alabaster);">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-6">
+      {challenge.challengeFAQs && challenge.challengeFAQs.length > 0 ? (
+        // Render custom challenge-specific FAQs
+        challenge.challengeFAQs.map((faq) => (
+          <details class="group p-6 rounded-lg" style="background: var(--color-dark-charcoal);">
+            <summary class="cursor-pointer text-lg font-semibold flex justify-between items-center" style="color: var(--color-alabaster);">
+              <span>{faq.question}</span>
+              <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <p class="mt-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+              {faq.answer}
+            </p>
+          </details>
+        ))
+      ) : (
+        // Fallback to generic FAQs
+        <>
+          <details class="group p-6 rounded-lg" style="background: var(--color-dark-charcoal);">
+            <summary class="cursor-pointer text-lg font-semibold flex justify-between items-center" style="color: var(--color-alabaster);">
+              <span>What makes this {challenge.duration}-day challenge different?</span>
+              <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <p class="mt-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+              Unlike generic habit trackers, NooLife creates a personalized {challenge.duration}-day plan with ~450 progressive tasks. It's not just checkboxes—it's a structured transformation system with GTA-style gamification, 5 rating dimensions (Discipline, Strength, Wisdom, Focus, Confidence), and streak-based accountability.
+            </p>
+          </details>
+
+          <details class="group p-6 rounded-lg" style="background: var(--color-dark-charcoal);">
+            <summary class="cursor-pointer text-lg font-semibold flex justify-between items-center" style="color: var(--color-alabaster);">
+              <span>What happens if I miss a day?</span>
+              <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <p class="mt-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+              You need to complete at least 2 tasks per day to maintain your streak. If you miss a day, your streak resets, but your progress doesn't zero out—NooLife tracks bounce-back time and cumulative improvements. The goal is consistency, not perfection.
+            </p>
+          </details>
+
+          <details class="group p-6 rounded-lg" style="background: var(--color-dark-charcoal);">
+            <summary class="cursor-pointer text-lg font-semibold flex justify-between items-center" style="color: var(--color-alabaster);">
+              <span>Is this challenge right for beginners?</span>
+              <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <p class="mt-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+              Yes. NooLife personalizes your plan based on your current baselines. If you're starting from zero, your {challenge.duration}-day plan will have gentler progressions. The app meets you where you are and builds incrementally—not overwhelming, just consistent forward progress.
+            </p>
+          </details>
+
+          <details class="group p-6 rounded-lg" style="background: var(--color-dark-charcoal);">
+            <summary class="cursor-pointer text-lg font-semibold flex justify-between items-center" style="color: var(--color-alabaster);">
+              <span>How much time does this take daily?</span>
+              <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <p class="mt-4 leading-relaxed" style="color: var(--color-faded-khaki);">
+              Most users spend 30-90 minutes on their daily tasks (workouts, reading, meditation, etc.), plus 2-3 minutes logging in the app. The time investment scales with your goals—but the app's streak system and visual progress tracking make every minute count.
+            </p>
+          </details>
+        </>
+      )}
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA #3 -->
+<section class="py-16 sm:py-20 md:py-24 px-4 text-center" style="background: var(--color-dark-charcoal);">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6" style="color: var(--color-alabaster);">
+      Your {challenge.goal} Transformation<br>Starts Now. Are You In?
+    </h2>
+    <p class="text-xl mb-8 leading-relaxed" style="color: var(--color-faded-khaki);">
+      Join thousands who are transforming their lives with the {challenge.duration}-day challenge. Download NooLife and start your journey today.
+    </p>
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95 mb-4"
+      aria-label="Download on the App Store"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-16 md:h-20 w-auto mx-auto"
+      />
+    </a>
+    <p class="text-sm font-medium" style="color: var(--color-faded-khaki);">
+      Free 3-day trial. Weekly & yearly plans available.
+    </p>
+  </div>
+</section>
+
+<style>
+  @keyframes hero-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade-in {
+    animation: hero-fade-in 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] summary ~ * {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

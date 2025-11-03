@@ -1,0 +1,101 @@
+{
+  "problem": "Can't Stick to Any Habit",
+  "problemSlug": "cant-stick-to-habits",
+  "commonSymptoms": [
+    "Start strong Monday, quit by Thursday (never make it past Week 1)",
+    "Downloaded 10+ habit tracker apps, used each for 3-5 days max",
+    "New Year's resolutions abandoned by January 10th every year",
+    "Know exactly what you need to do but can't maintain consistency",
+    "Envy people who 'just do things' but you can't figure out how",
+    "Shame cycle: Quit habit → feel bad → avoid trying again for months"
+  ],
+  "rootCauses": [
+    "Trying to change 5+ habits simultaneously (willpower overload)",
+    "Going too hard too fast (2-hour workouts when baseline is zero)",
+    "All-or-nothing mindset: one miss = total failure in your mind",
+    "No accountability system (brain knows there's no real consequence)",
+    "Habit trackers that reset to zero (demotivating after first slip)",
+    "Misunderstanding habit formation science (21 days myth = false, actual: 66 days)"
+  ],
+  "scientificExplanation": "Habit formation takes 66 days on average for automaticity (Lally et al. 2009, UCL)—not 21 days. Most people quit within 7-14 days because they: 1) Overload willpower trying to change everything at once, 2) Set unrealistic intensity (crash fast), 3) Use all-or-nothing thinking (one miss = perceived total failure). Your prefrontal cortex (impulse control) requires progressive training. Trying to do 10 habits perfectly = willpower depletion = quit everything. Starting with 2-3 habits at sustainable intensity + forgiving progress system = actual behavior change.",
+  "failedSolutions": [
+    "Massive New Year's life overhauls (10 habits starting Jan 1)",
+    "Habit trackers with empty checkboxes and no structure/guidance",
+    "Streak apps that reset to zero after one miss (shame-based design)",
+    "Motivation videos and inspirational content (temporary emotion, not system)",
+    "Trying to copy elite performers' routines (their baseline ≠ yours)"
+  ],
+  "whyTheyFail": "Changing 10 habits at once depletes willpower faster than it builds. Empty checkbox trackers provide no guidance on HOW to build habits. Zero-reset systems trigger shame spirals. Motivation fades by Day 5 (emotion, not structure). Elite routines assume fitness/discipline baseline you don't have yet. These approaches ignore habit science: Start small, progressive difficulty, forgiving system, 66-day minimum commitment.",
+  "actualSolution": "NooLife's 66-day progressive system: Start with 2-3 core habits (meditation, workout, wake time). Complete minimum 2 tasks/day (low barrier = high compliance). Progressive difficulty as habits form. App doesn't reset to zero—maintains progress with 2-task minimum. After 66 days: Habits feel automatic (willpower no longer required). Then add 2-3 more. Build habit-forming skill progressively, not all at once.",
+  "nooLifeApproach": "NooLife tracks up to 10 habits BUT starts you at YOUR baseline (not fantasy goals). Personalized 66-day plan with 450 progressive tasks. Requires 2 tasks/day to maintain streak (forgiving, not punishing). Discipline Rating shows cumulative skill-building (32/100 → 78/100). After Week 1 data, app adjusts difficulty. You're not 'trying to stick to habits'—you're becoming 'person who follows through.' Identity shift = permanent change.",
+  "expectedTimeline": "Week 1-2: Habits feel effortful, willpower required. BUT: 2-task minimum is manageable. Streak building. Week 3-4: Tasks becoming routine. Trust building ('I say, I do'). Week 5-6: Habits forming. Identity shift starting ('I follow through'). Week 8-10: Automaticity reached. Habits feel like brushing teeth. Can add 2-3 more habits. Habit-forming skill acquired.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Start 2-3 core habits only (meditation, workout, wake time). Complete 2 tasks/day minimum. Build consistency foundation.",
+      "expectedProgress": "Hardest week. Resistance high. BUT: 2-task minimum is achievable. Proving to yourself you can follow through."
+    },
+    {
+      "week": 3,
+      "focus": "Tasks feeling routine. Discipline Rating 50-60/100. Habit-forming skill developing. Trust building.",
+      "expectedProgress": "Starting to believe 'I can stick to things.' Pattern recognition: 'I say → I do' becoming reliable."
+    },
+    {
+      "week": 6,
+      "focus": "Habits 70% automatic. Discipline Rating 65-75/100. Identity shift: 'I'm someone who follows through.'",
+      "expectedProgress": "Tasks feel natural, not forced. Missing a day feels wrong (identity integrated). Can handle stress without quitting."
+    },
+    {
+      "week": 10,
+      "focus": "Full automaticity reached. Discipline Rating 78-85/100. Ready to add 2-3 more habits if desired.",
+      "expectedProgress": "Habits feel like brushing teeth. Compare Day 1 (couldn't stick to anything) vs Day 66 (unshakeable routine). Skill acquired."
+    }
+  ],
+  "relatedHabits": ["meditation", "workout", "waking-early", "water"],
+  "relatedChallenges": ["66-day-discipline", "66-day-morning-routine"],
+  "relatedProblems": [
+    "no-discipline",
+    "procrastination",
+    "habit-tracker-failed"
+  ],
+  "testimonial": "\"Quit every habit by Day 5 for years. Downloaded 12 apps, failed 12 times. NooLife's 2-task-minimum system worked. Started with just meditation + workout. Day 66: both habits automatic. Now tracking 6 habits total. I'm someone who follows through now.\" - Emma K.",
+  "ctaAngle": "Build habit-forming skill with forgiving 66-day system. Free 3-day trial.",
+  "trustSignal": "Join 50,000+ users who've gone from 'can't stick to anything' to 6-8 solid habits with NooLife",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": [
+    "habit formation",
+    "consistency",
+    "discipline",
+    "behavior change",
+    "accountability"
+  ],
+  "metaKeywords": [
+    "cant stick to habits",
+    "why cant I stick to habits",
+    "habit consistency",
+    "build habits that stick",
+    "habit formation help"
+  ],
+  "faqs": [
+    {
+      "question": "Why do I quit every habit after 3-5 days?",
+      "answer": "You're trying to change too much at once (willpower overload) or going too hard too fast (unsustainable intensity). Starting 10 habits Jan 1 or doing 2-hour workouts when baseline is zero = crash by Day 5. NooLife starts with 2-3 habits at YOUR baseline. Progressive difficulty over 66 days = sustainable. You don't quit because the system is designed for your actual capacity."
+    },
+    {
+      "question": "Why 66 days and not 21 days like I've heard?",
+      "answer": "The 21-day myth comes from misinterpreted plastic surgery research (not habit formation). Actual research (Lally et al. 2009, UCL) shows 66 days average for habit automaticity (range: 18-254 days depending on complexity). Most people quit at 7-14 days thinking they 'failed' when they're only 20% through. 66 days gets you past automation threshold."
+    },
+    {
+      "question": "What if I miss a day? Do I have to start over?",
+      "answer": "No. NooLife doesn't reset to zero. If you maintain 2 tasks/day minimum, your streak continues. One miss doesn't erase 30 days of neural pathway building. Your Discipline Rating shows cumulative progress. Elite performers bounce back same-day. Progress over perfection."
+    },
+    {
+      "question": "How do I choose which habits to start with?",
+      "answer": "NooLife recommends: meditation (mental foundation), workout (physical foundation), wake time (discipline anchor). These 3 build self-control that transfers to all other habits. Master these first (66 days), then add 2-3 more. Trying 10 habits at once = none stick. Sequential mastery works."
+    },
+    {
+      "question": "How long before habits feel automatic?",
+      "answer": "Week 1-2: Effortful, willpower required. Week 3-4: Slightly easier, routine forming. Week 6-8: 70% automatic, willpower decreasing. Week 10+: Full automaticity—habits feel like brushing teeth. Your Discipline Rating trajectory shows exact progress. Day 66 habits require zero willpower (that's automation)."
+    }
+  ]
+}

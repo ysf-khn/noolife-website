@@ -1,0 +1,61 @@
+{
+  "habitName": "No Fap",
+  "habitSlug": "no-fap",
+  "category": "optional",
+  "difficulty": "hard",
+  "typicalDaysToAutomate": "75-90",
+  "shortDescription": "Build self-discipline and mental clarity through intentional restraint and focus",
+  "scientificBenefits": [
+    "Improved self-control and willpower across all life areas",
+    "Enhanced dopamine regulation and reward system recalibration",
+    "Increased mental clarity and reduced brain fog",
+    "Better focus and sustained attention on goals",
+    "Strengthened discipline that transfers to other habits",
+    "Improved energy levels and motivation"
+  ],
+  "researchCitations": [
+    {
+      "study": "Volkow et al. (2011) - Nature Reviews Neuroscience",
+      "finding": "Reducing overstimulation helps dopamine receptor density recover, improving reward sensitivity and motivation",
+      "link": "https://www.nature.com/articles/nrn3014"
+    },
+    {
+      "study": "Baumeister & Tierney (2011) - Willpower Research",
+      "finding": "Practicing self-control in one domain strengthens self-regulation capacity across all behaviors",
+      "link": "https://psycnet.apa.org/record/2011-19223-000"
+    },
+    {
+      "study": "Lally et al. (2009) - European Journal of Social Psychology",
+      "finding": "Habit automaticity forms after an average of 66 days of consistent practice, not 21 days as commonly believed",
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.674"
+    }
+  ],
+  "relatedHabits": ["meditation", "cold-shower", "workout", "waking-early"],
+  "commonBarriers": [
+    "Triggers from boredom or stress (need replacement behaviors)",
+    "Lack of accountability system",
+    "Unrealistic expectations (expecting instant results)",
+    "Not addressing underlying habits (phone scrolling, late nights)",
+    "Shame spiral after setbacks (all-or-nothing thinking)",
+    "Trying to rely on willpower alone without environmental design"
+  ],
+  "progressionPlan": "Week 1: Identify triggers, remove easy temptations, track daily. Week 2-3: High urge period—replace with workout/cold shower/meditation. Week 4-6: Urges decrease, focus becomes easier, energy improves. Week 7-9: New baseline established, discipline feels natural. Week 10+: Automaticity achieved. Best results: Pair with habit stacking (meditation + cold shower + workout for maximum discipline reset).",
+  "nooLifeFeatureHighlight": "NooLife tracks NoFap as part of your holistic transformation (1 of 10 habits). Private tracking—no judgment, just progress. Your Discipline and Focus ratings climb daily. Streak system doesn't reset for missing one day—maintain 2 tasks/day minimum. GTA-style visuals make tracking feel like leveling up willpower. Pair with meditation, cold showers, and workouts for maximum habit-stacking synergy.",
+  "testimonial": "\"Tried NoFap alone for years, kept failing. NooLife's habit stacking changed everything. Pairing NoFap with cold showers and meditation made it stick. Day 78, most disciplined I've ever been.\" - Marcus T.",
+  "ctaAngle": "Build self-discipline with NoFap tracking + habit stacking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/nofap_male.webp",
+  "tags": [
+    "nofap",
+    "self discipline",
+    "self control",
+    "mental clarity",
+    "dopamine detox"
+  ],
+  "metaKeywords": [
+    "nofap benefits",
+    "nofap tracker",
+    "how to do nofap",
+    "nofap habit",
+    "nofap accountability app"
+  ]
+}

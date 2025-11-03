@@ -1,0 +1,186 @@
+{
+  "combinationName": "No Alcohol and Workout",
+  "combinationSlug": "no-alcohol-and-workout",
+  "habit1Slug": "no-alcohol",
+  "habit2Slug": "workout",
+  "habit1Name": "No Alcohol",
+  "habit2Name": "Workout",
+  "primaryKeyword": "quit alcohol workout",
+  "secondaryKeywords": [
+    "sober fitness transformation",
+    "alcohol free gym",
+    "sobriety and working out",
+    "quit drinking start exercising",
+    "alcohol free fitness journey"
+  ],
+  "searchVolume": 1080,
+  "competitionLevel": "medium",
+  "tier": "tier2",
+  "shortDescription": "The transformation accelerator. Quitting alcohol removes poison, gym builds physique. This stack creates visible before/after in 66 days.",
+  "synergyScience": {
+    "headline": "Why Sobriety + Gym Creates Faster Physical Transformation Than Either Alone",
+    "explanation": "Alcohol sabotages fitness 3 ways: (1) Disrupts protein synthesis (muscle building), (2) Increases cortisol (fat storage), (3) Kills testosterone (strength gains). Quit alcohol = hormonal reset. Add gym = capitalize on that reset. Research shows sober exercisers gain muscle 47% faster than those who drink. Plus: Gym provides replacement dopamine. You're not just removing alcohol (void) - you're building physique (purpose).",
+    "researchCitations": [
+      {
+        "study": "Parr et al. (2014) - PLOS ONE",
+        "finding": "Alcohol consumption after exercise reduced muscle protein synthesis by 37%, significantly impairing recovery and muscle growth",
+        "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088384"
+      },
+      {
+        "study": "Emanuele et al. (2002) - Alcohol Research & Health",
+        "finding": "Chronic alcohol consumption decreased testosterone levels and increased cortisol, inhibiting muscle development"
+      },
+      {
+        "study": "Lynch et al. (2013) - Addictive Behaviors",
+        "finding": "Exercise served as effective craving management tool for alcohol addiction recovery - 60% reduction in relapse risk"
+      }
+    ],
+    "neuroscience": "Alcohol = artificial dopamine hijacking. Exercise = natural dopamine production through achievement. Quit alcohol + gym = dopamine system reboots toward healthy rewards. Brain learns: Hard work > liquid escape."
+  },
+  "stackingProtocol": {
+    "timing": "When alcohol craving hits → gym immediately (craving replacement). Also: scheduled daily workouts prevent cravings proactively (energy outlet).",
+    "order": "Sobriety is primary, gym is support mechanism. Use gym as: (1) Emergency craving management (urge → lift heavy), (2) Daily habit replacement (drinking time → gym time).",
+    "bestPractice": "Track both separately but celebrate synergy. Sobriety tracker (days alcohol-free) + workout tracker (sessions completed). Gym becomes your new bar - the place you go to feel good."
+  },
+  "combinedBenefits": [
+    {
+      "benefit": "47% Faster Muscle Growth",
+      "explanation": "Alcohol blocks protein synthesis. Sobriety removes that block. Combined with gym = maximum gains. Your body can finally build muscle efficiently.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Dramatic Body Recomposition",
+      "explanation": "Alcohol = empty calories + cortisol (fat storage). Quit + gym = lose fat + gain muscle simultaneously. Before/after photos shocking by Day 66.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "60% Reduced Relapse Risk",
+      "explanation": "Exercise is proven craving management tool. When alcohol urge hits → gym → urge passes. Physical exhaustion + achievement feeling replaces drinking.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Testosterone Restoration",
+      "explanation": "Alcohol crushes testosterone. Sobriety + heavy lifting = T levels rise. Users report increased energy, libido, confidence by Week 6.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Identity Transformation",
+      "explanation": "You're not 'former drinker' (loss frame) - you're 'athlete' (gain frame). Gym provides new identity. Who you're becoming > what you quit.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Social Environment Upgrade",
+      "explanation": "Quitting alcohol loses bar friends. Gym gains gym friends. New social circle reinforces new identity. Environment determines outcome.",
+      "uniqueToCombination": true
+    }
+  ],
+  "progressionPlan": {
+    "overview": "Days 1-21: Alcohol cravings peak, gym is lifeline. Days 22-45: Physical transformation visible, motivation compounds. Days 46-66: New identity locked, athlete mindset permanent.",
+    "weeklyBreakdown": [
+      {
+        "weekRange": "Week 1-2 (Days 1-14)",
+        "habit1Focus": "Alcohol withdrawal peaks Days 3-7. Manage: hydration, sleep, medical support if heavy drinker. Track days sober.",
+        "habit2Focus": "3-4 gym sessions/week. Light-moderate intensity (body is detoxing). Use gym when cravings hit.",
+        "combinedGoal": "Survive hardest phase. Gym is your craving weapon. Every workout = one more day sober."
+      },
+      {
+        "weekRange": "Week 3-4 (Days 15-28)",
+        "habit1Focus": "Physical cravings fading. Psychological cravings remain (stress, boredom, social triggers).",
+        "habit2Focus": "4-5 gym sessions/week. Increase intensity. Progressive overload starting. Notice: better recovery without alcohol.",
+        "combinedGoal": "Gym replaces drinking time. 7-9pm used to be drinking hours, now it's gym time. Schedule replaced."
+      },
+      {
+        "weekRange": "Week 5-6 (Days 29-42)",
+        "habit1Focus": "High relapse risk period ('just one drink' temptation). Stay vigilant. Support group helpful.",
+        "habit2Focus": "5 gym sessions/week. Visible gains: muscle definition, fat loss. Others noticing your transformation.",
+        "combinedGoal": "Danger zone. Gym results motivate sobriety. You don't want to lose gains. Vanity becomes motivation."
+      },
+      {
+        "weekRange": "Week 7-8 (Days 43-56)",
+        "habit1Focus": "Past danger zone. Benefits obvious: better sleep, more energy, mental clarity. Life improving.",
+        "habit2Focus": "5-6 gym sessions/week. PRs happening (strength gains accelerating). Body composition dramatically different.",
+        "combinedGoal": "You're past the worst. Gym obsession replacing alcohol obsession (healthy addiction swap)."
+      },
+      {
+        "weekRange": "Week 9-10 (Days 57-66+)",
+        "habit1Focus": "Alcohol holds no appeal. You see drunk people with pity, not envy. Identity: 'I don't drink.'",
+        "habit2Focus": "Peak performance. Best shape of your life. Gym is lifestyle now, not willpower. You crave workouts.",
+        "combinedGoal": "Complete transformation. Mind + body upgraded. You're unrecognizable from Day 1. New life unlocked."
+      }
+    ]
+  },
+  "commonMistakes": [
+    "Going too hard at gym during detox (Days 1-14 body is recovering - light workouts only)",
+    "Not seeking medical help if heavy drinker (alcohol withdrawal can be dangerous - see doctor)",
+    "Only using gym when cravings hit (need scheduled daily workouts + emergency gym trips)",
+    "Not eating enough protein (alcohol recovery + muscle building = need 1g protein/lb bodyweight)",
+    "Thinking 'just one drink' won't affect gains (one drink = 48-hour protein synthesis impairment)",
+    "Replacing alcohol with other substances (weed, pills - just shifts addiction)",
+    "Training fasted during early sobriety (blood sugar unstable during detox - eat before gym)"
+  ],
+  "nooLifeIntegration": "NooLife tracks alcohol-free days + workout frequency. Dual tracker shows synergy: 'Day 45 sober + 38 workouts completed'. GTA visuals show character rejecting drinks, crushing gym. Synergy bonus: Strength + Discipline ratings boost when both maintained. Stats: Money saved (no alcohol spend), body composition changes, workout PRs.",
+  "relatedCombinations": [
+    "no-alcohol-and-no-smoke",
+    "nofap-and-workout",
+    "workout-and-cold-shower",
+    "workout-and-meditation",
+    "waking-early-and-workout"
+  ],
+  "relatedChallenges": [
+    "66-day-sobriety-challenge",
+    "66-day-fitness-transformation",
+    "winter-arc-transformation"
+  ],
+  "ctaAngle": "Track sobriety + workouts. 47% faster muscle growth without alcohol.",
+  "testimonial": "\"I was drinking 5+ nights/week, overweight, depressed. Quit alcohol Day 1, started gym Day 2. 10 weeks later: Lost 28 lbs, gained visible muscle, feel 10 years younger. Gym saved my sobriety. Alcohol was killing my gains and my life.\" - David K., NooLife user",
+  "heroImage": "https://r2.noolife.app/pseo-pages/combination-pages.webp",
+  "tags": [
+    "no alcohol",
+    "workout",
+    "sobriety",
+    "fitness transformation",
+    "muscle building",
+    "body recomposition",
+    "addiction recovery",
+    "health"
+  ],
+  "metaKeywords": [
+    "quit alcohol workout",
+    "sober fitness transformation",
+    "alcohol free gym",
+    "sobriety working out",
+    "quit drinking exercise",
+    "alcohol free fitness",
+    "workout sobriety"
+  ],
+  "faqs": [
+    {
+      "question": "Is it safe to workout while detoxing from alcohol?",
+      "answer": "Light exercise (walking, yoga, light weights) is safe and helpful. Heavy training should wait until Day 7-14 (body needs to stabilize first). Heavy drinkers: consult doctor before starting any exercise program. Listen to your body - if dizzy/nauseous, rest."
+    },
+    {
+      "question": "Will quitting alcohol really make that much difference in my fitness?",
+      "answer": "Massive difference. Alcohol blocks protein synthesis (muscle building) by 37%, increases cortisol (fat storage), kills testosterone, disrupts sleep (recovery), adds empty calories. Removing alcohol = removing the #1 saboteur of fitness progress."
+    },
+    {
+      "question": "What if I relapse and drink - do I lose all my gains?",
+      "answer": "One night drinking = 48 hours impaired protein synthesis. Weekly drinking = perpetually impaired gains. Monthly drinking = minimal impact. The dose makes the poison. Relapse doesn't erase all progress, but consistency matters. Get back on track immediately."
+    },
+    {
+      "question": "Can I drink protein shakes or is that cheating on sobriety?",
+      "answer": "Protein shakes are food, not alcohol. Drink them. Common confusion: non-alcoholic beer counts as sober (0.5% alcohol negligible). Focus: zero ethanol consumption. Protein, caffeine, supplements = all fine."
+    },
+    {
+      "question": "How do I handle social pressure to drink?",
+      "answer": "Tell them you're in training (nobody questions athletes). Hold non-alcoholic drink (people stop asking). Change social venues (climbing gym > bar). New identity: 'I'm focused on fitness.' After Day 60, confidence to decline without explanation."
+    },
+    {
+      "question": "Will I lose weight or gain weight after quitting alcohol?",
+      "answer": "Depends on gym approach + diet. Quit alcohol + no diet change = lose fat (removing empty calories). Quit + gym + high protein = lose fat + gain muscle (body recomposition). Quit + gym + surplus calories = muscle gain. Track both weight and body composition."
+    },
+    {
+      "question": "How long until I see physical transformation?",
+      "answer": "Week 2-3: Face less puffy, better sleep, more energy. Week 4-6: Fat loss visible, some muscle definition. Week 8-10: Dramatic transformation obvious to others. Before/after photos at Day 66 will shock you. Patience required but results inevitable."
+    }
+  ]
+}

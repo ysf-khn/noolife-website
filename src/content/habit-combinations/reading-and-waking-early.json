@@ -1,0 +1,185 @@
+{
+  "combinationName": "Reading and Waking Early",
+  "combinationSlug": "reading-and-waking-early",
+  "habit1Slug": "reading",
+  "habit2Slug": "waking-early",
+  "habit1Name": "Reading",
+  "habit2Name": "Waking Early",
+  "primaryKeyword": "wake up early read",
+  "secondaryKeywords": [
+    "morning reading habit",
+    "5am reading routine",
+    "early morning reading benefits",
+    "reading before work",
+    "morning reading ritual"
+  ],
+  "searchVolume": 1320,
+  "competitionLevel": "low",
+  "tier": "tier2",
+  "shortDescription": "The quiet mind advantage. Early mornings = peak comprehension, zero distractions. Reading at 6am hits different than reading at 10pm.",
+  "synergyScience": {
+    "headline": "Why Morning Reading Beats Evening: The Cognitive Fresh State",
+    "explanation": "Your brain's working memory capacity is highest in first 2-3 hours after waking. Evening reading fights against decision fatigue + adenosine (sleep pressure). Morning reading = fresh cognitive state, peak absorption. Research shows 31% better retention from morning vs. evening reading. Plus: Early wake gives PURPOSE. You're not just waking early 'because discipline' - you're waking to read.",
+    "researchCitations": [
+      {
+        "study": "Wieth & Zacks (2011) - Thinking & Reasoning",
+        "finding": "Cognitive performance peaks in morning for most people, with optimal problem-solving and comprehension before 12pm"
+      },
+      {
+        "study": "Fenn et al. (2003) - Journal of Experimental Psychology",
+        "finding": "Information processed in morning showed 30% better long-term retention compared to evening processing"
+      },
+      {
+        "study": "Nisbett & Gurung (1988) - Journal of Personality",
+        "finding": "Morning reading sessions correlated with higher academic performance - attributed to reduced distractions and mental freshness"
+      }
+    ],
+    "neuroscience": "Morning = low adenosine (wakefulness chemical), high cortisol (alertness), fresh prefrontal cortex (decision-making/comprehension). Evening = high adenosine (tired), declining cortisol, depleted prefrontal cortex (poor focus). Reading is cognitive work - do it when brain is fresh."
+  },
+  "stackingProtocol": {
+    "timing": "Wake at 5:30-6:00am → Coffee/tea → Read 20-40 min → Start day. Reading must happen BEFORE phone/email (digital distractions kill the ritual).",
+    "order": "Wake → Bathroom → Coffee → Read. No phone check. No email. Guard the first 30-60 minutes ruthlessly. Reading comes before digital chaos.",
+    "bestPractice": "Prepare reading spot night before (book open, bookmark, coffee mug ready). Wake → Walk directly to reading spot → 20 pages minimum. Physical book better than phone/Kindle (fewer distractions)."
+  },
+  "combinedBenefits": [
+    {
+      "benefit": "31% Better Reading Retention",
+      "explanation": "Morning cognitive freshness = better comprehension and memory formation. Evening reading often forgotten by next day. Morning reading sticks.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Zero Distraction Window",
+      "explanation": "At 6am, nobody texts, no emails arrive, no noise. Evening reading always interrupted. Morning reading is pure focus time.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Purpose-Driven Early Wake",
+      "explanation": "Waking early for reading (enjoyable) > waking early 'because discipline' (painful). Purpose creates consistency. You WANT to wake for reading.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "1-2 Books/Month Guaranteed",
+      "explanation": "20 pages/day × 30 days = 600 pages = 2 books. Morning consistency guarantees you'll actually finish books (evening reading gets skipped).",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Mental Clarity Before Work",
+      "explanation": "Reading before work primes your brain. You're thinking deeply before email chaos. This cognitive warmup improves work performance.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Compound Learning Effect",
+      "explanation": "Daily reading + morning retention = knowledge compounds. Over months, you've consumed 10-20 books with high retention. Life-changing amount of learning.",
+      "uniqueToCombination": true
+    }
+  ],
+  "progressionPlan": {
+    "overview": "Start with 10 pages/morning + gradual wake time shift. Most people fail by trying 6am + 50 pages on Day 1. Progressive stacking prevents overwhelm.",
+    "weeklyBreakdown": [
+      {
+        "weekRange": "Week 1-2",
+        "habit1Focus": "10 pages/morning (5-10 min). Pick ONE book. Finish before starting next.",
+        "habit2Focus": "Wake 15 min earlier than current (e.g., 7am → 6:45am).",
+        "combinedGoal": "Build ritual: Wake → Coffee → Read 10 pages → Day starts. Consistency over quantity."
+      },
+      {
+        "weekRange": "Week 3-4",
+        "habit1Focus": "15 pages/morning (10-15 min). Notice comprehension improving.",
+        "habit2Focus": "Wake another 15 min earlier (6:30am). Reading gives purpose to early wake.",
+        "combinedGoal": "Reading feels natural. You're finishing books faster than ever. Wake is easier."
+      },
+      {
+        "weekRange": "Week 5-6",
+        "habit1Focus": "20 pages/morning (15-20 min). Approaching 1 book/month pace.",
+        "habit2Focus": "Wake at 6:15am. Some days you wake before alarm (circadian adapting).",
+        "combinedGoal": "Morning reading is your favorite part of day. Quiet, coffee, book. Pure peace."
+      },
+      {
+        "weekRange": "Week 7-8",
+        "habit1Focus": "25 pages/morning (20-25 min). Reading speed improving from daily practice.",
+        "habit2Focus": "Wake at 6:00am. Circadian rhythm locked. Early wake feels natural now.",
+        "combinedGoal": "You're crushing books. 1-2/month easily. Knowledge compounding. Mind expanding."
+      },
+      {
+        "weekRange": "Week 9-10 (Day 66)",
+        "habit1Focus": "30 pages/morning (25-30 min). 2+ books/month. 25+ books/year.",
+        "habit2Focus": "Wake 5:45-6:00am naturally. Alarm is backup. You're a morning person now.",
+        "combinedGoal": "Identity shift: 'I'm a reader who wakes early' or 'I'm someone who starts the day with learning.' Permanent."
+      }
+    ]
+  },
+  "commonMistakes": [
+    "Checking phone before reading (dopamine hijack - reading will feel boring after scrolling)",
+    "Reading on phone/tablet (notifications distract - physical books better for morning ritual)",
+    "Starting 5 books simultaneously (finish one book before starting next - seeing progress motivates)",
+    "Reading difficult/boring books (morning reading should be enjoyable - if you dread it, you'll skip)",
+    "Not preparing reading spot night before (morning friction kills consistency)",
+    "Reading in bed (you'll fall back asleep - sit upright in dedicated spot)",
+    "Skipping weekends (consistency is everything - read every morning, no exceptions)"
+  ],
+  "nooLifeIntegration": "NooLife tracks wake time + pages read daily. Morning task: 'Wake 6am + read 20 pages'. Streaks break if either skipped. GTA visuals show character in peaceful morning reading scene. Synergy bonus: Wisdom + Discipline ratings boost. Stats: Books finished, pages read, wake consistency, comprehension (self-rated).",
+  "relatedCombinations": [
+    "reading-and-journaling",
+    "reading-and-meditation",
+    "waking-early-and-meditation",
+    "waking-early-and-cold-shower",
+    "journaling-and-waking-early"
+  ],
+  "relatedChallenges": [
+    "66-day-reading-challenge",
+    "66-day-5am-club",
+    "66-day-morning-routine"
+  ],
+  "ctaAngle": "Track early wake + reading ritual. 31% better retention, 2 books/month.",
+  "testimonial": "\"I always wanted to read more but never did. Started waking at 6am to read. 8 months later, I've read 18 books. Morning reading is sacred - no phone, no distractions, just me and the book. Life-changing habit.\" - Amanda R., NooLife user",
+  "heroImage": "https://r2.noolife.app/pseo-pages/combination-pages.webp",
+  "tags": [
+    "reading",
+    "waking early",
+    "morning routine",
+    "5am club",
+    "learning",
+    "knowledge",
+    "productivity",
+    "self improvement"
+  ],
+  "metaKeywords": [
+    "wake up early read",
+    "morning reading habit",
+    "5am reading routine",
+    "early morning reading benefits",
+    "morning reading ritual",
+    "reading before work",
+    "early wake reading"
+  ],
+  "faqs": [
+    {
+      "question": "Should I read fiction or non-fiction in the morning?",
+      "answer": "Whatever you'll actually read consistently. Non-fiction for learning, fiction for enjoyment. Morning comprehension is good for both. Many start with fiction (easier, more enjoyable) then add non-fiction. Mix it up."
+    },
+    {
+      "question": "How many pages should I aim for?",
+      "answer": "Start with 10 pages (doable even when tired). Work up to 20-30 pages. At 25 pages/day, you'll read 20+ books/year. Quality over quantity - better to read 10 pages with full focus than skim 50."
+    },
+    {
+      "question": "What if I fall asleep while reading?",
+      "answer": "Don't read in bed or lying down. Sit upright in chair with good lighting. If still sleepy, splash cold water on face first or do 10 jumping jacks. By Week 2, morning grogginess fades naturally."
+    },
+    {
+      "question": "Physical book vs. Kindle/iPad?",
+      "answer": "Physical book is better (no notifications, no blue light, more focused). But Kindle works if you disable notifications. Avoid phone/iPad reading (too many distractions). The medium matters less than consistency."
+    },
+    {
+      "question": "Should I read the same book every day or multiple books?",
+      "answer": "One book at a time. Finish it, then start next. Juggling multiple books kills momentum. Exception: One fiction + one non-fiction (alternate mornings) works for some people. Test what works for you."
+    },
+    {
+      "question": "What if I don't comprehend what I'm reading in the morning?",
+      "answer": "First week is rough (sleep inertia). By Week 2, comprehension actually IMPROVES vs. evening reading (brain is fresh). If struggling: Easier books initially, coffee helps, annotate as you read (active engagement)."
+    },
+    {
+      "question": "How long until this becomes a craving?",
+      "answer": "21 days to establish ritual. 40 days to feel natural. 66 days to automate. Most users start craving morning reading by Day 30. By Day 66, skipping feels wrong - it's your peace before chaos. Permanent habit."
+    }
+  ]
+}

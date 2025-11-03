@@ -1,0 +1,57 @@
+{
+  "habitName": "Pushups",
+  "habitSlug": "pushups",
+  "category": "optional",
+  "difficulty": "easy",
+  "typicalDaysToAutomate": "35-45",
+  "shortDescription": "Daily pushup practice for upper body strength, functional fitness, and discipline",
+  "scientificBenefits": [
+    "Increased chest, shoulder, and tricep strength",
+    "Improved core stability and posture",
+    "Enhanced bone density in arms and wrists",
+    "Better functional strength for daily activities",
+    "Cardiovascular health benefits (when done in volume)"
+  ],
+  "researchCitations": [
+    {
+      "study": "Yang et al. (2019) - JAMA Network Open",
+      "finding": "Men able to do 40+ pushups have 96% lower cardiovascular disease risk",
+      "link": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2724778"
+    },
+    {
+      "study": "Dhahbi et al. (2018) - International Journal of Sports Physiology and Performance",
+      "finding": "8-week pushup training increases upper body strength by 45% in beginners"
+    },
+    {
+      "study": "Gottschall et al. (2013) - Journal of Strength and Conditioning Research",
+      "finding": "Pushups activate 50+ muscles simultaneously, making them highly efficient"
+    }
+  ],
+  "relatedHabits": ["workout", "sit-ups", "running"],
+  "commonBarriers": [
+    "Can't do a full pushup yet (need modifications)",
+    "Wrist or shoulder pain from poor form",
+    "Plateau at certain rep count",
+    "Boredom from same exercise daily",
+    "Forgetting to do them consistently"
+  ],
+  "progressionPlan": "Week 1-2: Start where you are (wall/knee pushups if needed), 10-15 reps daily. Week 3-4: 20-30 regular pushups, focus on form. Week 5-8: 40-50+ pushups, add variations (wide, diamond, decline), progressive sets.",
+  "nooLifeFeatureHighlight": "Track daily pushup count. Watch rep progression over time. GTA-style upper body strength visuals. Contributes to Strength and Discipline ratings. Celebrate personal records.",
+  "testimonial": "\"Could barely do 10 pushups. NooLife tracked my daily progress. Day 66: 60 straight. Numbers don't lie.\" - Jenna F.",
+  "ctaAngle": "Build upper body strength with daily pushup tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/pushups_male.webp",
+  "tags": [
+    "pushups",
+    "upper body",
+    "strength training",
+    "fitness",
+    "bodyweight exercise"
+  ],
+  "metaKeywords": [
+    "daily pushups",
+    "pushup challenge",
+    "how to do more pushups",
+    "pushup benefits",
+    "bodyweight training"
+  ]
+}

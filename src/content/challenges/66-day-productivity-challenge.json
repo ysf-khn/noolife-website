@@ -1,0 +1,95 @@
+{
+  "challengeName": "66-Day Productivity Challenge",
+  "challengeSlug": "66-day-productivity-challenge",
+  "duration": 66,
+  "goal": "Peak Productivity",
+  "goalSlug": "productivity",
+  "includedHabits": [
+    "waking-early",
+    "studying",
+    "meditation",
+    "social-media-control",
+    "reading"
+  ],
+  "targetAudience": "10x your output in 66 days. Perfect for students, professionals, and entrepreneurs tired of procrastination.",
+  "scientificRationale": "Productivity isn't about working harder—it's about eliminating distractions, optimizing focus windows, and building systems. Research shows that deep work capacity (focused, uninterrupted work) can be trained like a muscle. By combining early waking (peak willpower hours), social media limits (attention protection), meditation (focus training), and studying (skill development) for 66 days, you create permanent productivity infrastructure. This is Cal Newport's Deep Work in challenge form.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Wake at 6am. Social media limit: 1 hour daily. Study/deep work 20-30 min. Track distractions.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "Increase deep work to 45 min. Add 5-min meditation before work sessions. Notice improved focus.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 3,
+      "focus": "Deep work hits 60-90 min daily. Use Pomodoro (25 min focus, 5 min break). Output measurably increasing.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Add reading (20 pages daily) for knowledge acquisition. Morning routine locked: wake, meditate, deep work.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 5,
+      "focus": "Deep work 90-120 min daily. Meditation 10-15 min. Social media down to 30 min. Productivity at all-time high.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 6,
+      "focus": "Peak performance zone. Notice how much you accomplish before 10am. Afternoons feel like bonus time.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "Track tangible output: courses completed, projects finished, pages written. Compare to pre-challenge baseline.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Productivity systems fully automatic. Deep work doesn't require willpower. Distractions feel uncomfortable.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Maintain intensity during busy weeks. Your productivity edge is your competitive advantage.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: Calculate total deep work hours (60-100+). Projects completed. You're in the top 1% of productivity.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll complete 60-100+ hours of deep work, wake early automatically, limit social media to <30 min daily, maintain laser focus for 90-120 min sessions, and achieve measurably more output (courses completed, projects shipped, promotions earned). NooLife productivity finishers report an average 3.2x increase in daily output and 78% reduction in procrastination.",
+  "commonPitfalls": [
+    "Not eliminating phone/internet during deep work (distractions kill flow)",
+    "Multitasking instead of single-tasking (focus on one thing at a time)",
+    "Not tracking output (measure progress, not just time spent)",
+    "Skipping meditation (focus training compounds productivity gains)",
+    "Working long hours instead of focused hours (90 min deep work > 4 hours distracted work)",
+    "Not protecting morning hours (mornings are non-negotiable productivity time)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily wake time, study/deep work duration, Pomodoro sessions (built-in timer in Assets screen), meditation minutes, social media usage, reading pages. Your Wisdom, Focus, and Discipline ratings skyrocket. GTA-style productive workspace visuals make every logged session feel like leveling up. See your productivity heatmap prove you're becoming unstoppable.",
+  "testimonial": "\"Procrastinated for years. NooLife's 66-day productivity challenge changed everything. Day 66: wake at 5:30am, 2 hours deep work daily, finished 3 certifications. Got promoted. Productivity is my superpower now.\" - Kevin H.",
+  "ctaAngle": "10x your productivity with deep work tracking and Pomodoro timers. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "productivity challenge",
+    "66 day productivity",
+    "deep work",
+    "focus",
+    "time management"
+  ],
+  "metaKeywords": [
+    "productivity challenge",
+    "how to be more productive",
+    "deep work challenge",
+    "66 day productivity",
+    "productivity habits"
+  ]
+}

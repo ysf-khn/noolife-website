@@ -1,0 +1,50 @@
+{
+  "habitName": "Sit Ups",
+  "habitSlug": "sit-ups",
+  "category": "optional",
+  "difficulty": "easy",
+  "typicalDaysToAutomate": "30-40",
+  "shortDescription": "Daily sit-ups and core training for abdominal strength, posture, and athletic performance",
+  "scientificBenefits": [
+    "Strengthened core muscles and stability",
+    "Improved posture and reduced back pain",
+    "Enhanced athletic performance across all activities",
+    "Better balance and coordination",
+    "Functional strength for daily movements"
+  ],
+  "researchCitations": [
+    {
+      "study": "Hibbs et al. (2008) - British Journal of Sports Medicine",
+      "finding": "Core stability training improves athletic performance and reduces injury risk by 35%"
+    },
+    {
+      "study": "Chang et al. (2015) - Journal of Physical Therapy Science",
+      "finding": "8-week core strengthening program reduces lower back pain by 67%"
+    },
+    {
+      "study": "Willardson (2007) - Strength & Conditioning Journal",
+      "finding": "Core strength directly correlates with power output in running, jumping, throwing"
+    }
+  ],
+  "relatedHabits": ["workout", "pushups", "running"],
+  "commonBarriers": [
+    "Neck or lower back discomfort from poor form",
+    "Boredom from repetitive movement",
+    "Lack of visible ab definition in early weeks",
+    "Not knowing how many reps to aim for",
+    "Forgetting to do them daily"
+  ],
+  "progressionPlan": "Week 1-2: 15-20 sit-ups daily (focus on form). Week 3-4: 30-40 sit-ups, add variations (bicycle crunches, leg raises). Week 5-8: 50-100 sit-ups, progressive sets (3x25, 4x25), or timed planks between sets.",
+  "nooLifeFeatureHighlight": "Track daily sit-up count. Log reps completed. GTA-style core workout visuals. Contributes to Strength and Discipline ratings. Watch your numbers climb over 66 days.",
+  "testimonial": "\"Started at 20 sit-ups, struggling. Day 60, hit 100 straight. NooLife's tracking made the progress so visible.\" - Tyler B.",
+  "ctaAngle": "Build core strength with progressive sit-up tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/situps_male.webp",
+  "tags": ["sit ups", "core workout", "abs", "strength training", "fitness"],
+  "metaKeywords": [
+    "daily sit ups",
+    "sit up challenge",
+    "core strength",
+    "ab workout routine",
+    "how to do sit ups"
+  ]
+}

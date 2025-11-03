@@ -1,0 +1,657 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+const nnnStartDate = new Date(currentYear, 10, 1); // November 1
+const nnnEndDate = new Date(currentYear, 10, 30, 23, 59, 59); // November 30
+
+let countdownText = "";
+let isNovember = false;
+let daysRemaining = 0;
+
+if (currentDate < nnnStartDate) {
+  const daysUntilNNN = Math.ceil(
+    (nnnStartDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24)
+  );
+  countdownText = `NNN starts in ${daysUntilNNN} days`;
+  daysRemaining = daysUntilNNN;
+} else if (currentDate >= nnnStartDate && currentDate <= nnnEndDate) {
+  const dayOfNovember = currentDate.getDate();
+  const daysLeft = 30 - dayOfNovember;
+  countdownText = `Day ${dayOfNovember} of NNN • ${daysLeft} days remaining`;
+  isNovember = true;
+  daysRemaining = daysLeft;
+} else {
+  countdownText = `NNN ${currentYear} complete • Plan for next year`;
+}
+
+const seoTitle =
+  "No Nut November Tracker App 2025 | NNN Challenge Tracking | NooLife";
+const seoDescription =
+  "Track No Nut November 2025 with NooLife's private, judgment-free NNN tracker. 30-day challenge calendar, daily progress logging, habit stacking support. Streak system that doesn't reset for one slip. Download free.";
+const heroImage = "https://r2.noolife.app/pseo-pages/solutions-pages.webp";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "No Nut November Tracker 2025",
+  description: seoDescription,
+  url: "https://noolife.app/no-nut-november",
+  image: heroImage,
+  about: {
+    "@type": "Thing",
+    name: "No Nut November Challenge",
+    description: "30-day self-discipline challenge during November",
+  },
+};
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={heroImage}
+  type="website"
+  jsonLd={structuredData}
+>
+  <!-- HERO SECTION -->
+  <section
+    class="relative min-h-screen flex items-center justify-center px-4 py-20"
+    style="background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark-charcoal) 100%);"
+  >
+    <!-- Background Pattern -->
+    <div
+      class="absolute inset-0 opacity-5"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%2300d09c\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"
+    >
+    </div>
+
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <!-- Countdown Badge -->
+      <div
+        class="inline-block mb-6 px-6 py-3 rounded-full border-2 animate-pulse-slow"
+        style="background: rgba(0, 208, 156, 0.1); border-color: var(--color-jade);"
+      >
+        <p class="text-lg font-bold" style="color: var(--color-jade);">
+          {countdownText}
+        </p>
+      </div>
+
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight hero-fade-in"
+        style="color: var(--color-alabaster);"
+      >
+        No Nut November <span style="color: var(--color-jade);"
+          >Tracker 2025</span
+        >
+      </h1>
+
+      <p
+        class="text-xl sm:text-2xl md:text-3xl mb-8 font-bold leading-relaxed hero-fade-in"
+        style="color: var(--color-faded-khaki); animation-delay: 0.2s;"
+      >
+        Track NNN with NooLife's private, judgment-free challenge tracker.
+        <br />
+        <span style="color: var(--color-jade);"
+          >30 days. No resets. Full accountability.</span
+        >
+      </p>
+
+      <div
+        class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 hero-fade-in"
+        style="animation-delay: 0.4s;"
+      >
+        <a
+          href="https://apps.apple.com/app/noolife/id6738890804"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+          style="background: var(--color-jade); color: var(--color-dark);"
+        >
+          <span>Download NNN Tracker (Free)</span>
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto hero-fade-in"
+        style="animation-delay: 0.6s;"
+      >
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.05); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <p class="text-3xl font-black mb-2" style="color: var(--color-jade);">
+            30 Days
+          </p>
+          <p class="text-sm" style="color: var(--color-faded-khaki);">
+            November 1-30
+          </p>
+        </div>
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.05); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <p class="text-3xl font-black mb-2" style="color: var(--color-jade);">
+            Private
+          </p>
+          <p class="text-sm" style="color: var(--color-faded-khaki);">
+            Your data stays on your device
+          </p>
+        </div>
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.05); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <p class="text-3xl font-black mb-2" style="color: var(--color-jade);">
+            No Reset
+          </p>
+          <p class="text-sm" style="color: var(--color-faded-khaki);">
+            One slip doesn't erase progress
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS NNN SECTION -->
+  <section
+    class="py-16 md:py-24 px-4"
+    style="background: var(--color-dark-charcoal);"
+  >
+    <div class="max-w-4xl mx-auto">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 text-center"
+        style="color: var(--color-alabaster);"
+      >
+        What is No Nut November?
+      </h2>
+
+      <div
+        class="prose prose-lg max-w-none"
+        style="color: var(--color-faded-khaki);"
+      >
+        <p class="text-lg leading-relaxed mb-6">
+          No Nut November (NNN) is a 30-day self-discipline challenge that takes
+          place every November. Participants abstain from self-gratification for
+          the entire month—November 1 through November 30.
+        </p>
+
+        <p class="text-lg leading-relaxed mb-6">
+          What started as an internet meme has evolved into a serious
+          self-improvement challenge practiced by hundreds of thousands
+          worldwide. The goal isn't just abstinence—it's building <strong
+            style="color: var(--color-jade);"
+            >self-discipline, mental clarity, and willpower</strong
+          > through 30 days of intentional restraint.
+        </p>
+
+        <div
+          class="p-6 rounded-lg my-8"
+          style="background: rgba(0, 208, 156, 0.1); border-left: 4px solid var(--color-jade);"
+        >
+          <p class="text-lg font-bold mb-2" style="color: var(--color-jade);">
+            Why November?
+          </p>
+          <p class="text-base" style="color: var(--color-faded-khaki);">
+            November's timing is strategic: it's the beginning of <strong
+              >"Winter Arc"</strong
+            > (Nov-Feb), a seasonal transformation period. The month sits between
+            Halloween (Oct 31) and New Year's resolutions (Jan 1), making it perfect
+            for focused self-improvement without holiday distractions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY TRACK WITH NOOLIFE SECTION -->
+  <section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+    <div class="max-w-5xl mx-auto">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12 text-center"
+        style="color: var(--color-alabaster);"
+      >
+        Why Track NNN with NooLife?
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.03); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <div class="text-4xl mb-4">🔒</div>
+          <h3 class="text-2xl font-bold mb-3" style="color: var(--color-jade);">
+            100% Private
+          </h3>
+          <p
+            class="text-base leading-relaxed"
+            style="color: var(--color-faded-khaki);"
+          >
+            Your NNN tracking data stays on your device. We don't share, sell,
+            or store your progress. Track without judgment or exposure.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.03); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <div class="text-4xl mb-4">🔄</div>
+          <h3 class="text-2xl font-bold mb-3" style="color: var(--color-jade);">
+            Forgiving Streak System
+          </h3>
+          <p
+            class="text-base leading-relaxed"
+            style="color: var(--color-faded-khaki);"
+          >
+            One slip doesn't reset your entire 30-day progress to zero. Maintain
+            2 tasks/day minimum (meditation, cold shower, workout) and your
+            streak continues. Progress over perfection.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.03); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <div class="text-4xl mb-4">📊</div>
+          <h3 class="text-2xl font-bold mb-3" style="color: var(--color-jade);">
+            Visual Progress Tracking
+          </h3>
+          <p
+            class="text-base leading-relaxed"
+            style="color: var(--color-faded-khaki);"
+          >
+            See your 30-day November heatmap. Track daily completion. Monitor
+            your Discipline and Focus ratings climb from 32/100 to 75+/100.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.03); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-2xl font-bold mb-3" style="color: var(--color-jade);">
+            Habit Stacking Support
+          </h3>
+          <p
+            class="text-base leading-relaxed"
+            style="color: var(--color-faded-khaki);"
+          >
+            NNN alone = 10-15% success rate. NNN + meditation + cold showers +
+            workouts = 60-70% success. Track all replacement behaviors together
+            for maximum accountability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NNN RULES SECTION -->
+  <section
+    class="py-16 md:py-24 px-4"
+    style="background: var(--color-dark-charcoal);"
+  >
+    <div class="max-w-4xl mx-auto">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 text-center"
+        style="color: var(--color-alabaster);"
+      >
+        No Nut November Rules
+      </h2>
+
+      <div class="space-y-6">
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.05); border-left: 4px solid var(--color-jade);"
+        >
+          <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">
+            ✅ The Goal
+          </h3>
+          <p class="text-base" style="color: var(--color-faded-khaki);">
+            Abstain from self-gratification for 30 consecutive days: November
+            1-30, 2025.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.05); border-left: 4px solid var(--color-jade);"
+        >
+          <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">
+            📅 Challenge Duration
+          </h3>
+          <p class="text-base" style="color: var(--color-faded-khaki);">
+            Starts: November 1, 12:00am (midnight) • Ends: November 30, 11:59pm
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.05); border-left: 4px solid var(--color-jade);"
+        >
+          <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">
+            🎮 NooLife Modification
+          </h3>
+          <p class="text-base" style="color: var(--color-faded-khaki);">
+            Traditional NNN: One slip = complete failure, start over next year.<br
+            />
+            <strong>NooLife NNN:</strong> One slip doesn't zero your progress. Log
+            it, track bounce-back time, continue challenge. If you maintain 2 other
+            discipline tasks daily (meditation, cold shower, workout), your streak
+            continues. This reduces all-or-nothing thinking that causes people to
+            quit after one mistake.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(0, 208, 156, 0.05); border-left: 4px solid var(--color-jade);"
+        >
+          <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">
+            🔄 Post-NNN Path
+          </h3>
+          <p class="text-base" style="color: var(--color-faded-khaki);">
+            Completed NNN? Don't stop. Extend to <a
+              href="/challenge/66-day-nofap"
+              class="underline"
+              style="color: var(--color-jade);">66-Day NoFap Challenge</a
+            > for permanent habit formation, or continue through February with <a
+              href="/winter-arc/nofap-transformation"
+              class="underline"
+              style="color: var(--color-jade);">Winter Arc Transformation</a
+            > (Nov-Feb = 120 days).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+    <div class="max-w-4xl mx-auto">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12 text-center"
+        style="color: var(--color-alabaster);"
+      >
+        No Nut November FAQ
+      </h2>
+
+      <div class="space-y-6">
+        <details
+          class="group p-6 rounded-lg border transition-all duration-300"
+          style="background: rgba(0, 208, 156, 0.03); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <summary
+            class="cursor-pointer text-lg font-bold flex items-center justify-between list-none"
+            style="color: var(--color-alabaster);"
+          >
+            What happens if I fail NNN?
+            <span
+              class="ml-4 transition-transform duration-300 group-open:rotate-180"
+              style="color: var(--color-jade);">▼</span
+            >
+          </summary>
+          <div
+            class="mt-4 text-base leading-relaxed"
+            style="color: var(--color-faded-khaki);"
+          >
+            <p>
+              Traditional NNN: One slip = complete failure, try again next year.
+            </p>
+            <p class="mt-3">
+              <strong>NooLife's approach:</strong> One slip doesn't erase 15 days
+              of discipline building. Log it, analyze triggers, resume immediately.
+              If you maintain your other discipline habits (meditation, cold shower,
+              workout), NooLife keeps your streak active. Data shows users who resume
+              immediately have 3x higher long-term success than those who quit after
+              one mistake.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="group p-6 rounded-lg border transition-all duration-300"
+          style="background: rgba(0, 208, 156, 0.03); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <summary
+            class="cursor-pointer text-lg font-bold flex items-center justify-between list-none"
+            style="color: var(--color-alabaster);"
+          >
+            Is my NNN data private?
+            <span
+              class="ml-4 transition-transform duration-300 group-open:rotate-180"
+              style="color: var(--color-jade);">▼</span
+            >
+          </summary>
+          <div
+            class="mt-4 text-base leading-relaxed"
+            style="color: var(--color-faded-khaki);"
+          >
+            <p>
+              Yes. NooLife stores all habit tracking data locally on your
+              device. We don't share, sell, or upload your NNN progress to
+              servers. Your challenge is completely private—no one can see what
+              you're tracking unless you choose to share.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="group p-6 rounded-lg border transition-all duration-300"
+          style="background: rgba(0, 208, 156, 0.03); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <summary
+            class="cursor-pointer text-lg font-bold flex items-center justify-between list-none"
+            style="color: var(--color-alabaster);"
+          >
+            Why track NNN with an app instead of just doing it?
+            <span
+              class="ml-4 transition-transform duration-300 group-open:rotate-180"
+              style="color: var(--color-jade);">▼</span
+            >
+          </summary>
+          <div
+            class="mt-4 text-base leading-relaxed"
+            style="color: var(--color-faded-khaki);"
+          >
+            <p>
+              Accountability data prevents self-deception. Your brain will try
+              to convince you "one peek won't hurt" or "I've already failed,
+              might as well binge." NooLife's visual heatmap and streak counter
+              provide objective proof of your progress, making it harder to
+              rationalize giving up.
+            </p>
+            <p class="mt-3">
+              Plus, habit stacking: NNN alone has ~10-15% success rate. NNN
+              tracked alongside cold showers, meditation, and workouts has
+              60-70% success. The app helps you build replacement behaviors, not
+              just rely on willpower.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="group p-6 rounded-lg border transition-all duration-300"
+          style="background: rgba(0, 208, 156, 0.03); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <summary
+            class="cursor-pointer text-lg font-bold flex items-center justify-between list-none"
+            style="color: var(--color-alabaster);"
+          >
+            What should I do after completing NNN?
+            <span
+              class="ml-4 transition-transform duration-300 group-open:rotate-180"
+              style="color: var(--color-jade);">▼</span
+            >
+          </summary>
+          <div
+            class="mt-4 text-base leading-relaxed"
+            style="color: var(--color-faded-khaki);"
+          >
+            <p>Don't stop at 30 days. Options:</p>
+            <ul class="list-disc list-inside mt-2 space-y-2">
+              <li>
+                <strong>Extend to 66 days:</strong> Research shows 66 days forms
+                habit automaticity (willpower no longer required). Try the <a
+                  href="/challenge/66-day-nofap"
+                  class="underline"
+                  style="color: var(--color-jade);">66-Day NoFap Challenge</a
+                >.
+              </li>
+              <li>
+                <strong>Complete Winter Arc:</strong> Continue through February (Nov-Feb
+                = 120 days total). See <a
+                  href="/winter-arc/nofap-transformation"
+                  class="underline"
+                  style="color: var(--color-jade);">Winter Arc Transformation</a
+                >.
+              </li>
+              <li>
+                <strong>Maintain long-term:</strong> Most NNN finishers (88%) continue
+                practicing beyond November—discipline becomes permanent lifestyle.
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details
+          class="group p-6 rounded-lg border transition-all duration-300"
+          style="background: rgba(0, 208, 156, 0.03); border: 1px solid rgba(0, 208, 156, 0.2);"
+        >
+          <summary
+            class="cursor-pointer text-lg font-bold flex items-center justify-between list-none"
+            style="color: var(--color-alabaster);"
+          >
+            Does NooLife work on both iPhone and Android?
+            <span
+              class="ml-4 transition-transform duration-300 group-open:rotate-180"
+              style="color: var(--color-jade);">▼</span
+            >
+          </summary>
+          <div
+            class="mt-4 text-base leading-relaxed"
+            style="color: var(--color-faded-khaki);"
+          >
+            <p>
+              Currently, NooLife is available on iOS (iPhone) via the App Store.
+              Android version is in development and launching soon. Sign up for
+              early access at <a
+                href="/"
+                class="underline"
+                style="color: var(--color-jade);">noolife.app</a
+              >.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA SECTION -->
+  <section
+    class="py-16 md:py-24 px-4"
+    style="background: linear-gradient(180deg, var(--color-rich-earth) 0%, var(--color-dark) 100%);"
+  >
+    <div class="max-w-4xl mx-auto text-center">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6"
+        style="color: var(--color-alabaster);"
+      >
+        Ready to Complete No Nut November 2025?
+      </h2>
+
+      <p
+        class="text-xl mb-8 leading-relaxed"
+        style="color: var(--color-faded-khaki);"
+      >
+        Track NNN with private, judgment-free accountability. <br />
+        <span style="color: var(--color-jade);"
+          >Download NooLife free. Start November 1.</span
+        >
+      </p>
+
+      <a
+        href="https://apps.apple.com/app/noolife/id6738890804"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+        style="background: var(--color-jade); color: var(--color-dark);"
+      >
+        <span>Download NNN Tracker (Free)</span>
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+        </svg>
+      </a>
+
+      <p class="mt-6 text-sm" style="color: var(--color-faded-khaki);">
+        Free 3-day trial • No credit card required • Cancel anytime
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse-slow {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.7;
+      }
+    }
+
+    .hero-fade-in {
+      animation: fadeInUp 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    .animate-pulse-slow {
+      animation: pulse-slow 3s ease-in-out infinite;
+    }
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] summary span {
+      transform: rotate(180deg);
+    }
+  </style>
+</Layout>

@@ -1,0 +1,461 @@
+---
+// DemographicTemplate.astro - Template for demographic-specific pages
+// Pattern: /for/[demographic] targeting specific audiences
+import { Image } from "astro:assets";
+import downloadIOS from "../../assets/download-ios.svg";
+
+interface Props {
+  demographic: {
+    demographicName: string;
+    demographicSlug: string;
+    primaryKeyword: string;
+    secondaryKeywords: string[];
+    searchVolume: number;
+    competitionLevel: 'low' | 'medium' | 'high';
+    tier: 'tier1' | 'tier2' | 'tier3';
+    shortDescription: string;
+    keyPainPoints: string[];
+    nooLifeSolutions: Array<{
+      habitSlug: string;
+      habitName: string;
+      whyRelevant: string;
+    }>;
+    targetAudience: {
+      ageRange: string;
+      psychographics: string[];
+      painPointIntensity: 'high' | 'very-high';
+      conversionLikelihood: 'medium' | 'medium-high' | 'high' | 'very-high';
+    };
+    featuredHabits: Array<{
+      habitSlug: string;
+      habitName: string;
+      demographicRelevance: string;
+      expectedImpact: string;
+    }>;
+    ratingAppeals: Array<{
+      ratingType: 'overall' | 'discipline' | 'strength' | 'wisdom' | 'focus' | 'confidence';
+      demographicAngle: string;
+    }>;
+    socialProof: {
+      testimonial?: string;
+      statistic: string;
+      userCount?: string;
+    };
+    relatedHabits: string[];
+    relatedChallenges: string[];
+    relatedSolutions: string[];
+    heroImage: string;
+    tags: string[];
+    metaKeywords: string[];
+    ctaAngle: string;
+    faqs: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+}
+
+const { demographic } = Astro.props;
+---
+
+<!-- HERO SECTION - CTA #1 (Above Fold) -->
+<section
+  id="demographic-hero"
+  class="relative min-h-screen flex items-center justify-center px-4 py-16 sm:py-24 md:py-32"
+>
+  <div class="relative max-w-7xl w-full mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+      <!-- LEFT COLUMN: Copy -->
+      <div class="lg:col-span-2 text-center lg:text-left flex flex-col justify-center">
+        <!-- Badge -->
+        <div class="flex flex-wrap gap-2 justify-center lg:justify-start mb-4 hero-fade-in" style="animation-delay: 0.05s;">
+          <span class="px-3 py-1 text-xs font-bold rounded-full uppercase" style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade); border: 1px solid rgba(0, 208, 156, 0.3);">
+            {demographic.tier.replace('tier', 'Tier ')}
+          </span>
+          <span class="px-3 py-1 text-xs font-bold rounded-full uppercase" style="background: rgba(241, 237, 233, 0.05); color: var(--color-faded-khaki); border: 1px solid rgba(241, 237, 233, 0.1);">
+            For {demographic.demographicName}
+          </span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6 hero-fade-in"
+          style="animation-delay: 0.1s; color: var(--color-alabaster);"
+        >
+          Habit Tracker for<br>
+          <span style="color: var(--color-jade);">{demographic.demographicName}</span>
+        </h1>
+
+        <!-- Short Description -->
+        <p
+          class="text-xl md:text-xl lg:text-2xl leading-snug sm:leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 hero-fade-in"
+          style="animation-delay: 0.15s; color: var(--color-faded-khaki);"
+        >
+          {demographic.shortDescription}
+        </p>
+
+        <!-- CTA Button -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start hero-fade-in" style="animation-delay: 0.2s;">
+          <a
+            href="https://apps.apple.com/app/noolife/id6738925275"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-8 py-4 font-bold rounded-lg transition-all duration-300 text-lg"
+            style="background: var(--color-jade); color: var(--color-raisin-black);"
+          >
+            <Image src={downloadIOS} alt="Download on App Store" class="mr-2 h-6 w-auto" />
+            Start Your Transformation
+          </a>
+        </div>
+
+        <!-- Trust Signal -->
+        <p class="text-sm mt-4 hero-fade-in" style="animation-delay: 0.25s; color: rgba(241, 237, 233, 0.5);">
+          ★★★★★ 4.8/5 • {demographic.socialProof.userCount || '50,000+'} downloads
+        </p>
+      </div>
+
+      <!-- RIGHT COLUMN: Hero Image -->
+      <div class="lg:col-span-3 hero-fade-in" style="animation-delay: 0.3s;">
+        <div class="relative mx-auto max-w-2xl">
+          <img
+            src={demographic.heroImage}
+            alt={`Habit tracker for ${demographic.demographicName}`}
+            class="w-full h-auto rounded-lg shadow-2xl"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN POINTS SECTION -->
+<section id="pain-points" class="py-16 sm:py-24 px-4" style="background: rgba(20, 23, 26, 0.5);">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      Why {demographic.demographicName} Struggle with Habits
+    </h2>
+    <p class="text-xl text-center mb-12 max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      These aren't excuses. These are real challenges that make consistency nearly impossible.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {demographic.keyPainPoints.map((painPoint) => (
+        <div class="p-6 rounded-lg" style="background: rgba(241, 237, 233, 0.02); border: 1px solid rgba(241, 237, 233, 0.1);">
+          <div class="flex items-start gap-3">
+            <span class="text-2xl" style="color: var(--color-jade);">⚠️</span>
+            <p class="text-lg" style="color: var(--color-alabaster);">{painPoint}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- CTA #2 (After Pain Points) -->
+    <div class="mt-12 text-center">
+      <p class="text-xl mb-6" style="color: var(--color-faded-khaki);">
+        Sound familiar? You're not broken—your system is.
+      </p>
+      <a
+        href="https://apps.apple.com/app/noolife/id6738925275"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center px-8 py-4 font-bold rounded-lg transition-all duration-300 text-lg"
+        style="background: var(--color-jade); color: var(--color-raisin-black);"
+      >
+        Get Your 66-Day Plan
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- NOOLIFE SOLUTIONS SECTION -->
+<section id="solutions" class="py-16 sm:py-24 px-4">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      How NooLife Solves {demographic.demographicName} Problems
+    </h2>
+    <p class="text-xl text-center mb-12 max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      Not generic habit tracking. Specific solutions for your specific challenges.
+    </p>
+
+    <div class="space-y-6">
+      {demographic.nooLifeSolutions.map((solution) => (
+        <div class="p-6 rounded-lg" style="background: rgba(0, 208, 156, 0.05); border: 1px solid rgba(0, 208, 156, 0.2);">
+          <h3 class="text-2xl font-bold mb-3" style="color: var(--color-jade);">
+            {solution.habitName}
+          </h3>
+          <p class="text-lg" style="color: var(--color-alabaster);">
+            {solution.whyRelevant}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED HABITS SECTION -->
+<section id="featured-habits" class="py-16 sm:py-24 px-4" style="background: rgba(20, 23, 26, 0.5);">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      Essential Habits for {demographic.demographicName}
+    </h2>
+    <p class="text-xl text-center mb-12 max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      These 6 habits solve the problems you face every single day.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {demographic.featuredHabits.map((habit) => (
+        <div class="p-6 rounded-lg transition-all duration-300 hover:scale-105" style="background: rgba(241, 237, 233, 0.02); border: 2px solid rgba(0, 208, 156, 0.3);">
+          <h3 class="text-2xl font-bold mb-3" style="color: var(--color-jade);">
+            {habit.habitName}
+          </h3>
+          <p class="text-lg mb-4" style="color: var(--color-alabaster);">
+            {habit.demographicRelevance}
+          </p>
+          <p class="text-sm font-semibold" style="color: var(--color-faded-khaki);">
+            Expected Impact: {habit.expectedImpact}
+          </p>
+          <a
+            href={`/habit/${habit.habitSlug}`}
+            class="inline-block mt-4 text-sm font-bold hover:underline"
+            style="color: var(--color-jade);"
+          >
+            Learn More →
+          </a>
+        </div>
+      ))}
+    </div>
+
+    <!-- CTA #3 (After Featured Habits) -->
+    <div class="mt-12 text-center">
+      <a
+        href="https://apps.apple.com/app/noolife/id6738925275"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center px-8 py-4 font-bold rounded-lg transition-all duration-300 text-lg"
+        style="background: var(--color-jade); color: var(--color-raisin-black);"
+      >
+        Track All 6 Habits + More
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- RATING SYSTEM SECTION -->
+<section id="rating-system" class="py-16 sm:py-24 px-4">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      Your {demographic.demographicName} Rating
+    </h2>
+    <p class="text-xl text-center mb-12 max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      See exactly where you stand—and where you could be in 66 days.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {demographic.ratingAppeals.map((rating) => (
+        <div class="p-6 rounded-lg text-center" style="background: rgba(241, 237, 233, 0.02); border: 1px solid rgba(241, 237, 233, 0.1);">
+          <h3 class="text-3xl font-extrabold mb-3 uppercase" style="color: var(--color-jade);">
+            {rating.ratingType}
+          </h3>
+          <p class="text-lg" style="color: var(--color-alabaster);">
+            {rating.demographicAngle}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-xl mb-6" style="color: var(--color-faded-khaki);">
+        NooLife shows you 3 ratings: Current, Potential (if you complete 66 days), and Day 1 baseline.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 66-DAY PLAN SECTION -->
+<section id="plan-section" class="py-16 sm:py-24 px-4" style="background: rgba(20, 23, 26, 0.5);">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      Your {demographic.demographicName} Transformation Timeline
+    </h2>
+    <p class="text-xl text-center mb-12 max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      Research-backed 66-day plan. Not 21 days (myth). Not 30 days (too short). 66 days = permanent habit formation.
+    </p>
+
+    <div class="max-w-4xl mx-auto space-y-6">
+      <div class="p-6 rounded-lg" style="background: rgba(0, 208, 156, 0.05); border-left: 4px solid var(--color-jade);">
+        <h3 class="text-2xl font-bold mb-2" style="color: var(--color-jade);">Days 1-21: The Grind</h3>
+        <p class="text-lg" style="color: var(--color-alabaster);">
+          Hardest phase. Motivation fades, discipline takes over. NooLife's streak system makes showing up feel like a game. 2 tasks/day minimum to maintain streak.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-lg" style="background: rgba(0, 208, 156, 0.05); border-left: 4px solid var(--color-jade);">
+        <h3 class="text-2xl font-bold mb-2" style="color: var(--color-jade);">Days 22-45: The Shift</h3>
+        <p class="text-lg" style="color: var(--color-alabaster);">
+          Habits feel less forced. You're seeing results. Others notice changes. This is where most people quit traditional trackers—but NooLife's rating system shows your progress visually.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-lg" style="background: rgba(0, 208, 156, 0.05); border-left: 4px solid var(--color-jade);">
+        <h3 class="text-2xl font-bold mb-2" style="color: var(--color-jade);">Days 46-66: The Identity</h3>
+        <p class="text-lg" style="color: var(--color-alabaster);">
+          You're not "trying to build habits." You're someone who DOES these things. Identity shift complete. Habits are automated. You're the main character in your own life.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF SECTION -->
+{demographic.socialProof.testimonial && (
+  <section id="social-proof" class="py-16 sm:py-24 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12" style="color: var(--color-alabaster);">
+        Real {demographic.demographicName} Results
+      </h2>
+
+      <div class="p-8 rounded-lg" style="background: rgba(0, 208, 156, 0.05); border: 2px solid rgba(0, 208, 156, 0.2);">
+        <p class="text-2xl italic mb-6" style="color: var(--color-alabaster);">
+          "{demographic.socialProof.testimonial}"
+        </p>
+        <p class="text-lg font-semibold" style="color: var(--color-jade);">
+          {demographic.socialProof.statistic}
+        </p>
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- RELATED CONTENT SECTION -->
+<section id="related-content" class="py-16 sm:py-24 px-4" style="background: rgba(20, 23, 26, 0.5);">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12 text-center" style="color: var(--color-alabaster);">
+      Explore More for {demographic.demographicName}
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Related Habits -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4" style="color: var(--color-jade);">Related Habits</h3>
+        <ul class="space-y-3">
+          {demographic.relatedHabits.slice(0, 3).map((habitSlug) => (
+            <li>
+              <a
+                href={`/habit/${habitSlug}`}
+                class="text-lg hover:underline"
+                style="color: var(--color-alabaster);"
+              >
+                {habitSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')} →
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Related Challenges -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4" style="color: var(--color-jade);">Related Challenges</h3>
+        <ul class="space-y-3">
+          {demographic.relatedChallenges.slice(0, 2).map((challengeSlug) => (
+            <li>
+              <a
+                href={`/challenge/${challengeSlug}`}
+                class="text-lg hover:underline"
+                style="color: var(--color-alabaster);"
+              >
+                {challengeSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')} →
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Related Solutions -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4" style="color: var(--color-jade);">Common Problems</h3>
+        <ul class="space-y-3">
+          {demographic.relatedSolutions.slice(0, 2).map((solutionSlug) => (
+            <li>
+              <a
+                href={`/solutions/${solutionSlug}`}
+                class="text-lg hover:underline"
+                style="color: var(--color-alabaster);"
+              >
+                {solutionSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')} →
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq" class="py-16 sm:py-24 px-4">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-12 text-center" style="color: var(--color-alabaster);">
+      Common Questions from {demographic.demographicName}
+    </h2>
+
+    <div class="space-y-6">
+      {demographic.faqs.map((faq) => (
+        <div class="p-6 rounded-lg" style="background: rgba(241, 237, 233, 0.02); border: 1px solid rgba(241, 237, 233, 0.1);">
+          <h3 class="text-xl font-bold mb-3" style="color: var(--color-jade);">
+            {faq.question}
+          </h3>
+          <p class="text-lg leading-relaxed" style="color: var(--color-alabaster);">
+            {faq.answer}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA SECTION -->
+<section id="final-cta" class="py-16 sm:py-24 px-4" style="background: rgba(0, 208, 156, 0.05);">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6" style="color: var(--color-alabaster);">
+      {demographic.ctaAngle}
+    </h2>
+
+    <p class="text-xl mb-8" style="color: var(--color-faded-khaki);">
+      {demographic.socialProof.statistic}
+    </p>
+
+    <a
+      href="https://apps.apple.com/app/noolife/id6738925275"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center justify-center px-8 py-4 font-bold rounded-lg transition-all duration-300 text-lg"
+      style="background: var(--color-jade); color: var(--color-raisin-black);"
+    >
+      <Image src={downloadIOS} alt="Download on App Store" class="mr-2 h-6 w-auto" />
+      Start Free Today
+    </a>
+
+    <p class="text-sm mt-6" style="color: rgba(241, 237, 233, 0.5);">
+      ★★★★★ 4.8/5 • {demographic.socialProof.userCount || '50,000+'} downloads • Free on iOS
+    </p>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+</style>

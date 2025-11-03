@@ -1,0 +1,57 @@
+{
+  "habitName": "Waking Early",
+  "habitSlug": "waking-early",
+  "category": "core",
+  "difficulty": "medium",
+  "typicalDaysToAutomate": "45-60",
+  "shortDescription": "Consistent early wake times for increased productivity and mental clarity",
+  "scientificBenefits": [
+    "Enhanced productivity during peak cognitive hours",
+    "Improved sleep quality through consistent circadian rhythm",
+    "Greater self-discipline and daily momentum",
+    "More time for morning routines and personal development",
+    "Better mood and reduced stress levels"
+  ],
+  "researchCitations": [
+    {
+      "study": "Randler (2009) - Journal of Applied Social Psychology",
+      "finding": "Morning people are more proactive and report higher life satisfaction",
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1559-1816.2009.00549.x"
+    },
+    {
+      "study": "Walker (2017) - Why We Sleep",
+      "finding": "Consistent wake times regulate circadian rhythm, improving sleep quality by 23%"
+    },
+    {
+      "study": "Harvard Business Review (2018)",
+      "finding": "Early risers report 40% higher productivity in first 4 hours of day"
+    }
+  ],
+  "relatedHabits": ["cold-shower", "meditation", "workout"],
+  "commonBarriers": [
+    "Going to bed too late",
+    "Hitting snooze repeatedly",
+    "Lack of compelling morning routine",
+    "Evening phone/screen usage disrupting sleep",
+    "Inconsistent schedule on weekends"
+  ],
+  "progressionPlan": "Week 1: Move wake time 15 min earlier. Week 2: Another 15 min earlier. Week 3-4: Stabilize at target time (e.g., 6am). Week 5-8: Build compelling morning routine to reinforce habit. Adjust bedtime progressively earlier to match.",
+  "nooLifeFeatureHighlight": "Track your wake time daily with visual streaks. GTA-style morning task cards. App tracks sleep consistency across 66 days, showing rating improvements tied to discipline score.",
+  "testimonial": "\"Waking at 5:30am felt impossible. NooLife's gradual progression + streak tracking made it stick. 50 days in, I can't imagine sleeping past 6.\" - Jordan T.",
+  "ctaAngle": "Master early rising with personalized 66-day plans. Track wake times, build morning routines. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/morning.webp",
+  "tags": [
+    "waking early",
+    "morning routine",
+    "productivity",
+    "sleep habits",
+    "winter arc"
+  ],
+  "metaKeywords": [
+    "how to wake up early",
+    "waking up early benefits",
+    "early morning routine",
+    "become a morning person",
+    "wake up early habit"
+  ]
+}

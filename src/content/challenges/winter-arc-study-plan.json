@@ -1,0 +1,98 @@
+{
+  "challengeName": "Winter Arc Study Plan",
+  "challengeSlug": "winter-arc-study-plan",
+  "duration": 66,
+  "goal": "Knowledge Mastery",
+  "goalSlug": "winter-study",
+  "includedHabits": [
+    "studying",
+    "reading",
+    "journaling",
+    "meditation",
+    "social-media-control",
+    "waking-early"
+  ],
+  "targetAudience": "Learn faster, retain more, build expertise in 66 days. Perfect for students, professionals, and anyone tired of surface-level knowledge.",
+  "scientificRationale": "Winter creates perfect learning conditions: fewer social obligations, earlier sunsets forcing indoor focus, cultural 'hibernation mode' reducing distractions. Research on deep work (Newport) shows that 3-4 hours of focused study daily for 60+ days produces expertise-level knowledge retention. By combining intensive study (2+ hours daily), reading (20+ pages), reflective journaling, meditation for focus, minimal social media, and early wake for peak cognitive hours through winter's 66 darkest days, you compress years of learning into one transformative season. This is accelerated expertise.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Establish study routine: 60min focused study (choose ONE skill/subject), 15 pages reading (related books), 10min journaling (consolidate learnings), 5min meditation (pre-study focus), social media <90min, wake 7am. Build foundation.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "Increase study to 90min. Implement active recall (no passive reading—test yourself constantly). Meditation before study sharpens focus. Notice learning velocity increasing.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 3,
+      "focus": "Study 2 hours daily. Add spaced repetition (review Day 1 notes today, Day 7 notes tomorrow). Reading 20 pages. Journal connects concepts across sources. Mental models forming.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Thanksgiving week: study through chaos. Others coast, you compound. 2+ hours daily (non-negotiable). This discipline separates learners from dabblers.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 5,
+      "focus": "December begins: darkest month = deepest focus. Study 2.5 hours (peak cognitive hours: 6-9am post-wake). Reading 25 pages. You're retaining everything now.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Mid-winter mastery emerging. Notice expertise developing in chosen subject. Meditation 10min improves information processing. Social media <60min (time reallocated to learning).",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "Holiday chaos (Christmas/New Year): everyone parties, you study. 2+ hours daily through Dec 25-Jan 1. This commitment defines transformation. Knowledge compounds during others' breaks.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 8,
+      "focus": "January: they're starting resolutions. You have 130+ hours focused study completed, 1,200+ pages read. Expertise visible. People asking YOU questions now.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Final intensity: 3 hours study daily, 30 pages reading, 15min journaling (synthesis of all learnings), 15min meditation, social media <30min, wake 6am. Maximum learning velocity.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: 150+ hours focused study, 15+ books read, 66 journal entries documenting journey from novice to near-expert. Compare knowledge Dec 1 vs now: unrecognizable. Spring launches your expertise.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll have completed 150+ hours of focused study (equivalent to full college course), read 15-20 books, written 66 journal entries consolidating knowledge, meditated 660+ minutes for improved focus, reduced social media by 70%, and achieved measurable expertise in chosen subject. NooLife Winter Arc study finishers report 4.2x knowledge retention vs. previous learning attempts and 78% continue intensive study beyond March 1.",
+  "commonPitfalls": [
+    "Studying too many subjects (choose ONE for 66 days—depth beats breadth)",
+    "Passive consumption (reading without active recall = entertainment, not learning)",
+    "Not scheduling study time (2+ hours daily requires morning commitment)",
+    "Skipping journaling (reflection consolidates knowledge—don't skip this)",
+    "Linear reading (spaced repetition + active recall required for retention)",
+    "Social media 'research' rabbit holes (focus time is sacred—no distractions)",
+    "Quitting during holiday weeks (Dec 24-Jan 1 study time separates amateurs from experts)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily study hours with precision timer and cumulative hour counter. Book reading tracked separately (see 66-day reading streak and page count). Journal completion logged daily. Meditation timer preps focus (guided 5/10/15min sessions in Assets). Social media limits enforced. Your Wisdom rating skyrockets daily—visual proof of knowledge compound. GTA-style scholar visuals: character surrounded by books, studying in winter isolation, becoming expert.",
+  "testimonial": "\"Failed online courses for 2 years, couldn't retain anything. NooLife's Winter Arc study plan changed everything. Day 66: 160 hours studying data science, read 18 technical books, meditation improved focus 10x. Got promoted. Learning is my superpower now.\" - Jessica M.",
+  "ctaAngle": "Build expertise with Winter Arc's focused study tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/winter_arc.webp",
+  "tags": [
+    "winter arc",
+    "study plan",
+    "learning",
+    "knowledge",
+    "productivity",
+    "reading challenge"
+  ],
+  "metaKeywords": [
+    "winter arc study plan",
+    "winter learning challenge",
+    "focused study",
+    "build expertise",
+    "winter productivity"
+  ]
+}

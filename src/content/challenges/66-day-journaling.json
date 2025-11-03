@@ -1,0 +1,89 @@
+{
+  "challengeName": "66-Day Journaling Challenge",
+  "challengeSlug": "66-day-journaling",
+  "duration": 66,
+  "goal": "Journaling Habit",
+  "goalSlug": "journaling",
+  "includedHabits": ["journaling", "meditation", "reading"],
+  "targetAudience": "Build a daily journaling practice for self-awareness and emotional clarity. Perfect for overthinkers and those seeking inner peace.",
+  "scientificRationale": "Expressive writing about thoughts and emotions reduces stress, improves immune function, and enhances psychological well-being. Research shows that 15-20 minutes of journaling 3-4x/week produces measurable mental health benefits. By journaling daily for 66 days, you create a permanent self-reflection habit that improves emotional regulation, decision-making, and self-awareness. This isn't just writing—it's cognitive behavioral therapy in journal form.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "5 minutes nightly. Simple prompts: 3 gratitudes, biggest win, biggest challenge. Track completion, not quality.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 2,
+      "focus": "Increase to 10 minutes. Experiment with free-form writing (stream of consciousness). Notice reduced anxiety.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 3,
+      "focus": "Establish routine (morning reflection or evening review). 10-15 min daily. Thoughts flow more easily.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Add weekly review (Sundays: reflect on week's themes, patterns). Self-awareness measurably improving.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 5,
+      "focus": "Pair with meditation (10 min) before journaling for deeper clarity. Insights come faster.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 6,
+      "focus": "Journaling feels automatic. You look forward to it. Emotional processing happens through writing, not rumination.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "Experiment with formats (bullet journal, morning pages, gratitude-only). Find what resonates.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Review past entries. Notice personal growth. Patterns you couldn't see in real-time become obvious.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Journaling is non-negotiable self-care. Missing a day feels uncomfortable. It's your mental reset button.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: Read Day 1 entry vs Day 66. Notice how much you've evolved. Journaling is permanent now.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll journal 10-20 minutes daily automatically, experience measurably reduced anxiety and stress, improved emotional regulation, enhanced self-awareness, and better decision-making clarity. NooLife journaling finishers report an average 64% reduction in anxiety, 58% improvement in emotional clarity, and 91% continue journaling beyond 66 days.",
+  "commonPitfalls": [
+    "Perfectionism ('my thoughts aren't important enough')—write anyway",
+    "Not having consistent time/place (anchor journaling to existing routine)",
+    "Judging yourself for 'bad' entries (there's no such thing)",
+    "Only journaling when stressed (daily practice prevents overwhelm)",
+    "Not tracking streak (accountability prevents skipping)",
+    "Evening tiredness making it feel like chore (try morning journaling instead)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife has built-in Journey screen with 4 daily journal cards: mood tracker, completed tasks, visual journal (photo/video), text journal. Track journaling consistency with streak counters. Your Wisdom, Confidence, and Focus ratings improve daily. GTA-style reflective visuals make every entry feel like character development.",
+  "testimonial": "\"Never journaled before. NooLife's 66-day challenge made it easy with daily prompts. Day 66: 10 min nightly is my mental reset. Anxiety down 70%. I understand myself now.\" - Priya N.",
+  "ctaAngle": "Build a daily journaling habit with prompts and tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "journaling challenge",
+    "66 day journaling",
+    "self reflection",
+    "mental health",
+    "gratitude journal"
+  ],
+  "metaKeywords": [
+    "66 day journaling challenge",
+    "daily journaling habit",
+    "journaling benefits",
+    "how to start journaling",
+    "journaling for mental health"
+  ]
+}

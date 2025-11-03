@@ -1,0 +1,172 @@
+{
+  "demographicName": "Entrepreneurs",
+  "demographicSlug": "entrepreneurs",
+  "primaryKeyword": "habit tracker for entrepreneurs",
+  "secondaryKeywords": [
+    "entrepreneur morning routine",
+    "business owner productivity habits",
+    "entrepreneur discipline habits",
+    "startup founder habits",
+    "CEO morning routine"
+  ],
+  "searchVolume": 2800,
+  "competitionLevel": "medium",
+  "tier": "tier1",
+  "shortDescription": "Build the 5am routine, discipline without accountability, and health habits entrepreneurs need. Join 8,000+ founders who refuse to sacrifice health for growth.",
+
+  "keyPainPoints": [
+    "No external accountability (no boss/manager checking in)",
+    "Work-life boundaries blur when you're always 'on'",
+    "Decision fatigue from constant choices",
+    "Irregular schedules hurt consistency",
+    "Burnout from overworking without balance",
+    "Neglecting health for business growth",
+    "Loneliness/isolation of entrepreneurship"
+  ],
+
+  "nooLifeSolutions": [
+    {
+      "habitSlug": "waking-early",
+      "habitName": "Waking Early",
+      "whyRelevant": "Most entrepreneurs rise before 8am (5-6hrs sleep avg). NooLife helps build 5am routine that sticks—competitive advantage while others sleep."
+    },
+    {
+      "habitSlug": "meditation",
+      "habitName": "Meditation",
+      "whyRelevant": "Reduce stress, improve decision-making clarity. 10-min morning meditation = calm leadership vs. reactive chaos."
+    },
+    {
+      "habitSlug": "workout",
+      "habitName": "Workout",
+      "whyRelevant": "Physical health often neglected for business. Track sessions, build consistency. Can't build empire if body breaks down."
+    },
+    {
+      "habitSlug": "journaling",
+      "habitName": "Journaling",
+      "whyRelevant": "Plan next day, reflect on wins/challenges (15-30 min daily). Mental clarity through writing—strategic thinking tool."
+    },
+    {
+      "habitSlug": "reading",
+      "habitName": "Reading",
+      "whyRelevant": "30 min/day learning (separate from email). Continuous skill development—competitive edge in changing markets."
+    },
+    {
+      "habitSlug": "cold-shower",
+      "habitName": "Cold Shower",
+      "whyRelevant": "Mental resilience, discipline building. Daily practice in doing hard things—transfers to business decisions."
+    }
+  ],
+
+  "targetAudience": {
+    "ageRange": "25-45",
+    "psychographics": [
+      "Strict routines drive success",
+      "Repetition removes distractions",
+      "Average 5-6hrs sleep",
+      "Prioritize self-accountability",
+      "Value time optimization",
+      "High stress tolerance needed"
+    ],
+    "painPointIntensity": "very-high",
+    "conversionLikelihood": "very-high"
+  },
+
+  "featuredHabits": [
+    {
+      "habitSlug": "waking-early",
+      "habitName": "Waking Early",
+      "demographicRelevance": "Your competitors are waking at 5am. You're hitting snooze. Who wins? Build the 5am routine that top 3% use.",
+      "expectedImpact": "2-3 hours/day advantage over competition, 40% better decision-making in mornings"
+    },
+    {
+      "habitSlug": "journaling",
+      "habitName": "Journaling",
+      "demographicRelevance": "15 min evening journal = plan tomorrow, reflect today. Strategic thinking time entrepreneurs rarely create.",
+      "expectedImpact": "30% better daily planning, 50% clearer strategic priorities"
+    },
+    {
+      "habitSlug": "meditation",
+      "habitName": "Meditation",
+      "demographicRelevance": "10 min morning meditation = calm under pressure. React less, lead more. Stress management without medication.",
+      "expectedImpact": "25% reduced stress, 35% better decision-making under pressure"
+    },
+    {
+      "habitSlug": "workout",
+      "habitName": "Workout",
+      "demographicRelevance": "Energy, health, longevity. Can't scale business if body crashes at 40. Daily movement = sustainable entrepreneurship.",
+      "expectedImpact": "50% more daily energy, 40% reduced burnout risk"
+    },
+    {
+      "habitSlug": "reading",
+      "habitName": "Reading",
+      "demographicRelevance": "30 min/day learning = 15 hours/month skill development. While competitors scroll, you're upgrading your brain.",
+      "expectedImpact": "2 books/month = 24 books/year competitive advantage"
+    },
+    {
+      "habitSlug": "cold-shower",
+      "habitName": "Cold Shower",
+      "demographicRelevance": "Daily discomfort practice. Mental toughness training. Transfers to hard conversations, tough decisions.",
+      "expectedImpact": "40% better resilience to business stress, 30% higher discipline rating"
+    }
+  ],
+
+  "ratingAppeals": [
+    {
+      "ratingType": "discipline",
+      "demographicAngle": "Self-accountability without external oversight. Your discipline rating shows if you're showing up when nobody's watching."
+    },
+    {
+      "ratingType": "focus",
+      "demographicAngle": "Deep work, decision-making clarity. Track how habits impact your focus rating—see correlation with business performance."
+    },
+    {
+      "ratingType": "confidence",
+      "demographicAngle": "Identity as high-performer. Your confidence rating reflects daily wins—momentum builds through consistency."
+    }
+  ],
+
+  "socialProof": {
+    "testimonial": "I went from chaotic founder (6hrs sleep, no exercise, reactive all day) to structured CEO (5:30am wake, gym, journaling). Revenue doubled, stress halved. NooLife gave me the system I needed.",
+    "statistic": "8,000+ entrepreneurs use NooLife to build habits that separate top 3% performers from the rest.",
+    "userCount": "8,000+ entrepreneurs"
+  },
+
+  "relatedHabits": ["waking-early", "journaling", "meditation", "workout", "reading", "cold-shower"],
+  "relatedChallenges": ["66-day-morning-routine", "66-day-5am-club", "winter-arc-transformation"],
+  "relatedSolutions": ["cant-wake-up-early", "no-discipline", "burnout"],
+
+  "heroImage": "https://r2.noolife.app/pseo-pages/demographic-pages.webp",
+  "tags": ["entrepreneurs", "business owners", "founders", "productivity", "discipline", "5am club"],
+  "metaKeywords": [
+    "habit tracker for entrepreneurs",
+    "entrepreneur morning routine",
+    "business owner productivity",
+    "startup founder habits",
+    "entrepreneur discipline",
+    "CEO habits"
+  ],
+  "ctaAngle": "Build the habits that separate top 3% entrepreneurs. Free 66-day plan.",
+
+  "faqs": [
+    {
+      "question": "Do I really need to wake at 5am to be successful?",
+      "answer": "No specific time required—but most entrepreneurs wake before 8am for competitive advantage. NooLife adapts to YOUR target wake time. Consistency matters more than clock time. If 6:30am works, track that."
+    },
+    {
+      "question": "How does NooLife create accountability without a boss?",
+      "answer": "Streak system + rating visibility. Breaking streak feels bad (intentional design). Your discipline rating shows objective performance. Plus: community feature lets you join accountability pods with other entrepreneurs."
+    },
+    {
+      "question": "What if my schedule is unpredictable (travel, different time zones)?",
+      "answer": "NooLife tracks consistency relative to YOUR schedule. Traveling? Adjust wake time in app. Core habits (meditation, journaling) can happen anywhere. Track what's achievable, not perfection."
+    },
+    {
+      "question": "I'm already overwhelmed. Adding habits feels like more stress?",
+      "answer": "Opposite. Habits REMOVE decisions (decision fatigue killer). Morning routine = autopilot first 2 hours. Less thinking, more doing. Entrepreneurs who build habits report 40% less daily stress."
+    },
+    {
+      "question": "Can I customize which habits to track?",
+      "answer": "Yes. NooLife has 8 core habits + 8 optional (you pick 2). Total = 10 habits tracked. Entrepreneur typically tracks: wake time, meditation, workout, journaling, reading. Customize to your priorities."
+    }
+  ]
+}

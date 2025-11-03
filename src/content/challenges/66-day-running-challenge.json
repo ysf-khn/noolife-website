@@ -1,0 +1,200 @@
+{
+  "challengeName": "66-Day Running Challenge",
+  "challengeSlug": "66-day-running-challenge",
+  "duration": 66,
+  "goal": "Running Habit",
+  "goalSlug": "running",
+  "includedHabits": ["running", "workout", "water-intake"],
+  "targetAudience": "Go from couch to 5K in 66 days. Perfect for non-runners ready to build endurance and cardiovascular health.",
+  "scientificRationale": "Running is the most accessible cardio: no equipment, no gym, just you and the road. Research shows that progressive running programs over 8-10 weeks (56-70 days) safely build aerobic capacity from zero to 5K (3.1 miles). By running consistently for 66 days using walk/run intervals that gradually increase, you build cardiovascular fitness, mental toughness, and running habit automation. This is proven Couch-to-5K methodology.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Walk/run intervals 3x: 1 min run, 2 min walk, repeat 6x (15-20 min total). Track every session.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 2,
+      "focus": "Increase to 2 min run, 1 min walk intervals. Running 3x weekly. Notice breathing improving.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 3,
+      "focus": "3 min run, 1 min walk. Running 4x. First continuous 10-min run achieved. Confidence building.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Continuous 15-min runs 3x. Add 4th shorter run. Cardiovascular fitness measurably improving.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "20-min continuous runs. Running feels automatic. Recovery faster. Endurance building rapidly.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "25-min runs 3x. First 5K attempt (may need walk breaks—that's okay). Running is now identity.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "Continuous 30-min runs. 5K without walking. Notice mental clarity, stress relief from running.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Running 4-5x weekly. 5K in under 35 min. Experiment with pace, distance goals. You're a runner now.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Run in all weather (rain, cold, heat). True runners run regardless. Discipline peaks.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: 5K in under 30 min. Compare Day 1 (couldn't run 1 min) vs now. Running is permanent habit.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll run 5K (3.1 miles) continuously, complete 40-50+ runs, experience measurably improved cardiovascular health, reduced stress, better sleep, and genuinely identify as a runner. NooLife running finishers report an average 5K time of 28-32 min and 96% continue running beyond 66 days.",
+  "commonPitfalls": [
+    "Starting too fast (stick to walk/run intervals or you'll get injured)",
+    "Skipping rest days (recovery is when fitness builds—run 3-4x weekly max initially)",
+    "Wrong shoes (invest in proper running shoes to prevent shin splints)",
+    "Not tracking progress (seeing times improve motivates continuation)",
+    "Comparing to experienced runners (focus on your own baseline)",
+    "Weather excuses (rain/cold/heat—run anyway, that's what makes you a runner)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks running frequency, distance, time. Log every run with duration and distance. Your Strength and Discipline ratings climb daily. GTA-style athlete runner visuals make every logged run feel like endurance building. See your 66-day running heatmap and distance progression—proof you're a runner.",
+  "testimonial": "\"Couldn't run 1 minute without stopping. NooLife's 66-day running plan changed everything. Day 66: ran 5K in 29 minutes. Running is my meditation now. Best shape of my life.\" - Elena C.",
+  "ctaAngle": "Go from couch to 5K with progressive running tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "running challenge",
+    "couch to 5k",
+    "66 day running",
+    "running habit",
+    "cardio challenge"
+  ],
+  "metaKeywords": [
+    "66 day running challenge",
+    "couch to 5k",
+    "running for beginners",
+    "how to start running",
+    "running habit tracker"
+  ],
+  "phaseBreakdowns": [
+    {
+      "phase": 1,
+      "phaseLabel": "Foundation",
+      "dayRange": "Days 1-21",
+      "phaseGoal": "Build base aerobic fitness, master walk/run intervals, prevent injury",
+      "keyMilestones": [
+        "Complete first 2 weeks without injury",
+        "Run continuously for 5 minutes without stopping",
+        "Establish 3x/week running routine",
+        "Notice breathing and recovery improving"
+      ],
+      "expectedProgress": "Expect struggle—breathing heavy, legs burning, feeling slow. This is your body adapting. By day 21, you'll run 10-15 min continuously, breathing feels easier, and you'll recover faster between runs. Aerobic base is forming."
+    },
+    {
+      "phase": 2,
+      "phaseLabel": "Acceleration",
+      "dayRange": "Days 22-45",
+      "phaseGoal": "Rapid endurance gains, continuous 5K capability, lock in runner identity",
+      "keyMilestones": [
+        "Run 20+ minutes continuously",
+        "Complete first 5K (with or without walk breaks)",
+        "Running 4-5x weekly feels natural",
+        "Identity shift: you now call yourself 'a runner'"
+      ],
+      "expectedProgress": "This is where transformation accelerates. You'll crave runs on rest days. Cardiovascular fitness jumps dramatically. Your Strength and Discipline ratings spike. Running becomes non-negotiable—skipping feels wrong. You're not 'trying to run,' you ARE a runner."
+    },
+    {
+      "phase": 3,
+      "phaseLabel": "Mastery",
+      "dayRange": "Days 46-66",
+      "phaseGoal": "Run 5K continuously under 30 min, cement permanent runner identity, plan next goals",
+      "keyMilestones": [
+        "Run 5K continuously in under 30 minutes",
+        "Complete 40-50+ total runs",
+        "Run in all weather conditions (no excuses)",
+        "Natural desire to sign up for races or train for 10K"
+      ],
+      "expectedProgress": "Full transformation locked in. You're now a runner—not aspirational, actual. You run in rain, cold, heat. Compare Day 1 (couldn't run 1 min) vs Day 66 (5K continuous). You'll start planning half marathons or speed goals because running is core identity."
+    }
+  ],
+  "transformationMetrics": [
+    {
+      "metric": "Continuous Running Ability",
+      "baseline": "Can't run 1 minute without stopping",
+      "expected": "Run 5K (3.1 miles) continuously in 28-32 min"
+    },
+    {
+      "metric": "Total Runs Completed",
+      "baseline": "0 runs ever (or years since last run)",
+      "expected": "40-50+ runs in 66 days"
+    },
+    {
+      "metric": "Cardiovascular Fitness",
+      "baseline": "Low VO2 max, winded climbing stairs",
+      "expected": "Measurably improved aerobic capacity, easy daily activities"
+    },
+    {
+      "metric": "Strength Rating",
+      "baseline": "32 / 100",
+      "expected": "72 / 100"
+    }
+  ],
+  "customizationOptions": [
+    {
+      "area": "Running Frequency",
+      "options": [
+        "Starter (3x/week): Recommended for true beginners, minimizes injury risk",
+        "Standard (4x/week): Balanced approach, faster progress while allowing recovery",
+        "Aggressive (5-6x/week): Maximum gains, for those with prior cardio base"
+      ]
+    },
+    {
+      "area": "Goal Focus",
+      "options": [
+        "Distance: Focus on completing 5K, pace doesn't matter (most common)",
+        "Speed: Aim for sub-30 min 5K, incorporate interval training",
+        "Consistency: Just build the running habit, distance/speed secondary"
+      ]
+    },
+    {
+      "area": "Running Environment",
+      "options": [
+        "Outdoor Running: Parks, trails, streets (best for building toughness)",
+        "Treadmill: Gym or home treadmill (easier on joints, controlled pace)",
+        "Mixed: Combination based on weather and preference"
+      ]
+    }
+  ],
+  "challengeFAQs": [
+    {
+      "question": "I've never run before. Can I really go from couch to 5K in 66 days?",
+      "answer": "Yes. NooLife's plan uses proven Couch-to-5K methodology: gradual walk/run intervals that build aerobic capacity safely. Week 1 is mostly walking with short run bursts. By Week 6-8, you're running continuously. Thousands have done this. The key is following the progressive plan and not skipping ahead."
+    },
+    {
+      "question": "What if I can't complete a run?",
+      "answer": "Walk. Seriously. If you're supposed to run 10 min but can only do 5, walk the rest. Log it as completed. Showing up matters more than perfection. Your body is adapting. Tomorrow's run will be slightly easier. NooLife tracks your progression—every run builds fitness even if it felt hard."
+    },
+    {
+      "question": "How do I avoid injury?",
+      "answer": "1) Invest in proper running shoes (visit running store for fitting). 2) Don't skip rest days (run 3-4x weekly max initially). 3) Follow the plan (don't jump ahead to longer runs). 4) Listen to pain (sharp pain = stop, muscle soreness = normal). 5) Stretch and hydrate. Most injuries come from doing too much too soon."
+    },
+    {
+      "question": "What's a realistic 5K time for a beginner?",
+      "answer": "NooLife finishers average 28-32 min by Day 66. Elite: sub-25 min. Beginner: 30-40 min. Walking: 45-60 min. Your goal isn't to win races—it's to run 5K continuously without stopping. Speed comes with more training. Finishing > time."
+    },
+    {
+      "question": "Should I run every day?",
+      "answer": "No. Running is high-impact—your body needs recovery. Start with 3x/week (Mon/Wed/Fri). Increase to 4x after Week 4-6. Elite runners do 5-6x, but that's after months/years of base building. Rest days prevent injury and allow fitness adaptations. NooLife's plan builds in proper recovery."
+    }
+  ]
+}

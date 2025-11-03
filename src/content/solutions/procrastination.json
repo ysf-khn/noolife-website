@@ -1,0 +1,97 @@
+{
+  "problem": "Procrastinate on Everything",
+  "problemSlug": "procrastination",
+  "commonSymptoms": [
+    "Scrolling phone for 'just 5 minutes' that turns into 2 hours",
+    "Knowing exactly what you need to do but doing everything except that",
+    "Feeling guilty while procrastinating but still can't stop",
+    "Starting tasks at the last minute when panic kicks in",
+    "Cycle of shame → procrastinate more → more shame",
+    "To-do list keeps growing while productivity stays flat"
+  ],
+  "rootCauses": [
+    "Dopamine system prioritizes instant gratification over delayed rewards",
+    "Task feels overwhelming (lack of clear first step)",
+    "Perfectionism: fear of doing it 'wrong' prevents starting",
+    "No accountability system (brain knows you can always 'do it later')",
+    "Executive function deficit (decision fatigue, unclear priorities)",
+    "Emotional avoidance (task triggers anxiety, boredom, or inadequacy feelings)"
+  ],
+  "scientificExplanation": "Procrastination isn't laziness—it's emotional regulation failure. Research from Dr. Tim Pychyl (Carleton University) shows procrastinators prioritize mood repair over goal pursuit. Your brain chooses short-term mood improvement (scrolling, Netflix) over long-term goal progress (work, exercise). The prefrontal cortex (planning) loses to the limbic system (immediate pleasure). Willpower depletes throughout the day, making late-day procrastination worse. Breaking the cycle requires external structure, not more motivation.",
+  "failedSolutions": [
+    "Trying to 'just focus' or 'be more disciplined' (willpower alone)",
+    "Productivity apps with overwhelming features you never use",
+    "Motivation videos that work for 20 minutes then wear off",
+    "Beating yourself up for procrastinating (shame increases avoidance)",
+    "Complex time-blocking systems that require more discipline than you have"
+  ],
+  "whyTheyFail": "These approaches ignore neuroscience. Willpower is finite and depletes. Motivation is unreliable and fluctuates. Shame triggers more avoidance (your brain escapes discomfort by procrastinating more). Complex systems require executive function—the exact cognitive resource procrastination depletes. You need external structure that works when willpower is zero.",
+  "actualSolution": "Replace motivation with automation. NooLife breaks 66-day goals into 450+ micro-tasks (<5 min each). No decision fatigue—app tells you exactly what to do today. Complete minimum 2 tasks/day to maintain streak (low barrier = high compliance). Task completion = dopamine hit = momentum building. Progressive difficulty increase as habits form. Identity shift: You become 'someone who takes action,' not 'someone trying to stop procrastinating.'",
+  "nooLifeApproach": "NooLife eliminates the 3 procrastination triggers: 1) Overwhelming tasks → App breaks everything into <5min micro-tasks. 2) No accountability → Streak system + Discipline rating show cumulative progress. 3) Dopamine deficit → GTA-style task cards + rating increases provide instant gratification for real work. You're not fighting procrastination—you're building action-taking identity. 450 tasks over 66 days = automaticity without willpower.",
+  "expectedTimeline": "Week 1-2: Tasks feel effortful, willpower required. BUT: Streak building creates momentum. Week 3-4: Completing 2 tasks/day becomes routine. Procrastination urges still present but easier to override. Week 5-6: Identity shift starts ('I'm someone who takes action'). Tasks feel automatic. Week 8-10: Procrastination significantly reduced. Your Discipline rating proves transformation is real, not just feeling different.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Commit to 2 tasks/day minimum. Track everything. Notice procrastination patterns (when? what triggers?)",
+      "expectedProgress": "Hardest week. Procrastination habits still strong. Expect resistance. BUT: Streak starts, momentum building."
+    },
+    {
+      "week": 3,
+      "focus": "Task completion becoming routine. Procrastination urges weaker. Discipline rating climbing measurably.",
+      "expectedProgress": "Action-taking feels less effortful. Phone scrolling decreasing naturally as tasks provide dopamine."
+    },
+    {
+      "week": 6,
+      "focus": "Identity shift solidifying. You now see yourself as 'someone who takes action' (not aspirational, actual).",
+      "expectedProgress": "Tasks feel automatic. Procrastination only during high-stress periods. Discipline transfers to work, relationships."
+    },
+    {
+      "week": 10,
+      "focus": "Habit automaticity reached. Procrastination 70-80% reduced from baseline. Action-taking is core identity.",
+      "expectedProgress": "Compare Day 1 task avoidance vs Day 66 automatic execution. You're operating at different level."
+    }
+  ],
+  "relatedHabits": ["waking-early", "workout", "meditation", "studying"],
+  "relatedChallenges": ["66-day-discipline", "66-day-morning-routine"],
+  "relatedProblems": ["no-motivation", "cant-focus", "phone-addiction"],
+  "testimonial": "\"Was the king of procrastination. Started tasks at 11pm night before deadline. NooLife's 2-tasks-per-day system broke the pattern. Day 66: I tackle hard tasks in morning automatically. My Discipline rating went 28 → 76. Life-changing.\" - Jordan S.",
+  "ctaAngle": "Stop procrastinating with science-backed task system. Free 3-day trial.",
+  "trustSignal": "Join 50,000+ users who've beaten procrastination with NooLife's accountability system",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": [
+    "procrastination",
+    "productivity",
+    "discipline",
+    "task management",
+    "habit formation"
+  ],
+  "metaKeywords": [
+    "how to stop procrastinating",
+    "procrastination solution",
+    "beat procrastination",
+    "procrastination help",
+    "stop procrastinating app"
+  ],
+  "faqs": [
+    {
+      "question": "Why do I procrastinate even when I know it's hurting me?",
+      "answer": "Your brain prioritizes short-term mood repair over long-term goals (neuroscience, not character flaw). When task triggers anxiety/boredom, brain seeks immediate relief (phone, Netflix). Breaking cycle requires external structure (NooLife's task system) that works when willpower is zero."
+    },
+    {
+      "question": "How does completing 2 tasks/day fix chronic procrastination?",
+      "answer": "Micro-tasks (5min each) eliminate overwhelm—procrastination's #1 trigger. Completing tasks = dopamine hit = momentum building. After 66 days of 2-tasks-minimum, action-taking becomes automated identity. You're not 'trying not to procrastinate,' you're 'someone who takes action.' Identity shift = permanent change."
+    },
+    {
+      "question": "What if I'm too overwhelmed to even start 2 tasks?",
+      "answer": "NooLife's tasks are <5min micro-actions ('Drink 500ml water,' 'Meditate 5min,' '10 pushups'). If you can scroll phone for 5min, you can do 1 task. Start with absolute easiest task. Momentum builds. Day 1 feels impossible, Day 30 feels automatic."
+    },
+    {
+      "question": "I've tried habit trackers before. Why is this different?",
+      "answer": "Most trackers: empty checkboxes, no structure, streak resets to zero. NooLife: personalized 450-task plan, tells you exactly what to do daily, maintains progress even if you miss a day (2-tasks-minimum system), Discipline rating shows measurable improvement. Structure beats willpower."
+    },
+    {
+      "question": "How long before I see results?",
+      "answer": "Week 1-2: Streak momentum building (motivation boost). Week 3-4: Tasks feel easier, procrastination urges decreasing. Week 6-8: Identity shift ('I take action' becomes core identity). Week 10+: Procrastination reduced 70-80%, automaticity reached. Compare your Day 1 vs Day 66 Discipline rating—data proves transformation."
+    }
+  ]
+}

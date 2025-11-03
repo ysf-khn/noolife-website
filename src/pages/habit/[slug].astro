@@ -1,0 +1,58 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import HabitTemplate from '../../components/templates/HabitTemplate.astro';
+
+export const getStaticPaths = (async () => {
+  const habits = await getCollection('habits');
+
+  return habits.map(habit => ({
+    params: { slug: habit.data.habitSlug },
+    props: { habit },
+  }));
+}) satisfies GetStaticPaths;
+
+const { habit } = Astro.props;
+const habitData = habit.data;
+
+// Generate SEO title and description
+const seoTitle = `${habitData.habitName} Habit: Build it in 66 Days | NooLife`;
+const seoDescription = `${habitData.shortDescription}. Track ${habitData.habitName.toLowerCase()} with NooLife's science-backed 66-day habit plan. ${habitData.scientificBenefits[0]}`;
+
+// Generate structured data for habit page
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": `How to Build a ${habitData.habitName} Habit`,
+  "description": habitData.shortDescription,
+  "totalTime": `P${habitData.typicalDaysToAutomate.split('-')[0]}D`,
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Understand the Benefits",
+      "text": habitData.scientificBenefits.join('. ')
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Follow Progressive Plan",
+      "text": habitData.progressionPlan
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Track with NooLife",
+      "text": habitData.nooLifeFeatureHighlight
+    }
+  ]
+};
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={habitData.heroImage}
+  type="website"
+  jsonLd={structuredData}
+>
+  <HabitTemplate habit={habitData} />
+</Layout>

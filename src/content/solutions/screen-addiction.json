@@ -1,0 +1,104 @@
+{
+  "problem": "Screen Addiction",
+  "problemSlug": "screen-addiction",
+  "commonSymptoms": [
+    "You're on screens (phone, laptop, TV) 10+ hours daily without realizing",
+    "You check your phone within 60 seconds of waking up",
+    "You can't sit through a meal or conversation without checking screens",
+    "Your eyes hurt, sleep is terrible, and focus is shot but you keep scrolling",
+    "You've tried digital detoxes but relapse within days",
+    "Real-world activities feel boring compared to screen stimulation"
+  ],
+  "rootCauses": [
+    "**Dopamine desensitization**: Constant novelty from screens crashes your baseline, making everything else boring",
+    "**Infinite content loops**: Autoplay, infinite scroll, and algorithms ensure you never run out of stimulation",
+    "**Multi-platform dependency**: Not just phone—it's laptop, TV, tablet, creating 24/7 screen exposure",
+    "**FOMO and social pressure**: Fear of missing out on messages, trends, news keeps you checking",
+    "**Boredom intolerance**: Your brain lost the ability to tolerate unstimulated moments",
+    "**Sleep cycle destruction**: Blue light + late-night screens wreck melatonin, creating exhaustion that increases dependency"
+  ],
+  "scientificExplanation": "Research from Stanford's Neuroscience Lab shows screen addiction is a **dopamine regulation disorder**. Screens provide **variable interval reinforcement**—you never know when the next interesting thing appears, so your brain keeps checking (same mechanism as slot machines). Over time, this creates **baseline dopamine depletion**: your resting dopamine drops so low that real-world activities (conversations, nature, reading) feel unrewarding. Additionally, **blue light exposure** suppresses melatonin production, destroying sleep quality and creating exhaustion—which makes you seek easy stimulation (screens) instead of effortful activities. The solution is **progressive dopamine rebalancing**: reduce screen time gradually while building replacement activities, fix sleep hygiene, and create friction barriers between you and devices.",
+  "failedSolutions": [
+    "Digital detox weekends that end Monday morning",
+    "Setting screen time limits you immediately override",
+    "Deleting apps but reinstalling them days later",
+    "Putting your phone in another room but retrieving it constantly",
+    "Promising yourself \"just 30 minutes\" that becomes 3 hours"
+  ],
+  "whyTheyFail": "These fail because they're **willpower-based against automation**. Your brain has neural pathways for screen-checking that fire automatically when bored, anxious, or idle. Screen time limits are friction you bypass in 2 seconds. App deletion doesn't address the dopamine void. Moving your phone works if you have replacement activities—otherwise you just walk to get it. Time promises fail because screens hijack your time perception. The real fix is **systematic replacement + accountability**: reduce screen time progressively (not cold turkey), fill the void with activities that provide sustainable dopamine (workouts, reading, social interaction), and create visible consequences for excessive use (broken streak, dropped ratings).",
+  "actualSolution": "Science-backed screen addiction recovery has four components: (1) **Track total screen time daily** to create awareness—most people underestimate by 50%+. (2) **Set progressive reduction targets**: If you're at 10 hours/day, aim for 8 hours Week 1, 6 hours Week 3, 4 hours Week 6. (3) **Create phone-free windows**: Morning first hour, meals, before bed. Gradually expand. (4) **Build replacement activities**: When you reach for phone, have immediate alternatives (pushups, reading, calling a friend). (5) **Fix sleep**: No screens 60 mins before bed, blue light blockers, consistent sleep time. Over 66 days, dopamine baseline recovers and real-world activities become interesting again.",
+  "nooLifeApproach": "NooLife treats screen addiction as **dopamine system repair through competing habit building**. You track daily screen time as one of your core metrics—it's front-and-center in the app. The system creates **phone-free zones** through prescribed habits: morning workout (can't be on phone), meditation (phone-free), reading (screen-free alternative), cold showers (physical engagement). Your **Focus rating** drops when screen time exceeds targets, creating identity pressure. Additionally, building your streak requires completing offline tasks—you can't maintain momentum while scrolling 8 hours daily. By Week 6-8, your life is so full of engaging activities (workouts, reading, journaling, meditation) that screens become boring by comparison. You've restored dopamine balance.",
+  "expectedTimeline": "Weeks 1-2: active withdrawal, cravings. Weeks 3-4: dopamine rebalancing begins. Weeks 6-8: real-world interesting again. Weeks 10+: screens feel boring/draining.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Baseline Tracking + First Phone-Free Windows",
+      "expectedProgress": "Track current screen time honestly (likely 8-12 hrs/day). Set first phone-free hour: morning after waking. You'll feel strong cravings and check constantly—that's the addiction revealing itself. Install friction: delete 2-3 most addictive apps, turn off non-essential notifications. Screen time target: reduce by 15%. Focus rating shows current baseline (probably 40-50)."
+    },
+    {
+      "week": 3,
+      "focus": "Dopamine Replacement + Expanded Boundaries",
+      "expectedProgress": "Phone-free windows: first hour morning, during meals, last hour before bed (3hrs total). Replacement habits building: morning workout, reading 10 pages, 5-min meditation. Screen time down 30-40% from baseline. You notice: books becoming interesting again, conversations feel engaging. Cravings reduce. Focus rating: 55-65."
+    },
+    {
+      "week": 6,
+      "focus": "Dopamine Baseline Recovery + Interest Restoration",
+      "expectedProgress": "Screen time 4-5 hrs/day (down from 10+), mostly utilitarian (work, messages). Phone-free for 6+ hours daily. Your brain has rebalanced—nature walks, reading, workouts feel rewarding again. You notice how drained you feel after excessive scrolling, so you self-limit. Focus rating: 70-80. Friends comment you're more present."
+    },
+    {
+      "week": 10,
+      "focus": "Permanent Behavior Change + Screen Aversion",
+      "expectedProgress": "Screen time 2-3 hrs/day, intentional use only. You check phone for specific purposes (messages, directions) not compulsive scrolling. Infinite scroll feels gross—you can feel the dopamine manipulation. Your life is full: workouts, reading, meditation, social time, hobbies. Screens are tools, not entertainment. Focus rating: 85+. You've become someone who uses screens, not someone screens use."
+    }
+  ],
+  "relatedHabits": ["meditation", "reading", "workout", "social-media-limit"],
+  "relatedChallenges": ["winter-arc", "no-fap-challenge"],
+  "relatedProblems": [
+    "phone-addiction",
+    "cant-quit-social-media",
+    "cant-focus"
+  ],
+  "testimonial": "I was on screens 12 hours/day—phone, laptop, TV. Couldn't focus, sleep was destroyed, life felt empty. NooLife forced me to track the number and build phone-free habits. By Week 8, I'm at 3 hours/day, sleep is perfect, and I'm reading 30 pages daily. Focus rating: 38 → 81.",
+  "ctaAngle": "Stop letting screens control your dopamine. Track usage, build offline habits, and restore your brain's reward system.",
+  "trustSignal": "50,000+ users reduced screen time by 60%+ and restored dopamine balance using NooLife's replacement system.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": [
+    "screen-addiction",
+    "phone-addiction",
+    "dopamine",
+    "focus",
+    "digital-detox",
+    "screen-time"
+  ],
+  "metaKeywords": [
+    "screen addiction help",
+    "reduce screen time",
+    "phone addiction solution",
+    "digital detox that works",
+    "stop scrolling addiction",
+    "screen time too high",
+    "overcome phone dependency"
+  ],
+  "faqs": [
+    {
+      "question": "How much screen time is too much?",
+      "answer": "Research suggests **4+ hours of recreational screen time daily** correlates with dopamine dysregulation, poor sleep, and reduced focus. However, the real metric is **how it affects you**: If you're sleeping poorly, struggling to focus, finding real-world activities boring, or experiencing eye strain/headaches, your screen time is too high regardless of the number. NooLife's approach: track current usage (most people are 8-12 hrs/day), then reduce progressively. Target for **dopamine health**: 2-3 hours recreational screens daily max, with 60+ mins phone-free before bed and first hour after waking screen-free. Work-related screens are separate but should include frequent breaks (Pomodoro method)."
+    },
+    {
+      "question": "What if I need screens for work?",
+      "answer": "Work-related screen time is necessary but can still cause dopamine issues if not managed. The fix is **separating work screens from dopamine screens**: (1) **No infinite scroll during work**—use browser blockers for social media, news, YouTube. (2) **Pomodoro breaks**—every 25 mins, take 5-min screen-free break (walk, stretch, close eyes). NooLife has this built-in. (3) **Strict boundaries**: Work screens end at 6pm, then 60-min screen-free window before bed. (4) **Morning phone-free hour**: Don't start with screens even if work is remote. This prevents **work screens from bleeding into dopamine addiction**. Track recreational vs work screens separately—NooLife flags when recreational exceeds targets."
+    },
+    {
+      "question": "Why do I feel anxious when I can't check my phone?",
+      "answer": "That's **dopamine withdrawal anxiety**—your brain expects the frequent hits and panics when they're delayed. It's identical to mild substance withdrawal. Additionally, you've built an **identity around constant connectivity**: being available, knowing what's happening, responding immediately. Phone separation threatens this identity, creating anxiety. The fix is **gradual exposure**: start with 15-min phone-free windows and prove to your brain nothing bad happens. Extend to 30 mins, 60 mins, 2 hours. By Week 4-6, your dopamine baseline recovers and the anxiety fades. You realize: most messages can wait, most news doesn't matter, most notifications are irrelevant. NooLife systematizes this: prescribed phone-free windows during workouts, meditation, reading that build tolerance gradually."
+    },
+    {
+      "question": "What should I do instead of using screens?",
+      "answer": "The best replacements provide **alternative dopamine sources** without variable reward traps: (1) **Physical activity**: Workouts, running, sports—release endorphins and dopamine naturally. (2) **Reading**: Engages focus, builds knowledge, screen-free. (3) **Social interaction**: Real conversations, not texts—releases oxytocin. (4) **Creative hobbies**: Music, art, building things—provides flow state dopamine. (5) **Nature exposure**: Walks, hiking—resets nervous system. (6) **Meditation**: Builds dopamine baseline, reduces cravings. NooLife prescribes these systematically: you're building workouts, reading, meditation, cold showers daily. By Week 6, your life is so full you don't have time for 8-hour screen binges. The replacement activities become more rewarding than scrolling."
+    },
+    {
+      "question": "How do I stop checking my phone first thing in the morning?",
+      "answer": "Morning phone-checking is the **worst dopamine habit** because it: (1) Spikes cortisol immediately (stress from emails/news), (2) Sets a reactive tone (you're responding, not leading), (3) Hijacks your first-hour focus window. The fix is **replacement ritual**: Before bed, put phone across the room (not on nightstand). When alarm goes off (use actual alarm clock or watch), immediately do ONE physical action: drink water, 10 pushups, cold water on face, or 2-min stretch. This interrupts the automatic reach-for-phone pathway. NooLife prescribes this: your morning tasks (wake time, water, cold shower, workout) are phone-free by design. By Week 3-4, the new pathway is automated: wake → physical action → morning routine → THEN check phone (60-90 mins later)."
+    }
+  ]
+}

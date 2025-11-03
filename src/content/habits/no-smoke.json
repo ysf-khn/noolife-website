@@ -1,0 +1,57 @@
+{
+  "habitName": "No Smoke",
+  "habitSlug": "no-smoke",
+  "category": "optional",
+  "difficulty": "hard",
+  "typicalDaysToAutomate": "75-90",
+  "shortDescription": "Quitting smoking and nicotine for improved health, performance, and freedom from addiction",
+  "scientificBenefits": [
+    "Dramatically reduced risk of cancer and heart disease",
+    "Improved lung capacity and cardiovascular function",
+    "Better taste, smell, and overall sensory experience",
+    "Increased energy and physical endurance",
+    "Financial savings and independence from addiction"
+  ],
+  "researchCitations": [
+    {
+      "study": "Pirie et al. (2013) - The Lancet",
+      "finding": "Quitting before age 40 eliminates 90% of excess mortality risk from smoking",
+      "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(12)61720-6/fulltext"
+    },
+    {
+      "study": "US Surgeon General (2020)",
+      "finding": "Heart attack risk drops by 50% within 1 year of quitting smoking"
+    },
+    {
+      "study": "West et al. (2015) - Addiction",
+      "finding": "Tracking and accountability increase quit success rates by 300%"
+    }
+  ],
+  "relatedHabits": ["workout", "running", "meditation"],
+  "commonBarriers": [
+    "Nicotine withdrawal cravings (peak days 3-5)",
+    "Habitual smoking routines (after meals, with coffee)",
+    "Social smoking with friends",
+    "Stress relief coping mechanism",
+    "Fear of weight gain after quitting"
+  ],
+  "progressionPlan": "Week 1-2: Set quit date, identify triggers, prepare alternatives (gum, exercise). Week 3-4: Navigate acute withdrawal with replacement behaviors. Week 5-8: Rewire reward pathways, celebrate milestones, track health improvements (breathing, taste, energy).",
+  "nooLifeFeatureHighlight": "Smoke-free day counter with health milestone notifications. Track money saved. Log cravings vs resistance. Contributes massively to Discipline, Strength, and Confidence ratings. Celebrate every day clean.",
+  "testimonial": "\"Smoked for 8 years. NooLife's streak tracking kept me accountable through the hardest 2 weeks. Day 71, never going back.\" - David M.",
+  "ctaAngle": "Quit smoking with daily tracking and milestone celebrations. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/nosmoke_male.webp",
+  "tags": [
+    "quit smoking",
+    "no smoking",
+    "nicotine free",
+    "health",
+    "addiction recovery"
+  ],
+  "metaKeywords": [
+    "quit smoking",
+    "how to stop smoking",
+    "smoking cessation",
+    "nicotine withdrawal",
+    "quit smoking tracker"
+  ]
+}

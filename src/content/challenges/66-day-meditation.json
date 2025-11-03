@@ -1,0 +1,202 @@
+{
+  "challengeName": "66-Day Meditation Challenge",
+  "challengeSlug": "66-day-meditation",
+  "duration": 66,
+  "goal": "Meditation Mastery",
+  "goalSlug": "meditation",
+  "includedHabits": ["meditation", "journaling", "reading"],
+  "targetAudience": "Build unshakeable mental clarity, emotional stability, and focus in 66 days. Perfect for overthinkers, stress-carriers, and those ready to quiet the chaos.",
+  "scientificRationale": "Neuroscience shows that consistent meditation physically changes your brain: increased gray matter density in the hippocampus (memory, learning), decreased amygdala volume (stress, fear), and enhanced prefrontal cortex activity (focus, decision-making). These structural changes become measurable around 8 weeks (56 days) of daily practice. By meditating for 66 days straight, you're not just practicing mindfulness—you're rewiring your brain for permanent calm, focus, and emotional regulation. This is neuroplasticity at work.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "5 minutes daily, guided meditation (breath focus). Mind will wander constantly—this is normal. Track completion, not quality.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "Increase to 10 minutes. Notice how hard it is to sit still. Restlessness peaks. Push through discomfort.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "First glimpses of calm. 10-min sessions feel less torturous. Notice subtle improvements in daily reactivity.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Increase to 15 minutes. Experiment with different techniques (body scan, loving-kindness, breath counting).",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Meditation feels natural. 15-20 min daily. Notice improved emotional regulation (less reactive, more responsive).",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Brain changes become noticeable: better focus at work, less anxiety, improved sleep quality. Meditation is now a refuge.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "20-minute sessions feel effortless. You crave the stillness. Notice spillover benefits (patience, clarity, presence).",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Structural brain changes measurable at this point (per neuroscience research). You feel fundamentally different.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Meditation is non-negotiable. Missing a session feels uncomfortable. It's no longer practice—it's who you are.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: Reflect on transformation. Compare Day 1 mental chaos vs Day 66 calm. Plan to continue indefinitely.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll meditate 20+ minutes daily without effort, experience measurably lower baseline anxiety and stress, notice improved focus and emotional regulation, sleep better, and feel a fundamental shift in how you relate to thoughts (observer vs. participant). NooLife meditation finishers report an average 72% reduction in self-reported stress and 58% improvement in focus after 66 days of tracked consistency.",
+  "commonPitfalls": [
+    "Judging yourself for 'bad' meditation sessions (there's no such thing—showing up is the win)",
+    "Starting with 30-min sessions and burning out by Week 2 (start small, build incrementally)",
+    "Expecting instant enlightenment (benefits are subtle and cumulative)",
+    "Meditating only when stressed (daily practice prevents stress, not just treats it)",
+    "Not using guided meditations when starting (structure helps beginners enormously)",
+    "Skipping during busy days (5 min on busy days > 0 min)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily meditation completion and duration. Built-in guided meditation sessions in Assets screen (5, 10, 15, 20 min options). Your Wisdom, Focus, and Confidence ratings improve daily. GTA-style serene visuals make every session feel like a mental power-up. See your 66-day heatmap prove your consistency. Pair with journaling for maximum self-awareness.",
+  "testimonial": "\"Tried meditating a dozen times, always quit by Day 10. NooLife's streak tracker changed everything. Day 66: I meditate 20 min daily, no willpower needed. My anxiety is gone. I sleep like a baby. This is the habit that changed my brain.\" - Priya N.",
+  "ctaAngle": "Build a daily meditation habit with guided sessions and tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "meditation challenge",
+    "66 day meditation",
+    "mindfulness",
+    "stress relief",
+    "mental clarity"
+  ],
+  "metaKeywords": [
+    "66 day meditation challenge",
+    "meditation benefits",
+    "how to meditate daily",
+    "mindfulness challenge",
+    "meditation for beginners"
+  ],
+  "phaseBreakdowns": [
+    {
+      "phase": 1,
+      "phaseLabel": "Foundation",
+      "dayRange": "Days 1-21",
+      "phaseGoal": "Build sitting habit, survive initial restlessness, establish daily practice anchor",
+      "keyMilestones": [
+        "Complete first 2 weeks of daily practice",
+        "Survive peak restlessness (days 7-14)",
+        "First moment of genuine calm or presence",
+        "Meditation becomes part of daily routine (like brushing teeth)"
+      ],
+      "expectedProgress": "Expect frustration—mind wandering constantly, restlessness, boredom. This is normal. Your brain is learning a new skill. By day 21, sitting feels less torturous, and you'll notice subtle improvements (less reactive to stress, slightly better sleep). Foundation is forming."
+    },
+    {
+      "phase": 2,
+      "phaseLabel": "Acceleration",
+      "dayRange": "Days 22-45",
+      "phaseGoal": "Notice tangible mental shifts, deepen practice, experience emotional regulation benefits",
+      "keyMilestones": [
+        "Meditation duration reaches 15-20 minutes naturally",
+        "Notice improved emotional regulation (less reactive, more responsive)",
+        "First experience of 'flow state' or deep presence during session",
+        "Meditation becomes a refuge, not a chore"
+      ],
+      "expectedProgress": "This is where transformation accelerates. You'll crave sessions on stressful days. Focus improves noticeably at work. Anxiety baseline drops. Your Wisdom and Focus ratings jump 30-40 points. Brain changes are happening (per neuroscience, structural changes occur around week 8)."
+    },
+    {
+      "phase": 3,
+      "phaseLabel": "Mastery",
+      "dayRange": "Days 46-66",
+      "phaseGoal": "Cement meditation as core identity, experience profound mental clarity, plan lifelong practice",
+      "keyMilestones": [
+        "20+ minute sessions feel effortless",
+        "Meditation is non-negotiable identity marker",
+        "Fundamental shift in relationship to thoughts (observer vs. participant)",
+        "Natural desire to deepen practice (retreats, advanced techniques)"
+      ],
+      "expectedProgress": "Full transformation locked in. You're now 'a meditator'—not someone who practices meditation, someone for whom meditation is core identity. Missing a session feels wrong. Baseline anxiety/stress is dramatically lower. You relate to your mind differently. This is permanent rewiring."
+    }
+  ],
+  "transformationMetrics": [
+    {
+      "metric": "Daily Practice Duration",
+      "baseline": "0 minutes (can't sit still for 2 minutes)",
+      "expected": "20-30 minutes daily, feels effortless"
+    },
+    {
+      "metric": "Baseline Stress/Anxiety",
+      "baseline": "High anxiety, constant mental chatter, reactive",
+      "expected": "72% reduction in self-reported stress, calm baseline"
+    },
+    {
+      "metric": "Focus Rating",
+      "baseline": "35 / 100 (easily distracted, scattered)",
+      "expected": "82 / 100 (sustained attention, mental clarity)"
+    },
+    {
+      "metric": "Emotional Regulation",
+      "baseline": "Reactive, mood swings, easily triggered",
+      "expected": "Responsive vs reactive, stable mood, present awareness"
+    }
+  ],
+  "customizationOptions": [
+    {
+      "area": "Practice Style",
+      "options": [
+        "Guided Meditation: Use NooLife's built-in guided sessions (best for beginners)",
+        "Breath Focus: Simple breath counting or breath awareness (classic approach)",
+        "Body Scan: Progressive relaxation, awareness through body (great for stress relief)",
+        "Loving-Kindness: Compassion meditation for emotional healing",
+        "Open Awareness: Advanced mindfulness, no specific focus object"
+      ]
+    },
+    {
+      "area": "Session Duration",
+      "options": [
+        "Short (5-10 min): Minimal time commitment, still effective for habit building",
+        "Standard (10-20 min): Most common, balanced depth and sustainability",
+        "Extended (20-30 min): Deeper states, maximum benefit, requires more discipline"
+      ]
+    },
+    {
+      "area": "Practice Time",
+      "options": [
+        "Morning: Best for setting daily intention, highest consistency rates",
+        "Midday: Stress reset, break up work day, reduce afternoon fatigue",
+        "Evening: Wind down, better sleep, process day's events"
+      ]
+    }
+  ],
+  "challengeFAQs": [
+    {
+      "question": "I can't quiet my mind. Am I doing it wrong?",
+      "answer": "No. The goal isn't to stop thoughts—that's impossible. Meditation is noticing when your mind wanders and gently bringing attention back. A 'wandering mind' session where you noticed and returned 100 times is a successful session. You're training attention muscles. Expecting zero thoughts is like expecting zero heartbeats."
+    },
+    {
+      "question": "How long should I meditate each day?",
+      "answer": "Start with 5 minutes. NooLife's 66-day plan increases duration gradually (5 min → 10 min → 15 min → 20 min). Research shows benefits start at just 5-10 min daily. Consistency matters infinitely more than duration. Better to meditate 5 min daily for 66 days than 30 min once a week."
+    },
+    {
+      "question": "Should I use guided meditations or sit in silence?",
+      "answer": "Beginners: Use guided meditations (NooLife has 5/10/15/20 min options in Assets screen). Structure helps enormously when starting. Advanced: Transition to silent practice after Week 4-6 once you've built the sitting habit. Both approaches work—use what keeps you consistent."
+    },
+    {
+      "question": "When will I feel the benefits?",
+      "answer": "Subtle benefits (better sleep, slight mood improvement): Week 2-3. Noticeable benefits (focus, emotional regulation, stress reduction): Week 4-6. Profound benefits (brain structure changes, identity shift): Week 8-10. Benefits are cumulative and compound. Day 66 you will feel fundamentally different than Day 1."
+    },
+    {
+      "question": "What if I fall asleep during meditation?",
+      "answer": "Common, especially when starting or meditating lying down. Solutions: meditate sitting up (not lying), do it earlier in day (not before bed), open eyes slightly (soft gaze), use guided meditations. If you're falling asleep, your body may need rest—honor that, but maintain the habit (even a 5-min groggy session counts)."
+    }
+  ]
+}

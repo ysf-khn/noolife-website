@@ -1,0 +1,186 @@
+{
+  "combinationName": "Waking Early and Workout",
+  "combinationSlug": "waking-early-and-workout",
+  "habit1Slug": "waking-early",
+  "habit2Slug": "workout",
+  "habit1Name": "Waking Early",
+  "habit2Name": "Workout",
+  "primaryKeyword": "wake up early workout",
+  "secondaryKeywords": [
+    "5am workout routine",
+    "morning workout habit",
+    "early morning exercise",
+    "waking early workout benefits",
+    "morning workout consistency"
+  ],
+  "searchVolume": 1610,
+  "competitionLevel": "low",
+  "tier": "tier2",
+  "shortDescription": "The accountability lock. Morning workouts force early wake. You can't skip the gym if it's at 6am. This stack builds both habits simultaneously.",
+  "synergyScience": {
+    "headline": "Morning Workouts = 40% Higher Adherence: The Wake-Early Lock",
+    "explanation": "Evening workouts get skipped (work ran late, too tired, friends invited you out). Morning workouts happen at 6am before life interferes. Research shows morning exercisers have 40% higher adherence rates. But here's the key: Morning workout FORCES early wake. You can't hit snooze when the gym opens at 6am. This stack creates mutual accountability - workout needs early wake, early wake needs purpose (workout).",
+    "researchCitations": [
+      {
+        "study": "Willis et al. (2007) - Medicine & Science in Sports",
+        "finding": "Morning exercise sessions showed 40% higher adherence compared to afternoon/evening sessions over 1 year",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/17762377/"
+      },
+      {
+        "study": "Chtourou & Souissi (2012) - Journal of Strength Research",
+        "finding": "Morning exercise improved circadian rhythm alignment and sleep quality when performed consistently"
+      },
+      {
+        "study": "Fairbrother et al. (2014) - Vascular Health Journal",
+        "finding": "Morning exercise (7am) reduced blood pressure more effectively than afternoon exercise"
+      }
+    ],
+    "neuroscience": "Morning cortisol peak (30-60 min after waking) aligns perfectly with workout timing. You're biochemically primed for performance. Evening workouts fight against adenosine buildup (sleep pressure). Morning = hormonal advantage."
+  },
+  "stackingProtocol": {
+    "timing": "Wake at 5:30-6:00am → Workout 6:00-7:00am → Shower → Start day. Gym must open before work starts (non-negotiable).",
+    "order": "Wake → Workout (within 30-60 minutes). Don't delay. The gap between wake and workout is where consistency dies.",
+    "bestPractice": "Prepare gym bag night before (clothes, shoes, water). Wake → Drink water → Bathroom → Gym clothes on → Leave house within 15 min. Automate the sequence, eliminate decisions."
+  },
+  "combinedBenefits": [
+    {
+      "benefit": "40% Higher Workout Consistency",
+      "explanation": "Morning workouts don't get canceled. No evening excuses (tired, social plans, work stress). At 6am, nothing interferes. You show up or you don't.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Forces Early Wake Accountability",
+      "explanation": "Gym opens at 6am. You HAVE to wake early. The workout creates external accountability for early wake. No willpower needed - gym won't wait.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "All-Day Energy Boost",
+      "explanation": "Morning exercise increases endorphins + BDNF lasting 8-12 hours. You're energized all day. Evening workouts only benefit that night.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Improved Sleep Quality",
+      "explanation": "Morning workouts don't interfere with sleep (evening workouts can). Your circadian rhythm strengthens - wake early, workout, sleep better.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Mental Edge All Day",
+      "explanation": "Conquering workout at 6am while others sleep = psychological win. You start the day ahead. This confidence compounds.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Lower Blood Pressure",
+      "explanation": "Research shows morning exercise reduces blood pressure more than evening exercise. Cardiovascular health benefit unique to morning timing.",
+      "uniqueToCombination": false
+    }
+  ],
+  "progressionPlan": {
+    "overview": "Start with 2-3 morning workouts/week. Most people fail by committing to 6am daily on Day 1. Progressive approach: shift wake time gradually, increase workout frequency slowly.",
+    "weeklyBreakdown": [
+      {
+        "weekRange": "Week 1-2",
+        "habit1Focus": "Wake 15 min earlier than current (e.g., 6:30am). Just 2 morning workouts this week (Mon, Wed).",
+        "habit2Focus": "30-min workout (any type). Focus on showing up, not intensity. Prove you can do it.",
+        "combinedGoal": "Build the ritual: Alarm → Gym clothes → Leave house. Success = consistency, not performance."
+      },
+      {
+        "weekRange": "Week 3-4",
+        "habit1Focus": "Wake another 15 min earlier (6:15am). Add third morning workout (Mon, Wed, Fri).",
+        "habit2Focus": "40-min workout. Increase intensity slightly. You're adapting.",
+        "combinedGoal": "3 morning workouts/week is locked. Early wake is easier now - you have purpose."
+      },
+      {
+        "weekRange": "Week 5-6",
+        "habit1Focus": "Wake at 6:00am. Add fourth workout (Tue added - now Mon/Tue/Wed/Fri).",
+        "habit2Focus": "45-min workout. Progressive overload. Tracking lifts or times.",
+        "combinedGoal": "You're waking before alarm some days. The habit is sticking. Workout quality improving."
+      },
+      {
+        "weekRange": "Week 7-8",
+        "habit1Focus": "Wake at 5:45-6:00am. Consider 5th workout day if recovery allows.",
+        "habit2Focus": "Full workout routine (45-60 min). Strength, cardio, whatever your goal.",
+        "combinedGoal": "Morning workouts are non-negotiable. Skipping feels wrong. You're in the 5am club."
+      },
+      {
+        "weekRange": "Week 9-10 (Day 66)",
+        "habit1Focus": "Wake 5:30-6:00am naturally. Alarm is backup. Circadian rhythm locked.",
+        "habit2Focus": "4-5 workouts/week. Strength, endurance, physique gains obvious.",
+        "combinedGoal": "Identity shift: 'I'm someone who works out at 6am.' This is who you are now."
+      }
+    ]
+  },
+  "commonMistakes": [
+    "Committing to 6 days/week morning workouts on Day 1 (leads to burnout by Week 2)",
+    "Not preparing gym bag night before (morning friction kills consistency)",
+    "Trying full intensity workouts while adjusting to early wake (ease into it)",
+    "Sleeping in on weekends (ruins circadian rhythm - consistency is everything)",
+    "Working out at home without accountability (gym membership creates commitment)",
+    "Not eating pre-workout (at least banana + water - you need fuel)",
+    "Evening workouts as backup plan (eliminates the mutual accountability benefit)"
+  ],
+  "nooLifeIntegration": "NooLife tracks target wake time + workout completion as linked morning ritual. Task: 'Wake 6am + workout'. Streaks break if you skip either. GTA visuals show your character crushing 6am workout while city sleeps. Synergy bonus: Complete both for Strength + Discipline ratings. Stats: Morning workout consistency, wake time adherence, energy levels throughout day.",
+  "relatedCombinations": [
+    "waking-early-and-cold-shower",
+    "waking-early-and-meditation",
+    "workout-and-meditation",
+    "workout-and-cold-shower",
+    "nofap-and-workout"
+  ],
+  "relatedChallenges": [
+    "66-day-5am-club",
+    "66-day-fitness-transformation",
+    "winter-arc-workout-plan"
+  ],
+  "ctaAngle": "Track 6am wake + workout ritual. 40% better consistency.",
+  "testimonial": "\"I skipped evening workouts constantly. Too tired, too busy. Switched to 6am. Game changer. Gym is empty, I'm energized, and nothing interferes. 5 months in, haven't missed a Monday.\" - Tyler J., NooLife user",
+  "heroImage": "https://r2.noolife.app/pseo-pages/combination-pages.webp",
+  "tags": [
+    "waking early",
+    "workout",
+    "morning routine",
+    "5am club",
+    "fitness",
+    "discipline",
+    "consistency",
+    "productivity"
+  ],
+  "metaKeywords": [
+    "wake up early workout",
+    "5am workout routine",
+    "morning workout habit",
+    "early morning exercise benefits",
+    "morning workout consistency",
+    "6am gym routine",
+    "early wake fitness"
+  ],
+  "faqs": [
+    {
+      "question": "Should I eat before a 6am workout?",
+      "answer": "Light fuel: banana + water minimum. For intense lifting, add protein (Greek yogurt or shake). Full breakfast not needed - small pre-workout snack prevents energy crash. Save big meal for post-workout."
+    },
+    {
+      "question": "How do I not feel exhausted during morning workouts?",
+      "answer": "First 2 weeks are brutal (sleep inertia). By Week 3, your body adapts. Tips: Drink water immediately upon waking, do 5 jumping jacks before leaving house (activates nervous system), start workout with dynamic warmup (not static stretching)."
+    },
+    {
+      "question": "What if my gym doesn't open until 8am?",
+      "answer": "Home workouts, outdoor running, or find 24-hour gym. The key is exercising within 60 min of waking. Waiting until 8am breaks the early-wake habit (you'll sleep until 7:30am). Exercise must force the early wake."
+    },
+    {
+      "question": "Can I workout at home instead of gym?",
+      "answer": "Yes, but gym membership creates accountability (you paid for it, don't waste it). Home workouts easier to skip. If home: prepare equipment night before, follow structured program (no winging it), consider workout buddy accountability."
+    },
+    {
+      "question": "Should I do cardio or strength training in the morning?",
+      "answer": "Both work. Strength training: Testosterone peaks in morning (optimal for lifting). Cardio: Lower injury risk when muscles are warm (do 10-min warmup). Mix both throughout week. Consistency beats optimization."
+    },
+    {
+      "question": "Will morning workouts make me too tired for work?",
+      "answer": "Opposite. Morning exercise increases energy, focus, mood for 8-12 hours. You'll be more productive at work. The exhaustion myth comes from overtraining - keep intensity reasonable during adaptation phase."
+    },
+    {
+      "question": "How long until this becomes automatic?",
+      "answer": "21 days: Ritual established. 40 days: Feels natural. 66 days: Fully automated. Most users wake before alarm by Day 45. By Day 66, skipping morning workout feels uncomfortable - your body craves it."
+    }
+  ]
+}

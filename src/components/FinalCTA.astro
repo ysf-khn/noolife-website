@@ -3,6 +3,13 @@
 // Last chance conversion with urgency messaging
 import { Image } from "astro:assets";
 import downloadIOS from "../assets/download-ios.svg";
+import { buildAppStoreURL } from "../utils/analytics";
+
+const appStoreURL = buildAppStoreURL({
+  utm_source: 'website',
+  utm_medium: 'landing',
+  utm_campaign: 'bottom-cta'
+});
 ---
 
 <section
@@ -41,7 +48,8 @@ import downloadIOS from "../assets/download-ios.svg";
       <!-- CTA Button -->
       <div class="flex justify-center items-center mb-12">
         <a
-          href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+          id="final-app-store-cta"
+          href={appStoreURL}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-block transition-transform hover:scale-105"
@@ -58,3 +66,34 @@ import downloadIOS from "../assets/download-ios.svg";
     </div>
   </div>
 </section>
+
+<script>
+  import { trackCTAClick, trackAppStoreClick, getPageSlug } from "../utils/analytics";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const finalCTA = document.getElementById('final-app-store-cta');
+
+    if (finalCTA) {
+      finalCTA.addEventListener('click', () => {
+        const pageSlug = getPageSlug();
+
+        // Track generic CTA click
+        trackCTAClick({
+          page_slug: pageSlug,
+          cta_position: 'bottom',
+          cta_text: 'Download on the App Store'
+        });
+
+        // Track App Store specific click with UTM params
+        trackAppStoreClick({
+          page_slug: pageSlug,
+          cta_position: 'bottom',
+          cta_text: 'Download on the App Store',
+          utm_source: 'website',
+          utm_medium: 'landing',
+          utm_campaign: 'bottom-cta'
+        });
+      });
+    }
+  });
+</script>

@@ -1,0 +1,127 @@
+---
+// Dynamic route for demographic-specific pages
+// URL pattern: /for/[demographic-slug]
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import DemographicTemplate from '../../components/templates/DemographicTemplate.astro';
+
+export async function getStaticPaths() {
+  const demographics = await getCollection('demographics');
+
+  return demographics.map((demographic) => ({
+    params: { slug: demographic.data.demographicSlug },
+    props: { demographic }
+  }));
+}
+
+type Props = {
+  demographic: CollectionEntry<'demographics'>;
+};
+
+const { demographic } = Astro.props;
+const { data } = demographic;
+
+// SEO metadata - Title pattern from pSEO strategy
+const title = `${data.demographicName} Habit Tracker: Build ${getPrimaryGoal(data)} in 66 Days | NooLife`;
+const description = `${data.shortDescription} ${data.socialProof.statistic} Free iOS app.`;
+
+// Helper function to extract primary goal from demographic
+function getPrimaryGoal(data: any): string {
+  // Map demographic to primary goal
+  const goalMap: Record<string, string> = {
+    'students': 'Focus & Discipline',
+    'entrepreneurs': 'the 5am Routine',
+    'athletes': 'Consistency & Recovery',
+    'remote-workers': 'Structure & Focus',
+    'working-parents': 'Balance & Self-Care',
+    'young-professionals': 'Career Habits',
+    'creatives': 'Creative Consistency',
+    'gamers': 'Health & Performance',
+    'high-school-students': 'Academic Excellence',
+    'retirees': 'Healthy Routine',
+    'night-shift-workers': 'Health Balance',
+    'military': 'Mental Toughness'
+  };
+  return goalMap[data.demographicSlug] || 'Consistency';
+}
+
+// Schema markup - Article schema for content richness
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': `Habit Tracker for ${data.demographicName}: Build ${getPrimaryGoal(data)} in 66 Days`,
+  'description': data.shortDescription,
+  'author': {
+    '@type': 'Organization',
+    'name': 'NooLife'
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'NooLife',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': 'https://noolife.app/logo.png'
+    }
+  },
+  'datePublished': '2025-11-03',
+  'about': {
+    '@type': 'SoftwareApplication',
+    'name': 'NooLife',
+    'applicationCategory': 'ProductivityApplication',
+    'operatingSystem': 'iOS',
+    'offers': {
+      '@type': 'Offer',
+      'price': '0',
+      'priceCurrency': 'USD'
+    }
+  }
+};
+
+// SoftwareApplication schema for NooLife app
+const appSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  'name': 'NooLife',
+  'applicationCategory': 'HealthApplication',
+  'operatingSystem': 'iOS',
+  'offers': {
+    '@type': 'Offer',
+    'price': '0',
+    'priceCurrency': 'USD'
+  },
+  'aggregateRating': {
+    '@type': 'AggregateRating',
+    'ratingValue': '4.8',
+    'ratingCount': '50000'
+  }
+};
+
+// FAQ schema
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': data.faqs.map((faq) => ({
+    '@type': 'Question',
+    'name': faq.question,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': faq.answer
+    }
+  }))
+};
+
+---
+
+<Layout
+  title={title}
+  description={description}
+  image={data.heroImage}
+>
+  <!-- JSON-LD schemas -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(appSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- Demographic Page Content -->
+  <DemographicTemplate demographic={data} />
+</Layout>

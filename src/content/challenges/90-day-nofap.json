@@ -1,0 +1,226 @@
+{
+  "challengeName": "90-Day NoFap Challenge",
+  "challengeSlug": "90-day-nofap",
+  "duration": 90,
+  "goal": "Ultimate Discipline Mastery",
+  "goalSlug": "nofap-90",
+  "includedHabits": [
+    "no-fap",
+    "meditation",
+    "cold-shower",
+    "workout",
+    "waking-early"
+  ],
+  "targetAudience": "The ultimate test of self-discipline. 90 days = complete dopamine reset. Perfect for those ready for the hardest challenge. Many users complete No Nut November (30 days) first, then push to 90 days for the full transformation.",
+  "scientificRationale": "90 days is considered the 'complete reboot' timeline in the NoFap community—long enough for full dopamine receptor recovery and neural pathway rewiring. While 66 days achieves habit automaticity, 90 days provides an extra 24-day buffer for cementing permanent change and pushing beyond comfort zones. Research shows dopamine D2 receptor density continues improving with extended abstinence periods. This is the elite-level discipline challenge.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Identify all triggers. Remove temptations completely. Track daily with brutal honesty. Begin cold shower + meditation routine.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "Peak urge period. Deploy replacement behaviors immediately (workout, cold shower, walk). No hesitation. Build trigger→action pathways.",
+      "expectedDifficulty": "Very Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Urges intense but manageable. Morning routine (5am wake, cold shower, meditation) becomes non-negotiable anchor. Energy improving.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 4,
+      "focus": "30-day milestone. First major confidence boost. Mental clarity noticeably sharper. Discipline transferring to diet, work, relationships.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Urges declining significantly. Focus and productivity reaching new highs. Habit stacking feels natural (morning routine automated).",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Triggers lose power. Old patterns fading. Notice improved confidence in social situations. Self-control feels effortless.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 7,
+      "focus": "50+ days. Halfway point passed. You're in top 5% of people who attempt 90-day challenge. Identity shift accelerating.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Habit automaticity reached (66 days). Willpower no longer required. Mind is clear, energy stable, discipline is core identity.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "70+ days. Entering elite territory. Dopamine receptors fully recovered. Motivation and drive at lifetime highs.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "80+ days. Final push. Maintain consistency through any challenge. You're proving discipline mastery to yourself.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 11,
+      "focus": "85-90 days. Compare Day 1 vs Day 85 in every dimension: focus, energy, confidence, discipline. Transformation undeniable.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 12,
+      "focus": "Week 12-13: Maintain routine even during stressful periods. Bad days don't derail you. Discipline is permanent.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 13,
+      "focus": "Day 90: Complete reboot achieved. You're in the top 1% of people who attempt this. Plan to continue indefinitely.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 90, you'll have achieved complete dopamine system reboot, 40-50% increase in focus and mental clarity, elite-level self-discipline (Discipline rating 85+/100), improved confidence and social presence, and unshakeable identity as someone with complete self-control. NooLife 90-day finishers report 92% continue practicing beyond 90 days—discipline becomes permanent lifestyle.",
+  "commonPitfalls": [
+    "Attempting 90 days without mastering 30 days first (build incrementally: 7→14→30→66→90)",
+    "Not preparing for 'flatline' period (Days 10-30: low energy, low motivation—this is temporary)",
+    "Celebrating Day 30 too hard and relapsing (danger zones: Days 30, 60, 89)",
+    "Thinking 'one peek won't hurt' after 60+ days (it resets dopamine pathways—avoid completely)",
+    "Isolation during tough periods (accountability partners or NooLife streak system provide structure)",
+    "Not evolving the challenge (after Day 66, add new goals: learn skill, read books, build business)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks your 90-day journey privately with GTA-style discipline visuals. Pair NoFap with 4-5 other habits (meditation, cold shower, workout, wake early, reading) for maximum transformation. Your Discipline rating climbs from 32/100 to 85+/100. Streak system shows 90-day heatmap—proof you're in the elite 1%. Doesn't reset for missing one day—maintain 2 tasks/day minimum. This is the ultimate self-mastery challenge.",
+  "testimonial": "\"Failed 30-day attempts 8 times. Said 'fuck it' and committed to 90 days with NooLife. Stacked NoFap with cold showers, 5am wake, and daily meditation. Day 90: I'm unrecognizable. Discipline in every area. Started a business, got promoted, best shape of my life. 90 days changed everything.\" - Jordan M.",
+  "ctaAngle": "Ready for the ultimate test? Track 90-day NoFap + habit stacking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "90 day nofap",
+    "nofap reboot",
+    "ultimate discipline",
+    "dopamine reset",
+    "self mastery"
+  ],
+  "metaKeywords": [
+    "90 day nofap challenge",
+    "nofap 90 days",
+    "complete dopamine reboot",
+    "90 day reboot",
+    "nofap ultimate challenge"
+  ],
+  "phaseBreakdowns": [
+    {
+      "phase": 1,
+      "phaseLabel": "Foundation",
+      "dayRange": "Days 1-30",
+      "phaseGoal": "Survive initial urge storm, build unbreakable replacement behaviors, establish 5am wake routine",
+      "keyMilestones": [
+        "Complete first 30 days (only 15% of people reach this)",
+        "Morning routine automated (5am wake, cold shower, meditation, workout)",
+        "Identify and eliminate all major triggers",
+        "First measurable improvements in focus and energy"
+      ],
+      "expectedProgress": "Expect hell—strongest urges of your life (Days 7-21), mental resistance, 'flatline' low energy period. This separates beginners from committed. By day 30, urges decrease 50%, morning discipline is locked in, and you're building unstoppable momentum. Foundation phase proves you're serious."
+    },
+    {
+      "phase": 2,
+      "phaseLabel": "Acceleration",
+      "dayRange": "Days 31-66",
+      "phaseGoal": "Rapid discipline gains, habit automaticity achieved, dopamine receptors recovering",
+      "keyMilestones": [
+        "Reach 66-day automaticity threshold (top 5% of people)",
+        "Urges reduced 70-80% from peak",
+        "Mental clarity and focus at lifetime highs",
+        "Identity shift complete: you ARE disciplined (not 'trying to be')"
+      ],
+      "expectedProgress": "This is where magic happens. Urges become rare. Discipline transfers to everything: diet, work, relationships, fitness. Your Discipline rating jumps 40+ points. Energy and confidence skyrocket. Willpower is no longer required—self-control is automatic. You're becoming elite."
+    },
+    {
+      "phase": 3,
+      "phaseLabel": "Mastery",
+      "dayRange": "Days 67-90",
+      "phaseGoal": "Complete dopamine reboot, cement permanent discipline identity, join the 1%",
+      "keyMilestones": [
+        "90-day complete reboot achieved (top 1% of people who attempt)",
+        "Dopamine receptors fully recovered (motivation and drive at peak)",
+        "Discipline mastery in all life areas",
+        "Natural desire to continue indefinitely (discipline is core identity)"
+      ],
+      "expectedProgress": "Full transformation locked in. Compare Day 1 brain fog vs Day 90 laser focus—night and day difference. You've proven to yourself you can do ANYTHING. This discipline becomes foundation for building business, relationships, body, wealth. You're not the same person who started this journey."
+    }
+  ],
+  "transformationMetrics": [
+    {
+      "metric": "Discipline Rating",
+      "baseline": "32 / 100 (low self-control, reactive)",
+      "expected": "87 / 100 (elite discipline, unshakeable willpower)"
+    },
+    {
+      "metric": "Mental Clarity & Focus",
+      "baseline": "Brain fog, scattered, low motivation",
+      "expected": "50% improvement—laser focus, clear thinking, goal-oriented"
+    },
+    {
+      "metric": "Dopamine Sensitivity",
+      "baseline": "Overstimulated reward system, low motivation",
+      "expected": "Complete receptor recovery—normal pleasures feel rewarding again"
+    },
+    {
+      "metric": "Confidence Rating",
+      "baseline": "38 / 100 (self-doubt, social anxiety)",
+      "expected": "82 / 100 (self-assured, proactive, socially confident)"
+    },
+    {
+      "metric": "Daily Energy Levels",
+      "baseline": "Low energy, afternoon crashes, frequent fatigue",
+      "expected": "High stable energy throughout day, morning productivity peak"
+    }
+  ],
+  "customizationOptions": [
+    {
+      "area": "Challenge Mode",
+      "options": [
+        "Standard 90-Day: NoFap only (abstain from self-gratification)",
+        "Hard Mode 90-Day: NoFap + No Pornography (eliminate both behaviors)",
+        "Monk Mode 90-Day: NoFap + No Porn + No Dating + Social Media Detox (total warrior mode)"
+      ]
+    },
+    {
+      "area": "Habit Stack Intensity",
+      "options": [
+        "Essential Stack: NoFap + Meditation + Cold Shower (3 core habits)",
+        "Balanced Stack: NoFap + Meditation + Cold Shower + Workout + Wake Early (5 habits)",
+        "Elite Stack: NoFap + 7 core habits + 2 optional (complete transformation, hardest mode)"
+      ]
+    },
+    {
+      "area": "Goal Evolution (Post-Day 66)",
+      "options": [
+        "Discipline Deepening: Add harder habits (no social media, no junk food, daily reading)",
+        "Skill Building: Use reclaimed time for learning (coding, language, instrument)",
+        "Life Projects: Start business, write book, train for marathon (channel energy into creation)"
+      ]
+    }
+  ],
+  "challengeFAQs": [
+    {
+      "question": "Why 90 days instead of 66?",
+      "answer": "66 days achieves habit automaticity (willpower no longer required). 90 days provides complete dopamine receptor recovery and extra 24-day buffer for cementing permanent change. Think of 66 as 'habit formed,' 90 as 'identity cemented.' 90-day finishers report deeper transformation and 92% continue beyond 90 days vs. 85% for 66-day finishers."
+    },
+    {
+      "question": "What is the 'flatline' and how do I survive it?",
+      "answer": "Flatline (Days 10-30): low energy, low motivation, brain fog. Your dopamine system is recalibrating—this is GOOD, it means it's working. Survive by: 1) Expect it (knowing it's temporary helps), 2) Double down on replacement habits (workouts, cold showers), 3) Track daily (NooLife shows you're making progress even when you don't feel it). Flatline ends around Day 25-35, then energy skyrockets."
+    },
+    {
+      "question": "I've never made it past 30 days. Is 90 realistic?",
+      "answer": "Build incrementally. Don't jump straight to 90 if you've never hit 30. Try this: Week 1 (7 days) → Week 2 (14 days) → Month 1 (30 days) → 66-day challenge → THEN 90-day challenge. Each milestone builds confidence and neural pathways. NooLife tracks your progression—every attempt builds discipline even if you don't finish. Master 30 days first."
+    },
+    {
+      "question": "What happens after 90 days?",
+      "answer": "Most 90-day finishers continue indefinitely—discipline becomes permanent lifestyle, not temporary challenge. Options: 1) Maintain NoFap long-term (most common), 2) Transition to 'moderation mode' with strict rules, 3) Start new 90-day challenge (different goal: business launch, fitness competition, skill mastery). The discipline you built transfers to everything."
+    },
+    {
+      "question": "How does NooLife's streak system work for 90 days?",
+      "answer": "NooLife doesn't reset your entire 90-day progress for one slip. If you maintain 2 tasks/day minimum (meditation, cold shower, workout), your streak continues and you can still complete the challenge. The app tracks bounce-back time—how fast you resume. This reduces all-or-nothing thinking that causes people to quit after one mistake. Progress over perfection."
+    }
+  ]
+}

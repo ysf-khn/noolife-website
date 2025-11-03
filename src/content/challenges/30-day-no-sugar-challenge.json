@@ -1,0 +1,59 @@
+{
+  "challengeName": "30-Day No Sugar Challenge",
+  "challengeSlug": "30-day-no-sugar-challenge",
+  "duration": 30,
+  "goal": "Sugar-Free Living",
+  "goalSlug": "no-sugar",
+  "includedHabits": ["water-intake", "workout", "meditation"],
+  "targetAudience": "Break sugar addiction in 30 days. Perfect for those tired of energy crashes, weight gain, and food cravings.",
+  "scientificRationale": "Sugar triggers the same brain reward pathways as cocaine. The average American consumes 77g daily (3x recommended amount), causing insulin resistance, inflammation, and metabolic dysfunction. Research shows that 30 days sugar-free resets dopamine sensitivity, stabilizes blood sugar, and breaks addiction cycles. By eliminating added sugars for 30 days, you rewire cravings, lose weight, and reclaim energy. This is metabolic reset.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Eliminate added sugars (soda, candy, desserts, processed foods). Read labels. Cravings intense—push through. Drink 80oz water.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "Withdrawal symptoms peak (headaches, irritability, fatigue). This is dopamine recalibration. Add workout 3x, meditation 10 min.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Cravings reducing. Energy stabilizing. Notice weight loss, clearer skin, better sleep. Sugar tastes too sweet now.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Sugar-free feels normal. Cravings gone. Energy at all-time high. Taste buds reset—fruit tastes like candy.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 30, you'll have eliminated added sugars completely, lost 5-15 lbs, experience stable energy (no crashes), improved skin quality, better sleep, and broken sugar addiction. NooLife no-sugar finishers report an average 11 lbs weight loss, 68% improvement in energy stability, and 84% continue sugar-free beyond 30 days.",
+  "commonPitfalls": [
+    "Not reading labels (sugar hides in everything—sauces, bread, yogurt)",
+    "Replacing sugar with artificial sweeteners (these maintain sweet cravings)",
+    "Giving in during Week 2 withdrawal (this is temporary—push through)",
+    "Not planning meals (hunger + no plan = sugar relapse)",
+    "Social pressure ('just one bite'—no, that triggers cravings)",
+    "Thinking fruit = added sugar (whole fruit is fine, juice/dried fruit less so)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily sugar-free completion with streak counters. Log energy levels, cravings, weight. Your Discipline and Strength ratings climb daily. GTA-style healthy body visuals make every sugar-free day feel like metabolic healing. See your 30-day heatmap prove you can break addiction.",
+  "testimonial": "\"Sugar addict for 15 years. NooLife's 30-day challenge broke the cycle. Day 30: lost 13 lbs, energy is stable all day, skin glowing. Sugar tastes gross now. I'm free.\" - Amanda S.",
+  "ctaAngle": "Break sugar addiction with 30-day tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "no sugar challenge",
+    "30 day no sugar",
+    "sugar detox",
+    "quit sugar",
+    "sugar addiction"
+  ],
+  "metaKeywords": [
+    "30 day no sugar challenge",
+    "quit sugar",
+    "sugar detox",
+    "no sugar diet",
+    "break sugar addiction"
+  ]
+}

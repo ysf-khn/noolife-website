@@ -7,53 +7,60 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
-  type?: 'website' | 'article';
+  type?: "website" | "article";
   pubDate?: Date;
   updatedDate?: Date;
   author?: string;
   tags?: string[];
+  jsonLd?: Record<string, any>;
 }
 
 const {
   title = "NooLife - Your Winter Arc Starts Now | 66 Days to Transform",
   description = "66 days to separate yourself from everyone settling for average. This winter arc decides if you're a winner or just another resolution that dies in February. Download NooLife and start your transformation.",
   image,
-  type = 'website',
+  type = "website",
   pubDate,
   updatedDate,
   author,
   tags = [],
+  jsonLd: customJsonLd,
 } = Astro.props;
 
-const ogImage = image || 'https://noolife.app/noolife-og.png';
+const ogImage = image || "https://noolife.app/noolife-og.png";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Generate JSON-LD structured data
-const jsonLd = type === 'article' && pubDate ? {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": title,
-  "description": description,
-  "image": ogImage,
-  "datePublished": pubDate.toISOString(),
-  "dateModified": updatedDate?.toISOString() || pubDate.toISOString(),
-  "author": {
-    "@type": "Person",
-    "name": author || "NooLife Team"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "NooLife",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://noolife.app/noolife-og.png"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": canonicalURL.toString()
-  }
-} : null;
+// Use custom jsonLd if provided, otherwise generate for articles
+const jsonLd =
+  customJsonLd ||
+  (type === "article" && pubDate
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: title,
+        description: description,
+        image: ogImage,
+        datePublished: pubDate.toISOString(),
+        dateModified: updatedDate?.toISOString() || pubDate.toISOString(),
+        author: {
+          "@type": "Person",
+          name: author || "NooLife Team",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "NooLife",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://noolife.app/noolife-og.png",
+          },
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": canonicalURL.toString(),
+        },
+      }
+    : null);
 ---
 
 <!doctype html>
@@ -62,7 +69,12 @@ const jsonLd = type === 'article' && pubDate ? {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="alternate" type="application/rss+xml" title="NooLife Blog RSS Feed" href="/rss.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="NooLife Blog RSS Feed"
+      href="/rss.xml"
+    />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Primary Meta Tags -->
@@ -80,14 +92,26 @@ const jsonLd = type === 'article' && pubDate ? {
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    {type === 'article' && pubDate && (
-      <>
-        <meta property="article:published_time" content={pubDate.toISOString()} />
-        {updatedDate && <meta property="article:modified_time" content={updatedDate.toISOString()} />}
-        {author && <meta property="article:author" content={author} />}
-        {tags.map((tag) => <meta property="article:tag" content={tag} />)}
-      </>
-    )}
+    {
+      type === "article" && pubDate && (
+        <>
+          <meta
+            property="article:published_time"
+            content={pubDate.toISOString()}
+          />
+          {updatedDate && (
+            <meta
+              property="article:modified_time"
+              content={updatedDate.toISOString()}
+            />
+          )}
+          {author && <meta property="article:author" content={author} />}
+          {tags.map((tag) => (
+            <meta property="article:tag" content={tag} />
+          ))}
+        </>
+      )
+    }
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -96,9 +120,15 @@ const jsonLd = type === 'article' && pubDate ? {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
-    {jsonLd && (
-      <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
-    )}
+    {
+      jsonLd && (
+        <script
+          type="application/ld+json"
+          is:inline
+          set:html={JSON.stringify(jsonLd)}
+        />
+      )
+    }
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#1C1B1A" />
@@ -107,14 +137,15 @@ const jsonLd = type === 'article' && pubDate ? {
     <script
       is:inline
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-LQFEJH5MVX"></script>
+      src="https://www.googletagmanager.com/gtag/js?id=G-KGF286CYKE"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "G-LQFEJH5MVX");
+
+      gtag("config", "G-KGF286CYKE");
     </script>
   </head>
   <body>
@@ -122,6 +153,76 @@ const jsonLd = type === 'article' && pubDate ? {
     <slot />
   </body>
 </html>
+
+<script>
+  import { trackScrollDepth, getPageSlug } from "../utils/analytics";
+
+  // Track scroll depth at key milestones (25%, 50%, 75%, 100%)
+  // Only fire once per threshold per session
+  const SCROLL_THRESHOLDS = [25, 50, 75, 100] as const;
+  type ScrollThreshold = typeof SCROLL_THRESHOLDS[number];
+
+  // Get session storage key for current page
+  const pageSlug = getPageSlug();
+  const STORAGE_KEY = `scroll_tracked_${pageSlug}`;
+
+  // Load already tracked thresholds from sessionStorage
+  function getTrackedThresholds(): Set<ScrollThreshold> {
+    try {
+      const stored = sessionStorage.getItem(STORAGE_KEY);
+      return stored ? new Set(JSON.parse(stored)) : new Set();
+    } catch {
+      return new Set();
+    }
+  }
+
+  // Save tracked threshold to sessionStorage
+  function saveTrackedThreshold(threshold: ScrollThreshold): void {
+    try {
+      const tracked = getTrackedThresholds();
+      tracked.add(threshold);
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify([...tracked]));
+    } catch {
+      // Silently fail if sessionStorage is unavailable
+    }
+  }
+
+  let trackedThresholds = getTrackedThresholds();
+
+  function handleScroll(): void {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercentage = Math.round((scrollTop / docHeight) * 100);
+
+    // Check each threshold
+    for (const threshold of SCROLL_THRESHOLDS) {
+      if (scrollPercentage >= threshold && !trackedThresholds.has(threshold)) {
+        // Track this threshold
+        trackScrollDepth({
+          page_slug: pageSlug,
+          scroll_percentage: threshold
+        });
+
+        // Mark as tracked
+        trackedThresholds.add(threshold);
+        saveTrackedThreshold(threshold);
+      }
+    }
+
+    // Remove listener if all thresholds tracked
+    if (trackedThresholds.size === SCROLL_THRESHOLDS.length) {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }
+
+  // Only attach listener if we haven't tracked all thresholds yet
+  if (trackedThresholds.size < SCROLL_THRESHOLDS.length) {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    // Check immediately in case user is already scrolled
+    handleScroll();
+  }
+</script>
 
 <style>
   html,

@@ -1,0 +1,101 @@
+{
+  "problem": "Can't Wake Up Early",
+  "problemSlug": "cant-wake-up-early",
+  "commonSymptoms": [
+    "Hitting snooze 5-8 times every morning",
+    "Alarm goes off, you feel absolutely nothing (zero energy)",
+    "Waking up 10 minutes before you need to leave (rushed, anxious mornings)",
+    "Every night: 'Tomorrow I'll wake up early.' Every morning: doesn't happen",
+    "Envy morning people but convinced you're 'not a morning person'",
+    "Tried going to bed earlier but still can't wake up"
+  ],
+  "rootCauses": [
+    "Circadian rhythm misaligned (years of late nights trained your biology)",
+    "Sleep quality poor (phone before bed, room not dark, inconsistent schedule)",
+    "No compelling reason to get up (nothing exciting about mornings)",
+    "Sleep inertia (brain takes 30-90 min to fully wake)",
+    "Trying to shift wake time by 2+ hours overnight (shocks circadian system)",
+    "Identity: 'I'm not a morning person' becomes self-fulfilling prophecy"
+  ],
+  "scientificExplanation": "You can't hack circadian biology overnight. Research shows circadian rhythm adapts 15 minutes every 2-3 days maximum. Trying to wake at 5am when baseline is 9am = 4-hour shift requiring 32-48 days minimum. Your body resists because: 1) Cortisol awakening response not trained for early wake, 2) Melatonin still elevated, 3) Core body temperature low. Progressive 15-min shifts over 66 days = sustainable adaptation. Morning routine that excites you (coffee, workout, reading) = positive reinforcement making wake-up easier.",
+  "failedSolutions": [
+    "Setting alarm for 5am tomorrow (4-hour shock to circadian system = fails)",
+    "'Just go to bed earlier' (doesn't reset circadian rhythm automatically)",
+    "Willpower alone (sleep inertia overpowers willpower every time)",
+    "Motivation videos night before (morning you doesn't care about night you's promises)",
+    "Putting alarm across room (you walk over, turn off, go back to bed)"
+  ],
+  "whyTheyFail": "Circadian rhythm can't shift 2-4 hours instantly—biology doesn't work that way. Going to bed earlier without training wake time just makes you lie awake. Willpower is zero at 5am (pre-frontal cortex barely online). Motivation fades in sleep inertia fog. Alarm location doesn't address root cause: circadian misalignment and no positive reinforcement for waking.",
+  "actualSolution": "Progressive 15-minute wake shifts every 4-7 days over 66 days. Baseline 9am → Week 2: 8:30am → Week 4: 8am → Week 8: 6:30am. Pair with morning routine that excites you (cold shower, coffee, workout). NooLife tracks wake time daily + Discipline Rating. Identity shift: 'I'm not a morning person' → 'I wake early automatically.' By Day 66: Wake time feels natural, not forced. Circadian rhythm fully adapted.",
+  "nooLifeApproach": "NooLife tracks wake time as core habit. Start at YOUR current baseline (not 5am fantasy). App shifts target wake time progressively (15 min every 5-7 days). Pair with morning routine tasks (cold shower for alertness, workout for energy, meditation for calm start). Your Discipline + Strength ratings climb as morning routine solidifies. GTA-style early morning warrior visuals make 6am feel aspirational. You're not 'trying to wake early'—you're becoming early riser.",
+  "expectedTimeline": "Week 1-2: First 15-min shift (9am → 8:45am). Feels difficult but manageable. Week 3-4: Second shift (8:45am → 8:30am). Morning routine forming. Week 5-6: Third shift (8:30am → 8am). Waking feels easier, identity shifting. Week 8-10: Target wake time reached (6-6:30am). Circadian rhythm adapted. Waking early feels automatic.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Establish baseline wake time (track current time). Shift 15 min earlier. Create 10-min morning routine (cold water on face, coffee, 5 pushups).",
+      "expectedProgress": "First week hardest. Sleep inertia intense. BUT: 15-min shift manageable (not 2-hour shock). Routine gives reason to get up."
+    },
+    {
+      "week": 3,
+      "focus": "Second 15-min shift. Morning routine 20 min (add meditation or reading). Notice: waking slightly easier.",
+      "expectedProgress": "Circadian rhythm adapting. Cortisol awakening response training. Morning routine becoming habit."
+    },
+    {
+      "week": 6,
+      "focus": "Third 15-min shift. Morning routine 30 min (full workout or deep work). Identity shift starting ('I wake early').",
+      "expectedProgress": "Waking feels natural, not forced. Excitement for morning routine overrides sleep inertia. Discipline Rating climbing."
+    },
+    {
+      "week": 10,
+      "focus": "Target wake time reached (6-6:30am). Morning routine automatic (45-60 min). Circadian fully adapted.",
+      "expectedProgress": "Compare Day 1 (9am, groggy, rushed) vs Day 66 (6am, energized, productive). Different person."
+    }
+  ],
+  "relatedHabits": ["waking-early", "cold-shower", "workout", "meditation"],
+  "relatedChallenges": ["66-day-morning-routine", "winter-arc-discipline"],
+  "relatedProblems": [
+    "no-discipline",
+    "too-tired-to-workout",
+    "cant-stick-to-habits"
+  ],
+  "testimonial": "\"Woke at 9-9:30am for years. Alarm meant nothing. NooLife's progressive 15-min shifts changed everything. Started 9am, now wake 6am naturally (no alarm). 66-day morning routine is locked in. Energy levels unreal.\" - Sarah L.",
+  "ctaAngle": "Wake up early with progressive circadian adaptation. Free 3-day trial.",
+  "trustSignal": "Join 50,000+ users who've shifted wake times 2-4 hours with NooLife's progressive system",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": [
+    "wake up early",
+    "morning routine",
+    "circadian rhythm",
+    "morning person",
+    "sleep schedule"
+  ],
+  "metaKeywords": [
+    "how to wake up early",
+    "cant wake up early",
+    "become a morning person",
+    "wake up early tips",
+    "morning routine app"
+  ],
+  "faqs": [
+    {
+      "question": "Why can't I just set my alarm for 5am starting tomorrow?",
+      "answer": "Your circadian rhythm can only shift 15 minutes every 2-3 days safely. Jumping from 9am to 5am (4-hour shock) fights biology—you'll feel exhausted, brain foggy, and quit within days. Progressive 15-min shifts over 66 days = sustainable adaptation. Your body actually adjusts instead of being tortured awake."
+    },
+    {
+      "question": "I go to bed earlier but still can't wake up. Why?",
+      "answer": "Going to bed earlier doesn't reset circadian rhythm automatically. Your body's melatonin cycle is trained for late wake. You lie awake or sleep poorly. Solution: Train wake time progressively (15-min shifts), THEN bedtime naturally adjusts earlier after 2-3 weeks. Circadian rhythm adapts from wake time, not bed time."
+    },
+    {
+      "question": "How do I overcome sleep inertia (feeling groggy when alarm goes off)?",
+      "answer": "Sleep inertia lasts 30-90 min. Combat it: 1) Cold water on face immediately (activates alertness), 2) Bright light exposure (stops melatonin), 3) Movement (pushups, walk), 4) Exciting morning routine (gives reason to get up). NooLife's morning tasks provide structure when willpower is zero."
+    },
+    {
+      "question": "What if I'm just 'not a morning person'?",
+      "answer": "Morning person vs night owl is 50% biology, 50% habit. Biology (chronotype) can shift 1-2 hours with training. Habit (circadian rhythm) is 100% trainable. Most 'night owls' are actually smartphone-addicted late sleepers. 66 days of progressive wake shifts + morning routine = you become morning person. Identity follows behavior."
+    },
+    {
+      "question": "How long before waking early feels natural?",
+      "answer": "Week 1-2: Effortful, sleep inertia intense. Week 3-4: Slightly easier, morning routine forming. Week 6-8: Waking feels natural, identity shifting ('I wake early'). Week 10+: Automatic—wake before alarm, excited for morning routine. NooLife tracks Discipline Rating showing exact progress. You'll see transformation in data."
+    }
+  ]
+}

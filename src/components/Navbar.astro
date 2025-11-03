@@ -4,6 +4,13 @@
 import { Image } from "astro:assets";
 import downloadIOS from "../assets/download-ios.svg";
 import noolifeLogo from "../assets/noolife_logo.png";
+import { buildAppStoreURL } from "../utils/analytics";
+
+const appStoreURL = buildAppStoreURL({
+  utm_source: 'website',
+  utm_medium: 'landing',
+  utm_campaign: 'navbar-cta'
+});
 ---
 
 <nav
@@ -71,7 +78,8 @@ import noolifeLogo from "../assets/noolife_logo.png";
 
       <!-- Download CTA (Right) -->
       <a
-        href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+        id="navbar-app-store-cta"
+        href={appStoreURL}
         target="_blank"
         rel="noopener noreferrer"
         class="inline-block transition-transform hover:scale-105 justify-self-end"
@@ -90,6 +98,8 @@ import noolifeLogo from "../assets/noolife_logo.png";
 
 <!-- Client-side scripts -->
 <script>
+  import { trackCTAClick, trackAppStoreClick, getPageSlug } from "../utils/analytics";
+
   // Navbar scroll behavior
   function handleNavbarScroll() {
     const navbar = document.getElementById("navbar");
@@ -136,6 +146,31 @@ import noolifeLogo from "../assets/noolife_logo.png";
 
   // Event listeners
   window.addEventListener("scroll", handleNavbarScroll, { passive: true });
+
+  // CTA tracking
+  const navbarCTA = document.getElementById('navbar-app-store-cta');
+  if (navbarCTA) {
+    navbarCTA.addEventListener('click', () => {
+      const pageSlug = getPageSlug();
+
+      // Track generic CTA click
+      trackCTAClick({
+        page_slug: pageSlug,
+        cta_position: 'navbar',
+        cta_text: 'Download on the App Store'
+      });
+
+      // Track App Store specific click with UTM params
+      trackAppStoreClick({
+        page_slug: pageSlug,
+        cta_position: 'navbar',
+        cta_text: 'Download on the App Store',
+        utm_source: 'website',
+        utm_medium: 'landing',
+        utm_campaign: 'navbar-cta'
+      });
+    });
+  }
 </script>
 
 <style>

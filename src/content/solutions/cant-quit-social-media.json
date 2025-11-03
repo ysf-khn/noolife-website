@@ -1,0 +1,101 @@
+{
+  "problem": "Can't Quit Social Media",
+  "problemSlug": "cant-quit-social-media",
+  "commonSymptoms": [
+    "You check Instagram/TikTok within 5 minutes of waking up",
+    "You've deleted apps multiple times but always reinstall them",
+    "Hours disappear into scrolling without realizing",
+    "You feel anxious when you can't check your feeds",
+    "You compare yourself to others and feel worse after scrolling",
+    "You know it's wasting your time but can't stop"
+  ],
+  "rootCauses": [
+    "**Variable reward schedules**: Apps use slot-machine psychology—unpredictable content keeps you hooked",
+    "**Dopamine dysregulation**: Constant novelty floods your brain, making normal activities feel boring",
+    "**Identity confusion**: Your self-worth becomes tied to likes, follows, and social validation",
+    "**Habit automation**: Neural pathways fire automatically when you're bored, anxious, or idle",
+    "**FOMO mechanisms**: Apps exploit fear of missing out to keep you checking constantly",
+    "**Low-friction access**: One tap away means no barrier between impulse and action"
+  ],
+  "scientificExplanation": "Social media platforms engineer addiction through **intermittent reinforcement**—the same mechanism that makes slot machines addictive. Research from Stanford's Persuasive Technology Lab shows these apps hijack your brain's reward system by delivering unpredictable dopamine hits. Each scroll might reveal something exciting, so your brain learns to keep checking. Over time, this creates **dopamine desensitization**: your baseline dopamine drops, making real-world activities (conversation, reading, hobbies) feel unrewarding. The solution isn't willpower—it's **behavioral replacement**: you need structured alternatives that provide similar stimulation without the variable reward trap, combined with friction barriers that interrupt automatic checking.",
+  "failedSolutions": [
+    "Going cold turkey and deleting all apps",
+    "Setting screen time limits that you override",
+    "Trying to \"just use it less\" through willpower",
+    "Moving apps to a folder or different screen",
+    "Promising yourself \"just 10 minutes\" of scrolling"
+  ],
+  "whyTheyFail": "These approaches fail because they rely on **willpower against automation**. Your brain has built neural superhighways for social media checking—willpower is a dirt road. Cold turkey creates massive dopamine withdrawal without replacement activities. Screen time limits are easily bypassed. Moving apps adds 2 seconds of friction but doesn't address the underlying reward seeking. You need **systematic dopamine rebalancing**: reduce access progressively while building competing habits that provide sustainable reward, plus accountability that makes relapse visible.",
+  "actualSolution": "The science-backed fix combines **progressive reduction** (not cold turkey), **replacement habits** (fill the dopamine void), and **social accountability** (make relapses costly). Start by establishing phone-free windows during high-risk times (morning, before bed, during meals). Replace scrolling impulses with immediate alternatives: when you reach for your phone, do 10 pushups instead, read one page, or meditate for 2 minutes. Track your usage daily—measurement alone reduces behavior by 15-20%. The key is **identity shift**: stop seeing yourself as \"someone trying not to use social media\" and become \"someone who doesn't need external validation.\"",
+  "nooLifeApproach": "NooLife treats social media addiction as a **system problem, not a discipline problem**. You track daily usage as part of your 8 core habits, giving you visibility into patterns. The app's streak system creates **positive accountability**: breaking your streak by excessive scrolling has visible consequences. More importantly, the 66-day plan floods your life with **replacement activities**: morning workouts, reading, meditation, cold showers—all provide dopamine hits without variable reward traps. Your **Discipline and Focus ratings** drop when you exceed social media limits, creating identity pressure to change. By Day 66, you've built a life interesting enough that scrolling becomes boring.",
+  "expectedTimeline": "Most users see significant reduction in usage by Week 3-4, with complete behavioral control by Week 8-10. Early weeks are hardest as your dopamine system rebalances.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Baseline Awareness + First Boundaries",
+      "expectedProgress": "Track current usage honestly (likely 3-5 hours/day). Set first phone-free window (30 mins morning). Expect strong cravings and frequent failures—you're just building awareness. Your Focus rating will show current reality."
+    },
+    {
+      "week": 3,
+      "focus": "Replacement Habit Formation",
+      "expectedProgress": "Phone-free windows extend to 2-3 hours/day. You've started replacing scroll impulses with pushups, reading, or meditation. Usage drops to 2-3 hours/day. Cravings reduce in structured times but spike during boredom/stress."
+    },
+    {
+      "week": 6,
+      "focus": "Identity Shift + Dopamine Rebalancing",
+      "expectedProgress": "Your brain adjusts to lower stimulation. Real-world activities become interesting again. Usage under 1 hour/day. You notice how scrolling makes you feel worse, not better. Focus rating climbs noticeably."
+    },
+    {
+      "week": 10,
+      "focus": "Automated Control + Value Misalignment",
+      "expectedProgress": "Social media feels like a chore, not a reward. You check intentionally (messages, specific posts) not compulsively. Usage 15-30 mins/day, purely utilitarian. You've become someone who doesn't need validation from strangers."
+    }
+  ],
+  "relatedHabits": ["meditation", "reading", "workout", "cold-showers"],
+  "relatedChallenges": ["winter-arc", "no-fap-challenge"],
+  "relatedProblems": ["phone-addiction", "cant-focus", "procrastination"],
+  "testimonial": "I was scrolling 5 hours a day without realizing it. NooLife's daily tracking made me face the number. By Week 8, I'm under 30 minutes and my Focus rating went from 42 to 78. I finally have time for things that actually matter.",
+  "ctaAngle": "Stop letting algorithms control your time. Track social media like any other habit and replace it with activities that actually improve your life.",
+  "trustSignal": "50,000+ users have reclaimed an average of 2.5 hours daily from social media using NooLife's progressive system.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": [
+    "social-media",
+    "addiction",
+    "focus",
+    "discipline",
+    "dopamine",
+    "screen-time"
+  ],
+  "metaKeywords": [
+    "how to quit social media",
+    "can't quit social media",
+    "social media addiction solution",
+    "reduce social media usage",
+    "stop scrolling addiction",
+    "delete social media permanently",
+    "social media detox that works",
+    "overcome social media addiction"
+  ],
+  "faqs": [
+    {
+      "question": "Do I have to delete all my social media accounts?",
+      "answer": "No. Cold turkey deletion usually fails because it doesn't address the underlying dopamine-seeking behavior. NooLife's approach is **progressive reduction with replacement**. You track daily usage and gradually reduce it while building competing habits (reading, workouts, meditation) that provide sustainable dopamine. By Week 8-10, most users naturally reduce to 15-30 minutes of intentional use (messages, specific content) rather than compulsive scrolling. The goal isn't elimination—it's **control and intentionality**. You decide when and why you use it, not your impulses."
+    },
+    {
+      "question": "What if I need social media for work or staying connected?",
+      "answer": "The target isn't zero usage—it's **eliminating compulsive scrolling** while keeping intentional use. Set specific times for work-related social media (e.g., 10am and 3pm) and use desktop versions instead of apps to add friction. For staying connected, schedule check-ins rather than constant monitoring. NooLife's tracking shows the difference between 4 hours of aimless scrolling vs 30 minutes of purposeful communication. Most \"work-related\" use is actually procrastination disguised as productivity—the daily tracking reveals this quickly."
+    },
+    {
+      "question": "Why can't I just set app limits and stick to them?",
+      "answer": "App limits fail for 70%+ of users because they're **friction without accountability**. You tap \"Ignore Limit\" without thinking. NooLife makes social media usage **visible in your ratings**: excessive scrolling drops your Focus and Discipline scores, which are front-and-center in the app. Breaking your streak to scroll also resets your progress, creating **identity pressure** to change. Plus, you're building replacement habits simultaneously—when you finish a workout or reading session, scrolling feels less appealing. It's systematic behavioral change, not just willpower against a timer."
+    },
+    {
+      "question": "How long until I stop craving the scroll?",
+      "answer": "**Dopamine rebalancing takes 3-6 weeks**. The first 2 weeks are hardest—your brain is adjusting to lower stimulation and you'll have strong cravings, especially when bored or stressed. By Week 3-4, cravings reduce significantly as your dopamine baseline stabilizes. By Week 6-8, real-world activities (conversations, books, workouts) become interesting again. By Week 10, social media often feels boring or even unpleasant—you've rewired your reward system. The timeline varies by baseline usage, but the pattern is consistent: short-term pain for long-term dopamine health."
+    },
+    {
+      "question": "What should I do instead when I want to scroll?",
+      "answer": "Have a **pre-planned replacement menu** for different situations: (1) **If bored**: Read one page, do 10 pushups, or 2-minute meditation. (2) **If seeking stimulation**: Go for a walk, listen to a podcast, or call a friend. (3) **If procrastinating**: Use Pomodoro timer (25-min focused work, NooLife has this built-in). (4) **If anxious**: Journal, workout, or cold shower. The key is **immediate alternatives**—when the impulse hits, you need a <30-second action to redirect the craving. NooLife's task system provides these built-in: every time you reach for your phone, you have a concrete alternative from your daily list."
+    }
+  ]
+}

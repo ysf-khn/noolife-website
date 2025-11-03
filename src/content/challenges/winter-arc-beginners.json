@@ -1,0 +1,97 @@
+{
+  "challengeName": "Winter Arc for Beginners",
+  "challengeSlug": "winter-arc-beginners",
+  "duration": 66,
+  "goal": "Beginner Transformation",
+  "goalSlug": "winter-beginner",
+  "includedHabits": [
+    "waking-early",
+    "water-intake",
+    "workout",
+    "reading",
+    "meditation"
+  ],
+  "targetAudience": "Start your Winter Arc with 5 foundational habits. Perfect for habit-tracking beginners ready to transform without overwhelming themselves.",
+  "scientificRationale": "Attempting too many habits simultaneously causes decision fatigue and failure. Research on habit formation shows that 3-5 complementary habits provide optimal balance between meaningful transformation and sustainable execution. By focusing on 5 foundational habits (early wake, hydration, movement, knowledge, mindfulness) for 66 days during winter, beginners build core discipline infrastructure without burnout. These 5 create cascading benefits: early wake provides time, water boosts energy, workout improves mood, reading builds knowledge, meditation enhances all others. This is beginner-optimized Winter Arc.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Establish 5 beginner habits: Wake 7am (no snooze), water 60oz daily, workout 15min (bodyweight or walk), read 10 pages (any book), meditate 5min (guided app). Just show up daily.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "Consistency over intensity. Same 5 habits, same minimums. Brain resisting change—this is normal. Winter darkness makes wake harder—expect this. Complete 4/5 minimum daily.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 3,
+      "focus": "First habit synergies: water intake boosts workout energy, reading before bed improves sleep (and wake), meditation reduces stress. Notice these connections—leverage them.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Thanksgiving week: first major test. Travel, family, disruption. Minimum 3/5 habits daily acceptable. Showing up imperfectly beats not showing up. Build resilience through chaos.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 5,
+      "focus": "Slight intensity increase (optional): wake 6:45am, water 70oz, workout 20min, read 12 pages, meditate 7min. Only increase if 5/5 completion is consistent. Otherwise maintain Week 1 levels.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "December begins: habits starting to feel automatic. Morning wake easier, water intake habitual, workout craving developing, reading enjoyable, meditation calming. This is automation emerging.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "Holiday stress test (Dec 24-Jan 1): parties, late nights, travel. Your 5 habits are non-negotiables. Even 10min workout + 5 pages reading + 3min meditation = WIN. Never zero days.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 8,
+      "focus": "January: others starting resolutions. You're on Day 55+ with 5 automated habits. Physical changes visible (better skin, energy, posture). Mental clarity obvious. People asking what you're doing differently.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Confidence peak: increase to challenge levels (optional): wake 6:30am, water 80oz, workout 25min, read 15 pages, meditate 10min. Or maintain Week 1 levels—both are wins.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: Beginner Winter Arc complete. 5 habits automated, 40+ workouts done, 800+ pages read (8-10 books), 450+ min meditation, hydration habit permanent. You're not a beginner anymore. Ready for full Winter Arc next year?",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll have: automated 5 foundational habits, woken before 7am for 66 days, consumed 4,500+ oz water (35+ gallons), completed 40+ workouts, read 800-1,000 pages (8-12 books), meditated 450+ minutes, improved energy and focus measurably, and built habit-tracking discipline. NooLife Beginner Winter Arc finishers report 88% automation of all 5 habits, 91% readiness for advanced challenges, and 84% continue all habits beyond March 1. This is beginner transformation.",
+  "commonPitfalls": [
+    "Comparing beginner plan to full Winter Arc (5 habits automated > 10 habits attempted and failed)",
+    "Increasing intensity too fast (master minimums before adding—discipline over heroics)",
+    "Missing one habit = quitting all five (4/5 or 3/5 is still progress, keep going)",
+    "Not tracking daily (beginners especially need to see streak building—visual motivation)",
+    "Perfectionism ('only 5 habits isn't enough')—these 5 create foundation for life transformation",
+    "Skipping meditation because 'it's not working' (benefits are cumulative—show up for 66 days)",
+    "Not celebrating wins (completing beginner Winter Arc is HUGE achievement—own it)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife makes beginner Winter Arc simple: just 5 habits to track daily. Morning checklist (wake ✓, water ✓, workout ✓, reading ✓, meditation ✓) creates instant visual feedback. Heatmap shows your 66-day consistency (see the green streak build). Your Overall Rating improves daily from just 5 habits (Strength from workout, Wisdom from reading, Focus from meditation, Discipline from wake/water). GTA-style beginner transformation visuals: character progressing from couch to morning warrior. Built-in meditation timer (5min guided perfect for beginners). Reading page tracker. This is beginner-friendly total transformation.",
+  "testimonial": "\"Never stuck to anything over 1 week in my life. NooLife's beginner Winter Arc (just 5 habits) was perfect starting point. Day 66: wake 6:45am every day, workout 40+ times, read 11 books (vs 0 last year), meditate daily, actually drink water now. Small habits = huge transformation. Doing full Winter Arc next year.\" - Emma R.",
+  "ctaAngle": "Start your Winter Arc with 5 beginner-friendly habits. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/winter_arc.webp",
+  "tags": [
+    "winter arc",
+    "beginner",
+    "5 habits",
+    "habit stacking",
+    "transformation for beginners",
+    "winter arc beginner"
+  ],
+  "metaKeywords": [
+    "winter arc for beginners",
+    "start winter arc",
+    "beginner transformation",
+    "5 habit challenge",
+    "winter arc easy"
+  ]
+}

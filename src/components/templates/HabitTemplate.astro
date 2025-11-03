@@ -1,0 +1,408 @@
+---
+// HabitTemplate.astro - Template for all habit landing pages
+// Pattern from pseo-strategy.md lines 135-191
+import { Image } from "astro:assets";
+import downloadIOS from "../../assets/download-ios.svg";
+
+interface Props {
+  habit: {
+    habitName: string;
+    habitSlug: string;
+    category: 'core' | 'optional';
+    difficulty: 'easy' | 'medium' | 'hard';
+    typicalDaysToAutomate: string;
+    shortDescription: string;
+    scientificBenefits: string[];
+    researchCitations: Array<{
+      study: string;
+      finding: string;
+      link?: string;
+    }>;
+    relatedHabits: string[];
+    commonBarriers: string[];
+    progressionPlan: string;
+    nooLifeFeatureHighlight: string;
+    testimonial?: string;
+    ctaAngle: string;
+    heroImage: string;
+    tags: string[];
+    metaKeywords: string[];
+  };
+}
+
+const { habit } = Astro.props;
+---
+
+<!-- HERO SECTION - CTA #1 (Above Fold) -->
+<section
+  id="habit-hero"
+  class="relative min-h-screen flex items-center justify-center px-4 py-16 sm:py-24 md:py-32"
+>
+  <div class="relative max-w-7xl w-full mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+      <!-- LEFT COLUMN: Copy -->
+      <div class="lg:col-span-2 text-center lg:text-left flex flex-col justify-center">
+        <!-- Badge -->
+        <div class="flex gap-2 justify-center lg:justify-start mb-4 hero-fade-in" style="animation-delay: 0.05s;">
+          <span class="px-3 py-1 text-xs font-bold rounded-full uppercase" style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade); border: 1px solid rgba(0, 208, 156, 0.3);">
+            {habit.category} habit
+          </span>
+          <span class="px-3 py-1 text-xs font-bold rounded-full uppercase" style="background: rgba(241, 237, 233, 0.05); color: var(--color-faded-khaki); border: 1px solid rgba(241, 237, 233, 0.1);">
+            {habit.difficulty}
+          </span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6 hero-fade-in"
+          style="animation-delay: 0.1s; color: var(--color-alabaster);"
+        >
+          Master <span style="color: var(--color-jade);">{habit.habitName}</span><br>
+          in 66 Days
+        </h1>
+
+        <!-- Description -->
+        <p
+          class="text-xl md:text-xl lg:text-2xl leading-snug sm:leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 hero-fade-in"
+          style="animation-delay: 0.2s; color: var(--color-faded-khaki);"
+        >
+          {habit.shortDescription}
+        </p>
+
+        <!-- Stats Row -->
+        <div class="flex flex-wrap gap-4 justify-center lg:justify-start mb-8 hero-fade-in" style="animation-delay: 0.25s;">
+          <div class="text-center">
+            <div class="text-3xl font-bold" style="color: var(--color-jade);">{habit.typicalDaysToAutomate}</div>
+            <div class="text-sm" style="color: var(--color-faded-khaki);">Days to automate</div>
+          </div>
+          <div class="w-px" style="background: rgba(241, 237, 233, 0.1);"></div>
+          <div class="text-center">
+            <div class="text-3xl font-bold" style="color: var(--color-jade);">{habit.scientificBenefits.length}+</div>
+            <div class="text-sm" style="color: var(--color-faded-khaki);">Proven benefits</div>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex flex-col items-center lg:items-start gap-2 hero-fade-in" style="animation-delay: 0.3s;">
+          <a
+            href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+            aria-label="Download on the App Store"
+          >
+            <Image
+              src={downloadIOS}
+              alt="Download on the App Store"
+              class="h-16 md:h-20 w-auto"
+              loading="eager"
+            />
+          </a>
+          <p class="text-sm font-medium italic" style="color: var(--color-mint);">
+            {habit.ctaAngle}
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Hero Image -->
+      <div class="lg:col-span-3 hero-fade-in" style="animation-delay: 0.3s;">
+        <div class="relative">
+          <img
+            src={habit.heroImage}
+            alt={`${habit.habitName} habit tracking`}
+            class="w-full h-auto block rounded-2xl transition-all duration-700 hover:scale-[1.02]"
+            style="filter: drop-shadow(0 25px 80px rgba(0, 208, 156, 0.2));"
+            loading="eager"
+          />
+          <div class="absolute -inset-4 bg-linear-to-r from-jade to-mint opacity-20 blur-3xl -z-10 rounded-3xl"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS SECTION -->
+<section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-rich-earth) 0%, var(--color-dark) 100%);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      Science-Backed Benefits
+    </h2>
+    <p class="text-lg md:text-xl mb-12 text-center max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      Research shows {habit.habitName.toLowerCase()} delivers measurable improvements across multiple areas of your life.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {habit.scientificBenefits.map((benefit, index) => (
+        <div
+          class="p-6 rounded-xl border transition-all duration-300 hover:scale-105 hover:border-[rgba(0,208,156,0.4)]"
+          style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+        >
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 flex-shrink-0 mt-1" style="color: var(--color-jade);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <p class="text-base leading-relaxed" style="color: var(--color-alabaster);">
+              {benefit}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH SECTION -->
+<section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      What the Research Says
+    </h2>
+    <p class="text-lg md:text-xl mb-12 text-center max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      These aren't motivational quotes. These are peer-reviewed studies proving {habit.habitName.toLowerCase()} works.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {habit.researchCitations.map((citation) => (
+        <div
+          class="p-6 rounded-xl border"
+          style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+        >
+          <h3 class="text-lg font-bold mb-3" style="color: var(--color-jade);">
+            {citation.study}
+          </h3>
+          <p class="text-base leading-relaxed mb-4" style="color: var(--color-faded-khaki);">
+            {citation.finding}
+          </p>
+          {citation.link && (
+            <a
+              href={citation.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-medium hover:underline"
+              style="color: var(--color-mint);"
+            >
+              Read the study →
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- PROGRESSION PLAN SECTION - CTA #2 (Mid-Content) -->
+<section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-rich-earth) 100%);">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      Your 66-Day Progression Plan
+    </h2>
+    <p class="text-lg md:text-xl mb-8 text-center max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      Most people fail because they go too hard, too fast. NooLife's progressive system makes {habit.habitName.toLowerCase()} stick.
+    </p>
+
+    <div
+      class="p-8 rounded-2xl border mb-8"
+      style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px); border-color: rgba(0, 208, 156, 0.2);"
+    >
+      <p class="text-lg leading-relaxed" style="color: var(--color-alabaster);">
+        {habit.progressionPlan}
+      </p>
+    </div>
+
+    <!-- NooLife Feature Highlight -->
+    <div
+      class="p-8 rounded-2xl border mb-8"
+      style="background: linear-gradient(135deg, rgba(0, 208, 156, 0.05), rgba(0, 208, 156, 0.02)); border-color: rgba(0, 208, 156, 0.3);"
+    >
+      <h3 class="text-xl font-bold mb-3" style="color: var(--color-jade);">
+        How NooLife Helps
+      </h3>
+      <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+        {habit.nooLifeFeatureHighlight}
+      </p>
+    </div>
+
+    <!-- CTA #2 -->
+    <div class="text-center">
+      <a
+        href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      >
+        <Image
+          src={downloadIOS}
+          alt="Download on the App Store"
+          class="h-16 md:h-20 w-auto mx-auto"
+          loading="lazy"
+        />
+      </a>
+      <p class="text-sm font-medium italic mt-2" style="color: var(--color-mint);">
+        Start your free 3-day trial today.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMON BARRIERS SECTION -->
+<section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      Why Most People Fail (And How to Beat It)
+    </h2>
+    <p class="text-lg md:text-xl mb-12 text-center max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      These are the real blockers. Knowing them = beating them.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {habit.commonBarriers.map((barrier, index) => (
+        <div
+          class="p-6 rounded-xl border flex items-start gap-4"
+          style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(255, 82, 82, 0.2);"
+        >
+          <div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center" style="background: rgba(255, 82, 82, 0.1); color: #ff5252;">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </div>
+          <p class="text-base leading-relaxed" style="color: var(--color-alabaster);">
+            {barrier}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-8 p-6 rounded-xl border" style="background: rgba(0, 208, 156, 0.05); border-color: rgba(0, 208, 156, 0.2);">
+      <p class="text-base leading-relaxed text-center" style="color: var(--color-faded-khaki);">
+        <strong style="color: var(--color-jade);">NooLife's solution:</strong> Progressive difficulty scaling, accountability tracking, and visual streak systems that make showing up easier than quitting.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL SECTION -->
+{habit.testimonial && (
+  <section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-rich-earth) 100%);">
+    <div class="max-w-4xl mx-auto text-center">
+      <svg class="w-12 h-12 mx-auto mb-6 opacity-40" style="color: var(--color-jade);" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+      </svg>
+      <blockquote class="text-xl md:text-2xl leading-relaxed mb-6" style="color: var(--color-alabaster);">
+        {habit.testimonial}
+      </blockquote>
+    </div>
+  </section>
+)}
+
+<!-- FAQ SECTION -->
+<section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 text-center" style="color: var(--color-alabaster);">
+      Common Questions About {habit.habitName}
+    </h2>
+
+    <div class="flex flex-col gap-4">
+      <details
+        class="rounded-xl border border-[rgba(241,237,233,0.08)] hover:border-[rgba(0,208,156,0.15)] [&[open]]:border-[rgba(0,208,156,0.3)] transition-all"
+        style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px);"
+      >
+        <summary class="px-6 py-6 lg:px-8 cursor-pointer flex justify-between items-center gap-4 text-lg font-bold list-none" style="color: var(--color-alabaster);">
+          <span>How long does it take to build this habit?</span>
+          <svg class="w-6 h-6 flex-shrink-0 transition-transform [details[open]>&]:rotate-180" style="color: var(--color-jade);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 lg:px-8 text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+          <p>Research shows habit automation typically takes {habit.typicalDaysToAutomate} days for {habit.habitName.toLowerCase()}. NooLife's 66-day plan is designed to take you past the automation threshold, making the habit stick permanently.</p>
+        </div>
+      </details>
+
+      <details
+        class="rounded-xl border border-[rgba(241,237,233,0.08)] hover:border-[rgba(0,208,156,0.15)] [&[open]]:border-[rgba(0,208,156,0.3)] transition-all"
+        style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px);"
+      >
+        <summary class="px-6 py-6 lg:px-8 cursor-pointer flex justify-between items-center gap-4 text-lg font-bold list-none" style="color: var(--color-alabaster);">
+          <span>What makes NooLife different from other habit trackers?</span>
+          <svg class="w-6 h-6 flex-shrink-0 transition-transform [details[open]>&]:rotate-180" style="color: var(--color-jade);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 lg:px-8 text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+          <p>NooLife doesn't just track checkboxes. We generate a personalized 66-day plan with ~450 progressive tasks, track your identity transformation across 5 rating dimensions, and use cinematic GTA-style visuals to make discipline feel rewarding. It's gamified self-improvement with real accountability.</p>
+        </div>
+      </details>
+
+      <details
+        class="rounded-xl border border-[rgba(241,237,233,0.08)] hover:border-[rgba(0,208,156,0.15)] [&[open]]:border-[rgba(0,208,156,0.3)] transition-all"
+        style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px);"
+      >
+        <summary class="px-6 py-6 lg:px-8 cursor-pointer flex justify-between items-center gap-4 text-lg font-bold list-none" style="color: var(--color-alabaster);">
+          <span>Can I track {habit.habitName.toLowerCase()} alongside other habits?</span>
+          <svg class="w-6 h-6 flex-shrink-0 transition-transform [details[open]>&]:rotate-180" style="color: var(--color-jade);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 lg:px-8 text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+          <p>Yes. NooLife tracks up to 10 habits simultaneously (8 core + 2 optional). {habit.habitName} is a {habit.category} habit that pairs well with {habit.relatedHabits.slice(0, 2).map((slug, index) => (
+            <>
+              <a href={`/habit/${slug}`} class="text-jade hover:underline">
+                {slug.replace(/-/g, ' ')}
+              </a>
+              {index === 0 && habit.relatedHabits.slice(0, 2).length > 1 ? ' and ' : ''}
+            </>
+          ))}. The app's habit stacking approach helps you build complementary routines.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA SECTION - CTA #3 (Bottom) -->
+<section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-rich-earth) 0%, var(--color-dark) 100%);">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6" style="color: var(--color-alabaster);">
+      Ready to Build Your {habit.habitName} Habit?
+    </h2>
+    <p class="text-xl md:text-2xl leading-relaxed mb-8" style="color: var(--color-faded-khaki);">
+      66 days from now, this could be automatic. Or you could still be thinking about starting. Your move.
+    </p>
+
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95 mb-4"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-20 md:h-24 w-auto mx-auto"
+        loading="lazy"
+      />
+    </a>
+
+    <p class="text-sm font-medium" style="color: var(--color-faded-khaki);">
+      Free 3-day trial. Weekly & yearly plans available.
+    </p>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+</style>

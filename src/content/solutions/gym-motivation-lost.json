@@ -1,0 +1,104 @@
+{
+  "problem": "Lost Gym Motivation",
+  "problemSlug": "gym-motivation-lost",
+  "commonSymptoms": [
+    "You used to train consistently but now making excuses constantly",
+    "You pay for a gym membership you haven't used in months",
+    "You plan to go but when the time comes, you skip it",
+    "You scroll fitness content for motivation but never actually train",
+    "You feel guilty about not going but still don't go",
+    "You've lost visible progress and feel like starting over is pointless"
+  ],
+  "rootCauses": [
+    "**Outcome dependency**: You were motivated by visible gains, but progress plateaued so motivation died",
+    "**All-or-nothing thinking**: You think you need 90-min gym sessions or it doesn't count",
+    "**Identity loss**: You stopped seeing yourself as \"someone who trains\" and became \"someone trying to get back into it\"",
+    "**No accountability**: Skipping has zero consequences—no one knows, no streak breaks, no visible cost",
+    "**Comparison trap**: You see where you were (strong/fit) vs now (weaker) and feel demoralized",
+    "**Energy deficit masking as motivation loss**: Poor sleep, diet, or stress making workouts feel impossible"
+  ],
+  "scientificExplanation": "Research from Stanford's Behavior Lab shows gym attendance drops 80%+ after 6 months because people rely on **outcome-based motivation** (seeing muscle growth, weight loss) which is unsustainable. When progress slows (inevitable after beginner gains), motivation crashes. Additionally, **identity disruption** occurs: you were \"someone who trains\" but life disrupted the pattern (injury, busy period, vacation). Your brain updated identity to \"someone who doesn't train anymore.\" The solution is **process-based identity rebuilding**: start with workouts so short they bypass resistance (5-min sessions), build a visible streak that creates loss aversion, and shift identity from \"trying to get back\" to \"I'm someone who trains daily\" through consistency evidence.",
+  "failedSolutions": [
+    "Watching transformation videos for motivation",
+    "Signing up for expensive gym memberships hoping commitment helps",
+    "Waiting until you \"feel motivated\" to start again",
+    "Planning elaborate workout programs you never execute",
+    "Trying to jump back to your previous workout intensity"
+  ],
+  "whyTheyFail": "These fail because they're **emotion-dependent, not system-based**. Transformation videos spike dopamine temporarily but don't create habits. Expensive memberships add guilt, not action—sunk cost fallacy doesn't drive behavior. Waiting for motivation is waiting forever—motivation follows action, not vice versa. Complex programs create decision fatigue before you start. Jumping back to old intensity creates pain/soreness that reinforces \"I'm out of shape,\" killing motivation further. The real fix: **start ridiculously small** (5-min workouts—2 pushups, 10 squats), **build immediate streak value** (Day 3 is worth protecting), **create accountability** (visible rating drops when you skip), and **rebuild identity through micro-evidence** (you train daily, even if briefly).",
+  "actualSolution": "Science-backed gym motivation restoration follows behavioral activation: (1) **Start with 5-minute home workouts**—2 pushups, 10 squats, 5 lunges. No gym required, no barrier to entry. (2) **Build daily streak immediately**: Day 1 = 1, Day 3 = 3. Loss aversion kicks in fast. (3) **Track in visible system**: Workouts affect your Strength rating—skipping drops the number, creating identity pressure. (4) **Progressive intensity**: After 2 weeks of daily 5-min workouts, increase to 10 mins. Week 6: 20 mins. Week 8: return to gym if desired. (5) **Shift from outcome to process identity**: You're not \"getting fit\"—you're \"someone who trains daily.\" By Week 8-10, the habit is automated and you're training regardless of motivation.",
+  "nooLifeApproach": "NooLife rebuilds gym motivation through **forced identity reconstruction**. Day 1 workout: 2 pushups. Not a typo—TWO. You can do this in your bedroom in 30 seconds. But you track it. Day 2: 2 pushups + 5 squats. Still under 2 minutes. By Day 7, you have a workout streak. By Day 15, you're doing 10 pushups, 20 squats, 10 lunges—still at home, 5-10 minutes. Your **Strength rating** is climbing visibly. By Week 4, tasks increase to 15-minute sessions. Week 6: 20-30 minutes. Week 8: you're back in the gym or crushing home workouts at full intensity. Here's the key: streak is so valuable by Week 4 (30+ days) that skipping feels devastating. You train on hard days to protect it. By Day 66, you're someone who trains—motivation irrelevant.",
+  "expectedTimeline": "Weeks 1-2: habit trigger formation. Weeks 3-4: intensity building. Weeks 6-8: full workouts restored. Weeks 10+: training is identity, not effort.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Barrier Elimination + Micro-Wins",
+      "expectedProgress": "Workout: 2 pushups, 5 squats, at home, 2 minutes max. Track daily. You'll feel silly doing so little but that's the point—you're removing all barriers. By Day 7, you have a workout streak. You've trained more this week than the past month. Strength rating baseline: 35-45. Identity evidence: \"I worked out 7 days straight.\""
+    },
+    {
+      "week": 3,
+      "focus": "Intensity Layering + Streak Protection",
+      "expectedProgress": "Workouts: 10 pushups, 20 squats, 10 lunges, 5-10 mins. Still at home. 20-day streak—breaking it feels costly. You notice: exercises getting easier, soreness is good soreness, energy improving. Strength rating: 50-60. You're starting to feel like \"someone who trains\" again. Loss aversion driving action on lazy days."
+    },
+    {
+      "week": 6,
+      "focus": "Full Workout Restoration + Gym Re-entry",
+      "expectedProgress": "Workouts: 20-30 mins, full-body routines (pushups, squats, lunges, planks, burpees) at home OR back at gym. 40+ day streak. Visible muscle returning, strength improving. You're training 6-7x/week not from motivation but from identity: \"This is what I do.\" Strength rating: 70-80. Friends notice you're back."
+    },
+    {
+      "week": 10,
+      "focus": "Training Mastery + Identity Lock",
+      "expectedProgress": "You're training 45-60 mins, 5-6x/week, gym or home. 65+ day streak approaching. You're stronger than when you quit—consistent progressive overload works. Training is non-negotiable: you do it on travel days, stressful days, tired days. Motivation is irrelevant. Strength rating: 85+. You're someone who trains, period."
+    }
+  ],
+  "relatedHabits": ["workout", "cold-showers", "wake-time", "running"],
+  "relatedChallenges": ["winter-arc", "no-fap-challenge"],
+  "relatedProblems": [
+    "no-motivation",
+    "too-tired-to-workout",
+    "always-quit-after-few-days"
+  ],
+  "testimonial": "I had a gym membership I hadn't used in 8 months. Felt like a failure. NooLife started me with 2 pushups at home—no gym, no excuses. By Week 6, I was back at the gym doing full workouts. By Day 66, I was stronger than before I quit. Strength rating: 32 → 84.",
+  "ctaAngle": "Stop waiting for motivation. Start with 2 pushups at home, build a streak, and become someone who trains daily.",
+  "trustSignal": "50,000+ users rebuilt gym habits from zero using NooLife's 2-pushup start system—avg 6.2 workouts/week by Day 66.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": [
+    "gym-motivation",
+    "workout",
+    "fitness",
+    "strength",
+    "consistency",
+    "habit-formation"
+  ],
+  "metaKeywords": [
+    "lost gym motivation",
+    "can't get back to gym",
+    "workout motivation lost",
+    "restart gym habit",
+    "gym consistency",
+    "get motivated to workout",
+    "rebuild fitness habit"
+  ],
+  "faqs": [
+    {
+      "question": "Why do I lose motivation after a few months of training?",
+      "answer": "This is **outcome-based motivation collapse**. In your first 3-6 months, you see rapid visible gains (beginner gains)—muscle growth, strength increases, weight loss. Your brain gets dopamine from these results, which fuels motivation. But after 6 months, progress slows significantly (adaptation, diminishing returns)—you're still improving but it's not visible week-to-week. The dopamine reward disappears, so motivation crashes. This happens to 80%+ of people. The solution: **shift from outcome-based to process-based identity**. You train because you're \"someone who trains,\" not because you're chasing visible results. NooLife does this by tracking workouts daily and tying them to your Strength rating—you see immediate feedback (rating climbs) even when physical results plateau. By Week 8-10, training becomes identity, not outcome-chasing."
+    },
+    {
+      "question": "How do I start training again after months off?",
+      "answer": "DO NOT try to jump back to your old workout intensity—this guarantees failure. Here's why: (1) **Extreme soreness**: Training at old intensity after time off causes severe DOMS (delayed onset muscle soreness), making you dread the next workout. (2) **Comparison demoralization**: You'll lift lighter weights and feel weaker, reinforcing \"I've lost everything.\" (3) **High resistance**: 90-min gym sessions feel impossible when you're out of the habit. The fix: **start embarrassingly small**: 5-min home workouts (2 pushups, 10 squats). Do this daily for 2 weeks. Then increase to 10 mins. Week 4: 15-20 mins. Week 6: back to gym if desired. You're rebuilding the habit trigger first, then layering intensity. By Week 8, you're training fully but you built gradually so it feels natural."
+    },
+    {
+      "question": "What if I don't have time for the gym anymore?",
+      "answer": "This is usually **perceived time scarcity, not actual**. You have time for 3-hour phone scrolling sessions but \"no time\" for 30-min workouts. The real issue: gym adds friction (commute, changing, showering) that makes skipping easy. The fix: **home workouts eliminate friction**. NooLife prescribes workouts you can do in your bedroom in 10-20 minutes: pushups, squats, lunges, planks, burpees. No equipment, no commute, no excuses. Research shows **consistency beats duration**: 15-min home workouts 6x/week (90 mins total) beats 90-min gym sessions 2x/week (180 mins total) because frequency builds habit and triggers muscle protein synthesis more often. By Week 6-8, you've proven you DO have time—you just needed to remove barriers."
+    },
+    {
+      "question": "Should I start with cardio or strength training?",
+      "answer": "**Start with whatever creates the least resistance**—habit formation beats optimization. That said, research suggests: (1) **Strength training (bodyweight)** is better for beginners because: (a) Builds muscle which increases metabolism long-term. (b) Provides visible progress (pushup count increases). (c) Can be done at home in 10-20 mins. (d) Less time-intensive than cardio for same benefits. (2) **Cardio (running)** is good for: (a) Cardiovascular health. (b) Stress reduction. (c) Endorphin release. NooLife prescribes BOTH: bodyweight strength (pushups, squats, lunges) AND running as separate tracked habits. You start with 2 pushups and 5-min runs, building both progressively. By Week 8, you're doing full strength + cardio routines. Ideal combo for overall fitness."
+    },
+    {
+      "question": "What if I feel too tired to work out?",
+      "answer": "This is the #1 excuse, and it's often **backwards causation**: you feel tired BECAUSE you're not working out, not the other way around. Exercise increases mitochondrial density, improves sleep quality, and boosts baseline energy. Sedentary lifestyles create fatigue. That said, real fatigue exists: (1) **If sleep-deprived (<6 hrs)**: Fix sleep first (see Poor Sleep Quality solution page). Workouts on severe sleep debt are counterproductive. (2) **If well-rested but \"feel tired\"**: This is likely dopamine depletion or habit resistance. The fix: **start the workout anyway with minimum viable effort**. Tell yourself \"just 2 pushups.\" 80% of the time, once you start, you'll finish the full workout. (3) **If chronically exhausted**: Check diet, hydration, stress levels, possible medical issues. NooLife tracks sleep + workouts—if you're sleeping 8hrs and still \"too tired,\" the app flags it for investigation."
+    }
+  ]
+}

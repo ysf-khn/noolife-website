@@ -1,0 +1,51 @@
+{
+  "habitName": "Running",
+  "habitSlug": "running",
+  "category": "core",
+  "difficulty": "medium",
+  "typicalDaysToAutomate": "50-66",
+  "shortDescription": "Daily or regular running practice for cardiovascular health and mental clarity",
+  "scientificBenefits": [
+    "Improved cardiovascular health and endurance",
+    "Reduced risk of chronic diseases (heart disease, diabetes)",
+    "Enhanced mood through runner's high endorphins",
+    "Better stress management and mental health",
+    "Increased longevity and quality of life"
+  ],
+  "researchCitations": [
+    {
+      "study": "Lee et al. (2014) - Journal of the American College of Cardiology",
+      "finding": "Running 5-10 minutes daily reduces risk of cardiovascular mortality by 30%",
+      "link": "https://www.jacc.org/doi/full/10.1016/j.jacc.2014.04.058"
+    },
+    {
+      "study": "Schuch et al. (2016) - Journal of Psychiatric Research",
+      "finding": "Running reduces depressive symptoms with effect size comparable to psychotherapy"
+    },
+    {
+      "study": "Chakravarty et al. (2008) - Archives of Internal Medicine",
+      "finding": "Long-term runners show 39% lower mortality rate over 21-year period"
+    }
+  ],
+  "relatedHabits": ["workout", "water-intake", "waking-early"],
+  "commonBarriers": [
+    "Initial discomfort and out-of-breath feeling",
+    "Weather excuses (too hot, too cold, raining)",
+    "Shin splints or knee pain from overtraining",
+    "Boredom from same routes",
+    "Self-consciousness about running in public"
+  ],
+  "progressionPlan": "Week 1-2: Walk/run intervals (1 min run, 2 min walk) for 15-20 min. Week 3-4: Increase run intervals (2 min run, 1 min walk). Week 5-6: Continuous 20-minute runs. Week 7-8: Build to 30 minutes, experiment with pace/distance goals.",
+  "nooLifeFeatureHighlight": "Running task with cinematic athlete visuals. Track distance, time, frequency. Pairs with other cardio habits. Contributes to Strength, Discipline, and Focus ratings. Visual heatmap shows consistency.",
+  "testimonial": "\"Couldn't run a mile without stopping. NooLife's progressive plan got me to 5K. Day 62, running is my meditation now.\" - Elena C.",
+  "ctaAngle": "Build a sustainable running habit with Couch-to-5K style progression. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/running.webp",
+  "tags": ["running", "cardio", "endurance", "fitness", "runner"],
+  "metaKeywords": [
+    "running habit",
+    "how to start running",
+    "daily running benefits",
+    "couch to 5k",
+    "running for beginners"
+  ]
+}

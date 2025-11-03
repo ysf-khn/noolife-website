@@ -1,0 +1,54 @@
+{
+  "challengeName": "21-Day Morning Routine Challenge",
+  "challengeSlug": "21-day-morning-routine",
+  "duration": 21,
+  "goal": "Morning Routine",
+  "goalSlug": "morning-routine",
+  "includedHabits": ["waking-early", "cold-shower", "meditation"],
+  "targetAudience": "Kickstart your morning transformation in just 21 days. Perfect for beginners ready to test the power of mornings without the 66-day commitment.",
+  "scientificRationale": "While 66 days is the average for full habit automation, research shows that 21 days is the critical threshold where new behaviors start to feel less effortful. Mornings are the highest-leverage time for behavior change—willpower is strongest, distractions are minimal, and early wins create momentum. A 21-day morning routine challenge is the perfect 'gateway habit': short enough to feel achievable, long enough to experience real benefits. Many users complete this challenge and immediately roll into the 66-day version.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Establish wake time (6-7am target). Eliminate snooze button. Add 30-sec cold shower at end of warm shower. Track daily completion.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "Increase cold shower to 60 sec. Add 5-min meditation. Morning routine now 10-15 min total. Notice improved energy and clarity.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 3,
+      "focus": "Routine feels automatic. Cold shower hits 90 sec, meditation 10 min. Identity shift begins: 'I'm a morning person now.'",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 21, you'll wake at your target time with minimal resistance, complete a 15-20 minute morning routine (cold shower + meditation) without willpower, experience measurably higher morning energy and mental clarity, and feel genuine momentum to continue. NooLife 21-day finishers report an average 54% improvement in morning consistency and 42% boost in daily productivity. Most immediately sign up for the 66-day challenge to cement the habit.",
+  "commonPitfalls": [
+    "Going to bed too late (sleep quality matters—aim for 7-8 hours)",
+    "Overloading Week 1 with an hour-long routine (start small: wake, cold shower, meditate—that's it)",
+    "Skipping weekends ('just this once' becomes 'every weekend')",
+    "Checking phone immediately upon waking (dopamine spike derails calm)",
+    "Quitting at Day 14 when novelty wears off (this is where discipline replaces motivation)",
+    "Not preparing the night before (lay out clothes, prep coffee, reduce morning friction)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks your 21-day morning routine with daily task completion: wake time, cold shower, meditation minutes. Your Discipline and Focus ratings improve daily. GTA-style sunrise visuals make every morning feel like a power-up. See your 21-day streak build—proof you can do hard things. Many users transition to the 66-day challenge after seeing results.",
+  "testimonial": "\"Never thought I could be a morning person. NooLife's 21-day challenge changed that. Day 21, waking at 6am feels normal. Cold showers are energizing. Meditation clears my mind. I'm hooked—starting the 66-day challenge tomorrow.\" - Alex P.",
+  "ctaAngle": "Build a morning routine in 21 days with daily tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "morning routine",
+    "21 day challenge",
+    "wake up early",
+    "cold shower",
+    "meditation"
+  ],
+  "metaKeywords": [
+    "21 day morning routine challenge",
+    "morning routine for beginners",
+    "how to build morning routine",
+    "wake up early challenge",
+    "21 day challenge"
+  ]
+}

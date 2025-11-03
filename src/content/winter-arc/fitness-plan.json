@@ -1,0 +1,104 @@
+{
+  "challengeName": "Winter Arc Fitness Plan",
+  "challengeSlug": "winter-arc-fitness-plan",
+  "duration": 66,
+  "focus": "Winter Arc Fitness",
+  "focusSlug": "fitness-plan",
+  "winterArcDefinition": "Winter Arc Fitness Plan leverages winter as the ultimate bulking/strength-building season. Fewer social obligations mean more gym time. Cooler temperatures allow intense training. Longer sleep windows improve recovery. By training consistently through winter's 66 days, you emerge in spring with physique others are just starting to build. Winter training = spring reveal.",
+  "whyWinterWorks": "Winter is nature's bulking season: cooler temps reduce overheating during intense training, longer sleep windows improve recovery, fewer social events mean more gym consistency, cultural 'hibernation' eliminates beach body pressure (train without performance anxiety). By building muscle/strength Oct-Feb, you arrive at spring already shredded while others are starting gym. This is seasonal timing advantage.",
+  "coreHabits": ["workout", "running", "pushups", "sit-ups", "water-intake"],
+  "targetAudience": "Build your winter body. Perfect for those using winter isolation to transform physically while others hibernate.",
+  "scientificRationale": "Winter is the perfect bulking and strength-building season: fewer social distractions, more recovery time (longer sleep), and cooler temperatures for intense training. Research shows that 66 days of progressive overload produces significant muscle gains and strength increases. By training consistently through winter, you emerge in spring with a physique others are just starting to build. Winter Arc fitness = summer reveal.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Workout 4x (30-min bodyweight/weights). Pushups daily (20-30). Running 2x. Water 80oz. Winter bulk begins.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "Add sit-ups daily (30-40). Increase workout intensity. Running 3x (20 min). Soreness fading, strength building.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Pushups hit 40+, sit-ups 50+. Workout 5x. Running 25 min continuous. Notice muscle definition appearing.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 4,
+      "focus": "First major strength gains. Workout split established (upper/lower or PPL). Winter Arc body emerging.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Pushups 50+, sit-ups 60-80. Running 5K continuous. Water 100oz on training days. Physique changing noticeably.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Workout consistency automatic. Progressive overload tracked. Others gaining winter weight—you're building muscle.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 7,
+      "focus": "Pushups 60-70, sit-ups 80-100. Running 30+ min. Strength PRs weekly. Winter Arc advantage clear.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Visible muscle growth. Strength at all-time high. You're building while others are hibernating.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Maintain intensity through holidays. Winter Arc warriors train through Thanksgiving-New Year's.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: Spring arrives. Compare winter start vs end photos. You're shredded while others are just starting gym.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "expectedTransformation": "By day 66: completed 60+ intense workouts. 2-3x pushup/sit-up capacity. Run 5K+ continuously. Gained 5-15 lbs muscle (or lost 10-20 lbs fat). Emerge in spring with physique that took others all year to not achieve. NooLife Winter Arc fitness finishers report average 156% strength increase and are beach-ready by March.",
+  "commonExcuses": [
+    "It's too cold to workout",
+    "I'll gain weight in winter like everyone else",
+    "I'll start training in spring for summer",
+    "Winter is for resting, not training"
+  ],
+  "excuseRebuttals": [
+    "Cold is perfect for training—no overheating, cooler temps improve performance. 'Too cold' is excuse. Train indoors or layer up. Elite train in adversity.",
+    "Average people gain winter weight. Elite use winter to build muscle. Which are you? Winter Arc fitness turns seasonal disadvantage into competitive advantage.",
+    "Starting training in spring means you're competing with millions who quit by June. Starting in winter means by spring, you're already shredded. Don't start when everyone starts.",
+    "Winter IS for resting—for average people. Elite use winter's fewer distractions to train harder. While they rest, you build. By spring, game over."
+  ],
+  "winterArcTimeline": "November 1 - February 28 (Core 66 days: Nov 1 - Jan 5)",
+  "commonPitfalls": [
+    "Using winter as excuse to skip training ('too cold/dark'—train anyway)",
+    "Not tracking progressive overload (you must increase weight/reps weekly)",
+    "Overeating without purpose (winter bulk doesn't mean dirty bulk)",
+    "Skipping cardio (running in cold builds mental toughness)",
+    "Not eating enough protein (aim 1g per lb bodyweight for muscle growth)",
+    "Breaking during holidays (Winter Arc = no days off)"
+  ],
+  "nooLifeIntegration": "NooLife tracks workout completion, pushups, sit-ups, running distance/time, water intake. Workout tracker logs exercises, sets, reps for progressive overload. Your Strength and Discipline ratings peak through winter. GTA-style winter athlete visuals make every session feel like power-building. Watch your Winter Arc transformation unfold.",
+  "testimonial": "\"Everyone gains weight in winter. I used Winter Arc to transform. Nov 1: 185 lbs, barely 30 pushups. Jan 6: 195 lbs pure muscle, 85 pushups, visible 6-pack. NooLife tracked everything. Spring reveal incoming.\" - Derek K.",
+  "ctaAngle": "Build your winter body with Winter Arc fitness tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/winter_arc.webp",
+  "tags": [
+    "winter arc",
+    "winter fitness",
+    "66 day workout",
+    "winter bulk",
+    "winter transformation"
+  ],
+  "metaKeywords": [
+    "winter arc fitness",
+    "winter workout plan",
+    "winter bulk challenge",
+    "winter transformation",
+    "winter arc training"
+  ]
+}

@@ -4,6 +4,13 @@
 import { Image } from "astro:assets";
 import downloadIOS from "../assets/download-ios.svg";
 import nooLifeScreens from "../assets/NooLifeScreens.svg";
+import { buildAppStoreURL } from "../utils/analytics";
+
+const appStoreURL = buildAppStoreURL({
+  utm_source: 'website',
+  utm_medium: 'landing',
+  utm_campaign: 'hero-cta'
+});
 ---
 
 <section
@@ -45,7 +52,8 @@ import nooLifeScreens from "../assets/NooLifeScreens.svg";
           style="animation-delay: 0.3s;"
         >
           <a
-            href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+            id="hero-app-store-cta"
+            href={appStoreURL}
             target="_blank"
             rel="noopener noreferrer"
             class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
@@ -124,3 +132,34 @@ import nooLifeScreens from "../assets/NooLifeScreens.svg";
     opacity: 0;
   }
 </style>
+
+<script>
+  import { trackCTAClick, trackAppStoreClick, getPageSlug } from "../utils/analytics";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const heroCTA = document.getElementById('hero-app-store-cta');
+
+    if (heroCTA) {
+      heroCTA.addEventListener('click', () => {
+        const pageSlug = getPageSlug();
+
+        // Track generic CTA click
+        trackCTAClick({
+          page_slug: pageSlug,
+          cta_position: 'hero',
+          cta_text: 'Download on the App Store'
+        });
+
+        // Track App Store specific click with UTM params
+        trackAppStoreClick({
+          page_slug: pageSlug,
+          cta_position: 'hero',
+          cta_text: 'Download on the App Store',
+          utm_source: 'website',
+          utm_medium: 'landing',
+          utm_campaign: 'hero-cta'
+        });
+      });
+    }
+  });
+</script>

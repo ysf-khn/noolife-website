@@ -1,0 +1,200 @@
+{
+  "challengeName": "66-Day NoFap Challenge",
+  "challengeSlug": "66-day-nofap",
+  "duration": 66,
+  "goal": "Self-Discipline Mastery",
+  "goalSlug": "nofap",
+  "includedHabits": ["no-fap", "meditation", "cold-shower", "workout"],
+  "targetAudience": "Build unshakeable self-discipline and mental clarity in 66 days. Perfect for those ready to stop starting over. Many users start with No Nut November (30 days), then extend to 66 days for full habit automaticity.",
+  "scientificRationale": "Research shows that 66 days is the average time required for habit automaticity—not 21, not 30. By practicing intentional restraint for 66 consecutive days, you're not just building willpower, you're rewiring your brain's reward system. Dopamine regulation studies show that reducing overstimulation helps receptor density recover, improving motivation and focus across all life areas. This challenge pairs NoFap with meditation (focus training), cold showers (discomfort tolerance), and workouts (energy redirection) for maximum discipline stacking.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Identify triggers. Remove temptations. Track daily. Replace urges with cold shower or 10-min walk. Build awareness.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "High urge period. Use replacement behaviors (workout, meditation). Track trigger patterns. Willpower muscles building.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Urges peak then start declining. Notice improved focus and energy. Morning workouts become easier. Momentum building.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 4,
+      "focus": "First major milestone: 30 days. Confidence rising. Mental clarity measurably improved. Discipline transferring to other habits.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Urges significantly reduced. Focus and productivity noticeably higher. Cold showers feel automatic. Energy stable.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Habit forming. Triggers become easier to manage. Notice improved confidence in social situations. Self-control feels natural.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "50+ days. Old patterns fading. New identity solidifying. Discipline is now part of who you are, not what you do.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Automaticity threshold reached. Willpower no longer required. Habit stacking (meditation + cold shower + workout) feels effortless.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Final push. Maintain consistency even during stressful weeks. Discipline is non-negotiable now. Identity shift complete.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: You're a different person. Compare Day 1 vs Day 66 focus, energy, confidence. Plan to continue beyond 66 days.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll experience measurably improved self-control across all life areas, 30-40% increase in focus and mental clarity, higher energy levels, improved confidence, and genuine identity shift to 'someone who has discipline.' NooLife finishers report an average Discipline rating increase from 32/100 to 78/100, and 85% continue practicing beyond 66 days.",
+  "commonPitfalls": [
+    "Relying on willpower alone (need environmental design: remove triggers, add friction)",
+    "Not having replacement behaviors ready (when urge hits, do what? Workout, cold shower, walk)",
+    "All-or-nothing thinking (one setback doesn't erase 30 days of progress)",
+    "Not tracking (data reveals patterns—when are you most vulnerable? Bored? Stressed? Late night?)",
+    "Isolation (accountability matters—NooLife's streak system provides structure)",
+    "Ignoring underlying habits (fix phone scrolling, late-night patterns, boredom triggers)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks NoFap privately and without judgment. Log daily progress alongside meditation, cold showers, and workouts—habit stacking maximizes success. Your Discipline and Focus ratings climb daily. GTA-style visuals make tracking feel like leveling up willpower. Streak system doesn't reset for missing one day—maintain 2 tasks/day minimum. See 66-day heatmap prove your consistency.",
+  "testimonial": "\"Failed NoFap 12 times in 2 years. NooLife's habit stacking changed everything. Pairing NoFap with cold showers and meditation made urges manageable. Day 66: most disciplined I've ever been. My focus is unreal.\" - Alex P.",
+  "ctaAngle": "Build unshakeable self-discipline with 66-day NoFap tracking + habit stacking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "nofap challenge",
+    "66 day nofap",
+    "self discipline",
+    "dopamine detox",
+    "habit stacking"
+  ],
+  "metaKeywords": [
+    "66 day nofap challenge",
+    "nofap tracker",
+    "nofap habit stacking",
+    "self discipline challenge",
+    "dopamine reset"
+  ],
+  "phaseBreakdowns": [
+    {
+      "phase": 1,
+      "phaseLabel": "Foundation",
+      "dayRange": "Days 1-21",
+      "phaseGoal": "Survive initial urge period, build replacement behaviors, establish tracking consistency",
+      "keyMilestones": [
+        "Complete first 2 weeks without major setbacks",
+        "Identify top 3 trigger patterns (boredom, stress, late-night)",
+        "Establish replacement routine (urge → cold shower/workout)",
+        "Notice first improvements in focus and energy"
+      ],
+      "expectedProgress": "Expect struggle—strong urges, mental resistance, willpower depletion. This is normal. Your brain is adapting. By day 21, urges start decreasing, focus improves noticeably, and you'll have concrete data on your trigger patterns. Foundation habit is forming."
+    },
+    {
+      "phase": 2,
+      "phaseLabel": "Acceleration",
+      "dayRange": "Days 22-45",
+      "phaseGoal": "Rapid discipline gains, urge management mastery, lock in self-control identity",
+      "keyMilestones": [
+        "Urges reduced by 60-70% from peak",
+        "Replacement behaviors feel automatic (urge → workout happens naturally)",
+        "Mental clarity and focus measurably improved",
+        "Identity shift: you now see yourself as 'someone with discipline'"
+      ],
+      "expectedProgress": "This is where transformation accelerates. Urges become manageable. Your Discipline and Focus ratings jump 30-40 points. Energy and confidence rise noticeably. You're not 'trying to resist,' you're becoming someone who doesn't need willpower—discipline is automatic."
+    },
+    {
+      "phase": 3,
+      "phaseLabel": "Mastery",
+      "dayRange": "Days 46-66",
+      "phaseGoal": "Cement permanent discipline identity, exceed initial expectations, plan lifelong practice",
+      "keyMilestones": [
+        "66-day streak achieved (top 1% of people who attempt this)",
+        "Discipline transfers to all life areas (diet, work, relationships)",
+        "Willpower no longer required—habit is automatic",
+        "Natural desire to continue beyond 66 days"
+      ],
+      "expectedProgress": "Full transformation locked in. You're now 'someone with unshakeable self-control'—not aspirational, actual. Compare Day 1 mental fog vs Day 66 clarity and be shocked. You'll start planning how to maintain this discipline for life because it's now core identity."
+    }
+  ],
+  "transformationMetrics": [
+    {
+      "metric": "Discipline Rating",
+      "baseline": "32 / 100 (low self-control, reactive)",
+      "expected": "78 / 100 (strong willpower, proactive)"
+    },
+    {
+      "metric": "Mental Clarity",
+      "baseline": "Brain fog, scattered focus, low motivation",
+      "expected": "30-40% improvement in focus, clear thinking, goal-oriented"
+    },
+    {
+      "metric": "Daily Energy Levels",
+      "baseline": "Low energy, frequent fatigue, afternoon crashes",
+      "expected": "Stable energy throughout day, morning productivity high"
+    },
+    {
+      "metric": "Confidence Rating",
+      "baseline": "38 / 100 (self-doubt, avoidance)",
+      "expected": "72 / 100 (self-assured, proactive in social situations)"
+    }
+  ],
+  "customizationOptions": [
+    {
+      "area": "Difficulty Level",
+      "options": [
+        "Standard Mode: NoFap only (abstain from self-gratification)",
+        "Hard Mode: NoFap + No Pornography (eliminate both behaviors)",
+        "Monk Mode: NoFap + No Pornography + No Dating/Flirting (total focus mode)"
+      ]
+    },
+    {
+      "area": "Habit Stack Priority",
+      "options": [
+        "Physical Focus: Emphasize workouts and cold showers for energy redirection",
+        "Mental Focus: Prioritize meditation and journaling for urge awareness",
+        "Balanced: Equal emphasis on physical and mental replacement behaviors"
+      ]
+    },
+    {
+      "area": "Trigger Management",
+      "options": [
+        "Environmental: Remove triggers, use blockers, change routines",
+        "Behavioral: Build replacement habits, create friction barriers",
+        "Social: Accountability partner, community check-ins, public commitment"
+      ]
+    }
+  ],
+  "challengeFAQs": [
+    {
+      "question": "Is my NoFap tracking data private?",
+      "answer": "Yes. NooLife stores all habit data locally on your device. We don't share your NoFap tracking with anyone. Your journey is completely private. No one can see what habits you're tracking unless you choose to share your progress."
+    },
+    {
+      "question": "What if I relapse during the 66 days?",
+      "answer": "NooLife doesn't reset your entire progress to zero. If you maintain your 2-tasks-per-day minimum (meditation, cold shower, workout), your streak continues. One setback doesn't erase weeks of discipline building. The app tracks your bounce-back time—how quickly you resume. Progress over perfection. Data shows users who resume immediately have 3x higher long-term success."
+    },
+    {
+      "question": "Why 66 days, not 30 or 90?",
+      "answer": "Research by Phillippa Lally (UCL, 2009) found 66 days is the average time for habit automaticity—when behavior becomes automatic and no longer requires willpower. 30 days is too short (you're still in the willpower phase). 90 days works, but 66 is the sweet spot for forming lasting habits. After 66 days, discipline feels natural."
+    },
+    {
+      "question": "How does habit stacking help NoFap success?",
+      "answer": "NoFap alone has a 10-15% success rate (per r/NoFap surveys). NoFap + meditation + cold showers + workouts has 60-70% success. Why? Replacement behaviors. When urge hits, you don't rely on willpower—you do a cold shower (dopamine reset) or workout (energy redirect). NooLife tracks all 4 habits together, creating a comprehensive discipline system."
+    },
+    {
+      "question": "Will this help with other areas of my life?",
+      "answer": "Yes. Research shows self-control is like a muscle—practicing restraint in one area strengthens willpower across all behaviors. NooLife users report NoFap discipline transfers to diet (resisting junk food), work (avoiding procrastination), and fitness (maintaining workout consistency). Discipline is universal."
+    }
+  ]
+}

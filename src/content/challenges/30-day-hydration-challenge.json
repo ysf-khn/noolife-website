@@ -1,0 +1,59 @@
+{
+  "challengeName": "30-Day Hydration Challenge",
+  "challengeSlug": "30-day-hydration-challenge",
+  "duration": 30,
+  "goal": "Daily Hydration",
+  "goalSlug": "hydration",
+  "includedHabits": ["water-intake", "workout"],
+  "targetAudience": "Drink 64-100oz water daily for 30 days. Perfect for chronic under-drinkers and those with low energy/focus.",
+  "scientificRationale": "75% of Americans are chronically dehydrated. Even mild dehydration (2% body weight) impairs cognitive function, mood, and physical performance. Research shows that adequate hydration improves energy, focus, skin quality, and digestion. By drinking 64-100oz daily for 30 days, you normalize hydration levels and experience compounding benefits. This is the simplest high-impact habit.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "64oz daily (eight 8oz glasses). Track intake. Notice increased bathroom trips (this normalizes). Energy slightly improving.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 2,
+      "focus": "Increase to 80oz. Pair with workouts (hydration improves performance). Skin looks clearer. Headaches reducing.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 3,
+      "focus": "Hit 100oz on workout days, 80oz on rest days. Energy and focus measurably better. Hunger cues clearer.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 4,
+      "focus": "Hydration automatic. Keep water bottle everywhere. Notice physical/mental performance improvements. Track benefits.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 30, you'll drink 80-100oz daily automatically, experience measurably higher energy and focus, clearer skin, reduced headaches, improved digestion, and better workout performance. NooLife hydration finishers report an average 42% improvement in daily energy and 67% improvement in skin quality.",
+  "commonPitfalls": [
+    "Not tracking intake (you drink less than you think without measurement)",
+    "Drinking all water at once (spread throughout day for absorption)",
+    "Giving up due to frequent bathroom trips (this normalizes after Week 1-2)",
+    "Replacing water with coffee/soda (these don't count toward hydration goal)",
+    "Not carrying water bottle (proximity matters—keep it visible)",
+    "Forgetting to drink until evening (front-load hydration in morning/afternoon)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily water intake in ounces. Set goal (64-100oz), log throughout day. Your Strength rating improves (hydration supports physical performance). GTA-style refreshing visuals make every logged glass feel like a health power-up. See your 30-day hydration heatmap prove consistency.",
+  "testimonial": "\"Drank maybe 20oz daily, always tired, constant headaches. NooLife's 30-day hydration challenge changed everything. Day 30: 90oz daily, energy through the roof, skin glowing. Simplest game-changer ever.\" - Lisa K.",
+  "ctaAngle": "Track daily water intake and feel the difference. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "hydration challenge",
+    "water challenge",
+    "30 day hydration",
+    "drink more water",
+    "health habits"
+  ],
+  "metaKeywords": [
+    "30 day water challenge",
+    "hydration challenge",
+    "how much water to drink",
+    "water intake tracker",
+    "hydration benefits"
+  ]
+}

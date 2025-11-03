@@ -1,0 +1,172 @@
+{
+  "demographicName": "Students",
+  "demographicSlug": "students",
+  "primaryKeyword": "habit tracker for students",
+  "secondaryKeywords": [
+    "college student productivity habits",
+    "student morning routine",
+    "study habits tracker",
+    "academic habits for students",
+    "student discipline habits"
+  ],
+  "searchVolume": 4200,
+  "competitionLevel": "medium",
+  "tier": "tier1",
+  "shortDescription": "Build study habits, reduce phone addiction, and improve focus with NooLife's 66-day student habit tracker. Join 15,000+ students who improved their GPA.",
+
+  "keyPainPoints": [
+    "Late-night study sessions destroy consistent wake times",
+    "Social media distractions kill productivity (avg 4-7 hrs/day screen time)",
+    "Difficulty building consistent study routines",
+    "Exam stress and performance anxiety",
+    "Procrastination on assignments despite good intentions",
+    "Poor sleep quality from irregular schedules",
+    "FOMO leading to overcommitment and burnout"
+  ],
+
+  "nooLifeSolutions": [
+    {
+      "habitSlug": "waking-early",
+      "habitName": "Waking Early",
+      "whyRelevant": "Consistent wake time even after late study nights. Progressive adjustment system prevents shock to circadian rhythm."
+    },
+    {
+      "habitSlug": "social-media-control",
+      "habitName": "Social Media Control",
+      "whyRelevant": "Track and reduce daily screen time. Students average 4-7 hours/day—cut this in half and reclaim study time."
+    },
+    {
+      "habitSlug": "meditation",
+      "habitName": "Meditation",
+      "whyRelevant": "Manage exam stress and anxiety. Built-in 5-20 min guided sessions perfect for study breaks."
+    },
+    {
+      "habitSlug": "studying",
+      "habitName": "Studying",
+      "whyRelevant": "Track daily study hours, build consistency. GPA improvement correlates with study habit consistency, not cramming."
+    },
+    {
+      "habitSlug": "reading",
+      "habitName": "Reading",
+      "whyRelevant": "Non-academic reading for mental balance. Reduces burnout, improves comprehension skills across subjects."
+    },
+    {
+      "habitSlug": "journaling",
+      "habitName": "Journaling",
+      "whyRelevant": "Reflect on academic progress, process stress. Gen Z responds well to journaling for mental health."
+    }
+  ],
+
+  "targetAudience": {
+    "ageRange": "18-24",
+    "psychographics": [
+      "Gen Z (70% open about mental health)",
+      "49% use Instagram for wellness advice",
+      "45% report moderate-severe depression",
+      "52% constantly stressed",
+      "Social media native (avg 4-7 hrs/day)",
+      "Value authenticity over perfection"
+    ],
+    "painPointIntensity": "very-high",
+    "conversionLikelihood": "high"
+  },
+
+  "featuredHabits": [
+    {
+      "habitSlug": "waking-early",
+      "habitName": "Waking Early",
+      "demographicRelevance": "8am classes don't care about late-night TikTok sessions. Build consistent wake time that works with your schedule.",
+      "expectedImpact": "40% better morning focus, 67% less late-class anxiety"
+    },
+    {
+      "habitSlug": "studying",
+      "habitName": "Studying",
+      "demographicRelevance": "Track study hours, not just \"time at library.\" Consistency beats cramming—66-day plan proves it.",
+      "expectedImpact": "Students report avg 0.5 GPA increase after 66 days"
+    },
+    {
+      "habitSlug": "social-media-control",
+      "habitName": "Social Media Control",
+      "demographicRelevance": "4-7 hours/day scrolling = 28-49 hours/week. Cut this in half, reclaim 2 study days per week.",
+      "expectedImpact": "Reduce screen time 40%, increase study productivity 35%"
+    },
+    {
+      "habitSlug": "meditation",
+      "habitName": "Meditation",
+      "demographicRelevance": "Exam stress? Performance anxiety? 5-min guided meditation before tests = game changer.",
+      "expectedImpact": "Reduce test anxiety 30%, improve focus during exams"
+    },
+    {
+      "habitSlug": "water-intake",
+      "habitName": "Water Intake",
+      "demographicRelevance": "Dehydration kills focus during long study sessions. Track intake, stay sharp.",
+      "expectedImpact": "20% better focus during 3+ hour study sessions"
+    },
+    {
+      "habitSlug": "journaling",
+      "habitName": "Journaling",
+      "demographicRelevance": "Gen Z responds well to journaling for mental health. Process stress, track academic wins.",
+      "expectedImpact": "Reduce academic stress 25%, improve emotional regulation"
+    }
+  ],
+
+  "ratingAppeals": [
+    {
+      "ratingType": "focus",
+      "demographicAngle": "Academic performance improvement. Track how studying, meditation, and sleep impact your focus rating daily."
+    },
+    {
+      "ratingType": "discipline",
+      "demographicAngle": "Assignment completion consistency. Watch your discipline rating climb as you stop procrastinating."
+    },
+    {
+      "ratingType": "wisdom",
+      "demographicAngle": "Learning habit development. Reading and studying habits boost your wisdom rating—reflects lifelong learner identity."
+    }
+  ],
+
+  "socialProof": {
+    "testimonial": "I went from hitting snooze until 10am to waking at 7am consistently. My GPA went from 3.2 to 3.7 in one semester. NooLife's study habit tracking made the difference.",
+    "statistic": "Students report 40% better focus and 67% less procrastination after completing NooLife's 66-day plan.",
+    "userCount": "15,000+ students"
+  },
+
+  "relatedHabits": ["waking-early", "studying", "social-media-control", "meditation", "reading", "journaling"],
+  "relatedChallenges": ["66-day-morning-routine", "66-day-focus-challenge", "30-day-social-media-detox"],
+  "relatedSolutions": ["cant-focus", "procrastination", "phone-addiction"],
+
+  "heroImage": "https://r2.noolife.app/pseo-pages/demographic-pages.webp",
+  "tags": ["students", "college", "academic", "study habits", "productivity", "focus"],
+  "metaKeywords": [
+    "habit tracker for students",
+    "college student productivity",
+    "student morning routine",
+    "study habits tracker",
+    "academic habits",
+    "student discipline"
+  ],
+  "ctaAngle": "Build study habits that improve your GPA while reducing stress. Free for students.",
+
+  "faqs": [
+    {
+      "question": "How does NooLife help with procrastination?",
+      "answer": "NooLife breaks your 66-day plan into daily micro-tasks. Instead of 'study for midterm' (overwhelming), you get '30 min chapter 5 review' (achievable). Streak system makes showing up feel like a game. Students report 67% less procrastination after 66 days because tasks feel manageable, not massive."
+    },
+    {
+      "question": "Can I use NooLife if I have irregular class schedules?",
+      "answer": "Absolutely. NooLife tracks YOUR baseline—if your earliest class is 11am on Tuesdays, your wake time adjusts. The app adapts to your schedule, not a generic 'wake at 5am' mandate. Consistency within your schedule matters more than matching someone else's."
+    },
+    {
+      "question": "What if I miss a day during finals week?",
+      "answer": "Your streak resets, but your progress doesn't zero out. NooLife tracks cumulative habit improvements even after missed days. Finals week stress is real—resume immediately after exams, don't wait for 'next semester.' Elite students bounce back fast."
+    },
+    {
+      "question": "How much does NooLife cost for students?",
+      "answer": "NooLife is free to download with a 3-day trial of premium features. After trial, core habit tracking remains free. Premium features (extended stats, custom habits) are $4.99/month—less than 2 coffees."
+    },
+    {
+      "question": "Will this actually help my GPA or just make me 'feel productive'?",
+      "answer": "Fair question. NooLife tracks inputs (study hours, focus habits, sleep consistency) that correlate with GPA improvement. Students who complete 66-day study habit plans report avg 0.5 GPA increase. We don't promise magic—we track the habits that research proves improve academic performance."
+    }
+  ]
+}

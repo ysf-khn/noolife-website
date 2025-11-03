@@ -1,0 +1,172 @@
+{
+  "demographicName": "Remote Workers",
+  "demographicSlug": "remote-workers",
+  "primaryKeyword": "habit tracker for remote workers",
+  "secondaryKeywords": [
+    "digital nomad productivity habits",
+    "work from home routine",
+    "remote work habits",
+    "digital nomad morning routine",
+    "remote worker focus habits"
+  ],
+  "searchVolume": 2400,
+  "competitionLevel": "medium",
+  "tier": "tier1",
+  "shortDescription": "Structure your freedom. Build productivity habits without office oversight. Join 12,000+ remote workers who turned chaos into consistency.",
+
+  "keyPainPoints": [
+    "Lack of structure without office routine",
+    "Work-life boundaries blur (no commute separation)",
+    "Loneliness/isolation (42% cite as biggest struggle)",
+    "Distractions everywhere in home environment",
+    "Time zone chaos for digital nomads",
+    "Motivation without boss/coworkers nearby",
+    "Inconsistent workspace/environment"
+  ],
+
+  "nooLifeSolutions": [
+    {
+      "habitSlug": "waking-early",
+      "habitName": "Waking Early",
+      "whyRelevant": "Create consistent start to unstructured days. No commute = need artificial boundary. Morning routine replaces office arrival."
+    },
+    {
+      "habitSlug": "meditation",
+      "habitName": "Meditation",
+      "whyRelevant": "Combat isolation, mental clarity. 10-min morning meditation = mental commute into work mode."
+    },
+    {
+      "habitSlug": "workout",
+      "habitName": "Workout",
+      "whyRelevant": "Replace commute with movement. Sedentary remote work = health killer. Daily workout = non-negotiable."
+    },
+    {
+      "habitSlug": "social-media-control",
+      "habitName": "Social Media Control",
+      "whyRelevant": "Avoid mid-workday distraction spirals. No manager watching = easy to scroll 2 hours away. Track usage ruthlessly."
+    },
+    {
+      "habitSlug": "cold-shower",
+      "habitName": "Cold Shower",
+      "whyRelevant": "Morning transition into work mode. Physical signal: work day starting. Activates alertness without office commute."
+    },
+    {
+      "habitSlug": "journaling",
+      "habitName": "Journaling",
+      "whyRelevant": "Shutdown routine to separate work/life. Evening journal = mental commute OUT of work mode. Critical boundary."
+    }
+  ],
+
+  "targetAudience": {
+    "ageRange": "Millennials/Gen Z heavy",
+    "psychographics": [
+      "Value flexibility but need structure",
+      "Tech-savvy",
+      "Coworking spaces popular for structure",
+      "Deep work blocks critical",
+      "Community-starved",
+      "Boundary issues common"
+    ],
+    "painPointIntensity": "very-high",
+    "conversionLikelihood": "high"
+  },
+
+  "featuredHabits": [
+    {
+      "habitSlug": "waking-early",
+      "habitName": "Waking Early",
+      "demographicRelevance": "Structure to unstructured days. Consistent wake time = work mode trigger. No commute = need this even more.",
+      "expectedImpact": "50% better work/life separation, 40% more productive mornings"
+    },
+    {
+      "habitSlug": "workout",
+      "habitName": "Workout",
+      "demographicRelevance": "Replace commute, combat sedentary lifestyle. Daily movement = energy, focus, health. Non-negotiable for remote workers.",
+      "expectedImpact": "60% more daily energy, 30% better focus"
+    },
+    {
+      "habitSlug": "meditation",
+      "habitName": "Meditation",
+      "demographicRelevance": "Combat isolation, mental clarity. Morning meditation = mental commute. Transitions you from sleep → work mode.",
+      "expectedImpact": "35% reduced isolation feelings, 40% better focus"
+    },
+    {
+      "habitSlug": "social-media-control",
+      "habitName": "Social Media Control",
+      "demographicRelevance": "No manager watching = easy to waste hours scrolling. Track screen time during work hours. Distractions kill deep work.",
+      "expectedImpact": "50% less distraction, 2+ hours/day reclaimed"
+    },
+    {
+      "habitSlug": "journaling",
+      "habitName": "Journaling",
+      "demographicRelevance": "Shutdown routine. Evening journal = mental commute OUT of work. Separates work/life when living at office.",
+      "expectedImpact": "40% better work/life boundaries, 30% less burnout"
+    },
+    {
+      "habitSlug": "cold-shower",
+      "habitName": "Cold Shower",
+      "demographicRelevance": "Work mode activation. Morning cold shower = physical signal that work day starting. Replaces office commute transition.",
+      "expectedImpact": "50% better morning alertness, 35% faster work mode activation"
+    }
+  ],
+
+  "ratingAppeals": [
+    {
+      "ratingType": "discipline",
+      "demographicAngle": "Self-management without oversight. Your discipline rating shows if you're productive when nobody's watching."
+    },
+    {
+      "ratingType": "focus",
+      "demographicAngle": "Deep work in distraction-rich environments. Track how habits impact your focus rating—correlation with output."
+    },
+    {
+      "ratingType": "confidence",
+      "demographicAngle": "Professional identity while remote. Confidence rating reflects you're still high-performer, even without office."
+    }
+  ],
+
+  "socialProof": {
+    "testimonial": "Working from home became working all the time. No boundaries. NooLife's morning routine (wake, workout, meditate) gave me structure. Shutdown journal gave me permission to stop. Game changer.",
+    "statistic": "42% of remote workers struggle with loneliness, 100% struggle with distractions. Join 12,000+ who built structure into freedom.",
+    "userCount": "12,000+ remote workers"
+  },
+
+  "relatedHabits": ["waking-early", "workout", "meditation", "social-media-control", "journaling", "cold-shower"],
+  "relatedChallenges": ["66-day-morning-routine", "66-day-focus-challenge", "66-day-digital-minimalism"],
+  "relatedSolutions": ["cant-focus", "no-discipline", "phone-addiction"],
+
+  "heroImage": "https://r2.noolife.app/pseo-pages/demographic-pages.webp",
+  "tags": ["remote workers", "digital nomads", "work from home", "productivity", "focus", "boundaries"],
+  "metaKeywords": [
+    "habit tracker for remote workers",
+    "digital nomad productivity",
+    "work from home routine",
+    "remote work habits",
+    "digital nomad habits",
+    "remote worker focus"
+  ],
+  "ctaAngle": "Structure your freedom. Build the routine your home office needs. Free plan.",
+
+  "faqs": [
+    {
+      "question": "How does NooLife help with work/life boundaries?",
+      "answer": "Morning routine (wake, workout, meditate) = work mode ON. Evening journal = work mode OFF. Physical rituals create mental boundaries when living at office. 40% of users report better boundaries after 66 days."
+    },
+    {
+      "question": "What if I work across multiple time zones?",
+      "answer": "NooLife tracks YOUR local time. Traveling? Adjust wake time in app. Core habits (meditation, journaling, workout) can happen anywhere. Consistency relative to YOUR schedule, not clock time."
+    },
+    {
+      "question": "Can I use NooLife if I work irregular hours?",
+      "answer": "Yes. Define YOUR work hours, build routine around that. Night owl? Track wake time at 11am. Consistency within YOUR schedule matters, not matching 9-5 office workers."
+    },
+    {
+      "question": "How does this help with loneliness/isolation?",
+      "answer": "Meditation helps process isolation feelings. Workout gets you out of house (gym = social). NooLife community feature connects you with other remote workers. But real solution: coworking spaces + intentional social time."
+    },
+    {
+      "question": "What if I already use productivity apps like Notion/Todoist?",
+      "answer": "NooLife isn't task manager—it's habit tracker. Notion = what to do today. NooLife = daily rituals that create productivity. Complement each other. Many users use both."
+    }
+  ]
+}

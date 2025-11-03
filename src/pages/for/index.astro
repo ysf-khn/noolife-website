@@ -1,0 +1,415 @@
+---
+// Demographics Index/Directory Page - Hub for all demographic pages
+// URL: /for (landing page for "Habit Tracker for Every Lifestyle")
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import downloadIOS from "../../assets/download-ios.svg";
+
+const demographics = await getCollection("demographics");
+
+// Sort by tier and search volume
+const sortedDemographics = demographics.sort((a, b) => {
+  // Tier priority
+  const tierOrder = { tier1: 1, tier2: 2, tier3: 3 };
+  const tierDiff = tierOrder[a.data.tier] - tierOrder[b.data.tier];
+  if (tierDiff !== 0) return tierDiff;
+
+  // Within same tier, sort by search volume (descending)
+  return b.data.searchVolume - a.data.searchVolume;
+});
+
+// Group by tier for better UX
+const tier1 = demographics.filter((d) => d.data.tier === "tier1");
+const tier2 = demographics.filter((d) => d.data.tier === "tier2");
+const tier3 = demographics.filter((d) => d.data.tier === "tier3");
+
+const title =
+  "Habit Tracker for Every Lifestyle: Built for Your World | NooLife";
+const description =
+  "Whether you're a student, entrepreneur, athlete, or parent—NooLife adapts to your specific challenges. 66-day science meets real-life demands. Free iOS app.";
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero Section -->
+  <section
+    class="relative min-h-[70vh] flex items-center justify-center px-4 py-16 sm:py-24"
+  >
+    <div class="relative max-w-6xl w-full mx-auto text-center">
+      <div class="mb-4 hero-fade-in" style="animation-delay: 0.05s;">
+        <span
+          class="px-4 py-2 text-sm font-bold rounded-full uppercase"
+          style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade); border: 1px solid rgba(0, 208, 156, 0.3);"
+        >
+          Built for Your Life
+        </span>
+      </div>
+
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6 hero-fade-in"
+        style="animation-delay: 0.1s; color: var(--color-alabaster);"
+      >
+        Habit Tracker for<br />
+        <span style="color: var(--color-jade);">Every Lifestyle</span>
+      </h1>
+
+      <p
+        class="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 hero-fade-in"
+        style="animation-delay: 0.2s; color: var(--color-faded-khaki);"
+      >
+        Students face different habit challenges than entrepreneurs. Athletes
+        need different systems than creatives. NooLife adapts to <em>your</em> specific
+        world—not generic advice that ignores your reality.
+      </p>
+
+      <div class="hero-fade-in" style="animation-delay: 0.25s;">
+        <a
+          href="https://apps.apple.com/app/noolife/id6738925275"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-8 py-4 font-bold rounded-lg transition-all duration-300 text-lg"
+          style="background: var(--color-jade); color: var(--color-raisin-black);"
+        >
+          <Image
+            src={downloadIOS}
+            alt="Download on App Store"
+            class="mr-2 h-6 w-auto"
+          />
+          Find Your Habit Plan
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tier 1 Demographics (High Priority) -->
+  <section
+    class="py-16 md:py-24 px-4"
+    style="background: rgba(20, 23, 26, 0.5);"
+  >
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2
+          class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4"
+          style="color: var(--color-alabaster);"
+        >
+          Find Your Lifestyle
+        </h2>
+        <p
+          class="text-lg md:text-xl max-w-3xl mx-auto"
+          style="color: var(--color-faded-khaki);"
+        >
+          Each page addresses your specific pain points, schedules, and goals.
+          No generic advice.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {
+          sortedDemographics
+            .filter((d) => d.data.tier === "tier1")
+            .map((demographic) => (
+              <a
+                href={`/for/${demographic.data.demographicSlug}`}
+                class="block p-6 rounded-xl border transition-all duration-300 hover:scale-105 hover:border-[rgba(0,208,156,0.4)] group"
+                style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+              >
+                <div class="flex items-center gap-2 mb-3">
+                  <span
+                    class="text-xs px-2 py-1 rounded-full font-bold uppercase"
+                    style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade);"
+                  >
+                    {demographic.data.searchVolume.toLocaleString()}/mo
+                  </span>
+                </div>
+
+                <h3
+                  class="text-2xl font-bold mb-2 group-hover:text-[var(--color-jade)] transition-colors"
+                  style="color: var(--color-alabaster);"
+                >
+                  {demographic.data.demographicName}
+                </h3>
+
+                <p
+                  class="text-sm mb-4"
+                  style="color: var(--color-faded-khaki);"
+                >
+                  {demographic.data.shortDescription.substring(0, 120)}...
+                </p>
+
+                <div class="flex items-center gap-2">
+                  <span
+                    class="text-sm font-bold group-hover:translate-x-1 transition-transform"
+                    style="color: var(--color-jade);"
+                  >
+                    View Guide →
+                  </span>
+                </div>
+              </a>
+            ))
+        }
+      </div>
+
+      <!-- Tier 2 & 3 Demographics -->
+      {
+        (tier2.length > 0 || tier3.length > 0) && (
+          <div class="mt-16">
+            <h3
+              class="text-2xl md:text-3xl font-bold mb-8 text-center"
+              style="color: var(--color-alabaster);"
+            >
+              More Lifestyles
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {sortedDemographics
+                .filter(
+                  (d) => d.data.tier === "tier2" || d.data.tier === "tier3"
+                )
+                .map((demographic) => (
+                  <a
+                    href={`/for/${demographic.data.demographicSlug}`}
+                    class="block p-5 rounded-lg border transition-all duration-300 hover:scale-105 hover:border-[rgba(0,208,156,0.3)] group"
+                    style="background: rgba(0, 0, 0, 0.4); border-color: rgba(241, 237, 233, 0.05);"
+                  >
+                    <h4
+                      class="text-xl font-bold mb-2 group-hover:text-[var(--color-jade)] transition-colors"
+                      style="color: var(--color-alabaster);"
+                    >
+                      {demographic.data.demographicName}
+                    </h4>
+
+                    <p class="text-sm" style="color: var(--color-faded-khaki);">
+                      {demographic.data.targetAudience.ageRange}
+                    </p>
+
+                    <span
+                      class="inline-block mt-3 text-xs font-bold group-hover:translate-x-1 transition-transform"
+                      style="color: var(--color-jade);"
+                    >
+                      Learn More →
+                    </span>
+                  </a>
+                ))}
+            </div>
+          </div>
+        )
+      }
+    </div>
+  </section>
+
+  <!-- Why Demographic-Specific Matters -->
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2
+        class="text-3xl md:text-4xl font-extrabold mb-8 text-center"
+        style="color: var(--color-alabaster);"
+      >
+        Why Generic Habit Advice Fails
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(241, 237, 233, 0.02); border: 1px solid rgba(241, 237, 233, 0.1);"
+        >
+          <div class="text-4xl mb-4">🎓</div>
+          <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">
+            Students
+          </h3>
+          <p style="color: var(--color-alabaster);">
+            Need to balance 8am classes, late study nights, exam stress, and
+            FOMO. A 5am wake time isn't realistic—but consistent wake time <em
+              >is</em
+            >.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(241, 237, 233, 0.02); border: 1px solid rgba(241, 237, 233, 0.1);"
+        >
+          <div class="text-4xl mb-4">💼</div>
+          <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">
+            Entrepreneurs
+          </h3>
+          <p style="color: var(--color-alabaster);">
+            Need discipline without accountability. No boss checking if they
+            wake early. Need systems that work when motivation disappears.
+          </p>
+        </div>
+
+        <div
+          class="p-6 rounded-lg"
+          style="background: rgba(241, 237, 233, 0.02); border: 1px solid rgba(241, 237, 233, 0.1);"
+        >
+          <div class="text-4xl mb-4">👶</div>
+          <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">
+            Parents
+          </h3>
+          <p style="color: var(--color-alabaster);">
+            Need habits that work with chaos. 10 minutes before kids wake >
+            "1-hour morning routine." Realistic > aspirational.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-xl mb-6" style="color: var(--color-faded-khaki);">
+          NooLife adapts to your baseline, not some influencer's fantasy
+          routine.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section
+    class="py-16 md:py-24 px-4"
+    style="background: rgba(20, 23, 26, 0.5);"
+  >
+    <div class="max-w-5xl mx-auto">
+      <h2
+        class="text-3xl md:text-4xl font-extrabold mb-12 text-center"
+        style="color: var(--color-alabaster);"
+      >
+        How Demographic-Specific Plans Work
+      </h2>
+
+      <div class="space-y-6">
+        <div class="flex gap-4 items-start">
+          <div
+            class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold"
+            style="background: var(--color-jade); color: var(--color-raisin-black);"
+          >
+            1
+          </div>
+          <div>
+            <h3
+              class="text-xl font-bold mb-2"
+              style="color: var(--color-alabaster);"
+            >
+              Select Your Demographic
+            </h3>
+            <p style="color: var(--color-faded-khaki);">
+              Choose the lifestyle that matches your reality (student,
+              entrepreneur, athlete, parent, etc.).
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div
+            class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold"
+            style="background: var(--color-jade); color: var(--color-raisin-black);"
+          >
+            2
+          </div>
+          <div>
+            <h3
+              class="text-xl font-bold mb-2"
+              style="color: var(--color-alabaster);"
+            >
+              See Your Specific Challenges
+            </h3>
+            <p style="color: var(--color-faded-khaki);">
+              We identify your demographic's unique pain points—no generic "just
+              wake at 5am" advice.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div
+            class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold"
+            style="background: var(--color-jade); color: var(--color-raisin-black);"
+          >
+            3
+          </div>
+          <div>
+            <h3
+              class="text-xl font-bold mb-2"
+              style="color: var(--color-alabaster);"
+            >
+              Get Tailored Solutions
+            </h3>
+            <p style="color: var(--color-faded-khaki);">
+              NooLife recommends 6 essential habits for your lifestyle, with
+              specific relevance explained.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div
+            class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold"
+            style="background: var(--color-jade); color: var(--color-raisin-black);"
+          >
+            4
+          </div>
+          <div>
+            <h3
+              class="text-xl font-bold mb-2"
+              style="color: var(--color-alabaster);"
+            >
+              Follow Your 66-Day Plan
+            </h3>
+            <p style="color: var(--color-faded-khaki);">
+              ~450 tasks spread across 66 days, adapted to your schedule and
+              constraints. Track progress, see ratings improve.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2
+        class="text-3xl md:text-4xl font-extrabold mb-6"
+        style="color: var(--color-alabaster);"
+      >
+        Find Your Lifestyle Above
+      </h2>
+
+      <p class="text-xl mb-8" style="color: var(--color-faded-khaki);">
+        Choose your demographic, get your specific plan. 66 days from now,
+        you'll be the main character in your own life.
+      </p>
+
+      <a
+        href="https://apps.apple.com/app/noolife/id6738925275"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center px-8 py-4 font-bold rounded-lg transition-all duration-300 text-lg"
+        style="background: var(--color-jade); color: var(--color-raisin-black);"
+      >
+        <Image
+          src={downloadIOS}
+          alt="Download on App Store"
+          class="mr-2 h-6 w-auto"
+        />
+        Start Free Today
+      </a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+</style>

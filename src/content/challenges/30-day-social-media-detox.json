@@ -1,0 +1,69 @@
+{
+  "challengeName": "30-Day Social Media Detox Challenge",
+  "challengeSlug": "30-day-social-media-detox",
+  "duration": 30,
+  "goal": "Social Media Detox",
+  "goalSlug": "social-media-detox",
+  "includedHabits": [
+    "social-media-control",
+    "reading",
+    "studying",
+    "meditation"
+  ],
+  "targetAudience": "Reclaim your focus, time, and mental health in 30 days. Perfect for those tired of scrolling away their potential.",
+  "scientificRationale": "Research shows that social media use triggers the same dopamine pathways as gambling and substance abuse. The average person spends 2.5 hours daily on social platforms—912 hours per year. By eliminating or drastically limiting social media for 30 days, you force a dopamine detox: your brain's reward system recalibrates, attention span recovers, and you rediscover the ability to focus deeply. Studies show that 30 days of reduced screen time significantly improves mood, sleep quality, and productivity. This isn't willpower—it's neurochemistry.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Delete social apps or use app blockers (1-hour daily limit max). Notice withdrawal: boredom, phantom phone checks. Track urges.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "Boredom intensifies. Fill time with reading (30 min daily), studying (20 min), or meditation. Notice how much free time you have.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Dopamine receptors start recovering. Less urge to check phone. Attention span measurably improving. Productivity spikes.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Social media feels optional, not compulsive. Notice mental clarity, reduced anxiety, better sleep. Plan post-challenge boundaries.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 5,
+      "focus": "Day 30: Reflect on time reclaimed (60-75 hours in 30 days). Decide if you'll reintroduce socials or stay detoxed.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 30, you'll have reclaimed 60-75 hours, experience measurably improved focus and attention span, sleep better (no pre-bed scrolling), feel less comparison-driven anxiety, and rediscover the ability to be present. NooLife detox finishers report reading an average of 3-4 books, completing online courses, or learning new skills in the time previously spent scrolling. Your Focus and Wisdom ratings will skyrocket.",
+  "commonPitfalls": [
+    "Not deleting apps (just hiding them doesn't work—delete or use Screen Time locks)",
+    "Replacing Instagram with TikTok or YouTube (all dopamine-loop platforms count)",
+    "Checking 'just for 5 minutes' (no such thing—one check becomes 45 minutes)",
+    "Not filling the void (boredom will pull you back unless you replace scrolling with something)",
+    "Justifying exceptions ('I need it for work/networking')—be honest about what's necessary vs. compulsive",
+    "Quitting during FOMO spike (Week 2 is hardest—push through)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily social media-free completion with streak counters. Log replacement activities (reading pages, study minutes, meditation sessions). Your Focus, Wisdom, and Confidence ratings improve as scrolling decreases. GTA-style focused-mind visuals make every day off socials feel like leveling up. See your 30-day heatmap prove you can live without the algorithm.",
+  "testimonial": "\"I was scrolling 4+ hours daily. NooLife's 30-day detox changed everything. Deleted Instagram, TikTok, Twitter. Day 30: read 4 books, learned Spanish basics, sleep is incredible. I got my life back.\" - Jordan T.",
+  "ctaAngle": "Reclaim your focus with 30-day social media detox tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "social media detox",
+    "30 day challenge",
+    "digital detox",
+    "phone addiction",
+    "dopamine detox"
+  ],
+  "metaKeywords": [
+    "30 day social media detox",
+    "quit social media",
+    "digital detox challenge",
+    "social media addiction",
+    "dopamine detox"
+  ]
+}

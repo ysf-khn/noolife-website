@@ -1,0 +1,95 @@
+{
+  "problem": "Too Tired to Workout",
+  "problemSlug": "too-tired-to-workout",
+  "commonSymptoms": [
+    "Every day: 'I'm too tired, I'll workout tomorrow' (tomorrow never comes)",
+    "Planning to workout after work but crashing on couch instead",
+    "Feel exhausted just thinking about exercise",
+    "Morning workout alarm goes off → too tired → back to sleep",
+    "Weekend comes, still too tired (thought rest would help—it didn't)",
+    "Cycle: No exercise → low energy → too tired to exercise → repeat"
+  ],
+  "rootCauses": [
+    "Paradox: Low energy CAUSED by no exercise (not fixed by rest)",
+    "Trying to do 60-min intense workouts when baseline fitness is zero",
+    "Poor sleep quality (need 7-8 hours for energy + recovery)",
+    "Dehydration and poor diet (brain fog, fatigue from nutrition deficit)",
+    "Sedentary lifestyle = mitochondria (energy factories) atrophy",
+    "Dopamine deficiency (no exercise = no endorphins = low motivation)"
+  ],
+  "scientificExplanation": "You're not too tired TO workout—you're tired BECAUSE you don't workout. Research shows exercise increases mitochondrial density (cellular energy production). Sedentary people have 30-40% fewer mitochondria than active people. Paradox: Exercise creates energy, inactivity depletes it. Trying 60-min HIIT when baseline is zero = burnout. Start with 10-min walks. Progressive overload over 66 days = mitochondria multiply, energy baseline rises. By Week 8: You have MORE energy post-workout than you did resting pre-workout. Biology changes.",
+  "failedSolutions": [
+    "Waiting until you 'have energy' to start (energy comes FROM exercise, not before)",
+    "Going all-in with intense workout programs (burn out by Day 5)",
+    "Pre-workout supplements (temporary stimulant boost, doesn't build real energy)",
+    "Gym membership you never use (environment change doesn't fix energy deficit)",
+    "Motivation videos (work for 2 hours, then energy crashes back to baseline)"
+  ],
+  "whyTheyFail": "Energy doesn't appear spontaneously—it's built through progressive adaptation. Intense programs require energy you don't have yet (crash fast). Stimulants mask problem without fixing mitochondria. Gym membership without habit system = wasted money. Motivation is temporary emotion; energy is biological adaptation requiring 4-8 weeks of consistent training. You need progressive system starting at YOUR baseline (not athlete's).",
+  "actualSolution": "Start impossibly easy: 10-min bodyweight exercises (10 pushups, 20 squats, 30-sec plank). NooLife increases difficulty progressively over 66 days. Week 1: 10 min. Week 4: 20 min. Week 8: 30-40 min. Your mitochondria multiply, cardiovascular fitness improves, energy baseline rises. Pair with sleep tracking (7-8 hours non-negotiable) and hydration (2-3L water). By Day 66: You have MORE energy than Day 1—data shows it in your Strength Rating.",
+  "nooLifeApproach": "NooLife tracks workout habit with progressive difficulty scaling. Start at YOUR baseline (not unrealistic goals). Complete 10-min workout = task complete = dopamine hit = momentum. App increases workout duration/intensity as Strength Rating climbs. Pair with sleep (wake time tracking), hydration (water habit), and cold showers (energy boost). Your Strength Rating proves energy is building (32/100 → 75/100). You're not 'trying to workout'—you're becoming energized person.",
+  "expectedTimeline": "Week 1-2: 10-min workouts feel hard but doable. Energy still low. BUT: Mitochondria starting to multiply. Week 3-4: Workouts 15-20 min. Notice: slightly more energy throughout day. Week 5-6: Workouts 25-30 min. Energy baseline measurably higher. Afternoon crashes less frequent. Week 8-10: Workouts 30-40 min feel automatic. MORE energy post-workout than you had resting on Day 1. Biology transformed.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Start 10-min bodyweight workouts (10 pushups, 20 squats, 30-sec plank). Track sleep and hydration. Just show up.",
+      "expectedProgress": "Hardest week. Feels effortful. Energy still low. BUT: You're showing up—mitochondria adapting."
+    },
+    {
+      "week": 3,
+      "focus": "Workouts 15 min. Add 5 more pushups, 10 more squats. Notice: waking up slightly less tired.",
+      "expectedProgress": "Energy improving 10-20%. Afternoon crashes less severe. Body adapting to movement."
+    },
+    {
+      "week": 6,
+      "focus": "Workouts 25-30 min. Progressive overload building strength. Strength Rating 60-70/100. Energy baseline clearly higher.",
+      "expectedProgress": "No longer 'too tired to workout.' Energy FROM workout > energy before workout started. Shift happening."
+    },
+    {
+      "week": 10,
+      "focus": "Workouts 30-40 min automatic. Strength Rating 72-78/100. Energy levels at lifetime high.",
+      "expectedProgress": "Compare Day 1 exhaustion vs Day 66 energy. Different biology. Mitochondria multiplied, fitness baseline transformed."
+    }
+  ],
+  "relatedHabits": ["workout", "waking-early", "water", "cold-shower"],
+  "relatedChallenges": ["66-day-workout-habit", "66-day-running-challenge"],
+  "relatedProblems": [
+    "no-discipline",
+    "cant-wake-up-early",
+    "cant-stick-to-habits"
+  ],
+  "testimonial": "\"Was exhausted 24/7. Thought I needed rest. NooLife's progressive workout plan proved I needed movement. Started 10-min bodyweight. Day 66: 45-min workouts, energy through roof. My Strength rating 28 → 76. Exercise GAVE me energy.\" - David R.",
+  "ctaAngle": "Build energy through progressive workout habit. Free 3-day trial.",
+  "trustSignal": "Join 50,000+ users who've gone from 'too tired' to energized with NooLife's progressive system",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": ["workout", "exercise", "energy", "fatigue", "fitness"],
+  "metaKeywords": [
+    "too tired to workout",
+    "no energy to exercise",
+    "workout motivation",
+    "how to get energy",
+    "workout fatigue"
+  ],
+  "faqs": [
+    {
+      "question": "Why am I too tired to workout when I'm getting enough sleep?",
+      "answer": "Paradox: Low energy is often CAUSED by no exercise, not fixed by rest. Sedentary lifestyle = mitochondria (cellular energy) atrophy. Exercise stimulates mitochondrial growth = more energy production. You don't need more rest—you need progressive movement to rebuild energy-producing capacity. Rest alone can't fix this."
+    },
+    {
+      "question": "How can exercise give me energy if I'm already exhausted?",
+      "answer": "Start impossibly easy (10-min bodyweight). First 2-3 weeks you'll feel tired after. Week 4-6: Energy starts improving. Week 8-10: You'll have MORE energy post-workout than pre-workout. Biology adapts: mitochondria multiply, cardiovascular efficiency improves, endorphins increase. Energy is built, not found."
+    },
+    {
+      "question": "What if I've tried working out before and it made me more tired?",
+      "answer": "You went too hard too fast (60-min intense workouts when baseline is zero = burnout). NooLife starts at YOUR baseline (10-min easy). Progressive overload over 66 days = body adapts without crashing. Energy builds gradually. Most people fail because they shock their system instead of training it."
+    },
+    {
+      "question": "Do I need a gym membership?",
+      "answer": "No. NooLife's workout system uses bodyweight exercises (pushups, squats, planks, lunges). Zero equipment needed. Gym membership doesn't fix 'too tired' problem—progressive habit building does. Save gym for Month 3-4 if you want (after baseline energy rebuilt)."
+    },
+    {
+      "question": "How long before I feel more energized?",
+      "answer": "Subtle improvements: Week 3-4 (waking up slightly less tired, fewer afternoon crashes). Noticeable improvements: Week 5-6 (energy baseline measurably higher, workouts feel easier). Major transformation: Week 8-10 (MORE energy than you had resting on Day 1). Your Strength Rating shows exact progress. Compare Day 1 vs Day 66—night and day."
+    }
+  ]
+}

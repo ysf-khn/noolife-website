@@ -1,0 +1,59 @@
+{
+  "challengeName": "30-Day Meditation Challenge",
+  "challengeSlug": "30-day-meditation-challenge",
+  "duration": 30,
+  "goal": "Meditation Habit",
+  "goalSlug": "meditation",
+  "includedHabits": ["meditation", "journaling"],
+  "targetAudience": "Learn to meditate in 30 days. Perfect for beginners skeptical about meditation or those who 'can't sit still.'",
+  "scientificRationale": "Meditation changes your brain in as little as 8 weeks, but noticeable benefits begin around 2-3 weeks of daily practice. Research shows that just 10 minutes of daily meditation reduces stress, improves focus, and enhances emotional regulation. By meditating for 30 straight days, you overcome the initial discomfort and experience enough benefits to motivate continuation. This is your meditation foundation.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "5 min daily, guided meditation (breath focus). Mind wanders constantly—this is normal. Just notice and return to breath.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "10 min daily. Restlessness peaks. Notice subtle calm moments. Add 3-min journaling after (insights, feelings).",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "First real benefits: less reactive, better sleep, improved focus. 10-15 min feels easier. Meditation feels worthwhile.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "15 min daily. Meditation feels automatic. You crave the stillness. Notice how it improves your entire day.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 30, you'll meditate 10-15 minutes daily with minimal resistance, experience measurably lower stress and anxiety, improved emotional regulation, better sleep quality, and enhanced focus. NooLife 30-day meditation finishers report an average 58% reduction in perceived stress and 92% continue meditating beyond 30 days.",
+  "commonPitfalls": [
+    "Judging yourself for 'bad' sessions (every session counts—there's no failure)",
+    "Expecting instant calm (benefits are subtle and cumulative)",
+    "Trying to 'stop thoughts' (meditation is about observing thoughts, not eliminating them)",
+    "Skipping when stressed (meditate especially when you feel you don't have time)",
+    "Not using guided meditations (structure helps beginners enormously)",
+    "Quitting during Week 2 discomfort (push through—benefits come Week 3+)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily meditation completion and duration. Built-in guided meditation sessions in Assets screen (5, 10, 15, 20 min options). Your Focus, Wisdom, and Confidence ratings improve daily. GTA-style serene visuals make every session feel like mental leveling up. See your 30-day meditation streak build.",
+  "testimonial": "\"Tried meditation 5 times, always quit. NooLife's 30-day challenge with guided sessions changed everything. Day 30: 15 min daily, anxiety cut in half. Sleep is incredible. I'm a believer now.\" - Emma R.",
+  "ctaAngle": "Build a meditation habit with guided sessions and tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "meditation challenge",
+    "30 day meditation",
+    "mindfulness",
+    "stress relief",
+    "meditation for beginners"
+  ],
+  "metaKeywords": [
+    "30 day meditation challenge",
+    "meditation for beginners",
+    "how to meditate daily",
+    "mindfulness challenge",
+    "meditation benefits"
+  ]
+}

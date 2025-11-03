@@ -1,0 +1,57 @@
+{
+  "habitName": "Water Intake",
+  "habitSlug": "water-intake",
+  "category": "core",
+  "difficulty": "easy",
+  "typicalDaysToAutomate": "21-30",
+  "shortDescription": "Daily hydration tracking for optimal physical and cognitive performance",
+  "scientificBenefits": [
+    "Improved cognitive function and focus",
+    "Better physical performance and endurance",
+    "Enhanced mood and reduced fatigue",
+    "Improved skin health and appearance",
+    "Better digestion and metabolism"
+  ],
+  "researchCitations": [
+    {
+      "study": "Popkin et al. (2010) - Nutrition Reviews",
+      "finding": "Proper hydration improves cognitive performance by up to 14% in tasks requiring attention",
+      "link": "https://academic.oup.com/nutritionreviews/article/68/8/439/1910837"
+    },
+    {
+      "study": "Armstrong et al. (2012) - Journal of Nutrition",
+      "finding": "Mild dehydration (1.5% fluid loss) significantly impairs mood and cognitive function"
+    },
+    {
+      "study": "Ericson (2013) - PLOS ONE",
+      "finding": "Drinking 500ml water before meals increases weight loss by 44% over 12 weeks"
+    }
+  ],
+  "relatedHabits": ["workout", "running", "waking-early"],
+  "commonBarriers": [
+    "Forgetting to drink throughout the day",
+    "Dislike of plain water taste",
+    "No tracking system or visual reminders",
+    "Bathroom frequency concerns during work/meetings",
+    "Not carrying a water bottle consistently"
+  ],
+  "progressionPlan": "Week 1: Establish baseline (track current intake). Week 2: Add 2 glasses (16oz) to baseline. Week 3-4: Reach 8 glasses/day (64oz). Week 5-8: Adjust based on activity level, maintain consistency, frontload intake (most water before 6pm).",
+  "nooLifeFeatureHighlight": "Simple tap-to-log water tracking. Visual progress bars showing daily intake. GTA-style hydration task cards. Contributes to Strength and Discipline ratings. Streak tracking for consistency.",
+  "testimonial": "\"Never thought I'd be the person who drinks enough water. NooLife's tracking made it so easy. 40+ day streak, feel so much more energized.\" - Maya P.",
+  "ctaAngle": "Track your hydration with visual progress tracking. Build the water intake habit. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/drink.webp",
+  "tags": [
+    "water intake",
+    "hydration",
+    "health habits",
+    "daily habits",
+    "wellness"
+  ],
+  "metaKeywords": [
+    "daily water intake",
+    "hydration habit",
+    "how much water to drink",
+    "water tracking app",
+    "hydration benefits"
+  ]
+}

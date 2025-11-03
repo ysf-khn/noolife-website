@@ -1,0 +1,52 @@
+{
+  "habitName": "Cold Shower",
+  "habitSlug": "cold-shower",
+  "category": "core",
+  "difficulty": "hard",
+  "typicalDaysToAutomate": "60-75",
+  "shortDescription": "Daily cold water exposure for mental resilience and physical health",
+  "scientificBenefits": [
+    "Increased alertness and mental clarity",
+    "Improved circulation and immune function",
+    "Enhanced metabolic rate and fat burning",
+    "Reduced inflammation and faster recovery",
+    "Boosted discipline and stress tolerance"
+  ],
+  "researchCitations": [
+    {
+      "study": "Buijze et al. (2016) - PLOS ONE",
+      "finding": "30-day cold shower routine reduced sick days by 29%",
+      "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161749"
+    },
+    {
+      "study": "Shevchuk (2008) - Medical Hypotheses",
+      "finding": "Cold showers may reduce depressive symptoms by activating sympathetic nervous system"
+    }
+  ],
+  "relatedHabits": ["waking-early", "meditation", "workout"],
+  "commonBarriers": [
+    "Initial temperature shock and discomfort",
+    "Morning grogginess makes it easy to skip",
+    "Lack of immediate gratification",
+    "Weather/season excuses (already cold outside)"
+  ],
+  "progressionPlan": "Week 1: End warm shower with 15 seconds cold. Week 2: 30 seconds cold. Week 3: 60 seconds cold. Week 4-8: Gradual increase to full cold shower (2-5 minutes).",
+  "nooLifeFeatureHighlight": "GTA-style cold shower task cards with cinematic visuals. Progressive difficulty scaling prevents burnout. Streak tracking that doesn't reset for missing one day.",
+  "testimonial": "\"I thought I'd never stick to cold showers. 66 days in, I feel weird WITHOUT it. NooLife's progression plan made it actually doable.\" - Alex M.",
+  "ctaAngle": "Track your cold shower progress with science-backed 66-day plans. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/cold_shower.webp",
+  "tags": [
+    "cold shower",
+    "habit formation",
+    "discipline",
+    "winter arc",
+    "morning routine"
+  ],
+  "metaKeywords": [
+    "cold shower habit",
+    "cold shower benefits",
+    "cold shower challenge",
+    "daily cold shower",
+    "how to take cold showers"
+  ]
+}

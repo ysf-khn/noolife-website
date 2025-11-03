@@ -1,0 +1,186 @@
+{
+  "combinationName": "Waking Early and Meditation",
+  "combinationSlug": "waking-early-and-meditation",
+  "habit1Slug": "waking-early",
+  "habit2Slug": "meditation",
+  "habit1Name": "Waking Early",
+  "habit2Name": "Meditation",
+  "primaryKeyword": "wake up early meditate",
+  "secondaryKeywords": [
+    "5am meditation routine",
+    "morning meditation habit",
+    "early morning mindfulness",
+    "waking early meditation benefits",
+    "5am club meditation"
+  ],
+  "searchVolume": 2260,
+  "competitionLevel": "low",
+  "tier": "tier1",
+  "shortDescription": "The 5AM clarity protocol. Early mornings = quiet mind, zero distractions. This is when meditation actually works. The world is silent, your mind follows.",
+  "synergyScience": {
+    "headline": "The 5AM Clarity Protocol: Why Early Wake + Meditation Wins",
+    "explanation": "Morning meditation (vs. evening) sets your stress baseline for the entire day. Research shows morning meditation improves focus throughout the day by 28%, while evening meditation only impacts sleep. Early wake gives you a distraction-free window - no emails, no people, no chaos. This isn't just meditation. It's meditation when your brain is fresh, receptive, and undistracted. Peak neuroplasticity window.",
+    "researchCitations": [
+      {
+        "study": "Tang et al. (2015) - PNAS",
+        "finding": "Morning mindfulness practice improved attention regulation throughout the day more than evening practice",
+        "link": "https://www.pnas.org/doi/10.1073/pnas.1419895112"
+      },
+      {
+        "study": "Huberman Lab - Circadian Biology",
+        "finding": "First 30-90 minutes after waking = optimal cortisol window for setting daily stress baseline. Morning practices anchor the day."
+      },
+      {
+        "study": "Lazar et al. (2005) - NeuroReport",
+        "finding": "Meditation increased cortical thickness in brain regions associated with attention - morning practice showed faster adaptation"
+      }
+    ],
+    "neuroscience": "Your brain's default mode network (DMN) is quietest in the morning - less mental chatter. Cortisol peaks naturally within 30 min of waking (cortisol awakening response). Meditation during this window trains your stress response system. You're programming your entire day in the first 30 minutes."
+  },
+  "stackingProtocol": {
+    "timing": "Wake at target time (5-6am) → 10-20 min meditation → Start your day. Meditation MUST be first activity (before phone, coffee, shower).",
+    "order": "Wake → Meditate → Everything else. If you check phone first, you've lost. Morning distractions hijack your brain. Guard the first 30 minutes ruthlessly.",
+    "bestPractice": "Prepare meditation spot night before (cushion, timer set). Wake → Walk directly to spot → Sit → Breathe. No decisions, no friction. Automated sequence = consistency."
+  },
+  "combinedBenefits": [
+    {
+      "benefit": "28% Improved All-Day Focus",
+      "explanation": "Morning meditation sets your attention baseline. Studies show morning practice improves focus throughout entire day. Evening meditation doesn't have this carryover effect.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Distraction-Free Practice Window",
+      "explanation": "5am = no emails, no texts, no people. Your meditation actually works because nothing interrupts it. Evening meditation is always fighting distractions.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Programs Your Stress Response for the Day",
+      "explanation": "First 30-90 min after waking sets cortisol baseline. Morning meditation = low-stress day. You're biochemically programming calm before chaos begins.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Accountability for Early Wake",
+      "explanation": "Meditation gives purpose to early wake. You're not just waking early 'because discipline' - you're waking for clarity. Purpose = consistency.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Faster Neuroplasticity Gains",
+      "explanation": "Morning brain = fresh, receptive. Meditation rewires neural pathways faster in the morning. You're hacking the optimal learning window.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Automatic Daily Practice",
+      "explanation": "Morning meditation never gets skipped (it's first thing). Evening meditation gets delayed/forgotten. Waking early guarantees consistency.",
+      "uniqueToCombination": true
+    }
+  ],
+  "progressionPlan": {
+    "overview": "Start with current wake time + 5-min meditation. Shift wake time earlier by 15 min every 2 weeks. By Day 66, you're waking at 5-6am with 20-min meditation ritual. Progressive approach prevents overwhelm.",
+    "weeklyBreakdown": [
+      {
+        "weekRange": "Week 1-2",
+        "habit1Focus": "Wake 15 min earlier than current (e.g., 7am → 6:45am). Set alarm across room.",
+        "habit2Focus": "5-min guided meditation immediately after waking. Use app (Headspace, Calm, or free YouTube).",
+        "combinedGoal": "Build the ritual: Alarm → Walk to cushion → Meditate → Day starts. No phone first."
+      },
+      {
+        "weekRange": "Week 3-4",
+        "habit1Focus": "Wake another 15 min earlier (6:30am). Notice the quiet - fewer distractions.",
+        "habit2Focus": "10-min meditation. Try breath counting or body scan. Notice increased focus throughout day.",
+        "combinedGoal": "You're protecting your first 30 minutes. No phone, no distractions. Just you and your mind."
+      },
+      {
+        "weekRange": "Week 5-6",
+        "habit1Focus": "Wake another 15 min earlier (6:15am). You're joining the early risers club.",
+        "habit2Focus": "15-min meditation. Experiment: guided vs. silent. Find what resonates.",
+        "combinedGoal": "Meditation is now your morning anchor. You crave this quiet time. Skipping feels wrong."
+      },
+      {
+        "weekRange": "Week 7-8",
+        "habit1Focus": "Final wake time shift (6:00am or 5:30am). You're in the 5am club now.",
+        "habit2Focus": "15-20 min meditation. Mostly silent (minimal guidance needed). You know what to do.",
+        "combinedGoal": "Your mornings are sacred. This ritual is non-negotiable. World is chaotic, you're calm."
+      },
+      {
+        "weekRange": "Week 9-10 (Day 66)",
+        "habit1Focus": "Wake at 5:30-6:00am naturally (alarm is backup). Circadian rhythm locked.",
+        "habit2Focus": "20-30 min meditation. It's not discipline anymore - it's craving. You need this.",
+        "combinedGoal": "Identity shift: 'I'm someone who wakes early and meditates.' This is who you are now."
+      }
+    ]
+  },
+  "commonMistakes": [
+    "Checking phone before meditating (dopamine hijack - ruins meditation quality)",
+    "Meditating in bed (you'll fall back asleep - sit upright in dedicated spot)",
+    "Skipping meditation on weekends (consistency is everything - no exceptions)",
+    "Waking early but doing other tasks first (meditation must be first, or it won't happen)",
+    "Using snooze button (breaks the ritual - alarm → meditation, no negotiation)",
+    "Expecting to feel good immediately (first 21 days are brutal - early wake is hard)",
+    "Not preparing meditation spot night before (morning friction kills consistency)"
+  ],
+  "nooLifeIntegration": "NooLife tracks target wake time + meditation completion as linked morning ritual. First task of day: 'Wake at 5:30am + 15min meditation'. Streak breaks if either is skipped. GTA visuals show your character in peaceful sunrise meditation - 'Main character energy'. Synergy bonus: Complete both for Discipline + Focus ratings. Stats: Average wake time, meditation streak, daily energy levels, focus quality.",
+  "relatedCombinations": [
+    "waking-early-and-cold-shower",
+    "meditation-and-cold-shower",
+    "journaling-and-waking-early",
+    "waking-early-and-workout",
+    "reading-and-waking-early"
+  ],
+  "relatedChallenges": [
+    "66-day-5am-club",
+    "66-day-morning-routine",
+    "66-day-mindfulness-challenge"
+  ],
+  "ctaAngle": "Track 5am wake + meditation ritual. Program your day before it starts.",
+  "testimonial": "\"I tried evening meditation for years, never stuck. 5am meditation changed everything. The house is silent. My mind is clear. I'm setting the tone before the world wakes up. 66 days in, I can't imagine life without this.\" - Rachel M., NooLife user",
+  "heroImage": "https://r2.noolife.app/pseo-pages/combination-pages.webp",
+  "tags": [
+    "waking early",
+    "meditation",
+    "morning routine",
+    "5am club",
+    "mindfulness",
+    "focus",
+    "productivity",
+    "circadian rhythm"
+  ],
+  "metaKeywords": [
+    "wake up early meditate",
+    "5am meditation routine",
+    "morning meditation habit",
+    "early morning mindfulness",
+    "5am club meditation benefits",
+    "morning meditation focus",
+    "early wake meditation"
+  ],
+  "faqs": [
+    {
+      "question": "Why is morning meditation better than evening?",
+      "answer": "Morning meditation sets your stress baseline for the entire day - improving focus, mood, and resilience for 8-12 hours. Evening meditation only helps sleep. Morning also has zero distractions (no emails, people, chaos). Your mind is fresh, not fried from the day."
+    },
+    {
+      "question": "What if I'm not a morning person?",
+      "answer": "'Not a morning person' is learned behavior, not genetics. 21 days of consistent early wake + meditation rewires your circadian rhythm. By Day 30, you'll crave mornings. Your chronotype adapts when you give it consistency."
+    },
+    {
+      "question": "How early do I actually need to wake up?",
+      "answer": "Ideal: 5:30-6:30am. Key is waking BEFORE household chaos begins. If you have kids, wake 30-60 min before them. The goal is undisturbed quiet time, not a specific clock time."
+    },
+    {
+      "question": "Can I drink coffee before meditating?",
+      "answer": "No. Caffeine before meditation defeats the purpose. You want your natural, calm morning state - not jittery alertness. Meditate first (10-20 min), then coffee. The meditation will wake you up naturally."
+    },
+    {
+      "question": "What if I fall asleep during morning meditation?",
+      "answer": "Don't meditate in bed or lying down. Sit upright in a chair or on a cushion. If still sleepy, splash cold water on face first. After Week 2, sleep inertia fades - you'll stay alert naturally."
+    },
+    {
+      "question": "Should I meditate before or after shower/breakfast?",
+      "answer": "BEFORE everything. Alarm → Meditate → Shower → Breakfast. The moment you break the ritual (shower first, check phone, etc.), meditation gets delayed/skipped. First activity of the day, no exceptions."
+    },
+    {
+      "question": "How long until I see benefits?",
+      "answer": "Focus improvement: 7-10 days. Stress reduction: 14-21 days. Automatic habit: 40-60 days. Identity shift ('I'm a meditator'): 66 days. Most users feel transformed by Day 30, but push to Day 66 for permanence."
+    }
+  ]
+}

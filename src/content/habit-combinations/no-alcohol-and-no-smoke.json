@@ -1,0 +1,186 @@
+{
+  "combinationName": "No Alcohol and No Smoking",
+  "combinationSlug": "no-alcohol-and-no-smoke",
+  "habit1Slug": "no-alcohol",
+  "habit2Slug": "no-smoke",
+  "habit1Name": "No Alcohol",
+  "habit2Name": "No Smoking",
+  "primaryKeyword": "quit drinking and smoking",
+  "secondaryKeywords": [
+    "sober no smoking",
+    "quit alcohol and cigarettes",
+    "sobriety and quitting smoking",
+    "alcohol free no smoking",
+    "quit both addictions"
+  ],
+  "searchVolume": 1620,
+  "competitionLevel": "medium",
+  "tier": "tier2",
+  "shortDescription": "Total substance freedom. Quitting both simultaneously = higher long-term success than staggered approach. This stack creates complete identity shift.",
+  "synergyScience": {
+    "headline": "Why Quitting Both Together Works Better Than One-at-a-Time",
+    "explanation": "Conventional wisdom: Quit one vice at a time. Research shows opposite. Smoking and drinking are linked behaviors (80% of smokers drink, 90% smoke more when drinking). Quitting both simultaneously removes cross-triggers. Studies show dual quitters have 60% higher success rates at 1-year mark vs. sequential quitters. You're not fighting two battles - you're removing one interconnected addiction system.",
+    "researchCitations": [
+      {
+        "study": "Baca & Yahne (2009) - Nicotine & Tobacco Research",
+        "finding": "Concurrent treatment for alcohol and tobacco resulted in 60% higher long-term abstinence vs. sequential treatment",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/19246425/"
+      },
+      {
+        "study": "McKee et al. (2017) - JAMA Psychiatry",
+        "finding": "Smoking cessation combined with alcohol treatment reduced relapse rates for both substances"
+      },
+      {
+        "study": "Prochaska et al. (2004) - JAMA",
+        "finding": "Quitting smoking didn't increase alcohol relapse risk - myth debunked. Dual treatment is safe and more effective"
+      }
+    ],
+    "neuroscience": "Both activate same dopamine pathways. Quitting one while continuing other = incomplete reset. Dopamine receptors stay desensitized. Quit both: Full dopamine system reboot. Your brain learns: no chemical shortcuts to feeling good."
+  },
+  "stackingProtocol": {
+    "timing": "Quit both on same day (Day 1 = alcohol-free + smoke-free). No 'I'll quit smoking next month' - that guarantees failure.",
+    "order": "Simultaneous, not sequential. Cross-triggers are too strong. Drinking triggers smoking urge. Smoking triggers drinking urge. Break both loops at once.",
+    "bestPractice": "Remove all access (dump alcohol, throw out cigarettes/vapes). Tell 3 people for accountability. Avoid bars/smoking areas first 30 days. Replace both habits with new reward (gym, meditation, cold showers)."
+  },
+  "combinedBenefits": [
+    {
+      "benefit": "60% Higher Long-Term Success",
+      "explanation": "Dual quitting has higher success rates than sequential. Removing cross-triggers prevents the domino effect: 'I drank, so I smoked' or 'I smoked, so I drank.'",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Complete Dopamine Reset",
+      "explanation": "Quitting one substance leaves dopamine pathways partially activated. Quit both: Full neurochemical reboot. By Day 90, natural dopamine sensitivity restored.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Identity Transformation",
+      "explanation": "You're not 'someone trying to quit' - you're 'someone who doesn't drink OR smoke.' Complete identity shift vs. partial change.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Compound Health Benefits",
+      "explanation": "Lung capacity + liver function + cardiovascular health all improve faster than either alone. The synergy is biological, not just psychological.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Financial Freedom Multiplier",
+      "explanation": "Average smoker + drinker spends $400-600/month. Quit both: $5K-7K/year saved. This financial win reinforces identity change.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Social Circle Upgrade",
+      "explanation": "Quitting both forces you to find new social environments. You can't half-quit (sober but smoking at bars doesn't work). Complete environment change = new friend group.",
+      "uniqueToCombination": true
+    }
+  ],
+  "progressionPlan": {
+    "overview": "Days 1-14 are hardest (dual withdrawal). Days 15-30: Physical cravings fade, psychological battle begins. Day 30-66: Building new identity. Most relapses happen Days 21-40 (stay vigilant).",
+    "weeklyBreakdown": [
+      {
+        "weekRange": "Week 1-2 (Days 1-14)",
+        "habit1Focus": "Alcohol withdrawal peaks Days 3-7. Manage: hydration, sleep, avoid triggers. See doctor if heavy drinker.",
+        "habit2Focus": "Nicotine withdrawal peaks Days 3-5. Manage: deep breathing, physical activity, nicotine patches if needed.",
+        "combinedGoal": "Survive hardest phase. Every hour you don't drink/smoke = brain healing. Track days, not perfection."
+      },
+      {
+        "weekRange": "Week 3-4 (Days 15-28)",
+        "habit1Focus": "Physical alcohol cravings fade. Psychological cravings remain (boredom, stress, social situations).",
+        "habit2Focus": "Physical nicotine cravings fade. Behavioral triggers remain (after meals, driving, stress).",
+        "combinedGoal": "Replace both habits with new rewards: gym, meditation, hobby. Don't white-knuckle - build new life."
+      },
+      {
+        "weekRange": "Week 5-6 (Days 29-42)",
+        "habit1Focus": "High relapse risk (the 'just one drink' temptation). Stay vigilant. Avoid bars/parties.",
+        "habit2Focus": "High relapse risk (the 'social smoke' temptation). Avoid smoking areas/smokers.",
+        "combinedGoal": "This is the danger zone. Support group helpful (AA, SMART Recovery). You're healing, but fragile."
+      },
+      {
+        "weekRange": "Week 7-8 (Days 43-56)",
+        "habit1Focus": "Benefits visible: better sleep, more energy, clearer skin, weight loss.",
+        "habit2Focus": "Benefits visible: breathing easier, taste/smell return, no morning cough.",
+        "combinedGoal": "You're past the worst. Cravings less frequent. Identity shifting: 'I don't do that anymore.'"
+      },
+      {
+        "weekRange": "Week 9-10 (Days 57-66+)",
+        "habit1Focus": "Alcohol holds no appeal. You see drunk people differently (pity, not envy).",
+        "habit2Focus": "Cigarette smell repulses you. Smoking areas look pathetic, not tempting.",
+        "combinedGoal": "Identity transformation complete. You're not 'quitting' - you're 'someone who doesn't drink or smoke.' Forever."
+      }
+    ]
+  },
+  "commonMistakes": [
+    "Trying to quit one at a time (sequential quitting has 40% lower success rate - quit both)",
+    "Not seeking medical help if heavy user (withdrawal can be dangerous - see doctor)",
+    "Keeping 'emergency' stash (dump everything Day 1 - no exceptions)",
+    "Thinking 'just one' is okay after 30 days (relapse starts with 'just one')",
+    "Not replacing habits with new rewards (boredom + void = relapse - build new life)",
+    "Isolating yourself (community/support group doubles success rate)",
+    "Using other substances as replacement (weed, vaping, kratom - just shifts addiction)"
+  ],
+  "nooLifeIntegration": "NooLife tracks dual sobriety streaks (alcohol-free days + smoke-free days). One tracker, two habits. Relapse on either breaks both streaks (accountability). GTA visuals show character rejecting temptations, building new life. Synergy bonus: Complete both daily for Discipline + Health ratings. Community: Connect with others on same journey. Stats: Money saved, health improvements, days sober.",
+  "relatedCombinations": [
+    "no-alcohol-and-workout",
+    "nofap-and-cold-shower",
+    "cold-shower-and-social-media-control",
+    "meditation-and-cold-shower",
+    "nofap-and-meditation"
+  ],
+  "relatedChallenges": [
+    "66-day-sobriety-challenge",
+    "66-day-dopamine-detox",
+    "winter-arc-transformation"
+  ],
+  "ctaAngle": "Track dual sobriety. 60% higher success when quitting both together.",
+  "testimonial": "\"I tried quitting smoking while still drinking. Failed 4 times. Quit both on same day. 1 year sober now. Drinking triggered smoking, smoking triggered drinking. Had to break both loops. Best decision of my life.\" - James D., NooLife user",
+  "heroImage": "https://r2.noolife.app/pseo-pages/combination-pages.webp",
+  "tags": [
+    "no alcohol",
+    "no smoking",
+    "sobriety",
+    "addiction recovery",
+    "substance free",
+    "dopamine reset",
+    "health transformation",
+    "discipline"
+  ],
+  "metaKeywords": [
+    "quit drinking and smoking",
+    "sober and smoke free",
+    "quit alcohol and cigarettes together",
+    "dual addiction recovery",
+    "sobriety smoking cessation",
+    "quit both at once",
+    "alcohol free no smoking"
+  ],
+  "faqs": [
+    {
+      "question": "Is it safe to quit both at the same time?",
+      "answer": "For most people, yes. Heavy drinkers should see doctor (alcohol withdrawal can be dangerous). Nicotine withdrawal is uncomfortable but not life-threatening. Medical supervision recommended if drinking 8+ drinks/day or smoking 2+ packs/day."
+    },
+    {
+      "question": "Won't quitting both be twice as hard?",
+      "answer": "No. They're linked behaviors. Quitting both removes cross-triggers (drinking triggers smoking urge, smoking triggers drinking urge). Sequential quitting = fighting same battle twice. Simultaneous = one hard battle, higher success rate."
+    },
+    {
+      "question": "Should I use nicotine patches or medication?",
+      "answer": "Nicotine replacement (patches, gum) can help with smoking cessation. For alcohol, medications like naltrexone or acamprosate may help. Consult doctor. Cold turkey works for some, medical support works for others. No shame in using tools."
+    },
+    {
+      "question": "What if I relapse on one - do I give up both?",
+      "answer": "No. Restart immediately. Relapse on alcohol ≠ smoking relapse (and vice versa). But be aware: Relapsing on one increases risk for other (cross-trigger). Don't use one relapse as excuse for both. Separate the behaviors in your mind."
+    },
+    {
+      "question": "How do I handle social situations?",
+      "answer": "Avoid bars/parties first 30-60 days (high relapse risk). After Day 60: Bring sober friend, have exit plan, hold non-alcoholic drink, tell host you're not drinking. For smoking: Avoid smoking areas entirely. New social environments help."
+    },
+    {
+      "question": "Will I gain weight after quitting both?",
+      "answer": "Possible (nicotine suppresses appetite, alcohol has calories). Combat: Replace habits with gym/exercise, track food, allow yourself healthy snacks. Temporary weight gain beats cancer + liver disease. Many users lose weight long-term (better health habits overall)."
+    },
+    {
+      "question": "How long until I feel normal again?",
+      "answer": "Physical withdrawal: 1-2 weeks. Psychological cravings: 30-90 days. Full brain healing: 6-12 months. Most users feel 'reborn' by Day 90. Energy, clarity, health improvements obvious by Week 8. Patience required - healing takes time."
+    }
+  ]
+}

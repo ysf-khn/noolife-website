@@ -1,0 +1,54 @@
+{
+  "challengeName": "21-Day Fitness Kickstart Challenge",
+  "challengeSlug": "21-day-fitness",
+  "duration": 21,
+  "goal": "Fitness Kickstart",
+  "goalSlug": "fitness",
+  "includedHabits": ["workout", "pushups", "running"],
+  "targetAudience": "Get fit fast in 21 days. Perfect for fitness beginners needing quick wins before committing long-term.",
+  "scientificRationale": "While 66 days achieves full habit automation, 21 days is the threshold where exercise starts to feel less effortful and early physical gains become visible. Research shows that 3 weeks of consistent training produces measurable strength increases, cardiovascular improvements, and mood benefits—enough to motivate continuation. This is your fitness gateway challenge.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Workouts 4x (20-min bodyweight). Pushups daily (15-20 reps). Running 2x (15-min walk/jog). Track everything.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "Increase workout to 25 min. Pushups hit 25-30 reps. Running 3x (20 min continuous). Soreness fading, energy rising.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Workouts feel automatic. Pushups 35-40 reps. Running 3x (25 min). Visible changes, strength gains measurable.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 21, you'll have completed 12 workouts, doubled pushup capacity, run 6-9 times, experience measurably higher energy and mood, see visible physical changes, and feel genuine momentum to continue. NooLife 21-day fitness finishers report an average 1.8x strength increase and 94% transition to longer challenges (30-day or 66-day).",
+  "commonPitfalls": [
+    "Going too hard Day 1 (start moderate or Week 2 soreness causes burnout)",
+    "Not tracking progress (seeing numbers climb motivates continuation)",
+    "Skipping workouts due to soreness (light movement helps recovery)",
+    "Comparing to advanced athletes (focus on your own baseline)",
+    "Not eating enough (fuel workouts with adequate protein/carbs)",
+    "Quitting at Day 14 plateau (gains continue even when newness fades)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks workout completion, pushup counts, running distance/time. Your Strength and Discipline ratings climb daily. GTA-style athlete visuals make every logged session feel like power-ups. See your 21-day fitness heatmap build. Most users roll into 66-day challenge after experiencing results.",
+  "testimonial": "\"Hadn't worked out in 3 years. NooLife's 21-day fitness challenge got me started. Day 21: 40 pushups (started at 10), ran 2 miles straight. Starting the 66-day challenge tomorrow.\" - Ryan T.",
+  "ctaAngle": "Kickstart your fitness in 21 days with workout tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "21 day fitness",
+    "fitness challenge",
+    "workout challenge",
+    "beginner fitness",
+    "quick fitness"
+  ],
+  "metaKeywords": [
+    "21 day fitness challenge",
+    "21 day workout challenge",
+    "fitness kickstart",
+    "beginner workout plan",
+    "get fit fast"
+  ]
+}

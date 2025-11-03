@@ -1,0 +1,95 @@
+{
+  "challengeName": "66-Day Discipline Builder Challenge",
+  "challengeSlug": "66-day-discipline-builder",
+  "duration": 66,
+  "goal": "Discipline Mastery",
+  "goalSlug": "discipline",
+  "includedHabits": [
+    "waking-early",
+    "cold-shower",
+    "no-fap",
+    "meditation",
+    "workout"
+  ],
+  "targetAudience": "Build unshakeable self-discipline in 66 days. Perfect for those tired of starting strong and quitting weak.",
+  "scientificRationale": "Discipline isn't willpower—it's a trainable skill. Research shows that consistent practice of 'hard tasks' (cold showers, early waking, delayed gratification) strengthens the prefrontal cortex and improves self-control across all domains. By stacking discipline-intensive habits for 66 days, you're not just building willpower—you're rewiring your brain's executive function. Studies on ego depletion show that discipline becomes easier with practice, not harder.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Lock in wake time (6am), start cold showers (30s), begin no-fap commitment. Discipline baseline established.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "Add 5-min meditation, workout 3x/week. Cold showers hit 60s. Resistance peaks—push through.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Increase meditation to 10 min, workout to 4x. Notice improved impulse control in daily decisions.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 4,
+      "focus": "Cold showers 90s, meditation 15 min. First major discipline gains noticeable. Temptations feel easier to resist.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Add delayed gratification practice (no snooze, no phone first hour). Discipline feels like identity shift.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "All habits automatic. Missing a workout or cold shower feels uncomfortable. You've crossed threshold.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 7,
+      "focus": "Cold showers 2+ min, meditation 20 min. Notice spillover: better at resisting junk food, distractions, laziness.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Discipline is now core identity. You're the person who does hard things. Track rating improvements.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Maintain intensity even when life gets busy. Discipline warriors don't negotiate with themselves.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: Discipline mastery achieved. You've proven you can do anything for 66 days. This is permanent.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll execute hard tasks automatically (cold showers, early waking, workouts, no-fap), experience measurably improved impulse control and delayed gratification across all life areas, feel genuine discomfort when you skip commitments, and operate from discipline, not motivation. NooLife discipline finishers report an average 89% improvement in self-reported self-control and 76% reduction in procrastination.",
+  "commonPitfalls": [
+    "Relying on motivation instead of systems (motivation fades, discipline doesn't)",
+    "Negotiating with yourself ('just this once' becomes 'every time')",
+    "Not tracking streaks (accountability prevents backsliding)",
+    "Quitting during urges instead of observing them (urges pass—they always do)",
+    "Comparing to people who started earlier (this is you vs. you 66 days ago)",
+    "Skipping 'easy' days (discipline on easy days matters more than hard days)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks all discipline habits daily: wake time, cold shower, no-fap streak, meditation minutes, workout completion. Your Discipline rating skyrockets from day 1. GTA-style warrior visuals make every logged task feel like building character stats. See your 66-day heatmap prove you're someone who finishes what they start.",
+  "testimonial": "\"I had zero discipline. Snooze button addict, porn habit, couldn't stick to anything. NooLife's 66-day discipline challenge changed everything. Day 66: I wake before my alarm, cold showers are automatic, 66 days no-fap. I'm built different now.\" - Anonymous",
+  "ctaAngle": "Build unshakeable discipline with 66-day tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "discipline challenge",
+    "66 day challenge",
+    "self discipline",
+    "willpower",
+    "self control"
+  ],
+  "metaKeywords": [
+    "how to build discipline",
+    "66 day discipline challenge",
+    "self discipline habits",
+    "improve willpower",
+    "discipline training"
+  ]
+}

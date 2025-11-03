@@ -1,0 +1,50 @@
+{
+  "habitName": "Praying",
+  "habitSlug": "praying",
+  "category": "optional",
+  "difficulty": "easy",
+  "typicalDaysToAutomate": "30-45",
+  "shortDescription": "Daily prayer practice for spiritual connection, gratitude, and mental peace",
+  "scientificBenefits": [
+    "Reduced stress and anxiety levels",
+    "Improved sense of purpose and meaning",
+    "Enhanced emotional regulation and resilience",
+    "Greater life satisfaction and well-being",
+    "Stronger sense of community and support"
+  ],
+  "researchCitations": [
+    {
+      "study": "Ai et al. (2007) - Journal of Health Psychology",
+      "finding": "Daily prayer associated with 40% reduction in post-operative complications and faster recovery"
+    },
+    {
+      "study": "Koenig et al. (2012) - Handbook of Religion and Health",
+      "finding": "Religious practices including prayer linked to lower depression rates and better coping"
+    },
+    {
+      "study": "Krause & Hayward (2015) - Psychology of Religion and Spirituality",
+      "finding": "Gratitude prayers increase life satisfaction by 25% over 6-month period"
+    }
+  ],
+  "relatedHabits": ["meditation", "reading", "journaling"],
+  "commonBarriers": [
+    "Forgetting designated prayer times",
+    "Feeling self-conscious or uncertain about how to pray",
+    "Busy schedule makes it feel like there's no time",
+    "Lack of quiet, private space",
+    "Inconsistent routine disrupts practice"
+  ],
+  "progressionPlan": "Week 1-2: Establish time (morning/night), 2-5 minutes daily. Week 3-4: 5-10 minutes, experiment with structure (gratitude, requests, reflection). Week 5-8: 10-15 minutes, deepen practice, integrate into non-negotiable routine.",
+  "nooLifeFeatureHighlight": "Private prayer tracking (daily checkmarks, streak counter). Set prayer time reminders. GTA-style peaceful reflection visuals. Contributes to Discipline, Wisdom, and Confidence ratings.",
+  "testimonial": "\"Making prayer non-negotiable changed everything. NooLife's streak tracking kept me consistent. 52 days, best part of my day.\" - Ahmed S.",
+  "ctaAngle": "Build a consistent prayer habit with daily tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/praying_male.webp",
+  "tags": ["prayer", "spirituality", "faith", "mindfulness", "daily ritual"],
+  "metaKeywords": [
+    "daily prayer habit",
+    "prayer routine",
+    "spiritual practice",
+    "prayer benefits",
+    "how to pray daily"
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "challengeName": "66-Day Reading Habit Challenge",
+  "challengeSlug": "66-day-reading-habit",
+  "duration": 66,
+  "goal": "Reading Habit",
+  "goalSlug": "reading",
+  "includedHabits": ["reading", "journaling", "meditation"],
+  "targetAudience": "Read 10+ books in 66 days. Perfect for those who 'want to read more' but never do.",
+  "scientificRationale": "Reading rewires your brain: increased vocabulary, improved empathy (fiction), enhanced critical thinking, and expanded knowledge. But most people fail to build reading habits because they set unrealistic goals (1 hour daily). Research shows that 15-20 minutes of daily reading, tracked consistently for 66 days, creates automatic behavior. By pairing reading with journaling (reflection) and meditation (focus training), you maximize retention and comprehension.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "10 pages daily (15-20 min). Pick a book you're genuinely interested in. Track daily completion, not speed.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 2,
+      "focus": "Increase to 15 pages daily. Add 5-min journaling (key takeaways, reflections). Consistency building.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 3,
+      "focus": "20 pages daily. Notice improved focus and vocabulary. Reading feels automatic before bed or in morning.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "First book completed (average 250-300 pages). Sense of accomplishment. Pick next book immediately.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 5,
+      "focus": "25-30 pages daily. Add meditation (10 min) before reading for deeper focus. Comprehension improves.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 6,
+      "focus": "2nd book completed. Reading habit fully automatic. You look forward to reading time—no willpower needed.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 7,
+      "focus": "30+ pages daily. Journaling captures deeper insights. Notice how reading influences thinking/conversations.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "3rd-4th books completed. You're now 'someone who reads.' Knowledge accumulation measurable.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Maintain pace even during busy weeks. Reading is non-negotiable self-care, not optional hobby.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: 10-12 books read (1,500-2,000 pages). You're in the top 1% of readers. Identity shift complete.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll have read 10-12 books (1,500-2,000 pages), read 20-30 pages daily automatically, experience measurably improved vocabulary and critical thinking, journal regularly about insights, and genuinely identify as 'a reader.' NooLife reading finishers report an average of 11.4 books completed and 73% improvement in self-reported focus and knowledge retention.",
+  "commonPitfalls": [
+    "Starting with dense, boring books (pick what genuinely interests you first)",
+    "Setting unrealistic page goals (20 pages daily is better than 100 pages sporadically)",
+    "Not tracking completion (streaks keep you accountable)",
+    "Quitting when a book is boring (it's okay to switch books—just keep reading)",
+    "Reading only non-fiction (fiction builds empathy and reduces stress differently)",
+    "Not journaling takeaways (reflection cements learning)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily reading completion and page count. Log books finished, pages read. Your Wisdom and Focus ratings climb daily. GTA-style library visuals make every reading session feel like leveling up intelligence. See your 66-day reading heatmap and book count—proof you're becoming the knowledgeable person you always wanted to be.",
+  "testimonial": "\"Read 2 books in all of 2023. Started NooLife's 66-day reading challenge. Day 66: 11 books finished. 20 pages daily became automatic. I'm smarter, more articulate, more interesting. Reading changed my life.\" - Jessica L.",
+  "ctaAngle": "Build a daily reading habit and finish 10+ books in 66 days. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "reading challenge",
+    "66 day reading",
+    "book challenge",
+    "reading habit",
+    "self improvement"
+  ],
+  "metaKeywords": [
+    "reading challenge",
+    "how to read more books",
+    "66 day reading challenge",
+    "build reading habit",
+    "reading habit tracker"
+  ],
+  "phaseBreakdowns": [
+    {
+      "phase": 1,
+      "phaseLabel": "Foundation",
+      "dayRange": "Days 1-21",
+      "phaseGoal": "Build daily reading habit, finish first 2-3 books, overcome initial resistance",
+      "keyMilestones": [
+        "Read daily for 2 consecutive weeks",
+        "Complete first full book (250-300 pages)",
+        "Establish reading anchor time (morning, lunch, bedtime)",
+        "Notice phone usage decreasing as reading increases"
+      ],
+      "expectedProgress": "Expect friction—distractions, short attention span, competing for phone time. By day 21, reading feels automatic, focus improves, and you'll finish 2-3 books. Foundation habit is forming."
+    },
+    {
+      "phase": 2,
+      "phaseLabel": "Acceleration",
+      "dayRange": "Days 22-45",
+      "phaseGoal": "Increase reading pace, deepen comprehension, lock in reader identity",
+      "keyMilestones": [
+        "Reading pace reaches 25-30 pages daily",
+        "Complete 4-6 books total",
+        "Journaling captures key insights automatically",
+        "Identity shift: you now call yourself 'a reader'"
+      ],
+      "expectedProgress": "Transformation accelerates. You'll crave reading time. Comprehension and retention improve (especially with journaling). Your Wisdom and Focus ratings jump. Reading becomes refuge, not chore. You're not 'trying to read more,' you ARE a reader."
+    },
+    {
+      "phase": 3,
+      "phaseLabel": "Mastery",
+      "dayRange": "Days 46-66",
+      "phaseGoal": "Read 10+ books total, cement lifelong reading habit, become top 1% of readers",
+      "keyMilestones": [
+        "Complete 10-12 books (1,500-2,000 pages)",
+        "Read 30+ pages daily effortlessly",
+        "Vocabulary and critical thinking measurably improved",
+        "Natural desire to continue reading for life"
+      ],
+      "expectedProgress": "Full transformation locked in. You're now a voracious reader—top 1% of population. Reading 10+ books in 66 days is what separates elite learners from average. You'll plan annual reading goals (52 books/year) because reading is core identity."
+    }
+  ],
+  "transformationMetrics": [
+    {
+      "metric": "Books Completed",
+      "baseline": "0-2 books in past year",
+      "expected": "10-12 books in 66 days"
+    },
+    {
+      "metric": "Daily Reading",
+      "baseline": "0-5 minutes (usually scrolling phone instead)",
+      "expected": "20-30 minutes daily, automatic"
+    },
+    {
+      "metric": "Wisdom Rating",
+      "baseline": "38 / 100",
+      "expected": "81 / 100"
+    },
+    {
+      "metric": "Knowledge Retention",
+      "baseline": "Poor recall, no system for capturing insights",
+      "expected": "73% improvement via journaling + reading consistency"
+    }
+  ],
+  "customizationOptions": [
+    {
+      "area": "Reading Time",
+      "options": [
+        "Morning: Fresh mind, best comprehension, sets positive tone for day",
+        "Lunch Break: Mental reset, breaks up work day, reduces afternoon slump",
+        "Evening: Wind down, better sleep, process day's events"
+      ]
+    },
+    {
+      "area": "Book Selection",
+      "options": [
+        "Non-Fiction Only: Knowledge, skills, self-improvement focus",
+        "Fiction Only: Story, empathy, creativity, stress relief",
+        "Mixed: Alternate between genres for balanced growth"
+      ]
+    },
+    {
+      "area": "Reading Pace",
+      "options": [
+        "Relaxed (10-15 pages/day): Sustainable, low pressure, 6-8 books in 66 days",
+        "Standard (20-25 pages/day): Balanced pace, 10-12 books in 66 days",
+        "Aggressive (30+ pages/day): Maximum learning, 12-15 books in 66 days"
+      ]
+    }
+  ],
+  "challengeFAQs": [
+    {
+      "question": "How do I find time to read?",
+      "answer": "You don't find time, you replace phone scrolling. Track your screen time—most people spend 3-4 hours daily on phones. Replace just 20-30 minutes with reading. Best times: morning (before phone distractions), lunch break, before bed (better sleep than scrolling). Reading becomes automatic when it has a specific time anchor."
+    },
+    {
+      "question": "What if I'm a slow reader?",
+      "answer": "Doesn't matter. Reading 10 pages daily (even if it takes 30 min) still completes 10+ books in 66 days. Speed reading is overrated—comprehension and retention matter more. NooLife tracks pages read, not reading speed. Consistency beats speed every time."
+    },
+    {
+      "question": "How do I stay focused while reading?",
+      "answer": "1) Remove phone from room. 2) Start with just 10 pages (low barrier). 3) Use meditation before reading (10 min focus training). 4) Journal after reading (forces active engagement). 5) Pick genuinely interesting books (boredom kills habits). Focus improves dramatically by Week 3-4 as your attention span rebuilds."
+    },
+    {
+      "question": "What if I hate the book I'm reading?",
+      "answer": "Switch books immediately. Life is too short for boring books. The goal is building the reading habit, not finishing every book you start. NooLife tracks reading consistency, not specific books. Give books 50 pages, then abandon guilt-free if not engaging. Keep reading something."
+    },
+    {
+      "question": "Should I read physical books, Kindle, or audiobooks?",
+      "answer": "Whatever keeps you consistent. Physical books: best for focus and retention. Kindle: convenience, built-in dictionary, portability. Audiobooks: count during commutes/workouts (double productivity). NooLife tracks all formats. Most successful readers use combination based on context (physical at home, audio in car)."
+    }
+  ]
+}

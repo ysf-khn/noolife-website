@@ -1,0 +1,106 @@
+{
+  "problem": "Can't Read Daily",
+  "problemSlug": "cant-read-daily",
+  "commonSymptoms": [
+    "You buy books with great intentions but never finish them",
+    "You scroll social media for hours but can't read for 10 minutes",
+    "You start books enthusiastically but abandon them by page 30",
+    "You have a stack of unread books creating guilt",
+    "You used to love reading but now it feels like a chore",
+    "You tell yourself you'll read before bed then scroll instead"
+  ],
+  "rootCauses": [
+    "**Dopamine dysregulation**: Social media/screens provide instant novelty hits; reading feels boring by comparison",
+    "**No reading trigger**: You plan to read \"sometime today\" but never have a specific cue",
+    "**Unrealistic targets**: You try to read 50 pages or 1 hour daily, creating resistance",
+    "**Wrong environment**: You try to read in bed with phone nearby, creating distraction competition",
+    "**Book selection mismatch**: You force yourself to read \"important\" books you don't actually enjoy",
+    "**Fragmented attention**: Years of scrolling destroyed your ability to sustain focus for 20+ minutes"
+  ],
+  "scientificExplanation": "Neuroscience research from MIT shows that **sustained attention is a trained skill, not a fixed trait**. Modern infinite-scroll platforms (TikTok, Instagram, Twitter) train your brain for **micro-attention**: 15-60 second bursts. This atrophies your prefrontal cortex's ability to sustain focus on single tasks (reading, deep work). Additionally, **dopamine baseline matters**: social media provides variable-interval rewards (slot machine effect), making reading's consistent, slow reward feel unrewarding. The solution is **progressive attention rebuilding**: start with 1-page daily reading (90 seconds), gradually increase as attention span recovers, anchor to specific trigger (after morning coffee, before bed), and reduce competing dopamine sources (limit social media) to rebalance reward systems.",
+  "failedSolutions": [
+    "Setting goals to read 1 book per week or 50 pages daily",
+    "Buying Kindle or audiobooks thinking format is the problem",
+    "Planning to read before bed but scrolling instead",
+    "Forcing yourself through boring books because they're \"good for you\"",
+    "Reading only when you \"feel like it\" (sporadic, no habit formation)"
+  ],
+  "whyTheyFail": "These fail because they ignore **habit formation neuroscience**. Ambitious page targets create resistance—by Day 3, you're skipping. Format changes don't fix attention span or dopamine issues. Reading before bed competes with phone scrolling, which your brain prefers (higher dopamine). Forcing boring books makes reading feel like punishment. Reading only when motivated means no consistency, so the habit never forms. The real fix: **start with 1 page daily** (impossible to resist), **anchor to specific trigger** (after coffee, after workout), **choose books you actually want to read** (not \"should\" reads), and **reduce dopamine competition** (limit screens, especially before reading time). Over 66 days, attention span recovers and reading becomes automatic.",
+  "actualSolution": "Science-backed daily reading habit follows progressive attention training: (1) **Start with 1 page daily**—takes 90 seconds, removes resistance entirely. (2) **Anchor to specific trigger**: After morning coffee, after meditation, or before bed (with phone in another room). Make it automatic. (3) **Choose enjoyable books first**: Fiction, thrillers, whatever you actually want to read. Build the habit before optimizing for \"important\" books. (4) **Create phone-free reading zone**: Physical books in a space where phone isn't present. (5) **Progressive page increase**: After 2 weeks at 1 page, increase to 5 pages. Week 6: 10 pages. Week 8: 15-20 pages. By Week 10, you're reading 20+ pages daily (1 book/month), and your attention span has recovered.",
+  "nooLifeApproach": "NooLife rebuilds reading habits through **forced micro-starts and attention recovery**. Day 1 task: Read 1 page. That's it. One page of any book you want. Track it. By Day 7, you've read daily for a week—more than the past month combined. Week 3: increase to 5 pages (5-10 mins). Week 6: 10 pages. Week 8: 15-20 pages. Your **Wisdom rating** (yes, there's a rating for reading/learning) climbs as you read consistently, creating identity pressure: \"I'm someone with 78 Wisdom because I read daily.\" The app also prescribes reading at specific times (morning after meditation, or evening before bed) to anchor the habit. By Day 66, you've read 600+ pages total and rebuilt your attention span. You're someone who reads.",
+  "expectedTimeline": "Weeks 1-2: habit trigger formation. Weeks 3-4: attention span rebuilding. Weeks 6-8: sustained focus restored. Weeks 10+: reading is automatic, finishing books regularly.",
+  "weekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Barrier Elimination + Trigger Anchoring",
+      "expectedProgress": "Read 1 page daily, anchored to trigger (after coffee or after meditation). Takes 90 seconds max. You'll finish the page wanting more—that's intentional. You're building the neural pathway: trigger → grab book → read. Track daily. 7-day reading streak. Wisdom rating baseline: 40-50. You've read more this week than last month."
+    },
+    {
+      "week": 3,
+      "focus": "Attention Extension + Enjoyment Discovery",
+      "expectedProgress": "Read 5 pages daily (5-10 mins). 20-day streak. You notice: focusing for 10 minutes feels easier than Week 1. Choose books you genuinely enjoy—mystery, thriller, biography—not boring \"self-improvement\" unless you love it. Finishing pages feels rewarding. You're thinking about the book during the day. Wisdom rating: 55-65."
+    },
+    {
+      "week": 6,
+      "focus": "Sustained Attention + Book Completion",
+      "expectedProgress": "Read 10-15 pages daily (15-20 mins). 40-day streak. You've finished 1-2 books completely—first time in months/years. Your attention span has recovered: 20-min reading sessions feel natural, not forced. Social media feels less appealing—you'd rather read. Wisdom rating: 70-80. You're someone who reads daily."
+    },
+    {
+      "week": 10,
+      "focus": "Advanced Reading + Knowledge Accumulation",
+      "expectedProgress": "Read 20+ pages daily (20-30 mins). 65+ day streak. You're finishing 1 book every 2-3 weeks. Reading before bed has replaced scrolling. Your Wisdom rating is 85+. Friends ask for book recommendations. You've discovered: reading isn't boring—your dopamine system was broken. Now it's fixed, and reading is one of your favorite daily activities."
+    }
+  ],
+  "relatedHabits": [
+    "meditation",
+    "wake-time",
+    "social-media-limit",
+    "cold-showers"
+  ],
+  "relatedChallenges": ["winter-arc", "no-fap-challenge"],
+  "relatedProblems": ["cant-focus", "phone-addiction", "screen-addiction"],
+  "testimonial": "I hadn't finished a book in 3 years. My attention span was destroyed by TikTok. NooLife started me at 1 page daily—felt ridiculous but I couldn't fail. By Week 8, I was reading 20 pages daily and finished 3 books. Wisdom rating: 38 → 81. I'm a reader again.",
+  "ctaAngle": "Stop trying to read for an hour daily. Start with 1 page, rebuild your attention span, and become someone who reads.",
+  "trustSignal": "50,000+ users rebuilt daily reading habits using NooLife's 1-page start system—avg 2.3 books/month by Day 66.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/solutions-pages.webp",
+  "tags": [
+    "reading",
+    "books",
+    "focus",
+    "attention-span",
+    "knowledge",
+    "wisdom",
+    "habit-formation"
+  ],
+  "metaKeywords": [
+    "how to read daily",
+    "can't read consistently",
+    "build reading habit",
+    "read more books",
+    "reading habit formation",
+    "can't finish books",
+    "improve attention span for reading"
+  ],
+  "faqs": [
+    {
+      "question": "Why can't I focus on reading for more than 5 minutes?",
+      "answer": "You've trained your brain for **micro-attention** through social media/TikTok/Instagram. These platforms deliver dopamine hits every 15-60 seconds, training your prefrontal cortex to expect constant novelty. Reading provides **sustained, single-focus reward**, which your brain now perceives as boring. Additionally, **dopamine baseline depletion**: constant screen use crashes your resting dopamine, making low-stimulation activities (reading, conversations) feel unrewarding. The fix is two-part: (1) **Reduce dopamine competition**: Cut social media to <1 hr/day for 2-3 weeks to let baseline recover. (2) **Progressive attention training**: Start with 1 page (90 seconds), increase to 5 pages (10 mins) Week 3, then 10 pages (20 mins) Week 6. By Week 8-10, your attention span recovers and 30-min reading sessions feel natural."
+    },
+    {
+      "question": "Should I read physical books or use a Kindle/audiobooks?",
+      "answer": "**Physical books are best for habit formation**, here's why: (1) **No notification competition**: Kindle/phone apps have notifications, creating distraction. Physical books don't. (2) **Tactile engagement**: Turning pages provides physical feedback that reinforces the habit. (3) **Visible progress**: You SEE the bookmark moving, pages accumulating—concrete evidence. (4) **No screen fatigue**: After 8-12 hrs of screen time daily, reading on another screen is exhausting. However, **audiobooks work for specific contexts**: commuting, workouts, chores—times you can't hold a book. They're supplementary, not primary. NooLife recommends: physical books for your daily reading habit, audiobooks as bonus consumption. By Week 8, you're reading 20 pages (physical) + listening during commute (2x consumption)."
+    },
+    {
+      "question": "How do I choose what books to read?",
+      "answer": "**Read what you actually want, not what you \"should.\"** The #1 mistake: forcing yourself through boring \"important\" books (philosophy, dense self-improvement) when you'd rather read thrillers. This makes reading feel like homework. The fix: **Weeks 1-4**: Read ONLY books you're genuinely excited about—fiction, mystery, sci-fi, biography of someone interesting. Build the habit with enjoyable books. **Weeks 5-8**: Mix enjoyable + one \"growth\" book (alternate chapters). **Week 8+**: You can handle denser books because the habit is solid. Pro tip: Keep 3 books going: (1) Morning read (actionable/self-improvement), (2) Evening read (fiction/enjoyment), (3) Audiobook (commute/chores). NooLife tracks pages, not specific books—you get Wisdom rating credit regardless of genre. Just read consistently."
+    },
+    {
+      "question": "What if I start books but never finish them?",
+      "answer": "This is **commitment without completion**, often caused by: (1) **Too many books simultaneously**: You start new books when current one gets boring, finishing none. (2) **Wrong book selection**: You're forcing yourself through books you don't enjoy. (3) **No progress accountability**: Finishing has no reward, so quitting is easy. The fix: **One book at a time rule** (until habit is solid). If you hate a book by page 50, quit it guilt-free and pick a better one—life's too short for bad books. But FINISH the good ones. NooLife helps by tracking cumulative pages: you see the number climb daily (100 pages, 200 pages, 300 pages), creating momentum. Additionally, your Wisdom rating increases with consistency—finishing books boosts it more than starting/abandoning. By Week 8, you've finished 2-3 books completely, proving you CAN finish."
+    },
+    {
+      "question": "When is the best time to read—morning or evening?",
+      "answer": "**The best time is whenever you're most consistent**—but research suggests: (1) **Morning (after coffee/meditation)**: Mind is fresh, no decision fatigue yet, focus is highest. Sets learning tone for day. However, mornings are often rushed. (2) **Evening (before bed, screen-free)**: Replaces scrolling, calms mind for better sleep, consistent time daily. However, if exhausted, you might fall asleep. NooLife prescribes **both options**, you choose based on lifestyle: (a) **Morning readers**: Anchor to morning routine (wake → water → meditate → READ → workout). (b) **Evening readers**: Anchor to wind-down (9pm → phone away → READ → bed at 10pm). The key: **same time daily** for 21 days to lock the trigger. By Week 3, your brain expects reading at that time—it becomes automatic."
+    }
+  ]
+}

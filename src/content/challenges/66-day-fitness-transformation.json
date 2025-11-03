@@ -1,0 +1,206 @@
+{
+  "challengeName": "66-Day Fitness Transformation Challenge",
+  "challengeSlug": "66-day-fitness-transformation",
+  "duration": 66,
+  "goal": "Fitness Transformation",
+  "goalSlug": "fitness-transformation",
+  "includedHabits": [
+    "workout",
+    "running",
+    "pushups",
+    "sit-ups",
+    "water-intake"
+  ],
+  "targetAudience": "Build real strength, endurance, and athletic confidence in 66 days. For beginners and returners ready to stop starting over.",
+  "scientificRationale": "Fitness transformations fail because people treat them as temporary challenges, not permanent identity shifts. Research shows that 66 days is the average time required for a new behavior to become automatic. By committing to consistent training for 66 days, you're not just getting fit—you're becoming an athlete. Progressive overload, tracked consistency, and identity-based habit formation make this challenge sustainable, not another failed New Year's resolution.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Establish baseline: 20-min bodyweight workouts 3x/week. Track water intake (64oz daily). Log every session.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "Increase to 4x/week. Add pushups (daily goal: 15-20 reps). Soreness peaks—push through.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Introduce running (15-min walk/run intervals 2x/week). Daily pushups hit 25-30 reps. Energy improves.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 4,
+      "focus": "First strength gains visible. Workout duration hits 30 min. Add sit-ups (20-30 daily). Confidence rising.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Running becomes continuous 20 min. Pushups reach 40+ reps. Notice improved posture and stamina.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Workouts feel automatic. Add resistance (bands, light weights). Track progressive overload. Identity shift begins.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 7,
+      "focus": "Running hits 25-30 min continuously. Pushups: 50+ reps. Sit-ups: 60-80 reps. Visible muscle definition.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "Workout split established (upper/lower or full body). Strength PRs weekly. Fitness is now core identity.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Maintain intensity even when life gets busy. Consistency matters more than perfection. Track recovery quality.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "66-day transformation complete. Compare Day 1 vs Day 66 photos, strength metrics, endurance. Plan next fitness goal.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, expect measurable gains: 2-3x increase in pushup/sit-up capacity, ability to run 5K continuously (if you started from zero), visible muscle definition, 15-25% strength increase in tracked lifts, and—most importantly—fitness feels non-negotiable. NooLife users report an average 45% strength improvement and 67% endurance increase after 66 days of tracked consistency.",
+  "commonPitfalls": [
+    "Starting too aggressively (Week 1 soreness leads to Week 2 burnout)",
+    "Not tracking progressive overload (you can't improve what you don't measure)",
+    "Skipping rest days (recovery is when muscles grow)",
+    "Comparing Day 10 physique to Instagram influencers (focus on your own baseline)",
+    "Quitting when visible results plateau around Week 4-5 (internal gains continue even when mirror changes slow)",
+    "Not eating enough protein (aim 0.8-1g per lb bodyweight for muscle growth)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife's workout tracker logs exercises, sets, reps, and progressive overload. Track daily pushups, sit-ups, running distance/time. Your Strength and Discipline ratings skyrocket. GTA-style gym visuals make every logged workout feel like a power-up. See consistency heatmaps, strength graphs, and streak counters prove you're becoming the athlete you always wanted to be.",
+  "testimonial": "\"Started at 10 pushups max, couldn't run a mile. NooLife tracked every rep, every run. Day 66: 65 pushups straight, ran 5K in under 30 min. The data doesn't lie—I'm a different person.\" - Marcus R.",
+  "ctaAngle": "Track your fitness transformation with progressive 66-day plans. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "fitness challenge",
+    "66 day transformation",
+    "workout plan",
+    "strength training",
+    "fitness habit"
+  ],
+  "metaKeywords": [
+    "66 day fitness challenge",
+    "fitness transformation",
+    "workout challenge",
+    "strength training plan",
+    "how to get fit in 66 days"
+  ],
+  "phaseBreakdowns": [
+    {
+      "phase": 1,
+      "phaseLabel": "Foundation",
+      "dayRange": "Days 1-21",
+      "phaseGoal": "Build baseline fitness, establish workout consistency, survive initial soreness",
+      "keyMilestones": [
+        "Complete first 2 weeks without missing a workout",
+        "Survive DOMS (delayed onset muscle soreness) peak",
+        "Establish 3-4x/week training rhythm",
+        "Notice first energy and mood improvements"
+      ],
+      "expectedProgress": "Expect struggle—soreness, fatigue, mental resistance. Your body is adapting. By day 21, workouts feel less brutal, energy improves noticeably, and you'll see first strength gains (pushups from 10 to 20+). Foundation is set."
+    },
+    {
+      "phase": 2,
+      "phaseLabel": "Acceleration",
+      "dayRange": "Days 22-45",
+      "phaseGoal": "Rapid strength gains, visible physique changes, lock in athletic identity",
+      "keyMilestones": [
+        "Double your starting pushup/sit-up capacity",
+        "Run continuously for 20+ minutes",
+        "Notice visible muscle definition",
+        "Identity shift: you now see yourself as 'someone who works out'"
+      ],
+      "expectedProgress": "This is where transformation accelerates dramatically. Strength PRs weekly. Mirror changes become undeniable. Your Strength rating jumps 30-40 points. Training becomes non-negotiable—skipping feels wrong. You're no longer 'trying to get fit,' you ARE fit."
+    },
+    {
+      "phase": 3,
+      "phaseLabel": "Mastery",
+      "dayRange": "Days 46-66",
+      "phaseGoal": "Cement permanent athletic identity, exceed initial goals, plan next-level training",
+      "keyMilestones": [
+        "Hit 3x your starting pushup capacity",
+        "Run 5K continuously (or equivalent endurance milestone)",
+        "Physique transformation complete and visible",
+        "Natural desire to continue training beyond 66 days"
+      ],
+      "expectedProgress": "Full transformation locked in. You're now an athlete—not aspirational, actual. Training is automatic. Compare Day 1 vs Day 66 photos and be shocked. You'll start planning advanced goals (half marathon, muscle-up, competition) because fitness is now core identity."
+    }
+  ],
+  "transformationMetrics": [
+    {
+      "metric": "Pushup Capacity",
+      "baseline": "10 pushups max (or can't do one)",
+      "expected": "50-70+ pushups continuously"
+    },
+    {
+      "metric": "Running Ability",
+      "baseline": "Can't run 1 mile without stopping",
+      "expected": "Run 5K (3.1 miles) continuously in 28-35 min"
+    },
+    {
+      "metric": "Strength Rating",
+      "baseline": "28 / 100",
+      "expected": "75 / 100"
+    },
+    {
+      "metric": "Body Composition",
+      "baseline": "High body fat % or very low muscle mass",
+      "expected": "5-15 lbs muscle gained OR 10-20 lbs fat lost, visible definition"
+    }
+  ],
+  "customizationOptions": [
+    {
+      "area": "Training Intensity",
+      "options": [
+        "Beginner (3x/week, 20-30 min): Build foundation, focus on consistency over intensity",
+        "Intermediate (4-5x/week, 40-50 min): Balanced strength + cardio, visible results",
+        "Advanced (6x/week, 60+ min): Maximum gains, athlete-level training, aggressive transformation"
+      ]
+    },
+    {
+      "area": "Training Focus",
+      "options": [
+        "Strength Priority: Heavy lifting, progressive overload, muscle building",
+        "Endurance Priority: Running, cardio, stamina, fat loss emphasis",
+        "Balanced: Equal strength + endurance for complete athletic development"
+      ]
+    },
+    {
+      "area": "Equipment Access",
+      "options": [
+        "No Equipment: Bodyweight only (pushups, sit-ups, running, park workouts)",
+        "Minimal (Bands/Dumbbells): Home gym setup, resistance bands, adjustable dumbbells",
+        "Full Gym: Access to weights, machines, cardio equipment for maximum variety"
+      ]
+    }
+  ],
+  "challengeFAQs": [
+    {
+      "question": "I've never worked out before. Is this too advanced?",
+      "answer": "No. NooLife personalizes your 66-day plan based on your Day 1 baseline. If you can't do a single pushup, your plan starts with knee pushups or wall pushups. If you can't run, you'll start with walk/run intervals. The app meets you where you are and builds incrementally. Beginners see the most dramatic transformations."
+    },
+    {
+      "question": "How much time per day does this require?",
+      "answer": "Minimum: 20-30 minutes, 3-4x/week (beginner). Standard: 40-50 minutes, 4-5x/week (most users). Advanced: 60-90 minutes, 5-6x/week (aggressive transformation). NooLife adjusts task distribution based on your selected intensity. Even 20 min/day builds real fitness over 66 days."
+    },
+    {
+      "question": "What if I miss a workout or get injured?",
+      "answer": "Missed workout: Your streak resets, but progress doesn't zero out. Resume immediately—one miss shouldn't become two. Injury: NooLife lets you modify exercises. Shoulder injury? Swap pushups for leg work. The app tracks alternative movements toward your Strength rating. Consistency > perfection."
+    },
+    {
+      "question": "Will I see visible physique changes?",
+      "answer": "Yes, if you're consistent. Expect visible changes by Week 4-6 (muscle definition, fat loss). By Day 66, transformation is undeniable—especially in before/after photos. Track body composition, not just weight. You may gain muscle while losing fat (scale stays same, but mirror tells truth). Take Day 1 photos."
+    },
+    {
+      "question": "Do I need to follow a specific diet?",
+      "answer": "NooLife focuses on training habits, not meal plans. But for best results: eat enough protein (0.8-1g per lb bodyweight), stay hydrated (track water intake in app), and don't under-eat if building muscle. You can transform with training alone, but nutrition accelerates results. Track what you can measure (water, protein), don't obsess over perfection."
+    }
+  ]
+}

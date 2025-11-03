@@ -1,0 +1,170 @@
+{
+  "challengeName": "30-Day Workout Challenge",
+  "challengeSlug": "30-day-workout-challenge",
+  "duration": 30,
+  "goal": "Workout Consistency",
+  "goalSlug": "workout",
+  "includedHabits": ["workout", "pushups", "sit-ups"],
+  "targetAudience": "Build workout consistency in 30 days. Perfect for fitness beginners and those restarting after a break.",
+  "scientificRationale": "The hardest part of fitness isn't the workout—it's showing up consistently. Research shows that 30 days of regular exercise creates enough positive feedback (energy, mood, strength gains) to motivate continuation. By committing to 20-30 minute workouts 4-5x/week for 30 days, you build the habit infrastructure that makes long-term fitness sustainable. This is the gateway to becoming someone who works out.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "20-min bodyweight workouts 4x (Mon/Wed/Fri/Sun). Pushups: 15-20 daily. Sit-ups: 20-30. Track every session.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 2,
+      "focus": "Soreness peaks then fades. Increase to 25-30 min sessions. Pushups hit 25-30, sit-ups 40-50. Energy improving.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "First strength gains visible. 30-min workouts feel normal. Pushups 35-40, sit-ups 50-60. Confidence rising.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "Workouts feel automatic. Missing a session feels uncomfortable. Pushups 40+, sit-ups 60+. You're a gym person now.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 30, you'll have completed 16-20 workouts, doubled your pushup/sit-up capacity, built visible muscle definition, experience measurably higher energy and mood, and genuinely identify as someone who works out. NooLife 30-day workout finishers report an average 2.1x increase in strength metrics and 87% continue training beyond 30 days.",
+  "commonPitfalls": [
+    "Starting too aggressively (soreness leads to burnout—start moderate)",
+    "Not tracking workouts (seeing progress motivates continuation)",
+    "Skipping due to soreness (light movement helps recovery)",
+    "Comparing to gym veterans (focus on your own progress)",
+    "Not eating enough protein (aim 0.8-1g per lb bodyweight)",
+    "Missing Week 2-3 (hardest period—push through)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily workout completion, pushup/sit-up counts. Dedicated workout tracker in Assets screen logs exercises, sets, reps. Your Strength and Discipline ratings climb daily. GTA-style gym visuals make every logged session feel like character stats increasing. See your 30-day consistency heatmap build.",
+  "testimonial": "\"Zero gym confidence. NooLife's 30-day workout challenge changed that. Day 30: 45 pushups (started at 12), visible abs, workout 5x/week. I'm hooked—continuing indefinitely.\" - Alex M.",
+  "ctaAngle": "Build workout consistency with 30-day tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "workout challenge",
+    "30 day fitness",
+    "gym consistency",
+    "strength training",
+    "bodyweight workout"
+  ],
+  "metaKeywords": [
+    "30 day workout challenge",
+    "workout consistency",
+    "fitness challenge",
+    "bodyweight workout plan",
+    "gym habit"
+  ],
+  "phaseBreakdowns": [
+    {
+      "phase": 1,
+      "phaseLabel": "Foundation",
+      "dayRange": "Days 1-10",
+      "phaseGoal": "Survive initial soreness, establish workout routine, build baseline strength",
+      "keyMilestones": [
+        "Complete first week without missing a workout",
+        "Survive DOMS (delayed onset muscle soreness)",
+        "Establish 4x/week workout rhythm",
+        "First energy and mood improvements noticeable"
+      ],
+      "expectedProgress": "Expect struggle—soreness, fatigue, mental resistance. By day 10, soreness fades, workouts feel less brutal, and you'll see first strength gains (pushups from 15 to 25+)."
+    },
+    {
+      "phase": 2,
+      "phaseLabel": "Acceleration",
+      "dayRange": "Days 11-20",
+      "phaseGoal": "Rapid strength gains, visible muscle definition, lock in workout identity",
+      "keyMilestones": [
+        "Double your starting pushup/sit-up capacity",
+        "Notice visible muscle definition",
+        "Workouts feel automatic (no longer need willpower)",
+        "Identity shift: you see yourself as someone who works out"
+      ],
+      "expectedProgress": "Transformation accelerates. Strength PRs weekly. Mirror changes become visible. Your Strength rating jumps 25-35 points. Working out becomes non-negotiable."
+    },
+    {
+      "phase": 3,
+      "phaseLabel": "Mastery",
+      "dayRange": "Days 21-30",
+      "phaseGoal": "Cement workout habit as permanent identity, plan continued training",
+      "keyMilestones": [
+        "Hit 2-3x your starting pushup capacity",
+        "Workout 16-20 times total",
+        "Fitness feels like core identity",
+        "Natural desire to continue beyond 30 days"
+      ],
+      "expectedProgress": "Habit locked in. Compare Day 1 vs Day 30 physique—undeniable transformation. You'll plan next fitness goals (66-day challenge, specific strength targets) because working out is now who you are."
+    }
+  ],
+  "transformationMetrics": [
+    {
+      "metric": "Pushup Capacity",
+      "baseline": "12-15 pushups max",
+      "expected": "40-50+ pushups"
+    },
+    {
+      "metric": "Sit-up Capacity",
+      "baseline": "20-25 sit-ups",
+      "expected": "60-80+ sit-ups"
+    },
+    {
+      "metric": "Total Workouts Completed",
+      "baseline": "0 workouts in past month",
+      "expected": "16-20 workouts in 30 days"
+    },
+    {
+      "metric": "Strength Rating",
+      "baseline": "30 / 100",
+      "expected": "68 / 100"
+    }
+  ],
+  "customizationOptions": [
+    {
+      "area": "Workout Frequency",
+      "options": [
+        "Starter (4x/week): Mon/Wed/Fri/Sun, recommended for beginners",
+        "Standard (5x/week): Mon-Fri with weekend rest",
+        "Aggressive (6x/week): Daily training with one rest day"
+      ]
+    },
+    {
+      "area": "Workout Focus",
+      "options": [
+        "Bodyweight Only: Pushups, sit-ups, squats, no equipment needed",
+        "Minimal Equipment: Add resistance bands or dumbbells for variety",
+        "Full Gym: Use machines and free weights for maximum variety"
+      ]
+    },
+    {
+      "area": "Time Commitment",
+      "options": [
+        "Quick (20 min): Essential movements only, high intensity",
+        "Standard (30 min): Balanced workout with warm-up/cool-down",
+        "Extended (45 min): Comprehensive training with multiple exercises"
+      ]
+    }
+  ],
+  "challengeFAQs": [
+    {
+      "question": "Is 30 days enough to see real results?",
+      "answer": "Yes. 30 days of consistent training produces measurable strength gains (2-3x capacity in pushups/sit-ups), visible muscle definition, improved energy and mood. While 66 days is better for permanent habit automation, 30 days creates enough momentum and results to motivate continued training. 87% of NooLife 30-day finishers continue beyond 30 days."
+    },
+    {
+      "question": "I'm completely out of shape. Can I do this?",
+      "answer": "Yes. Start with modified exercises (knee pushups instead of full pushups, crunches instead of full sit-ups). NooLife personalizes your plan based on Day 1 baseline. If you can only do 5 pushups, your plan starts there and builds incrementally. The key is consistency, not starting strength."
+    },
+    {
+      "question": "Do I need a gym membership?",
+      "answer": "No. This challenge is designed for bodyweight training (pushups, sit-ups, squats, lunges). You can do everything at home or in a park. Gym access adds variety but isn't required. NooLife tracks all movements—bodyweight, resistance bands, or gym equipment."
+    },
+    {
+      "question": "What if I miss a workout?",
+      "answer": "Get back on track immediately. Your streak resets, but progress doesn't zero out. Missing one workout shouldn't become two. The goal is 16-20 workouts in 30 days, not perfection. Life happens—NooLife tracks your bounce-back and cumulative improvements."
+    },
+    {
+      "question": "Should I workout when I'm sore?",
+      "answer": "Yes, but adjust intensity. Light movement helps recovery (active recovery). If you're extremely sore, do a lighter workout (fewer reps, simpler exercises). Sitting on the couch makes soreness worse. Consistency > intensity. Soreness peaks around Day 3-5 and fades by Day 10-12."
+    }
+  ]
+}

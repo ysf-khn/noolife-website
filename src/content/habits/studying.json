@@ -1,0 +1,57 @@
+{
+  "habitName": "Studying",
+  "habitSlug": "studying",
+  "category": "optional",
+  "difficulty": "medium",
+  "typicalDaysToAutomate": "40-55",
+  "shortDescription": "Daily study sessions for skill development, career advancement, and cognitive growth",
+  "scientificBenefits": [
+    "Enhanced memory formation and retention",
+    "Improved problem-solving abilities",
+    "Increased career opportunities and earning potential",
+    "Better cognitive flexibility and learning capacity",
+    "Greater sense of accomplishment and self-efficacy"
+  ],
+  "researchCitations": [
+    {
+      "study": "Dunlosky et al. (2013) - Psychological Science in the Public Interest",
+      "finding": "Distributed practice (daily studying) improves retention by 200% vs cramming",
+      "link": "https://journals.sagepub.com/doi/abs/10.1177/1529100612453266"
+    },
+    {
+      "study": "Karpicke & Roediger (2008) - Science",
+      "finding": "Active retrieval practice (testing yourself) doubles long-term retention vs re-reading"
+    },
+    {
+      "study": "Newport (2016) - Deep Work",
+      "finding": "Focused study sessions of 90-120 minutes produce disproportionate skill gains"
+    }
+  ],
+  "relatedHabits": ["reading", "meditation", "social-media-control"],
+  "commonBarriers": [
+    "Difficulty focusing for extended periods",
+    "Phone and internet distractions",
+    "Unclear goals or study plan",
+    "Procrastination and lack of motivation",
+    "Forgetting what was studied (no active recall)"
+  ],
+  "progressionPlan": "Week 1-2: 20-30 min daily, establish time/place, eliminate distractions. Week 3-4: 45-60 min, use Pomodoro technique (25 min focus, 5 min break). Week 5-8: 60-90 min, incorporate active recall and spaced repetition, track tangible progress (courses completed, concepts mastered).",
+  "nooLifeFeatureHighlight": "Track daily study time. Pomodoro timer in Assets screen for focused sessions. GTA-style knowledge-building visuals. Contributes heavily to Wisdom, Focus, and Discipline ratings. See study streaks build over 66 days.",
+  "testimonial": "\"Couldn't study more than 15 min without distraction. NooLife's tracking + Pomodoro timer changed the game. Passing my certification because of this.\" - Kevin H.",
+  "ctaAngle": "Build a consistent study habit with Pomodoro timers and tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/habits/studying_male.webp",
+  "tags": [
+    "studying",
+    "learning",
+    "education",
+    "productivity",
+    "skill development"
+  ],
+  "metaKeywords": [
+    "study habits",
+    "how to study daily",
+    "studying benefits",
+    "study routine",
+    "learning habits"
+  ]
+}

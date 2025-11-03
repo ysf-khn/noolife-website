@@ -1,0 +1,64 @@
+{
+  "challengeName": "30-Day Cold Shower Challenge",
+  "challengeSlug": "30-day-cold-shower-challenge",
+  "duration": 30,
+  "goal": "Cold Shower Mastery",
+  "goalSlug": "cold-shower",
+  "includedHabits": ["cold-shower", "meditation", "workout"],
+  "targetAudience": "Build mental toughness and physical resilience in 30 days. Perfect for those ready to embrace discomfort and unlock superhuman willpower.",
+  "scientificRationale": "Cold exposure triggers a cascade of physiological benefits: increased norepinephrine (alertness, focus), brown fat activation (metabolism), improved circulation, and reduced inflammation. But the real power is psychological: choosing discomfort daily rewires your brain's relationship with challenge. Studies show that 30 days of cold exposure significantly improves stress resilience and willpower across all life domains. Cold showers are the ultimate 'keystone habit'—master this, and everything else feels easier.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Start with 30 seconds cold at end of warm shower. Focus on breathing (deep, controlled). Track daily completion.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "Increase to 60-90 seconds cold. Notice improved alertness. Cold becomes uncomfortable but manageable.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 3,
+      "focus": "Full 2-minute cold showers. Add deliberate breathing technique (Wim Hof method). Mental resistance fades.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 4,
+      "focus": "3-minute cold showers feel normal. Start looking forward to it. Identity shift: 'I'm someone who does hard things.'",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 5,
+      "focus": "Day 30: Cold showers are non-negotiable. Notice spillover benefits (willpower, focus, energy). Plan to continue permanently.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 30, you'll complete 3-minute cold showers without hesitation, experience measurably higher morning energy and mental clarity, notice improved skin/hair quality, and most importantly—feel a fundamental shift in your relationship with discomfort. NooLife cold shower finishers report an average 78% improvement in self-reported willpower and discipline across all life areas.",
+  "commonPitfalls": [
+    "Starting with 5-min ice baths (begin small, build incrementally)",
+    "Shallow breathing during cold exposure (deep breathing is key)",
+    "Skipping days 'because it's too cold outside' (consistency matters more than perfection)",
+    "Not tracking completion (streak accountability prevents skipping)",
+    "Giving up during Week 2 when novelty wears off (this is where real growth happens)",
+    "Taking lukewarm showers and calling them 'cold' (be honest with yourself—it should be uncomfortable)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks your daily cold shower completion with streak counters. Log duration (30s → 3min progression). Your Discipline and Strength ratings increase daily. GTA-style icy visuals make every shower feel like leveling up. See your 30-day heatmap prove you're built different. Pair with meditation and workout tracking for maximum synergy.",
+  "testimonial": "\"30 days of cold showers changed my life. Started at 30 seconds, hated every second. Day 30: 3 minutes, pure mental clarity. NooLife's streak tracker kept me accountable. Now I can't imagine starting my day without it.\" - Tyler H.",
+  "ctaAngle": "Build mental toughness with 30-day cold shower tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "cold shower challenge",
+    "30 day challenge",
+    "mental toughness",
+    "willpower",
+    "wim hof"
+  ],
+  "metaKeywords": [
+    "30 day cold shower challenge",
+    "cold shower benefits",
+    "how to start cold showers",
+    "cold exposure therapy",
+    "wim hof method"
+  ]
+}

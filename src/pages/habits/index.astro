@@ -1,0 +1,387 @@
+---
+// Habits Index/Directory Page - Hub for all habit combinations
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const combinations = await getCollection('habit-combinations');
+const demographics = await getCollection('demographics');
+
+// Sort by tier and search volume
+const sortedCombinations = combinations.sort((a, b) => {
+  // Tier priority
+  const tierOrder = { tier1: 1, tier2: 2, tier3: 3, tier4: 4 };
+  const tierDiff = tierOrder[a.data.tier] - tierOrder[b.data.tier];
+  if (tierDiff !== 0) return tierDiff;
+
+  // Within same tier, sort by search volume (descending)
+  return b.data.searchVolume - a.data.searchVolume;
+});
+
+// Group by category for better UX
+const categories = {
+  discipline: combinations.filter(c => c.data.tags.includes('discipline')),
+  mental: combinations.filter(c => c.data.tags.includes('mindfulness') || c.data.tags.includes('meditation') || c.data.tags.includes('focus')),
+  fitness: combinations.filter(c => c.data.tags.includes('workout') || c.data.tags.includes('running') || c.data.tags.includes('fitness')),
+  recovery: combinations.filter(c => c.data.tags.includes('recovery') || c.data.tags.includes('cold shower')),
+  knowledge: combinations.filter(c => c.data.tags.includes('reading') || c.data.tags.includes('journaling') || c.data.tags.includes('learning')),
+};
+
+const title = 'Habit Stacking Guide: 30+ Science-Backed Combinations | NooLife';
+const description = 'Complete library of habit combinations backed by 66-day science. Discover which habits amplify each other for 3x results. Free iOS habit tracker.';
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero Section -->
+  <section class="relative min-h-[60vh] flex items-center justify-center px-4 py-16 sm:py-24">
+    <div class="relative max-w-5xl w-full mx-auto text-center">
+      <div class="mb-4 hero-fade-in" style="animation-delay: 0.05s;">
+        <span class="px-4 py-2 text-sm font-bold rounded-full uppercase" style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade); border: 1px solid rgba(0, 208, 156, 0.3);">
+          Habit Stacking Library
+        </span>
+      </div>
+
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6 hero-fade-in"
+        style="animation-delay: 0.1s; color: var(--color-alabaster);"
+      >
+        Build Habits That<br>
+        <span style="color: var(--color-jade);">Amplify Each Other</span>
+      </h1>
+
+      <p
+        class="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-8 hero-fade-in"
+        style="animation-delay: 0.2s; color: var(--color-faded-khaki);"
+      >
+        Not all habit combinations are equal. Some create 1+1=3 synergy. Others cancel each other out. This is your complete guide to stacking habits the science-backed way.
+      </p>
+
+      <div class="flex flex-wrap gap-6 justify-center mb-8 hero-fade-in" style="animation-delay: 0.25s;">
+        <div class="text-center">
+          <div class="text-4xl font-bold" style="color: var(--color-jade);">{combinations.length}+</div>
+          <div class="text-sm" style="color: var(--color-faded-khaki);">Combinations</div>
+        </div>
+        <div class="w-px" style="background: rgba(241, 237, 233, 0.1);"></div>
+        <div class="text-center">
+          <div class="text-4xl font-bold" style="color: var(--color-jade);">66</div>
+          <div class="text-sm" style="color: var(--color-faded-khaki);">Days to automate</div>
+        </div>
+        <div class="w-px" style="background: rgba(241, 237, 233, 0.1);"></div>
+        <div class="text-center">
+          <div class="text-4xl font-bold" style="color: var(--color-jade);">85%</div>
+          <div class="text-sm" style="color: var(--color-faded-khaki);">Success rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Combinations (Tier 1) -->
+  <section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-rich-earth) 0%, var(--color-dark) 100%);">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4" style="color: var(--color-alabaster);">
+          Top Habit Stacks
+        </h2>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+          These combinations have the highest search demand, best synergy, and strongest research backing. Start here.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {sortedCombinations.filter(c => c.data.tier === 'tier1').map((combination) => (
+          <a
+            href={`/habits/${combination.data.combinationSlug}`}
+            class="block p-6 rounded-xl border transition-all duration-300 hover:scale-105 hover:border-[rgba(0,208,156,0.4)] group"
+            style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs px-2 py-1 rounded-full font-bold uppercase" style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade);">
+                {combination.data.searchVolume.toLocaleString()}/mo
+              </span>
+              <span class="text-xs px-2 py-1 rounded-full font-bold uppercase" style="background: rgba(241, 237, 233, 0.05); color: var(--color-faded-khaki);">
+                {combination.data.competitionLevel} comp
+              </span>
+            </div>
+
+            <h3 class="text-xl font-bold mb-2 group-hover:text-jade transition-colors" style="color: var(--color-alabaster);">
+              {combination.data.habit1Name} + {combination.data.habit2Name}
+            </h3>
+
+            <p class="text-base leading-relaxed mb-4" style="color: var(--color-faded-khaki);">
+              {combination.data.shortDescription}
+            </p>
+
+            <div class="flex items-center gap-2 text-sm font-medium" style="color: var(--color-mint);">
+              <span>View stack</span>
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by Category -->
+  <section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4" style="color: var(--color-alabaster);">
+          Browse by Goal
+        </h2>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+          Find habit stacks optimized for your specific transformation goal.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Discipline Category -->
+        <div class="p-8 rounded-xl border" style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(0, 208, 156, 0.2);">
+          <div class="text-3xl font-bold mb-3" style="color: var(--color-jade);">💪 Discipline</div>
+          <p class="text-base mb-4" style="color: var(--color-faded-khaki);">
+            Build unbreakable discipline through stacked challenges.
+          </p>
+          <div class="space-y-2">
+            {categories.discipline.slice(0, 5).map((c) => (
+              <a href={`/habits/${c.data.combinationSlug}`} class="block text-sm hover:text-jade transition-colors" style="color: var(--color-alabaster);">
+                → {c.data.habit1Name} + {c.data.habit2Name}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Mental Clarity Category -->
+        <div class="p-8 rounded-xl border" style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(0, 208, 156, 0.2);">
+          <div class="text-3xl font-bold mb-3" style="color: var(--color-jade);">🧠 Mental Clarity</div>
+          <p class="text-base mb-4" style="color: var(--color-faded-khaki);">
+            Sharpen focus, reduce anxiety, build mindfulness.
+          </p>
+          <div class="space-y-2">
+            {categories.mental.slice(0, 5).map((c) => (
+              <a href={`/habits/${c.data.combinationSlug}`} class="block text-sm hover:text-jade transition-colors" style="color: var(--color-alabaster);">
+                → {c.data.habit1Name} + {c.data.habit2Name}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Fitness Category -->
+        <div class="p-8 rounded-xl border" style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(0, 208, 156, 0.2);">
+          <div class="text-3xl font-bold mb-3" style="color: var(--color-jade);">🏃 Fitness</div>
+          <p class="text-base mb-4" style="color: var(--color-faded-khaki);">
+            Optimize training, recovery, and athletic performance.
+          </p>
+          <div class="space-y-2">
+            {categories.fitness.slice(0, 5).map((c) => (
+              <a href={`/habits/${c.data.combinationSlug}`} class="block text-sm hover:text-jade transition-colors" style="color: var(--color-alabaster);">
+                → {c.data.habit1Name} + {c.data.habit2Name}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Recovery Category -->
+        <div class="p-8 rounded-xl border" style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(0, 208, 156, 0.2);">
+          <div class="text-3xl font-bold mb-3" style="color: var(--color-jade);">🧊 Recovery</div>
+          <p class="text-base mb-4" style="color: var(--color-faded-khaki);">
+            Speed recovery, reduce inflammation, optimize rest.
+          </p>
+          <div class="space-y-2">
+            {categories.recovery.slice(0, 5).map((c) => (
+              <a href={`/habits/${c.data.combinationSlug}`} class="block text-sm hover:text-jade transition-colors" style="color: var(--color-alabaster);">
+                → {c.data.habit1Name} + {c.data.habit2Name}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Knowledge Category -->
+        <div class="p-8 rounded-xl border" style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(0, 208, 156, 0.2);">
+          <div class="text-3xl font-bold mb-3" style="color: var(--color-jade);">📚 Knowledge</div>
+          <p class="text-base mb-4" style="color: var(--color-faded-khaki);">
+            Retain more, learn faster, build a second brain.
+          </p>
+          <div class="space-y-2">
+            {categories.knowledge.slice(0, 5).map((c) => (
+              <a href={`/habits/${c.data.combinationSlug}`} class="block text-sm hover:text-jade transition-colors" style="color: var(--color-alabaster);">
+                → {c.data.habit1Name} + {c.data.habit2Name}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Built for Your Lifestyle -->
+  <section class="py-16 md:py-24 px-4" style="background: rgba(20, 23, 26, 0.5);">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4" style="color: var(--color-alabaster);">
+          Built for Your Lifestyle
+        </h2>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+          Generic habit advice ignores your reality. Get demographic-specific habit plans tailored to your schedule, challenges, and goals.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        {demographics
+          .filter(d => d.data.tier === 'tier1')
+          .sort((a, b) => b.data.searchVolume - a.data.searchVolume)
+          .slice(0, 4)
+          .map((demographic) => (
+          <a
+            href={`/for/${demographic.data.demographicSlug}`}
+            class="block p-6 rounded-xl border transition-all duration-300 hover:scale-105 hover:border-[rgba(0,208,156,0.4)] group"
+            style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs px-2 py-1 rounded-full font-bold uppercase" style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade);">
+                {demographic.data.searchVolume.toLocaleString()}/mo
+              </span>
+            </div>
+
+            <h3 class="text-xl font-bold mb-2 group-hover:text-jade transition-colors" style="color: var(--color-alabaster);">
+              {demographic.data.demographicName}
+            </h3>
+
+            <p class="text-sm mb-4" style="color: var(--color-faded-khaki);">
+              {demographic.data.shortDescription.substring(0, 100)}...
+            </p>
+
+            <div class="flex items-center gap-2 text-sm font-medium" style="color: var(--color-mint);">
+              <span>View Guide</span>
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center">
+        <a
+          href="/for"
+          class="inline-flex items-center justify-center px-6 py-3 font-bold rounded-lg transition-all duration-300 hover:scale-105"
+          style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade); border: 2px solid rgba(0, 208, 156, 0.3);"
+        >
+          View All Lifestyles
+          <svg class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Use This Library -->
+  <section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-rich-earth) 100%);">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 text-center" style="color: var(--color-alabaster);">
+        How to Stack Habits Effectively
+      </h2>
+
+      <div class="space-y-6">
+        <div class="p-6 rounded-xl border" style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);">
+          <div class="flex items-start gap-4">
+            <div class="text-2xl font-bold" style="color: var(--color-jade);">1</div>
+            <div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-alabaster);">Start with ONE Stack</h3>
+              <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+                Don't try to stack 10 habits on Day 1. Pick ONE combination that resonates. Master it for 66 days. Then add another.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl border" style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);">
+          <div class="flex items-start gap-4">
+            <div class="text-2xl font-bold" style="color: var(--color-jade);">2</div>
+            <div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-alabaster);">Follow the Stacking Protocol</h3>
+              <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+                Order matters. Timing matters. Each combination page has a detailed stacking protocol. Follow it exactly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl border" style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);">
+          <div class="flex items-start gap-4">
+            <div class="text-2xl font-bold" style="color: var(--color-jade);">3</div>
+            <div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-alabaster);">Use Progressive Onboarding</h3>
+              <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+                Don't go 100% intensity on both habits Day 1. Follow our week-by-week progression plans. They prevent burnout and maximize adherence.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl border" style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);">
+          <div class="flex items-start gap-4">
+            <div class="text-2xl font-bold" style="color: var(--color-jade);">4</div>
+            <div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-alabaster);">Track Everything</h3>
+              <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+                What gets measured gets managed. NooLife tracks both habits + shows synergy bonuses when you complete both. Visible progress = motivation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6" style="color: var(--color-alabaster);">
+        Ready to Stack Your Habits?
+      </h2>
+      <p class="text-xl md:text-2xl leading-relaxed mb-8" style="color: var(--color-faded-khaki);">
+        Pick ONE combination. Commit to 66 days. Watch your life transform.
+      </p>
+
+      <a
+        href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      >
+        <img
+          src="/download-ios.svg"
+          alt="Download on the App Store"
+          class="h-20 md:h-24 w-auto mx-auto"
+          loading="lazy"
+        />
+      </a>
+
+      <p class="text-sm font-medium mt-4" style="color: var(--color-faded-khaki);">
+        Free 3-day trial. Track all your habit stacks in one app.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+</style>

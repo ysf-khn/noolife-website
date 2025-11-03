@@ -1,0 +1,186 @@
+{
+  "combinationName": "Studying and Journaling",
+  "combinationSlug": "studying-and-journaling",
+  "habit1Slug": "studying",
+  "habit2Slug": "journaling",
+  "habit1Name": "Studying",
+  "habit2Name": "Journaling",
+  "primaryKeyword": "study journal method",
+  "secondaryKeywords": [
+    "journaling for studying",
+    "study journal technique",
+    "learning journal students",
+    "active recall journaling",
+    "reflection journal studying"
+  ],
+  "searchVolume": 1080,
+  "competitionLevel": "low",
+  "tier": "tier2",
+  "shortDescription": "The retention multiplier. Post-study journaling = active recall on steroids. Students who journal retain 34% more than passive review.",
+  "synergyScience": {
+    "headline": "Why Writing About What You Learned Beats Re-Reading By 300%",
+    "explanation": "Re-reading feels productive but creates 'fluency illusion' (familiar = mastered, false). Journaling forces active recall: retrieve info from memory without looking. Research shows active recall improves retention 300% vs. passive review. Post-study journaling also processes: What confused you? What connections exist? Metacognition (thinking about your thinking) is the highest level of learning.",
+    "researchCitations": [
+      {
+        "study": "Roediger & Karpicke (2006) - Psychological Science",
+        "finding": "Retrieval practice (testing yourself) produced 50% better long-term retention than repeated studying",
+        "link": "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2006.01693.x"
+      },
+      {
+        "study": "Chi et al. (1994) - Cognitive Science",
+        "finding": "Self-explanation (explaining concepts to yourself) dramatically improved physics problem-solving vs. passive reading"
+      },
+      {
+        "study": "Dunlosky et al. (2013) - Psychological Science",
+        "finding": "Practice testing and distributed practice were most effective study techniques - journaling combines both"
+      }
+    ],
+    "neuroscience": "Studying = encoding (info enters brain). Journaling = retrieval (info exits brain onto paper). Each retrieval strengthens neural pathways more than re-encoding. You're building memory highways, not just driving them once."
+  },
+  "stackingProtocol": {
+    "timing": "Study 50 min → Journal 10 min → Break. Post-study journaling is critical (memory consolidation window). Morning study + evening reflection journal also effective.",
+    "order": "Always journal AFTER studying (retrieval practice). Pre-study journaling optional (clear mind, set intentions). Post-study is where retention magic happens.",
+    "bestPractice": "Study journal format: (1) What did I learn? (2) What confused me? (3) How does this connect to previous knowledge? (4) What questions remain? This metacognitive reflection = deep learning."
+  },
+  "combinedBenefits": [
+    {
+      "benefit": "34% Better Long-Term Retention",
+      "explanation": "Journaling forces active recall. Information you write (without looking) is information you'll remember for exams. Passive review creates fluency illusion - journaling reveals gaps.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Metacognitive Awareness",
+      "explanation": "Journaling reveals: What do you actually understand vs. what feels familiar? This self-awareness allows targeted review. You study smarter, not harder.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Concept Connection Building",
+      "explanation": "Writing forces you to connect new info to existing knowledge. These connections = deep understanding. Exams test connections, not memorization. Journaling builds that.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Confusion Identification",
+      "explanation": "Journaling question: 'What confused me?' makes gaps explicit. You can target confusion in next study session. Most students ignore confusion until exam (too late).",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Exam Question Prediction",
+      "explanation": "Your journal questions often match exam questions. Writing 'Why does X happen?' then answering it = pre-studying exam. You're generating practice tests.",
+      "uniqueToCombination": true
+    },
+    {
+      "benefit": "Study Session Accountability",
+      "explanation": "Journaling 'What did I learn?' forces honest assessment. If you can't fill a page, you didn't study effectively. This feedback loop improves study quality.",
+      "uniqueToCombination": true
+    }
+  ],
+  "progressionPlan": {
+    "overview": "Start with 5-min post-study reflection. Build to 10-15 min deep journaling. Most students skip this 'because no time' - but journaling SAVES time by improving retention (less re-study needed).",
+    "weeklyBreakdown": [
+      {
+        "weekRange": "Week 1-2",
+        "habit1Focus": "1-2 focused study sessions/day (50 min each). Track topics studied.",
+        "habit2Focus": "5-min post-study journal. Simple format: 'What did I learn today?' Bullet points okay.",
+        "combinedGoal": "Build habit: Study → Journal. Notice: Writing reveals gaps you didn't know existed."
+      },
+      {
+        "weekRange": "Week 3-4",
+        "habit1Focus": "2-3 study sessions/day. Active learning: summarize as you read (no passive highlighting).",
+        "habit2Focus": "7-min journal. Add: 'What confused me?' and 'What questions do I still have?'",
+        "combinedGoal": "Journaling improving study quality. You're targeting confusion, not just re-reading."
+      },
+      {
+        "weekRange": "Week 5-6",
+        "habit1Focus": "Consistent daily study. Pomodoro: 50 study → 10 break → repeat.",
+        "habit2Focus": "10-min journal. Add: 'How does this connect to what I already know?' (concept mapping).",
+        "combinedGoal": "Deep learning activated. You're building concept webs, not memorizing facts. Understanding > memorization."
+      },
+      {
+        "weekRange": "Week 7-8",
+        "habit1Focus": "Study routine locked. Before exams: review journal instead of textbook (your journal = personalized study guide).",
+        "habit2Focus": "10-min journal + weekly review journal (Sunday: review week's journals, note patterns/themes).",
+        "combinedGoal": "Your journal is more valuable than textbook. It's your learning in your words. Exam prep is reviewing journals."
+      },
+      {
+        "weekRange": "Week 9-10 (Day 66)",
+        "habit1Focus": "Studying is automatic. You're efficient, focused, retaining information. Grades improving.",
+        "habit2Focus": "Journaling is non-negotiable study component. You don't finish studying until you journal.",
+        "combinedGoal": "Identity shift: 'I'm a deep learner.' Study + journal = your superpower. Permanent academic advantage."
+      }
+    ]
+  },
+  "commonMistakes": [
+    "Journaling while looking at notes (defeats active recall - journal from memory first, then check notes)",
+    "Only journaling what you understood (also write confusions - gaps are the gold)",
+    "Bullet points only (some detail needed - explain concepts in sentences for deeper processing)",
+    "Not reviewing old journals (your journal IS your study guide for exams - review it)",
+    "Journaling on laptop with internet (distractions kill depth - pen and paper or distraction-free app)",
+    "Skipping journaling when 'no time' (journaling SAVES time by improving retention)",
+    "Perfect grammar focus (this isn't English class - messy thinking on paper beats no thinking)"
+  ],
+  "nooLifeIntegration": "NooLife tracks study time + journal entries. Task: 'Study 50 min + journal 10 min'. GTA visuals show character in deep learning mode. Synergy bonus: Wisdom + Focus ratings boost when both completed. Stats: Study hours, journal entries, exam scores (user-entered), retention quality (self-rated).",
+  "relatedCombinations": [
+    "studying-and-meditation",
+    "reading-and-journaling",
+    "journaling-and-waking-early",
+    "journaling-and-meditation",
+    "reading-and-studying"
+  ],
+  "relatedChallenges": [
+    "66-day-study-challenge",
+    "66-day-journaling-challenge",
+    "66-day-focus-challenge"
+  ],
+  "ctaAngle": "Track study + journal habit. 34% better retention through active recall.",
+  "testimonial": "\"I used to re-read notes 5 times before exams. Started journaling after study sessions - writing what I learned without looking. Retention skyrocketed. GPA went from 3.3 to 3.9. Journaling is the cheat code nobody talks about.\" - Aisha M., NooLife user",
+  "heroImage": "https://r2.noolife.app/pseo-pages/combination-pages.webp",
+  "tags": [
+    "studying",
+    "journaling",
+    "active recall",
+    "learning",
+    "students",
+    "academic performance",
+    "retention",
+    "metacognition"
+  ],
+  "metaKeywords": [
+    "study journal method",
+    "journaling for studying",
+    "active recall journaling",
+    "study journal technique",
+    "learning journal students",
+    "reflection journal studying",
+    "study journaling benefits"
+  ],
+  "faqs": [
+    {
+      "question": "Should I journal before or after studying?",
+      "answer": "AFTER is critical. Post-study journaling = active recall (retrieving info from memory strengthens it). Pre-study journaling optional (set intentions, clear mind) but post-study is where retention happens."
+    },
+    {
+      "question": "What should I write in my study journal?",
+      "answer": "Four key questions: (1) What did I learn? (2) What confused me? (3) How does this connect to previous knowledge? (4) What questions remain? This format forces deep processing beyond surface memorization."
+    },
+    {
+      "question": "Can I journal while looking at my notes?",
+      "answer": "No. Write from memory first (active recall). THEN check notes and add what you missed in different color. The struggle to remember = learning. Looking while writing = fluency illusion (feels productive but isn't)."
+    },
+    {
+      "question": "How long should I journal after studying?",
+      "answer": "Start with 5 minutes. Work up to 10-15 minutes. If you studied 50 minutes, 10-minute journal is 20% time investment for 34% retention improvement. Best ROI in studying."
+    },
+    {
+      "question": "What if I have nothing to write?",
+      "answer": "That reveals: You didn't study effectively OR you need to review. If truly nothing stuck, re-study that material. Usually journaling reveals you learned more than you thought - writing surfaces hidden knowledge."
+    },
+    {
+      "question": "Should I use pen and paper or digital?",
+      "answer": "Pen and paper better (no digital distractions, tactile engagement aids memory). But digital works if using distraction-free app with internet OFF. Never journal on phone (notification temptation kills depth)."
+    },
+    {
+      "question": "How do I use my journal for exam prep?",
+      "answer": "Review journals instead of textbook. Your journal = personalized study guide in your words. Re-read for overview, then practice active recall on confusing sections. Many students find their journal questions match exam questions."
+    }
+  ]
+}

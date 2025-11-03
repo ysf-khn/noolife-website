@@ -1,0 +1,461 @@
+---
+// SolutionTemplate.astro - Template for all problem-solution landing pages
+// Pattern from pseo-strategy.md Template 4
+import { Image } from "astro:assets";
+import downloadIOS from "../../assets/download-ios.svg";
+
+interface Props {
+  solution: {
+    problem: string;
+    problemSlug: string;
+    commonSymptoms: string[];
+    rootCauses: string[];
+    scientificExplanation: string;
+    failedSolutions: string[];
+    whyTheyFail: string;
+    actualSolution: string;
+    nooLifeApproach: string;
+    expectedTimeline: string;
+    weekBreakdown?: Array<{
+      week: number;
+      focus: string;
+      expectedProgress: string;
+    }>;
+    relatedHabits: string[];
+    relatedChallenges: string[];
+    relatedProblems?: string[];
+    testimonial?: string;
+    ctaAngle: string;
+    trustSignal?: string;
+    heroImage: string;
+    tags: string[];
+    metaKeywords: string[];
+    faqs: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+}
+
+const { solution } = Astro.props;
+---
+
+<!-- HERO SECTION - CTA #1 (Above Fold) -->
+<section
+  id="solution-hero"
+  class="relative min-h-screen flex items-center justify-center px-4 py-16 sm:py-24 md:py-32"
+>
+  <div class="relative max-w-7xl w-full mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+      <!-- LEFT COLUMN: Copy -->
+      <div class="lg:col-span-2 text-center lg:text-left flex flex-col justify-center">
+        <!-- Problem Badge -->
+        <div class="flex gap-2 justify-center lg:justify-start mb-4 hero-fade-in" style="animation-delay: 0.05s;">
+          <span class="px-3 py-1 text-xs font-bold rounded-full uppercase" style="background: rgba(255, 82, 82, 0.1); color: #ff5252; border: 1px solid rgba(255, 82, 82, 0.3);">
+            COMMON PROBLEM
+          </span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6 hero-fade-in"
+          style="animation-delay: 0.1s; color: var(--color-alabaster);"
+        >
+          Why You <span style="color: var(--color-jade);">{solution.problem}</span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p
+          class="text-xl md:text-xl lg:text-2xl leading-snug sm:leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8 hero-fade-in"
+          style="animation-delay: 0.2s; color: var(--color-faded-khaki);"
+        >
+          And the actual science-backed fix. Not willpower. Not motivation. Real systems.
+        </p>
+
+        <!-- CTA Button -->
+        <div class="flex flex-col items-center lg:items-start gap-2 hero-fade-in" style="animation-delay: 0.3s;">
+          <a
+            href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+            aria-label="Download on the App Store"
+          >
+            <Image
+              src={downloadIOS}
+              alt="Download on the App Store"
+              class="h-16 md:h-20 w-auto"
+              loading="eager"
+            />
+          </a>
+          <p class="text-sm font-medium italic" style="color: var(--color-mint);">
+            {solution.ctaAngle}
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Hero Image -->
+      <div class="lg:col-span-3 hero-fade-in" style="animation-delay: 0.3s;">
+        <div class="relative">
+          <img
+            src={solution.heroImage}
+            alt={`Solving ${solution.problem}`}
+            class="w-full h-auto block rounded-2xl transition-all duration-700 hover:scale-[1.02]"
+            style="filter: drop-shadow(0 25px 80px rgba(0, 208, 156, 0.2));"
+            loading="eager"
+          />
+          <div class="absolute -inset-4 bg-linear-to-r from-jade to-mint opacity-20 blur-3xl -z-10 rounded-3xl"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM SYMPTOMS SECTION (Pain Agitation) -->
+<section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-rich-earth) 0%, var(--color-dark) 100%);">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      Does This Sound Familiar?
+    </h2>
+    <p class="text-lg md:text-xl mb-12 text-center max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      You're not alone. These are the symptoms of {solution.problem.toLowerCase()}.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {solution.commonSymptoms.map((symptom) => (
+        <div
+          class="p-6 rounded-xl border transition-all duration-300 hover:border-[rgba(255,82,82,0.4)]"
+          style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(255, 82, 82, 0.2);"
+        >
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 flex-shrink-0 mt-1" style="color: #ff5252;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <p class="text-base leading-relaxed" style="color: var(--color-alabaster);">
+              {symptom}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-8 p-6 rounded-xl border text-center" style="background: rgba(0, 0, 0, 0.8); border-color: rgba(241, 237, 233, 0.1);">
+      <p class="text-lg leading-relaxed" style="color: var(--color-faded-khaki);">
+        It's exhausting. And you've tried to fix it. Multiple times.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ROOT CAUSES SECTION (Scientific Explanation) -->
+<section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      Why This Happens (The Science)
+    </h2>
+    <p class="text-lg md:text-xl mb-12 text-center max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      It's not your fault. Here's what's really going on.
+    </p>
+
+    <div
+      class="p-8 rounded-2xl border mb-8"
+      style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px); border-color: rgba(0, 208, 156, 0.2);"
+    >
+      <p class="text-lg leading-relaxed mb-6" style="color: var(--color-alabaster);">
+        {solution.scientificExplanation}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {solution.rootCauses.map((cause) => (
+        <div
+          class="p-6 rounded-xl border"
+          style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+        >
+          <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+            {cause}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- FAILED SOLUTIONS SECTION -->
+<section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-rich-earth) 100%);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      What You've Tried (And Why It Failed)
+    </h2>
+    <p class="text-lg md:text-xl mb-12 text-center max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      You weren't wrong for trying these. They just don't address the root cause.
+    </p>
+
+    <div class="grid grid-cols-1 gap-4 mb-8">
+      {solution.failedSolutions.map((failedSolution) => (
+        <div
+          class="p-6 rounded-xl border flex items-start gap-4"
+          style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(255, 82, 82, 0.2);"
+        >
+          <div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center" style="background: rgba(255, 82, 82, 0.1); color: #ff5252;">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </div>
+          <p class="text-base leading-relaxed" style="color: var(--color-alabaster);">
+            {failedSolution}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    <div
+      class="p-8 rounded-2xl border"
+      style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.1);"
+    >
+      <h3 class="text-xl font-bold mb-3" style="color: var(--color-faded-khaki);">
+        Why These Approaches Fail:
+      </h3>
+      <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+        {solution.whyTheyFail}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ACTUAL SOLUTION SECTION - CTA #2 (Mid-Content) -->
+<section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      The Actual Solution
+    </h2>
+    <p class="text-lg md:text-xl mb-8 text-center max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      Not motivational nonsense. Science-backed systems that work.
+    </p>
+
+    <div
+      class="p-8 rounded-2xl border mb-8"
+      style="background: linear-gradient(135deg, rgba(0, 208, 156, 0.05), rgba(0, 208, 156, 0.02)); border-color: rgba(0, 208, 156, 0.3);"
+    >
+      <p class="text-lg leading-relaxed" style="color: var(--color-alabaster);">
+        {solution.actualSolution}
+      </p>
+    </div>
+
+    <!-- NooLife Approach -->
+    <div
+      class="p-8 rounded-2xl border mb-8"
+      style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px); border-color: rgba(0, 208, 156, 0.2);"
+    >
+      <h3 class="text-xl font-bold mb-3" style="color: var(--color-jade);">
+        How NooLife Solves This
+      </h3>
+      <p class="text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+        {solution.nooLifeApproach}
+      </p>
+    </div>
+
+    <!-- CTA #2 -->
+    <div class="text-center">
+      <a
+        href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      >
+        <Image
+          src={downloadIOS}
+          alt="Download on the App Store"
+          class="h-16 md:h-20 w-auto mx-auto"
+          loading="lazy"
+        />
+      </a>
+      {solution.trustSignal && (
+        <p class="text-sm font-medium italic mt-2" style="color: var(--color-mint);">
+          {solution.trustSignal}
+        </p>
+      )}
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE SECTION -->
+<section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-rich-earth) 100%);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-center" style="color: var(--color-alabaster);">
+      What to Expect (Week by Week)
+    </h2>
+    <p class="text-lg md:text-xl mb-12 text-center max-w-3xl mx-auto" style="color: var(--color-faded-khaki);">
+      Progress isn't linear. Here's the realistic timeline.
+    </p>
+
+    {solution.weekBreakdown ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {solution.weekBreakdown.map((week) => (
+          <div
+            class="p-6 rounded-xl border"
+            style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+          >
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold" style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade);">
+                W{week.week}
+              </div>
+              <h3 class="text-lg font-bold" style="color: var(--color-alabaster);">
+                Week {week.week}
+              </h3>
+            </div>
+            <p class="text-base leading-relaxed mb-3" style="color: var(--color-faded-khaki);">
+              <strong>Focus:</strong> {week.focus}
+            </p>
+            <p class="text-sm leading-relaxed" style="color: var(--color-faded-khaki); opacity: 0.8;">
+              {week.expectedProgress}
+            </p>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div
+        class="p-8 rounded-2xl border"
+        style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+      >
+        <p class="text-lg leading-relaxed" style="color: var(--color-alabaster);">
+          {solution.expectedTimeline}
+        </p>
+      </div>
+    )}
+  </div>
+</section>
+
+<!-- TESTIMONIAL SECTION -->
+{solution.testimonial && (
+  <section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+    <div class="max-w-4xl mx-auto text-center">
+      <svg class="w-12 h-12 mx-auto mb-6 opacity-40" style="color: var(--color-jade);" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+      </svg>
+      <blockquote class="text-xl md:text-2xl leading-relaxed mb-6" style="color: var(--color-alabaster);">
+        {solution.testimonial}
+      </blockquote>
+    </div>
+  </section>
+)}
+
+<!-- FAQ SECTION -->
+<section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-rich-earth) 100%);">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 text-center" style="color: var(--color-alabaster);">
+      Common Questions
+    </h2>
+
+    <div class="flex flex-col gap-4">
+      {solution.faqs.map((faq) => (
+        <details
+          class="rounded-xl border border-[rgba(241,237,233,0.08)] hover:border-[rgba(0,208,156,0.15)] [&[open]]:border-[rgba(0,208,156,0.3)] transition-all"
+          style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px);"
+        >
+          <summary class="px-6 py-6 lg:px-8 cursor-pointer flex justify-between items-center gap-4 text-lg font-bold list-none" style="color: var(--color-alabaster);">
+            <span>{faq.question}</span>
+            <svg class="w-6 h-6 flex-shrink-0 transition-transform [details[open]>&]:rotate-180" style="color: var(--color-jade);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="px-6 pb-6 lg:px-8 text-base leading-relaxed" style="color: var(--color-faded-khaki);">
+            <p>{faq.answer}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- RELATED CONTENT SECTION -->
+<section class="py-16 md:py-24 px-4" style="background: var(--color-dark);">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 text-center" style="color: var(--color-alabaster);">
+      Related Solutions
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      {solution.relatedHabits.slice(0, 4).map((habitSlug) => (
+        <a
+          href={`/habit/${habitSlug}`}
+          class="p-6 rounded-xl border transition-all duration-300 hover:scale-105 hover:border-[rgba(0,208,156,0.4)]"
+          style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+        >
+          <span class="text-xs font-bold uppercase mb-2 block" style="color: var(--color-mint);">HABIT</span>
+          <h3 class="text-lg font-bold" style="color: var(--color-alabaster);">
+            {habitSlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+          </h3>
+        </a>
+      ))}
+    </div>
+
+    {solution.relatedChallenges.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {solution.relatedChallenges.slice(0, 2).map((challengeSlug) => (
+          <a
+            href={`/challenge/${challengeSlug}`}
+            class="p-6 rounded-xl border transition-all duration-300 hover:scale-105 hover:border-[rgba(0,208,156,0.4)]"
+            style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-color: rgba(241, 237, 233, 0.08);"
+          >
+            <span class="text-xs font-bold uppercase mb-2 block" style="color: var(--color-jade);">CHALLENGE</span>
+            <h3 class="text-lg font-bold" style="color: var(--color-alabaster);">
+              {challengeSlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+            </h3>
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+</section>
+
+<!-- FINAL CTA SECTION - CTA #3 (Bottom) -->
+<section class="py-16 md:py-24 px-4" style="background: linear-gradient(180deg, var(--color-rich-earth) 0%, var(--color-dark) 100%);">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6" style="color: var(--color-alabaster);">
+      Fix {solution.problem} in 66 Days
+    </h2>
+    <p class="text-xl md:text-2xl leading-relaxed mb-8" style="color: var(--color-faded-khaki);">
+      66 days from now, this is automatic. Or you're still stuck. Your move.
+    </p>
+
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95 mb-4"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-20 md:h-24 w-auto mx-auto"
+        loading="lazy"
+      />
+    </a>
+
+    <p class="text-sm font-medium" style="color: var(--color-faded-khaki);">
+      Free 3-day trial. Weekly & yearly plans available.
+    </p>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+</style>

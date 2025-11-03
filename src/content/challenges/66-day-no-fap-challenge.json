@@ -1,0 +1,89 @@
+{
+  "challengeName": "66-Day No Fap Challenge",
+  "challengeSlug": "66-day-no-fap-challenge",
+  "duration": 66,
+  "goal": "No Fap Mastery",
+  "goalSlug": "no-fap",
+  "includedHabits": ["no-fap", "workout", "cold-shower", "meditation"],
+  "targetAudience": "Reclaim your energy, focus, and confidence in 66 days. Perfect for those tired of compulsive behavior and brain fog.",
+  "scientificRationale": "Excessive pornography use downregulates dopamine receptors, creating addiction-like patterns. Research shows that 60-90 days of abstinence allows dopamine sensitivity to normalize, improving motivation, focus, and social confidence. By abstaining from pornography and self-gratification for 66 days while replacing with healthy habits (workout, cold showers, meditation), you rewire reward pathways and reclaim mental clarity. This is neurochemical reset.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Complete abstinence begins. Identify triggers (boredom, stress, late-night phone use). Install blockers. Track urges.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "Urges peak. Replace with workout (when triggered, do 20 pushups). Cold showers help. Notice slight energy increase.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "'Flatline' period begins (low libido, low motivation). This is normal brain recalibration. Push through.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 4,
+      "focus": "Add meditation (10 min) for urge management. Observe urges without acting. They pass—they always do.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Energy and focus measurably improving. Notice increased confidence in social situations. Brain fog lifting.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Urges reducing. Triggers less powerful. You're rewiring reward systems. Confidence at all-time high.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 7,
+      "focus": "Mental clarity, energy, motivation at peak. Notice people commenting on your presence and confidence.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 8,
+      "focus": "No-fap feels like identity now. Urges rare. When they arise, you observe and let them pass. You're in control.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "Maintain discipline through social/stress triggers. This is your competitive advantage. Track all wins.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Day 66: Compare energy, focus, confidence vs Day 1. You're operating at a different level. This is permanent.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 66, you'll have 66 days clean, experience measurably higher energy and mental clarity, improved social confidence, better focus and motivation, normalized dopamine sensitivity, and broken compulsive patterns. NooLife no-fap finishers report an average 76% improvement in self-reported confidence and 89% improvement in focus/motivation.",
+  "commonPitfalls": [
+    "Not removing triggers (delete apps, use website blockers, phone out of bedroom)",
+    "Isolating when stressed (workout, call friend, meditate—don't isolate with phone)",
+    "Boredom relapses (idle time is dangerous—stay busy with productive habits)",
+    "Peeking ('just one look' restarts dopamine cycle—avoid all triggers)",
+    "Not tracking urges vs actions (seeing urges decrease over time motivates continuation)",
+    "Shame after relapse (if you relapse, don't binge—get back on track immediately)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife tracks daily no-fap completion with private streak counter (no judgment, just data). Log urges separately from actions. Your Discipline, Confidence, and Focus ratings skyrocket. GTA-style focused warrior visuals make every clean day feel like power reclamation. Relapse doesn't zero progress—track bounce-back time.",
+  "testimonial": "\"Struggled with this for 8 years. NooLife's 66-day challenge changed everything. Day 66: more energy, more confidence, mental clarity insane. Private tracking kept me accountable without shame. I'm free.\" - Anonymous",
+  "ctaAngle": "Build self-control with private, judgment-free no-fap tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "no fap challenge",
+    "66 day no fap",
+    "self control",
+    "dopamine detox",
+    "discipline"
+  ],
+  "metaKeywords": [
+    "66 day nofap challenge",
+    "nofap benefits",
+    "quit pornography",
+    "dopamine reset",
+    "nofap tracker"
+  ]
+}

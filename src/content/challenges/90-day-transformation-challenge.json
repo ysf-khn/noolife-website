@@ -1,0 +1,111 @@
+{
+  "challengeName": "90-Day Total Transformation Challenge",
+  "challengeSlug": "90-day-transformation-challenge",
+  "duration": 90,
+  "goal": "Total Life Transformation",
+  "goalSlug": "transformation",
+  "includedHabits": [
+    "waking-early",
+    "cold-shower",
+    "workout",
+    "running",
+    "meditation",
+    "reading",
+    "journaling",
+    "studying",
+    "no-fap",
+    "social-media-control"
+  ],
+  "targetAudience": "The most intense challenge. 90 days to become unrecognizable. Perfect for those ready to commit to total life transformation—no half measures.",
+  "scientificRationale": "While 66 days achieves habit automaticity, 90 days creates identity-level change. Research from behavioral psychology shows that 12 weeks (90 days) is the threshold where temporary behavior change solidifies into permanent identity shift. By stacking 10+ habits across physical, mental, emotional, and intellectual domains for 90 straight days, you're not just building habits—you're becoming a fundamentally different person. This is the challenge that separates those who talk from those who transform.",
+  "weekByWeekBreakdown": [
+    {
+      "week": 1,
+      "focus": "Foundation week: wake time locked, cold showers start, workout 3x, meditation 5 min. Track everything. Momentum builds.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 2,
+      "focus": "Add reading (10 pages daily), journaling (5 min nightly), no-fap commitment, social media limits (1 hour max). Discipline phase.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 3,
+      "focus": "Add studying/skill development (20 min daily), running 2x/week. 10 habits tracked daily. Willpower peak demand.",
+      "expectedDifficulty": "Hard"
+    },
+    {
+      "week": 4,
+      "focus": "First major checkpoint. Notice energy improvements, mental clarity, physical changes. Consistency feels slightly easier.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 5,
+      "focus": "Increase workout to 4x, meditation to 10 min, reading to 20 pages. Habits feel more automatic. Identity shift begins.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 6,
+      "focus": "Cold showers hit 2 min, meditation 15 min. Notice people commenting on your transformation. Confidence skyrockets.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 7,
+      "focus": "Workout split established, running 5K continuous. Studying 45 min daily. Knowledge and strength gains measurable.",
+      "expectedDifficulty": "Medium"
+    },
+    {
+      "week": 8,
+      "focus": "Habits feel fully automatic. Missing a workout or meditation feels uncomfortable. You've crossed the identity threshold.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 9,
+      "focus": "All 5 ratings (Discipline, Strength, Wisdom, Focus, Confidence) at all-time highs. You're operating at peak capacity.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 10,
+      "focus": "Maintain intensity. Don't coast. The last 20 days cement permanent change. Track every single task.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 11,
+      "focus": "Reflect on transformation. Compare Day 1 vs Day 77 photos, strength, knowledge, mental state. You're unrecognizable.",
+      "expectedDifficulty": "Easy"
+    },
+    {
+      "week": 12,
+      "focus": "Day 90: Total transformation complete. You've read 15+ books, gained serious strength, mastered new skills. This is permanent.",
+      "expectedDifficulty": "Easy"
+    }
+  ],
+  "successMetrics": "By day 90, you'll be operating at a level most people never reach: physically strong (2-3x pushup/run capacity), mentally sharp (1,800+ pages read, new skills learned), emotionally stable (90 days meditation, journaling), and disciplined beyond recognition. NooLife 90-day finishers report an average 92% improvement across all 5 rating dimensions. You'll have completed 270+ workouts/tasks, meditated 90 straight days, and built an unshakeable identity as someone who does impossible things.",
+  "commonPitfalls": [
+    "Trying to go 100% intensity Day 1 (you'll burn out by Week 3—build incrementally)",
+    "Not planning for disruptions (travel, illness—have backup plans)",
+    "Comparing yourself to others (this is you vs. you 90 days ago)",
+    "Skipping rest days (recovery is part of the plan—don't overtrain)",
+    "Quitting during 'Week 5-6 flatline' when dopamine normalizes and novelty fades (this is where champions are made)",
+    "Not tracking progress (NooLife data shows how far you've come when motivation dips)",
+    "Breaking streak during holidays or weekends (90-day warriors don't take days off)"
+  ],
+  "nooLifeFeatureHighlight": "NooLife is built for the 90-day challenge. Track all 10+ habits daily across physical, mental, emotional, intellectual domains. Your 5 ratings (Discipline, Strength, Wisdom, Focus, Confidence) visualize your total transformation in real-time. GTA-style cinematic visuals make every logged task feel like a movie montage. See your 90-day heatmap, strength graphs, reading logs, meditation streak—proof you're built different.",
+  "testimonial": "\"Day 1: 220 lbs, depressed, scrolling 5 hours daily. Day 90: 185 lbs, read 18 books, learned SQL, ran a 10K, haven't watched porn in 90 days. NooLife tracked every single day. I'm literally a different human.\" - Carlos M.",
+  "ctaAngle": "Complete a total life transformation with 90-day tracking. Free 3-day trial.",
+  "heroImage": "https://r2.noolife.app/pseo-pages/challenges_pages.webp",
+  "tags": [
+    "90 day transformation",
+    "total transformation",
+    "life change",
+    "90 day challenge",
+    "self improvement"
+  ],
+  "metaKeywords": [
+    "90 day transformation challenge",
+    "90 day challenge",
+    "total life transformation",
+    "how to change your life in 90 days",
+    "90 day habit challenge"
+  ]
+}
