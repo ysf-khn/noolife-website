@@ -7,6 +7,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://noolife.app',
+  trailingSlash: 'always',
   integrations: [sitemap()],
   image: {
     remotePatterns: [

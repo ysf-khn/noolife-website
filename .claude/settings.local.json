@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(move:*)",
-      "Bash(wrangler r2 object put:*)"
+      "Bash(wrangler r2 object put:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []
