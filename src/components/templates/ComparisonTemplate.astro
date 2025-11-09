@@ -1,0 +1,541 @@
+---
+// ComparisonTemplate.astro - Template for competitor comparison pages (/vs/[competitor])
+// Conversion-optimized with 3 CTA placements as per pseo-expansion strategy
+import { Image } from "astro:assets";
+import downloadIOS from "../../assets/download-ios.svg";
+
+interface Props {
+  comparison: {
+    competitorName: string;
+    competitorSlug: string;
+    competitorTagline: string;
+    competitorWebsite: string;
+    nooLifePrice: string;
+    competitorPrice: string;
+    priceWinner: 'noolife' | 'competitor' | 'tie';
+    priceExplanation: string;
+    featureMatrix: Array<{
+      feature: string;
+      nooLifeHas: boolean;
+      nooLifeDetails?: string;
+      competitorHas: boolean;
+      competitorDetails?: string;
+      winner: 'noolife' | 'competitor' | 'tie';
+    }>;
+    competitorStrengths: string[];
+    competitorWeaknesses: string[];
+    nooLifeAdvantages: Array<{
+      advantage: string;
+      explanation: string;
+      scientificBacking?: string;
+    }>;
+    bestForCompetitor: string;
+    bestForNooLife: string;
+    quickVerdict: {
+      winner: 'noolife' | 'competitor' | 'depends';
+      oneLineTakeaway: string;
+      recommendation: string;
+    };
+    switchingFromCompetitor: {
+      difficulty: 'easy' | 'medium' | 'hard';
+      steps: string[];
+      dataExport: boolean;
+      estimatedTime: string;
+    };
+    faqs: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+}
+
+const { comparison } = Astro.props;
+
+// Helper function to get winner badge color
+const getWinnerColor = (winner: 'noolife' | 'competitor' | 'tie' | 'depends') => {
+  switch (winner) {
+    case 'noolife': return 'var(--color-jade)';
+    case 'competitor': return '#9333ea';
+    case 'tie':
+    case 'depends': return 'var(--color-faded-khaki)';
+  }
+};
+
+const getWinnerBg = (winner: 'noolife' | 'competitor' | 'tie' | 'depends') => {
+  switch (winner) {
+    case 'noolife': return 'rgba(0, 208, 156, 0.1)';
+    case 'competitor': return 'rgba(147, 51, 234, 0.1)';
+    case 'tie':
+    case 'depends': return 'rgba(241, 237, 233, 0.05)';
+  }
+};
+---
+
+<!-- HERO SECTION - INTRO -->
+<section
+  id="comparison-hero"
+  class="relative min-h-[60vh] flex items-center justify-center px-4 py-16 sm:py-24"
+>
+  <div class="relative max-w-7xl w-full mx-auto">
+    <div class="text-center">
+      <!-- Main Headline -->
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6"
+        style="color: var(--color-alabaster);"
+      >
+        NooLife vs <span style="color: var(--color-jade);">{comparison.competitorName}</span>
+      </h1>
+
+      <!-- Tagline comparison -->
+      <p
+        class="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-4"
+        style="color: var(--color-faded-khaki);"
+      >
+        {comparison.competitorTagline} vs. Science-backed habit transformation
+      </p>
+
+      <!-- Intro paragraph -->
+      <p
+        class="text-lg leading-relaxed max-w-2xl mx-auto"
+        style="color: var(--color-faded-khaki); opacity: 0.8;"
+      >
+        Choosing between {comparison.competitorName} and NooLife? Here's the honest breakdown.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK VERDICT TABLE (ABOVE FOLD) - CTA #1 -->
+<section id="quick-verdict" class="relative px-4 py-16" style="background: rgba(18, 20, 19, 0.4);">
+  <div class="relative max-w-7xl w-full mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12"
+      style="color: var(--color-alabaster);"
+    >
+      Quick Verdict
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Comparison Table -->
+      <div class="lg:col-span-2">
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr style="background: rgba(241, 237, 233, 0.05); border-bottom: 2px solid rgba(0, 208, 156, 0.3);">
+                <th class="p-4 text-left text-lg font-bold" style="color: var(--color-alabaster);">Category</th>
+                <th class="p-4 text-center text-lg font-bold" style="color: var(--color-jade);">NooLife</th>
+                <th class="p-4 text-center text-lg font-bold" style="color: #9333ea;">{comparison.competitorName}</th>
+                <th class="p-4 text-center text-lg font-bold" style="color: var(--color-faded-khaki);">Winner</th>
+              </tr>
+            </thead>
+            <tbody>
+              {comparison.featureMatrix.slice(0, 5).map((feature, index) => (
+                <tr style={`background: ${index % 2 === 0 ? 'rgba(18, 20, 19, 0.3)' : 'transparent'}; border-bottom: 1px solid rgba(241, 237, 233, 0.1);`}>
+                  <td class="p-4 font-semibold" style="color: var(--color-alabaster);">{feature.feature}</td>
+                  <td class="p-4 text-center">
+                    {feature.nooLifeHas ? (
+                      <span style="color: var(--color-jade); font-size: 1.5rem;">✓</span>
+                    ) : (
+                      <span style="color: var(--color-faded-khaki); opacity: 0.5;">—</span>
+                    )}
+                  </td>
+                  <td class="p-4 text-center">
+                    {feature.competitorHas ? (
+                      <span style="color: #9333ea; font-size: 1.5rem;">✓</span>
+                    ) : (
+                      <span style="color: var(--color-faded-khaki); opacity: 0.5;">—</span>
+                    )}
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="px-3 py-1 text-xs font-bold rounded-full uppercase"
+                      style={`background: ${getWinnerBg(feature.winner)}; color: ${getWinnerColor(feature.winner)}; border: 1px solid ${getWinnerColor(feature.winner)}33;`}
+                    >
+                      {feature.winner === 'noolife' ? 'NooLife' : feature.winner === 'competitor' ? comparison.competitorName : 'Tie'}
+                    </span>
+                  </td>
+                </tr>
+              ))}
+              <!-- Price row -->
+              <tr style="background: rgba(0, 208, 156, 0.05); border-top: 2px solid rgba(0, 208, 156, 0.3);">
+                <td class="p-4 font-bold" style="color: var(--color-alabaster);">Price</td>
+                <td class="p-4 text-center font-bold" style="color: var(--color-jade);">{comparison.nooLifePrice}</td>
+                <td class="p-4 text-center font-bold" style="color: #9333ea;">{comparison.competitorPrice}</td>
+                <td class="p-4 text-center">
+                  <span
+                    class="px-3 py-1 text-xs font-bold rounded-full uppercase"
+                    style={`background: ${getWinnerBg(comparison.priceWinner)}; color: ${getWinnerColor(comparison.priceWinner)}; border: 1px solid ${getWinnerColor(comparison.priceWinner)}33;`}
+                  >
+                    {comparison.priceWinner === 'noolife' ? 'NooLife' : comparison.priceWinner === 'competitor' ? comparison.competitorName : 'Tie'}
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm mt-4" style="color: var(--color-faded-khaki); opacity: 0.8;">{comparison.priceExplanation}</p>
+      </div>
+
+      <!-- CTA #1 (Quick Verdict) -->
+      <div class="flex flex-col justify-center items-center lg:items-start space-y-4 p-6" style="background: rgba(0, 208, 156, 0.05); border: 1px solid rgba(0, 208, 156, 0.2); border-radius: 12px;">
+        <h3 class="text-2xl font-bold text-center lg:text-left" style="color: var(--color-alabaster);">
+          Try NooLife Free
+        </h3>
+        <p class="text-center lg:text-left" style="color: var(--color-faded-khaki);">
+          {comparison.quickVerdict.oneLineTakeaway}
+        </p>
+        <a
+          href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95 w-full"
+          aria-label="Download on the App Store"
+        >
+          <Image
+            src={downloadIOS}
+            alt="Download on the App Store"
+            class="h-16 md:h-20 w-auto mx-auto lg:mx-0"
+            loading="eager"
+          />
+        </a>
+        <p class="text-xs text-center lg:text-left" style="color: var(--color-faded-khaki); opacity: 0.7;">
+          No credit card required
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE-BY-FEATURE COMPARISON -->
+<section id="detailed-comparison" class="relative px-4 py-16">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12"
+      style="color: var(--color-alabaster);"
+    >
+      Feature-by-Feature Breakdown
+    </h2>
+
+    <div class="space-y-8">
+      {comparison.featureMatrix.map((feature) => (
+        <div class="p-6" style="background: rgba(18, 20, 19, 0.4); border-left: 3px solid var(--color-jade); border-radius: 8px;">
+          <h3 class="text-2xl font-bold mb-4" style="color: var(--color-alabaster);">
+            {feature.feature}
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- NooLife -->
+            <div>
+              <h4 class="text-lg font-semibold mb-2" style="color: var(--color-jade);">NooLife</h4>
+              {feature.nooLifeHas ? (
+                <p style="color: var(--color-faded-khaki);">{feature.nooLifeDetails || '✓ Included'}</p>
+              ) : (
+                <p style="color: var(--color-faded-khaki); opacity: 0.6;">Not included</p>
+              )}
+            </div>
+            <!-- Competitor -->
+            <div>
+              <h4 class="text-lg font-semibold mb-2" style="color: #9333ea;">{comparison.competitorName}</h4>
+              {feature.competitorHas ? (
+                <p style="color: var(--color-faded-khaki);">{feature.competitorDetails || '✓ Included'}</p>
+              ) : (
+                <p style="color: var(--color-faded-khaki); opacity: 0.6;">Not included</p>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- COMPETITOR STRENGTHS -->
+<section id="competitor-strengths" class="relative px-4 py-16" style="background: rgba(147, 51, 234, 0.05);">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold mb-8"
+      style="color: var(--color-alabaster);"
+    >
+      What {comparison.competitorName} Does Well
+    </h2>
+    <p class="text-lg mb-6" style="color: var(--color-faded-khaki);">
+      To be fair, {comparison.competitorName} has its strengths:
+    </p>
+    <ul class="space-y-4">
+      {comparison.competitorStrengths.map((strength) => (
+        <li class="flex items-start">
+          <span class="mr-3 mt-1" style="color: #9333ea; font-size: 1.25rem;">✓</span>
+          <span style="color: var(--color-faded-khaki);">{strength}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<!-- COMPETITOR WEAKNESSES -->
+<section id="competitor-weaknesses" class="relative px-4 py-16">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold mb-8"
+      style="color: var(--color-alabaster);"
+    >
+      Where {comparison.competitorName} Falls Short
+    </h2>
+    <ul class="space-y-4">
+      {comparison.competitorWeaknesses.map((weakness) => (
+        <li class="flex items-start">
+          <span class="mr-3 mt-1" style="color: #ef4444; font-size: 1.25rem;">✗</span>
+          <span style="color: var(--color-faded-khaki);">{weakness}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<!-- CTA #2 (MID-COMPARISON - HIGHEST INTENT) -->
+<section id="mid-cta" class="relative px-4 py-16" style="background: linear-gradient(135deg, rgba(0, 208, 156, 0.1), rgba(18, 20, 19, 0.8));">
+  <div class="relative max-w-4xl w-full mx-auto text-center">
+    <h3 class="text-3xl sm:text-4xl font-bold mb-4" style="color: var(--color-alabaster);">
+      Ready for a Science-Backed Alternative?
+    </h3>
+    <p class="text-xl mb-8" style="color: var(--color-faded-khaki);">
+      NooLife combines tracking + transformation with 66-day research. Try it free.
+    </p>
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      aria-label="Download on the App Store"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-20 md:h-24 w-auto mx-auto"
+      />
+    </a>
+    <p class="text-sm mt-4" style="color: var(--color-faded-khaki); opacity: 0.7;">
+      No credit card required. Switch back anytime.
+    </p>
+  </div>
+</section>
+
+<!-- NOOLIFE ADVANTAGES -->
+<section id="noolife-advantages" class="relative px-4 py-16">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold mb-8"
+      style="color: var(--color-alabaster);"
+    >
+      Why NooLife is Different
+    </h2>
+    <div class="space-y-8">
+      {comparison.nooLifeAdvantages.map((advantage) => (
+        <div class="p-6" style="background: rgba(0, 208, 156, 0.05); border-left: 3px solid var(--color-jade); border-radius: 8px;">
+          <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">
+            {advantage.advantage}
+          </h3>
+          <p class="mb-2" style="color: var(--color-faded-khaki);">
+            {advantage.explanation}
+          </p>
+          {advantage.scientificBacking && (
+            <p class="text-sm italic" style="color: var(--color-faded-khaki); opacity: 0.8;">
+              <strong>Science:</strong> {advantage.scientificBacking}
+            </p>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- WHO SHOULD CHOOSE WHICH -->
+<section id="recommendations" class="relative px-4 py-16" style="background: rgba(18, 20, 19, 0.4);">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold text-center mb-12"
+      style="color: var(--color-alabaster);"
+    >
+      Which One is Right for You?
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Choose Competitor -->
+      <div class="p-6" style="background: rgba(147, 51, 234, 0.1); border: 1px solid rgba(147, 51, 234, 0.3); border-radius: 12px;">
+        <h3 class="text-2xl font-bold mb-4" style="color: #9333ea;">
+          Choose {comparison.competitorName} if:
+        </h3>
+        <p style="color: var(--color-faded-khaki);">
+          {comparison.bestForCompetitor}
+        </p>
+      </div>
+
+      <!-- Choose NooLife -->
+      <div class="p-6" style="background: rgba(0, 208, 156, 0.1); border: 1px solid rgba(0, 208, 156, 0.3); border-radius: 12px;">
+        <h3 class="text-2xl font-bold mb-4" style="color: var(--color-jade);">
+          Choose NooLife if:
+        </h3>
+        <p style="color: var(--color-faded-khaki);">
+          {comparison.bestForNooLife}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO SWITCH -->
+<section id="switching-guide" class="relative px-4 py-16">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold mb-8"
+      style="color: var(--color-alabaster);"
+    >
+      How to Switch from {comparison.competitorName} to NooLife
+    </h2>
+    <div class="mb-6">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="px-3 py-1 text-sm font-bold rounded-full" style={`background: ${comparison.switchingFromCompetitor.difficulty === 'easy' ? 'rgba(0, 208, 156, 0.2)' : comparison.switchingFromCompetitor.difficulty === 'medium' ? 'rgba(251, 191, 36, 0.2)' : 'rgba(239, 68, 68, 0.2)'}; color: ${comparison.switchingFromCompetitor.difficulty === 'easy' ? 'var(--color-jade)' : comparison.switchingFromCompetitor.difficulty === 'medium' ? '#fbbf24' : '#ef4444'};`}>
+          {comparison.switchingFromCompetitor.difficulty.toUpperCase()} SWITCH
+        </span>
+        <span style="color: var(--color-faded-khaki);">
+          Estimated time: {comparison.switchingFromCompetitor.estimatedTime}
+        </span>
+      </div>
+      {comparison.switchingFromCompetitor.dataExport && (
+        <p class="mb-4" style="color: var(--color-faded-khaki);">
+          ✓ {comparison.competitorName} allows data export
+        </p>
+      )}
+    </div>
+
+    <ol class="space-y-4">
+      {comparison.switchingFromCompetitor.steps.map((step, index) => (
+        <li class="flex items-start">
+          <span class="mr-3 font-bold flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full" style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);">
+            {index + 1}
+          </span>
+          <span style="color: var(--color-faded-khaki);">{step}</span>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="relative px-4 py-16" style="background: rgba(18, 20, 19, 0.4);">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2
+      class="text-3xl sm:text-4xl font-bold text-center mb-12"
+      style="color: var(--color-alabaster);"
+    >
+      Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-6">
+      {comparison.faqs.map((faq) => (
+        <div class="p-6" style="background: rgba(241, 237, 233, 0.05); border-radius: 8px;">
+          <h3 class="text-xl font-bold mb-3" style="color: var(--color-jade);">
+            {faq.question}
+          </h3>
+          <p style="color: var(--color-faded-khaki);">
+            {faq.answer}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- FINAL RECOMMENDATION -->
+<section id="final-verdict" class="relative px-4 py-16">
+  <div class="relative max-w-4xl w-full mx-auto text-center">
+    <h2
+      class="text-3xl sm:text-4xl font-bold mb-6"
+      style="color: var(--color-alabaster);"
+    >
+      Final Verdict
+    </h2>
+    <div class="mb-6">
+      <span
+        class="px-4 py-2 text-lg font-bold rounded-full uppercase"
+        style={`background: ${getWinnerBg(comparison.quickVerdict.winner)}; color: ${getWinnerColor(comparison.quickVerdict.winner)}; border: 2px solid ${getWinnerColor(comparison.quickVerdict.winner)};`}
+      >
+        Winner: {comparison.quickVerdict.winner === 'noolife' ? 'NooLife' : comparison.quickVerdict.winner === 'competitor' ? comparison.competitorName : 'Depends'}
+      </span>
+    </div>
+    <p class="text-xl mb-8" style="color: var(--color-faded-khaki);">
+      {comparison.quickVerdict.recommendation}
+    </p>
+  </div>
+</section>
+
+<!-- CTA #3 (BOTTOM - FINAL CONVERSION OPPORTUNITY) -->
+<section id="bottom-cta" class="relative px-4 py-20" style="background: linear-gradient(135deg, rgba(18, 20, 19, 0.9), rgba(0, 208, 156, 0.15));">
+  <div class="relative max-w-4xl w-full mx-auto text-center">
+    <h3 class="text-3xl sm:text-5xl font-bold mb-4" style="color: var(--color-alabaster);">
+      Ready to Try the 66-Day Science?
+    </h3>
+    <p class="text-xl mb-8" style="color: var(--color-faded-khaki);">
+      Join 50,000+ users transforming habits with NooLife. Free to try, decide for yourself.
+    </p>
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      aria-label="Download on the App Store"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-20 md:h-24 w-auto mx-auto"
+      />
+    </a>
+    <div class="mt-6 flex items-center justify-center gap-6">
+      <div class="text-center">
+        <div class="text-2xl font-bold" style="color: var(--color-jade);">⭐️ 4.8</div>
+        <div class="text-sm" style="color: var(--color-faded-khaki);">App Store rating</div>
+      </div>
+      <div class="w-px h-12" style="background: rgba(241, 237, 233, 0.2);"></div>
+      <div class="text-center">
+        <div class="text-2xl font-bold" style="color: var(--color-jade);">50K+</div>
+        <div class="text-sm" style="color: var(--color-faded-khaki);">Active users</div>
+      </div>
+    </div>
+    <p class="text-sm mt-6" style="color: var(--color-faded-khaki); opacity: 0.7;">
+      Switch back to {comparison.competitorName} anytime if it doesn't fit
+    </p>
+  </div>
+</section>
+
+<style>
+  /* Smooth animations */
+  section {
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Table responsive */
+  table {
+    min-width: 600px;
+  }
+
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.875rem;
+    }
+
+    th, td {
+      padding: 0.75rem !important;
+    }
+  }
+</style>

@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import ComparisonTemplate from '../../components/templates/ComparisonTemplate.astro';
+
+export const getStaticPaths = (async () => {
+  const comparisons = await getCollection('comparisons');
+
+  return comparisons.map(comparison => ({
+    params: { slug: comparison.data.competitorSlug },
+    props: { comparison },
+  }));
+}) satisfies GetStaticPaths;
+
+const { comparison } = Astro.props;
+const comparisonData = comparison.data;
+
+// Generate SEO title and description
+const seoTitle = `NooLife vs ${comparisonData.competitorName}: Which Habit Tracker Works? (2025 Comparison)`;
+const seoDescription = `Honest ${comparisonData.competitorName} vs NooLife comparison. ${comparisonData.quickVerdict.oneLineTakeaway}. Feature matrix, pricing, pros/cons. See which fits your goals.`;
+
+// Generate structured data for comparison page
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ComparisonWebPage",
+  "name": `NooLife vs ${comparisonData.competitorName} Comparison`,
+  "description": seoDescription,
+  "itemListElement": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "NooLife",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": comparisonData.nooLifePrice.includes('Free') ? "0" : comparisonData.nooLifePrice.replace(/[^0-9.]/g, ''),
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "50000"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": comparisonData.competitorName,
+      "applicationCategory": "HealthApplication",
+      "url": comparisonData.competitorWebsite
+    }
+  ],
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": comparisonData.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  }
+};
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={comparisonData.heroImage}
+  type="website"
+  jsonLd={structuredData}
+>
+  <ComparisonTemplate comparison={comparisonData} />
+</Layout>

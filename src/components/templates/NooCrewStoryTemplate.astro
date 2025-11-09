@@ -1,0 +1,453 @@
+---
+// NooCrewStoryTemplate.astro - Template for Noo Crew transformation story pages
+// Displays before/after rating transformations from hard mfers who completed 66 days
+import { Image } from "astro:assets";
+import downloadIOS from "../../assets/download-ios.svg";
+
+interface Props {
+  nooCrew: {
+    pageName: string;
+    pageSlug: string;
+    tagline: string;
+    communityStats: {
+      totalMembers: string;
+      activeThisMonth?: string;
+    };
+    transformationStories: Array<{
+      storyTitle: string;
+      userPseudonym: string;
+      timeframe: string;
+      beforeRatings: {
+        overall: number;
+        discipline?: number;
+        strength?: number;
+        wisdom?: number;
+        focus?: number;
+        confidence?: number;
+      };
+      afterRatings: {
+        overall: number;
+        discipline?: number;
+        strength?: number;
+        wisdom?: number;
+        focus?: number;
+        confidence?: number;
+      };
+      keyHabits: string[];
+      testimonialQuote: string;
+      transformationHighlights: string[];
+    }>;
+    ctaAngle: string;
+    faqs: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+}
+
+const { nooCrew } = Astro.props;
+
+// Helper to calculate improvement percentage
+const calculateImprovement = (before: number, after: number) => {
+  return Math.round(((after - before) / before) * 100);
+};
+
+// Helper to get rating color based on score
+const getRatingColor = (score: number) => {
+  if (score >= 75) return 'var(--color-jade)';
+  if (score >= 50) return '#fbbf24';
+  return '#ef4444';
+};
+---
+
+<!-- HERO SECTION -->
+<section
+  id="stories-hero"
+  class="relative min-h-[70vh] flex items-center justify-center px-4 py-16 sm:py-24"
+  style="background: linear-gradient(135deg, rgba(18, 20, 19, 0.95), rgba(0, 208, 156, 0.1));"
+>
+  <div class="relative max-w-7xl w-full mx-auto text-center">
+    <!-- Badge -->
+    <div class="flex justify-center mb-6">
+      <span
+        class="px-4 py-2 text-sm font-bold rounded-full uppercase tracking-wide"
+        style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade); border: 2px solid var(--color-jade);"
+      >
+        NOO CREW TRANSFORMATIONS
+      </span>
+    </div>
+
+    <!-- Main Headline -->
+    <h1
+      class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6"
+      style="color: var(--color-alabaster);"
+    >
+      {nooCrew.pageName}
+    </h1>
+
+    <!-- Tagline -->
+    <p
+      class="text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-4xl mx-auto mb-8"
+      style="color: var(--color-faded-khaki);"
+    >
+      {nooCrew.tagline}
+    </p>
+
+    <!-- Stats -->
+    <div class="flex flex-wrap gap-6 justify-center">
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-bold" style="color: var(--color-jade);">
+          {nooCrew.transformationStories.length}
+        </div>
+        <div class="text-sm uppercase tracking-wide" style="color: var(--color-faded-khaki);">
+          Real Transformations
+        </div>
+      </div>
+      <div class="w-px h-16" style="background: rgba(241, 237, 233, 0.2);"></div>
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-bold" style="color: var(--color-jade);">
+          {nooCrew.communityStats.totalMembers}
+        </div>
+        <div class="text-sm uppercase tracking-wide" style="color: var(--color-faded-khaki);">
+          Noo Crew Members
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMATION STORY CARDS -->
+<section id="transformation-stories" class="relative px-4 py-16">
+  <div class="relative max-w-6xl w-full mx-auto">
+    <div class="space-y-16">
+      {nooCrew.transformationStories.map((story, index) => (
+        <div
+          class="p-8"
+          style="background: rgba(18, 20, 19, 0.6); border: 1px solid rgba(0, 208, 156, 0.2); border-radius: 16px;"
+        >
+          <!-- Story Header -->
+          <div class="mb-8">
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full text-xl font-bold"
+                style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);"
+              >
+                {index + 1}
+              </div>
+              <div>
+                <h3 class="text-2xl md:text-3xl font-bold" style="color: var(--color-alabaster);">
+                  {story.storyTitle}
+                </h3>
+                <p class="text-sm" style="color: var(--color-faded-khaki); opacity: 0.8;">
+                  {story.userPseudonym} • {story.timeframe}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Before/After Ratings Comparison -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- BEFORE -->
+            <div class="p-6" style="background: rgba(239, 68, 68, 0.05); border: 2px solid rgba(239, 68, 68, 0.3); border-radius: 12px;">
+              <h4 class="text-xl font-bold mb-6 text-center" style="color: #ef4444;">
+                DAY 1 - BEFORE
+              </h4>
+
+              <!-- Overall Rating -->
+              <div class="mb-6">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="font-semibold" style="color: var(--color-faded-khaki);">Overall</span>
+                  <span class="text-2xl font-bold" style="color: #ef4444;">{story.beforeRatings.overall}</span>
+                </div>
+                <div class="w-full h-4 rounded-full overflow-hidden" style="background: rgba(18, 20, 19, 0.8);">
+                  <div
+                    class="h-full rounded-full transition-all duration-500"
+                    style={`width: ${story.beforeRatings.overall}%; background: ${getRatingColor(story.beforeRatings.overall)};`}
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Sub-ratings -->
+              {story.beforeRatings.discipline !== undefined && (
+                <div class="space-y-3">
+                  <div class="flex justify-between text-sm">
+                    <span style="color: var(--color-faded-khaki);">Discipline</span>
+                    <span style="color: var(--color-faded-khaki);">{story.beforeRatings.discipline}</span>
+                  </div>
+                  {story.beforeRatings.strength !== undefined && (
+                    <div class="flex justify-between text-sm">
+                      <span style="color: var(--color-faded-khaki);">Strength</span>
+                      <span style="color: var(--color-faded-khaki);">{story.beforeRatings.strength}</span>
+                    </div>
+                  )}
+                  {story.beforeRatings.wisdom !== undefined && (
+                    <div class="flex justify-between text-sm">
+                      <span style="color: var(--color-faded-khaki);">Wisdom</span>
+                      <span style="color: var(--color-faded-khaki);">{story.beforeRatings.wisdom}</span>
+                    </div>
+                  )}
+                  {story.beforeRatings.focus !== undefined && (
+                    <div class="flex justify-between text-sm">
+                      <span style="color: var(--color-faded-khaki);">Focus</span>
+                      <span style="color: var(--color-faded-khaki);">{story.beforeRatings.focus}</span>
+                    </div>
+                  )}
+                  {story.beforeRatings.confidence !== undefined && (
+                    <div class="flex justify-between text-sm">
+                      <span style="color: var(--color-faded-khaki);">Confidence</span>
+                      <span style="color: var(--color-faded-khaki);">{story.beforeRatings.confidence}</span>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            <!-- AFTER -->
+            <div class="p-6" style="background: rgba(0, 208, 156, 0.1); border: 2px solid var(--color-jade); border-radius: 12px;">
+              <h4 class="text-xl font-bold mb-6 text-center" style="color: var(--color-jade);">
+                DAY 66 - AFTER
+              </h4>
+
+              <!-- Overall Rating -->
+              <div class="mb-6">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="font-semibold" style="color: var(--color-alabaster);">Overall</span>
+                  <div class="flex items-center gap-2">
+                    <span class="text-2xl font-bold" style="color: var(--color-jade);">{story.afterRatings.overall}</span>
+                    <span class="text-sm font-bold px-2 py-1 rounded" style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);">
+                      +{calculateImprovement(story.beforeRatings.overall, story.afterRatings.overall)}%
+                    </span>
+                  </div>
+                </div>
+                <div class="w-full h-4 rounded-full overflow-hidden" style="background: rgba(18, 20, 19, 0.8);">
+                  <div
+                    class="h-full rounded-full transition-all duration-500"
+                    style={`width: ${story.afterRatings.overall}%; background: var(--color-jade);`}
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Sub-ratings -->
+              {story.afterRatings.discipline !== undefined && (
+                <div class="space-y-3">
+                  <div class="flex justify-between text-sm">
+                    <span style="color: var(--color-alabaster);">Discipline</span>
+                    <div class="flex items-center gap-2">
+                      <span style="color: var(--color-alabaster);">{story.afterRatings.discipline}</span>
+                      {story.beforeRatings.discipline !== undefined && (
+                        <span class="text-xs px-1.5 py-0.5 rounded" style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);">
+                          +{story.afterRatings.discipline - story.beforeRatings.discipline}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  {story.afterRatings.strength !== undefined && (
+                    <div class="flex justify-between text-sm">
+                      <span style="color: var(--color-alabaster);">Strength</span>
+                      <div class="flex items-center gap-2">
+                        <span style="color: var(--color-alabaster);">{story.afterRatings.strength}</span>
+                        {story.beforeRatings.strength !== undefined && (
+                          <span class="text-xs px-1.5 py-0.5 rounded" style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);">
+                            +{story.afterRatings.strength - story.beforeRatings.strength}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                  {story.afterRatings.wisdom !== undefined && (
+                    <div class="flex justify-between text-sm">
+                      <span style="color: var(--color-alabaster);">Wisdom</span>
+                      <div class="flex items-center gap-2">
+                        <span style="color: var(--color-alabaster);">{story.afterRatings.wisdom}</span>
+                        {story.beforeRatings.wisdom !== undefined && (
+                          <span class="text-xs px-1.5 py-0.5 rounded" style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);">
+                            +{story.afterRatings.wisdom - story.beforeRatings.wisdom}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                  {story.afterRatings.focus !== undefined && (
+                    <div class="flex justify-between text-sm">
+                      <span style="color: var(--color-alabaster);">Focus</span>
+                      <div class="flex items-center gap-2">
+                        <span style="color: var(--color-alabaster);">{story.afterRatings.focus}</span>
+                        {story.beforeRatings.focus !== undefined && (
+                          <span class="text-xs px-1.5 py-0.5 rounded" style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);">
+                            +{story.afterRatings.focus - story.beforeRatings.focus}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                  {story.afterRatings.confidence !== undefined && (
+                    <div class="flex justify-between text-sm">
+                      <span style="color: var(--color-alabaster);">Confidence</span>
+                      <div class="flex items-center gap-2">
+                        <span style="color: var(--color-alabaster);">{story.afterRatings.confidence}</span>
+                        {story.beforeRatings.confidence !== undefined && (
+                          <span class="text-xs px-1.5 py-0.5 rounded" style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);">
+                            +{story.afterRatings.confidence - story.beforeRatings.confidence}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <!-- Key Habits -->
+          <div class="mb-6">
+            <h4 class="text-lg font-semibold mb-3" style="color: var(--color-alabaster);">
+              Key Habits Tracked
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              {story.keyHabits.map((habit) => (
+                <span
+                  class="px-3 py-1 text-sm rounded-full"
+                  style="background: rgba(0, 208, 156, 0.1); color: var(--color-jade); border: 1px solid rgba(0, 208, 156, 0.3);"
+                >
+                  {habit}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Transformation Highlights -->
+          <div class="mb-6">
+            <h4 class="text-lg font-semibold mb-3" style="color: var(--color-alabaster);">
+              Transformation Highlights
+            </h4>
+            <ul class="space-y-2">
+              {story.transformationHighlights.map((highlight) => (
+                <li class="flex items-start">
+                  <span class="mr-2 mt-1" style="color: var(--color-jade);">✓</span>
+                  <span style="color: var(--color-faded-khaki);">{highlight}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <!-- Testimonial Quote -->
+          <div class="p-6" style="background: rgba(0, 208, 156, 0.05); border-left: 4px solid var(--color-jade); border-radius: 8px;">
+            <p class="text-lg italic mb-2" style="color: var(--color-faded-khaki);">
+              "{story.testimonialQuote}"
+            </p>
+            <p class="text-sm font-semibold" style="color: var(--color-jade);">
+              — {story.userPseudonym}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- COMMON PATTERNS ANALYSIS -->
+<section id="common-patterns" class="relative px-4 py-16" style="background: rgba(18, 20, 19, 0.4);">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8" style="color: var(--color-alabaster);">
+      What All Noo Crew Winners Did Consistently
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 text-center" style="background: rgba(0, 208, 156, 0.05); border-radius: 12px;">
+        <div class="text-5xl mb-3">🔥</div>
+        <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">Showed Up Daily</h3>
+        <p style="color: var(--color-faded-khaki);">Minimum 2 tasks per day to maintain streak</p>
+      </div>
+      <div class="p-6 text-center" style="background: rgba(0, 208, 156, 0.05); border-radius: 12px;">
+        <div class="text-5xl mb-3">📊</div>
+        <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">Tracked Everything</h3>
+        <p style="color: var(--color-faded-khaki);">No guessing, only data-driven progress</p>
+      </div>
+      <div class="p-6 text-center" style="background: rgba(0, 208, 156, 0.05); border-radius: 12px;">
+        <div class="text-5xl mb-3">💪</div>
+        <h3 class="text-xl font-bold mb-2" style="color: var(--color-jade);">Adapted, Didn't Quit</h3>
+        <p style="color: var(--color-faded-khaki);">Used NooLife's forgiving system when life happened</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA (SOCIAL PROOF) -->
+<section id="cta" class="relative px-4 py-20" style="background: linear-gradient(135deg, rgba(0, 208, 156, 0.15), rgba(18, 20, 19, 0.9));">
+  <div class="relative max-w-4xl w-full mx-auto text-center">
+    <h3 class="text-3xl sm:text-5xl font-bold mb-6" style="color: var(--color-alabaster);">
+      Your Transformation Starts<br>
+      When You Earn Noo Crew Status
+    </h3>
+    <p class="text-xl mb-8" style="color: var(--color-faded-khaki);">
+      {nooCrew.ctaAngle}
+    </p>
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      aria-label="Download on the App Store"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-20 md:h-24 w-auto mx-auto"
+      />
+    </a>
+    <p class="text-sm mt-6" style="color: var(--color-faded-khaki); opacity: 0.7;">
+      Complete 66 days. Become Noo Crew. No shortcuts.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="relative px-4 py-16" style="background: rgba(18, 20, 19, 0.4);">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12" style="color: var(--color-alabaster);">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-6">
+      {nooCrew.faqs.map((faq) => (
+        <div class="p-6" style="background: rgba(241, 237, 233, 0.05); border-radius: 8px;">
+          <h3 class="text-xl font-bold mb-3" style="color: var(--color-jade);">
+            {faq.question}
+          </h3>
+          <p style="color: var(--color-faded-khaki);">
+            {faq.answer}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Smooth animations for story cards */
+  section {
+    animation: fadeIn 0.8s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Rating bar animation */
+  [style*="width:"] {
+    animation: fillBar 1.5s ease-out;
+  }
+
+  @keyframes fillBar {
+    from {
+      width: 0%;
+    }
+  }
+</style>

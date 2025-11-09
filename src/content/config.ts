@@ -284,4 +284,166 @@ const demographics = defineCollection({
   })
 });
 
-export const collections = { blog, habits, challenges, 'winter-arc': winterArc, solutions, 'habit-combinations': habitCombinations, demographics };
+const comparisons = defineCollection({
+  type: 'data',
+  schema: z.object({
+    // Basic info
+    competitorName: z.string(),
+    competitorSlug: z.string(),
+    competitorTagline: z.string(),
+    competitorWebsite: z.string().url(),
+
+    // Pricing
+    nooLifePrice: z.string(),
+    competitorPrice: z.string(),
+    priceWinner: z.enum(['noolife', 'competitor', 'tie']),
+    priceExplanation: z.string(),
+
+    // Feature comparison
+    featureMatrix: z.array(z.object({
+      feature: z.string(),
+      nooLifeHas: z.boolean(),
+      nooLifeDetails: z.string().optional(),
+      competitorHas: z.boolean(),
+      competitorDetails: z.string().optional(),
+      winner: z.enum(['noolife', 'competitor', 'tie'])
+    })),
+
+    // Strengths/Weaknesses
+    competitorStrengths: z.array(z.string()),
+    competitorWeaknesses: z.array(z.string()),
+    nooLifeAdvantages: z.array(z.object({
+      advantage: z.string(),
+      explanation: z.string(),
+      scientificBacking: z.string().optional()
+    })),
+
+    // Use cases
+    bestForCompetitor: z.string(),
+    bestForNooLife: z.string(),
+
+    // Quick verdict
+    quickVerdict: z.object({
+      winner: z.enum(['noolife', 'competitor', 'depends']),
+      oneLineTakeaway: z.string(),
+      recommendation: z.string()
+    }),
+
+    // Migration
+    switchingFromCompetitor: z.object({
+      difficulty: z.enum(['easy', 'medium', 'hard']),
+      steps: z.array(z.string()),
+      dataExport: z.boolean(),
+      estimatedTime: z.string()
+    }),
+
+    // SEO
+    primaryKeyword: z.string(),
+    secondaryKeywords: z.array(z.string()),
+    heroImage: z.string().url(),
+    tags: z.array(z.string()),
+
+    // FAQ
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string()
+    }))
+  })
+});
+
+const nooCrew = defineCollection({
+  type: 'data',
+  schema: z.object({
+    // Page type
+    pageType: z.enum(['challenge', 'transformation', 'manifesto', 'habit-guide']),
+
+    // Basic info
+    pageName: z.string(),
+    pageSlug: z.string(),
+    tagline: z.string(),
+
+    // Community stats
+    communityStats: z.object({
+      totalMembers: z.string(),
+      activeThisMonth: z.string().optional(),
+      challengeParticipants: z.string().optional(),
+      averageStreak: z.string().optional()
+    }),
+
+    // For transformation pages
+    transformationStories: z.array(z.object({
+      storyTitle: z.string(),
+      userPseudonym: z.string(),
+      timeframe: z.string(),
+      beforeRatings: z.object({
+        overall: z.number(),
+        discipline: z.number().optional(),
+        strength: z.number().optional(),
+        wisdom: z.number().optional(),
+        focus: z.number().optional(),
+        confidence: z.number().optional()
+      }),
+      afterRatings: z.object({
+        overall: z.number(),
+        discipline: z.number().optional(),
+        strength: z.number().optional(),
+        wisdom: z.number().optional(),
+        focus: z.number().optional(),
+        confidence: z.number().optional()
+      }),
+      keyHabits: z.array(z.string()),
+      testimonialQuote: z.string(),
+      transformationHighlights: z.array(z.string())
+    })).optional(),
+
+    // For manifesto/philosophy
+    principles: z.array(z.object({
+      principle: z.string(),
+      explanation: z.string()
+    })).optional(),
+
+    // For challenge pages
+    challengeDetails: z.object({
+      duration: z.string(),
+      startDate: z.string().optional(),
+      participantCount: z.string(),
+      challengeRules: z.array(z.string()),
+      eliteStandards: z.array(z.string())
+    }).optional(),
+
+    // For habit guide pages
+    habitFocus: z.string().optional(),
+    habitSlug: z.string().optional(),
+    communityBenefits: z.array(z.string()).optional(),
+    nooCrewProtocol: z.array(z.string()).optional(),
+
+    // Noo Crew vs. Average contrast
+    nooCrewVsOthers: z.object({
+      nooCrewTraits: z.array(z.string()),
+      averagePersonTraits: z.array(z.string())
+    }).optional(),
+
+    // Related content
+    relatedHabits: z.array(z.string()),
+    relatedChallenges: z.array(z.string()),
+    relatedNooCrewPages: z.array(z.string()),
+
+    // SEO
+    primaryKeyword: z.string(),
+    secondaryKeywords: z.array(z.string()),
+    heroImage: z.string().url(),
+    tags: z.array(z.string()),
+
+    // CTA
+    ctaAngle: z.string(),
+    ctaEmphasis: z.enum(['elite', 'exclusive', 'urgency', 'fomo']),
+
+    // FAQ
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string()
+    }))
+  })
+});
+
+export const collections = { blog, habits, challenges, 'winter-arc': winterArc, solutions, 'habit-combinations': habitCombinations, demographics, comparisons, 'noo-crew': nooCrew };

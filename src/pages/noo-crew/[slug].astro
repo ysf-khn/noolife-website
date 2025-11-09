@@ -1,0 +1,81 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import NooCrewTemplate from '../../components/templates/NooCrewTemplate.astro';
+
+export const getStaticPaths = (async () => {
+  const nooCrewPages = await getCollection('noo-crew', ({ data }) => {
+    // Exclude transformation story pages (they have their own route)
+    return data.pageType !== 'transformation';
+  });
+
+  return nooCrewPages.map(page => ({
+    params: { slug: page.data.pageSlug },
+    props: { nooCrew: page },
+  }));
+}) satisfies GetStaticPaths;
+
+const { nooCrew } = Astro.props;
+const nooCrewData = nooCrew.data;
+
+// Generate SEO title and description based on page type
+let seoTitle = '';
+let seoDescription = '';
+
+switch (nooCrewData.pageType) {
+  case 'manifesto':
+    seoTitle = `${nooCrewData.pageName} | NooLife`;
+    seoDescription = `${nooCrewData.tagline}. Join ${nooCrewData.communityStats.totalMembers} hard mfers transforming with the Noo Crew. Elite community of disciplined performers.`;
+    break;
+  case 'challenge':
+    seoTitle = `${nooCrewData.pageName}: Elite ${nooCrewData.challengeDetails?.duration} Challenge | NooLife`;
+    seoDescription = `${nooCrewData.tagline}. ${nooCrewData.challengeDetails?.participantCount} Noo Crew members competing. Are you tough enough?`;
+    break;
+  case 'habit-guide':
+    seoTitle = `Noo Crew ${nooCrewData.habitFocus}: Elite Community Guide | NooLife`;
+    seoDescription = `Join the Noo Crew ${nooCrewData.habitFocus} community. ${nooCrewData.tagline}. ${nooCrewData.communityStats.totalMembers} hard mfers transforming together.`;
+    break;
+  default:
+    seoTitle = `${nooCrewData.pageName} | Noo Crew | NooLife`;
+    seoDescription = nooCrewData.tagline;
+}
+
+// Generate structured data
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": nooCrewData.pageName,
+  "description": seoDescription,
+  "about": {
+    "@type": "Organization",
+    "name": "Noo Crew",
+    "description": `Elite community of ${nooCrewData.communityStats.totalMembers} habit transformers using 66-day science`,
+    "memberOf": {
+      "@type": "SoftwareApplication",
+      "name": "NooLife"
+    }
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": nooCrewData.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  }
+};
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={nooCrewData.heroImage}
+  type="website"
+  jsonLd={structuredData}
+>
+  <NooCrewTemplate nooCrew={nooCrewData} />
+</Layout>

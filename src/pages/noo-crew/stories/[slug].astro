@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../../layouts/Layout.astro';
+import NooCrewStoryTemplate from '../../../components/templates/NooCrewStoryTemplate.astro';
+
+export const getStaticPaths = (async () => {
+  const transformationPages = await getCollection('noo-crew', ({ data }) => {
+    // Only include transformation story pages
+    return data.pageType === 'transformation';
+  });
+
+  return transformationPages.map(page => ({
+    params: { slug: page.data.pageSlug },
+    props: { nooCrew: page },
+  }));
+}) satisfies GetStaticPaths;
+
+const { nooCrew } = Astro.props;
+const nooCrewData = nooCrew.data;
+
+// Generate SEO title and description
+const seoTitle = `${nooCrewData.pageName}: Real Noo Crew Transformations | NooLife`;
+const seoDescription = `${nooCrewData.tagline}. See real before/after results from ${nooCrewData.transformationStories?.length || 0} Noo Crew members who completed 66 days. No filters. No bullshit.`;
+
+// Generate structured data
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": nooCrewData.pageName,
+  "description": seoDescription,
+  "about": {
+    "@type": "Organization",
+    "name": "Noo Crew",
+    "description": `Elite community of ${nooCrewData.communityStats.totalMembers} habit transformers`
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": nooCrewData.transformationStories?.length || 0,
+    "itemListElement": nooCrewData.transformationStories?.map((story, index) => ({
+      "@type": "CreativeWork",
+      "position": index + 1,
+      "name": story.storyTitle,
+      "author": {
+        "@type": "Person",
+        "name": story.userPseudonym
+      },
+      "description": story.testimonialQuote
+    })) || []
+  }
+};
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={nooCrewData.heroImage}
+  type="website"
+  jsonLd={structuredData}
+>
+  <NooCrewStoryTemplate nooCrew={nooCrewData} />
+</Layout>

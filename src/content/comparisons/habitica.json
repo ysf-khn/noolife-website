@@ -1,0 +1,181 @@
+{
+  "competitorName": "Habitica",
+  "competitorSlug": "habitica",
+  "competitorTagline": "Gamify Your Life",
+  "competitorWebsite": "https://habitica.com",
+
+  "nooLifePrice": "Free + $4.99/mo premium",
+  "competitorPrice": "Free + IAP ($0.99-$47.99/yr)",
+  "priceWinner": "noolife",
+  "priceExplanation": "Both offer free tiers, but NooLife's premium features (personalized 66-day plans, rating system) provide more transformation value than Habitica's cosmetic upgrades and guild features.",
+
+  "featureMatrix": [
+    {
+      "feature": "66-Day Scientific Foundation",
+      "nooLifeHas": true,
+      "nooLifeDetails": "Based on UCL research showing habit formation takes 66 days on average",
+      "competitorHas": false,
+      "competitorDetails": "No scientific foundation for habit formation timeline",
+      "winner": "noolife"
+    },
+    {
+      "feature": "Personalized Habit Plans",
+      "nooLifeHas": true,
+      "nooLifeDetails": "450 personalized tasks generated from your baseline data across 66 days",
+      "competitorHas": false,
+      "competitorDetails": "Generic habit templates only, no personalization",
+      "winner": "noolife"
+    },
+    {
+      "feature": "Gamification",
+      "nooLifeHas": true,
+      "nooLifeDetails": "GTA-inspired aesthetics focused on 'main character energy' and transformation",
+      "competitorHas": true,
+      "competitorDetails": "Full RPG system with character leveling, quests, pets, and boss battles",
+      "winner": "competitor"
+    },
+    {
+      "feature": "Streak System",
+      "nooLifeHas": true,
+      "nooLifeDetails": "Forgiving system requiring minimum 2 tasks per day to maintain streak",
+      "competitorHas": true,
+      "competitorDetails": "Daily streak resets if habits are missed",
+      "winner": "noolife"
+    },
+    {
+      "feature": "Progress Ratings",
+      "nooLifeHas": true,
+      "nooLifeDetails": "5 sub-ratings (Discipline, Strength, Wisdom, Focus, Confidence) + Overall rating",
+      "competitorHas": false,
+      "competitorDetails": "Character stats (STR, INT, CON, PER) tied to game mechanics, not real transformation",
+      "winner": "noolife"
+    },
+    {
+      "feature": "Visual Journal",
+      "nooLifeHas": true,
+      "nooLifeDetails": "66-day journey with daily mood, photos/videos, text reflections",
+      "competitorHas": false,
+      "competitorDetails": "No journaling feature",
+      "winner": "noolife"
+    },
+    {
+      "feature": "Social Features",
+      "nooLifeHas": false,
+      "nooLifeDetails": "Currently focused on individual transformation (community features planned)",
+      "competitorHas": true,
+      "competitorDetails": "Guilds, parties, and social challenges",
+      "winner": "competitor"
+    },
+    {
+      "feature": "Platform Support",
+      "nooLifeHas": false,
+      "nooLifeDetails": "iOS only (Android coming soon)",
+      "competitorHas": true,
+      "competitorDetails": "iOS, Android, and web browser",
+      "winner": "competitor"
+    }
+  ],
+
+  "competitorStrengths": [
+    "Extensive social features including guilds, parties, and group challenges create strong community engagement",
+    "Cross-platform support (iOS, Android, web) means you can access it anywhere",
+    "Deep RPG mechanics appeal to gamers who enjoy quest systems and character progression",
+    "Large existing community with established guilds for accountability",
+    "Completely free core functionality (premium is optional cosmetic upgrades)"
+  ],
+
+  "competitorWeaknesses": [
+    "RPG gimmick creates cognitive load—users focus on leveling up characters instead of actual habit formation",
+    "No scientific foundation for habit formation (arbitrary daily tasks vs. 66-day research)",
+    "Generic habit templates lack personalization based on your current baseline",
+    "Game mechanics can feel punishing—lose health when you miss habits, which demotivates rather than encourages",
+    "Character stats (STR, INT) are abstract game numbers, not real-world transformation metrics",
+    "Daily streak system is harsh—miss one day and progress feels lost"
+  ],
+
+  "nooLifeAdvantages": [
+    {
+      "advantage": "66-Day Science vs. Game Mechanics",
+      "explanation": "NooLife is built on University College London research showing habit automation takes 66 days on average. Habitica's RPG system has no scientific basis—it's designed for game engagement, not lasting behavior change.",
+      "scientificBacking": "Lally et al. (2010) found habit formation ranges from 18-254 days, with 66 days as the median. NooLife's plans account for this timeline."
+    },
+    {
+      "advantage": "Transformation Focus vs. Distraction",
+      "explanation": "NooLife's GTA-inspired visuals support the 'main character' narrative without distracting from habits. Habitica's quests, boss battles, and pet collection shift focus away from real-life transformation to in-game progression.",
+      "scientificBacking": "Identity-based habits (James Clear) work when the identity is real-world focused ('I'm disciplined') not game-world focused ('I'm level 42')."
+    },
+    {
+      "advantage": "Personalized 450-Task Plans vs. Generic Templates",
+      "explanation": "NooLife generates 450 personalized tasks based on your Day 1 baseline across 8 core + 2 optional habits. Habitica uses one-size-fits-all habit templates with no baseline assessment or progressive difficulty.",
+      "scientificBacking": "Progressive overload and personalized difficulty are key to sustainable habit formation—generic approaches fail to account for individual starting points."
+    },
+    {
+      "advantage": "Forgiving Streak System vs. Punishing Resets",
+      "explanation": "NooLife requires 2 tasks per day minimum to maintain your streak and uses ratings, not binary pass/fail. Habitica punishes missed habits with health loss and streak resets, which research shows increases dropout rates.",
+      "scientificBacking": "The industry's 52% churn rate within 30 days is largely driven by harsh streak resets that make users feel like failures after one bad day."
+    },
+    {
+      "advantage": "Real Ratings vs. Abstract Game Stats",
+      "explanation": "NooLife's 5 sub-ratings (Discipline, Strength, Wisdom, Focus, Confidence) reflect real-world capabilities. Habitica's STR/INT/CON are meaningless outside the game—they don't measure actual transformation.",
+      "scientificBacking": "Measurable progress tied to real identity markers increases motivation and adherence (Locke & Latham goal-setting theory)."
+    }
+  ],
+
+  "bestForCompetitor": "Choose Habitica if you're a hardcore gamer who thrives on RPG mechanics, love guild-based social challenges, need cross-platform access, and don't mind the distraction of quests/pets/boss battles. Also good if you're already deeply embedded in the Habitica community and want to stick with your existing guilds.",
+
+  "bestForNooLife": "Choose NooLife if you want science-backed transformation over game mechanics, need personalized 450-task plans based on your baseline, prefer a forgiving streak system (2-task minimum vs. harsh resets), want real-world rating metrics (Discipline, Strength, etc.) instead of abstract game stats, and are committed to the 66-day scientifically-proven timeline for habit automation.",
+
+  "quickVerdict": {
+    "winner": "depends",
+    "oneLineTakeaway": "Habitica wins for gamers who want RPG social features; NooLife wins for people seeking science-backed transformation without distractions.",
+    "recommendation": "If you've failed with generic habit trackers and need a system rooted in research (not game mechanics), NooLife's 66-day personalized approach addresses the core issues Habitica's gamification can't solve: lack of scientific foundation and distraction from real transformation."
+  },
+
+  "switchingFromCompetitor": {
+    "difficulty": "medium",
+    "steps": [
+      "Export your Habitica habit list (go to Settings → Data Export → Download User Data)",
+      "Review which habits you actually want to transform vs. those you created just for game points",
+      "Download NooLife and complete Day 1 baseline assessment for the 8 core habits + 2 optional habits you select",
+      "NooLife will generate your personalized 66-day plan with 450 tasks based on your starting point",
+      "You can keep Habitica for social guild features while using NooLife for actual habit transformation",
+      "After 66 days on NooLife, compare your real-world ratings (Discipline, Strength, etc.) to where you started"
+    ],
+    "dataExport": true,
+    "estimatedTime": "20-30 minutes to set up NooLife baseline properly"
+  },
+
+  "primaryKeyword": "habitica alternative",
+  "secondaryKeywords": [
+    "noolife vs habitica",
+    "better than habitica",
+    "habitica without rpg",
+    "science based habit tracker",
+    "habit tracker not gamified"
+  ],
+  "heroImage": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=630&fit=crop",
+  "tags": ["comparison", "habitica", "rpg habit tracker", "gamification", "66-day habits"],
+
+  "faqs": [
+    {
+      "question": "Can I use both Habitica and NooLife together?",
+      "answer": "Yes! Some users keep Habitica for the social guild features and use NooLife for the actual transformation work. Habitica's community is its strength, while NooLife's 66-day science is where the real behavior change happens."
+    },
+    {
+      "question": "I'm already level 80 in Habitica—should I switch?",
+      "answer": "Your Habitica level shows game engagement, not real-world transformation. Ask yourself: Have your real-life habits automated? Do you feel more disciplined/focused/confident? If not, NooLife's 66-day approach addresses the missing piece—lasting behavior change beyond game mechanics."
+    },
+    {
+      "question": "Does NooLife have quests and pets like Habitica?",
+      "answer": "No. NooLife intentionally avoids RPG distractions. The gamification is GTA-inspired 'main character energy'—your transformation journey IS the game, not collecting digital pets. If you want quests, stick with Habitica. If you want transformation, try NooLife."
+    },
+    {
+      "question": "What if I'm already 30 days into Habitica—should I switch?",
+      "answer": "If you're seeing real behavior change, keep going. But if you're just chasing game points without actual habit automation, the sunk cost fallacy shouldn't keep you in a system that's not working. NooLife's 66-day timeline starts from Day 1 with your baseline—better to start the right system now than waste another 30 days on game mechanics."
+    },
+    {
+      "question": "Is NooLife's streak system easier than Habitica's?",
+      "answer": "Not easier—more forgiving and scientifically accurate. Habitica resets streaks to zero on one miss, which demotivates. NooLife requires 2 tasks per day minimum and uses rating improvements, not binary streaks. This matches research showing perfection isn't required for habit formation—consistency over 66 days is."
+    }
+  ]
+}

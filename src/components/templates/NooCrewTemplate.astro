@@ -1,0 +1,477 @@
+---
+// NooCrewTemplate.astro - Template for Noo Crew community pages
+// ELITE/EXCLUSIVE positioning - hard mfers only, NOT generic/inclusive
+// Conversion-optimized with identity-based CTAs
+import { Image } from "astro:assets";
+import downloadIOS from "../../assets/download-ios.svg";
+
+interface Props {
+  nooCrew: {
+    pageType: 'challenge' | 'transformation' | 'manifesto' | 'habit-guide';
+    pageName: string;
+    pageSlug: string;
+    tagline: string;
+    communityStats: {
+      totalMembers: string;
+      activeThisMonth?: string;
+      challengeParticipants?: string;
+      averageStreak?: string;
+    };
+    transformationStories?: Array<{
+      storyTitle: string;
+      userPseudonym: string;
+      timeframe: string;
+      beforeRatings: {
+        overall: number;
+        discipline?: number;
+        strength?: number;
+        wisdom?: number;
+        focus?: number;
+        confidence?: number;
+      };
+      afterRatings: {
+        overall: number;
+        discipline?: number;
+        strength?: number;
+        wisdom?: number;
+        focus?: number;
+        confidence?: number;
+      };
+      keyHabits: string[];
+      testimonialQuote: string;
+      transformationHighlights: string[];
+    }>;
+    principles?: Array<{
+      principle: string;
+      explanation: string;
+    }>;
+    challengeDetails?: {
+      duration: string;
+      startDate?: string;
+      participantCount: string;
+      challengeRules: string[];
+      eliteStandards: string[];
+    };
+    habitFocus?: string;
+    habitSlug?: string;
+    communityBenefits?: string[];
+    nooCrewProtocol?: string[];
+    nooCrewVsOthers?: {
+      nooCrewTraits: string[];
+      averagePersonTraits: string[];
+    };
+    relatedHabits: string[];
+    relatedChallenges: string[];
+    relatedNooCrewPages: string[];
+    ctaAngle: string;
+    ctaEmphasis: 'elite' | 'exclusive' | 'urgency' | 'fomo';
+    faqs: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+}
+
+const { nooCrew } = Astro.props;
+
+// Helper to get CTA copy based on emphasis
+const getCtaCopy = (emphasis: string) => {
+  switch (emphasis) {
+    case 'elite': return 'Become Noo Crew';
+    case 'exclusive': return "I'm Ready to Be Noo Crew";
+    case 'urgency': return 'Join Now';
+    case 'fomo': return 'Start My Transformation';
+    default: return 'Become Noo Crew';
+  }
+};
+---
+
+<!-- HERO SECTION - ELITE COMMUNITY POSITIONING -->
+<section
+  id="noo-crew-hero"
+  class="relative min-h-screen flex items-center justify-center px-4 py-16 sm:py-24 md:py-32"
+  style="background: linear-gradient(135deg, rgba(18, 20, 19, 0.95), rgba(0, 208, 156, 0.1));"
+>
+  <div class="relative max-w-7xl w-full mx-auto text-center">
+    <!-- Community Badge -->
+    <div class="flex justify-center mb-6">
+      <span
+        class="px-4 py-2 text-sm font-bold rounded-full uppercase tracking-wide"
+        style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade); border: 2px solid var(--color-jade);"
+      >
+        THE NOO CREW
+      </span>
+    </div>
+
+    <!-- Main Headline -->
+    <h1
+      class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6"
+      style="color: var(--color-alabaster);"
+    >
+      {nooCrew.pageName}
+    </h1>
+
+    <!-- Tagline - CONFRONTATIONAL/ELITE TONE -->
+    <p
+      class="text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-4xl mx-auto mb-8"
+      style="color: var(--color-faded-khaki);"
+    >
+      {nooCrew.tagline}
+    </p>
+
+    <!-- Community Stats - SOCIAL PROOF -->
+    <div class="flex flex-wrap gap-6 justify-center mb-12">
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-bold" style="color: var(--color-jade);">
+          {nooCrew.communityStats.totalMembers}
+        </div>
+        <div class="text-sm uppercase tracking-wide" style="color: var(--color-faded-khaki);">
+          Noo Crew Members
+        </div>
+      </div>
+      {nooCrew.communityStats.activeThisMonth && (
+        <>
+          <div class="w-px h-16" style="background: rgba(241, 237, 233, 0.2);"></div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold" style="color: var(--color-jade);">
+              {nooCrew.communityStats.activeThisMonth}
+            </div>
+            <div class="text-sm uppercase tracking-wide" style="color: var(--color-faded-khaki);">
+              Active This Month
+            </div>
+          </div>
+        </>
+      )}
+      {nooCrew.communityStats.challengeParticipants && (
+        <>
+          <div class="w-px h-16" style="background: rgba(241, 237, 233, 0.2);"></div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold" style="color: var(--color-jade);">
+              {nooCrew.communityStats.challengeParticipants}
+            </div>
+            <div class="text-sm uppercase tracking-wide" style="color: var(--color-faded-khaki);">
+              {nooCrew.pageType === 'challenge' ? 'In This Challenge' : 'Transforming Now'}
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+
+    <!-- CTA #1 (HERO - IDENTITY-BASED) -->
+    <div class="flex flex-col items-center gap-4">
+      <a
+        href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+        aria-label="Download on the App Store"
+      >
+        <Image
+          src={downloadIOS}
+          alt="Download on the App Store"
+          class="h-20 md:h-24 w-auto"
+          loading="eager"
+        />
+      </a>
+      <p class="text-sm" style="color: var(--color-faded-khaki); opacity: 0.7;">
+        {nooCrew.ctaAngle}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE-TYPE-SPECIFIC CONTENT -->
+
+{nooCrew.pageType === 'manifesto' && nooCrew.principles && (
+  <section id="manifesto-principles" class="relative px-4 py-16">
+    <div class="relative max-w-5xl w-full mx-auto">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12"
+        style="color: var(--color-alabaster);"
+      >
+        Noo Crew Principles
+      </h2>
+
+      <div class="space-y-8">
+        {nooCrew.principles.map((principle, index) => (
+          <div
+            class="p-6"
+            style="background: rgba(0, 208, 156, 0.05); border-left: 4px solid var(--color-jade); border-radius: 8px;"
+          >
+            <div class="flex items-start gap-4">
+              <span
+                class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full text-2xl font-bold"
+                style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);"
+              >
+                {index + 1}
+              </span>
+              <div>
+                <h3 class="text-2xl font-bold mb-3" style="color: var(--color-alabaster);">
+                  {principle.principle}
+                </h3>
+                <p class="text-lg" style="color: var(--color-faded-khaki);">
+                  {principle.explanation}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+{nooCrew.pageType === 'challenge' && nooCrew.challengeDetails && (
+  <section id="challenge-details" class="relative px-4 py-16" style="background: rgba(18, 20, 19, 0.4);">
+    <div class="relative max-w-5xl w-full mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="text-center p-6" style="background: rgba(0, 208, 156, 0.1); border-radius: 12px;">
+          <div class="text-3xl font-bold mb-2" style="color: var(--color-jade);">
+            {nooCrew.challengeDetails.duration}
+          </div>
+          <div class="text-sm uppercase tracking-wide" style="color: var(--color-faded-khaki);">
+            Duration
+          </div>
+        </div>
+        <div class="text-center p-6" style="background: rgba(0, 208, 156, 0.1); border-radius: 12px;">
+          <div class="text-3xl font-bold mb-2" style="color: var(--color-jade);">
+            {nooCrew.challengeDetails.participantCount}
+          </div>
+          <div class="text-sm uppercase tracking-wide" style="color: var(--color-faded-khaki);">
+            Hard Mfers Competing
+          </div>
+        </div>
+        {nooCrew.challengeDetails.startDate && (
+          <div class="text-center p-6" style="background: rgba(0, 208, 156, 0.1); border-radius: 12px;">
+            <div class="text-3xl font-bold mb-2" style="color: var(--color-jade);">
+              {nooCrew.challengeDetails.startDate}
+            </div>
+            <div class="text-sm uppercase tracking-wide" style="color: var(--color-faded-khaki);">
+              Start Date
+            </div>
+          </div>
+        )}
+      </div>
+
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8" style="color: var(--color-alabaster);">
+        Elite Standards - Are You Tough Enough?
+      </h2>
+      <div class="space-y-4 mb-12">
+        {nooCrew.challengeDetails.eliteStandards.map((standard) => (
+          <div class="flex items-start p-4" style="background: rgba(0, 208, 156, 0.05); border-left: 3px solid var(--color-jade); border-radius: 6px;">
+            <span class="mr-3 mt-1" style="color: var(--color-jade); font-size: 1.25rem;">⚡</span>
+            <span class="text-lg" style="color: var(--color-faded-khaki);">{standard}</span>
+          </div>
+        ))}
+      </div>
+
+      <h3 class="text-2xl font-bold mb-6" style="color: var(--color-alabaster);">
+        Noo Crew Rules
+      </h3>
+      <ul class="space-y-4">
+        {nooCrew.challengeDetails.challengeRules.map((rule) => (
+          <li class="flex items-start">
+            <span class="mr-3 mt-1" style="color: var(--color-jade); font-size: 1.25rem;">✓</span>
+            <span style="color: var(--color-faded-khaki);">{rule}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
+
+{nooCrew.pageType === 'habit-guide' && (
+  <section id="habit-guide-content" class="relative px-4 py-16">
+    <div class="relative max-w-5xl w-full mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8" style="color: var(--color-alabaster);">
+        Why Noo Crew Does {nooCrew.habitFocus}
+      </h2>
+
+      {nooCrew.communityBenefits && (
+        <div class="mb-12">
+          <h3 class="text-2xl font-bold mb-6" style="color: var(--color-jade);">
+            Community Benefits
+          </h3>
+          <ul class="space-y-4">
+            {nooCrew.communityBenefits.map((benefit) => (
+              <li class="flex items-start">
+                <span class="mr-3 mt-1" style="color: var(--color-jade); font-size: 1.25rem;">✓</span>
+                <span style="color: var(--color-faded-khaki);">{benefit}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {nooCrew.nooCrewProtocol && (
+        <div>
+          <h3 class="text-2xl font-bold mb-6" style="color: var(--color-jade);">
+            Noo Crew Protocol
+          </h3>
+          <div class="space-y-4">
+            {nooCrew.nooCrewProtocol.map((protocol, index) => (
+              <div class="flex items-start p-4" style="background: rgba(0, 208, 156, 0.05); border-left: 3px solid var(--color-jade); border-radius: 6px;">
+                <span class="flex-shrink-0 mr-4 flex items-center justify-center w-8 h-8 rounded-full font-bold" style="background: rgba(0, 208, 156, 0.2); color: var(--color-jade);">
+                  {index + 1}
+                </span>
+                <span style="color: var(--color-faded-khaki);">{protocol}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+)}
+
+<!-- NOO CREW VS AVERAGE PERSON (IF PROVIDED) -->
+{nooCrew.nooCrewVsOthers && (
+  <section id="noo-crew-vs-average" class="relative px-4 py-16" style="background: rgba(18, 20, 19, 0.6);">
+    <div class="relative max-w-6xl w-full mx-auto">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12" style="color: var(--color-alabaster);">
+        Noo Crew vs. Average Person
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Noo Crew Traits -->
+        <div class="p-6" style="background: rgba(0, 208, 156, 0.1); border: 2px solid var(--color-jade); border-radius: 12px;">
+          <h3 class="text-2xl font-bold mb-6 text-center" style="color: var(--color-jade);">
+            ⚡ NOO CREW
+          </h3>
+          <ul class="space-y-4">
+            {nooCrew.nooCrewVsOthers.nooCrewTraits.map((trait) => (
+              <li class="flex items-start">
+                <span class="mr-3 mt-1" style="color: var(--color-jade); font-size: 1.25rem;">✓</span>
+                <span class="font-semibold" style="color: var(--color-alabaster);">{trait}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Average Person Traits -->
+        <div class="p-6" style="background: rgba(239, 68, 68, 0.05); border: 2px solid rgba(239, 68, 68, 0.3); border-radius: 12px;">
+          <h3 class="text-2xl font-bold mb-6 text-center" style="color: #ef4444;">
+            Average Person
+          </h3>
+          <ul class="space-y-4">
+            {nooCrew.nooCrewVsOthers.averagePersonTraits.map((trait) => (
+              <li class="flex items-start">
+                <span class="mr-3 mt-1" style="color: #ef4444; font-size: 1.25rem;">✗</span>
+                <span style="color: var(--color-faded-khaki); opacity: 0.7;">{trait}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <p class="text-xl text-center mt-12 font-bold" style="color: var(--color-jade);">
+        Which side are you on?
+      </p>
+    </div>
+  </section>
+)}
+
+<!-- CTA #2 (MID-CONTENT - SOCIAL PROOF) -->
+<section id="mid-cta" class="relative px-4 py-20" style="background: linear-gradient(135deg, rgba(0, 208, 156, 0.15), rgba(18, 20, 19, 0.9));">
+  <div class="relative max-w-4xl w-full mx-auto text-center">
+    <h3 class="text-3xl sm:text-5xl font-bold mb-6" style="color: var(--color-alabaster);">
+      These Aren't Special People.<br>
+      They're Noo Crew. You Can Be Too.
+    </h3>
+    <p class="text-xl mb-8" style="color: var(--color-faded-khaki);">
+      {nooCrew.communityStats.challengeParticipants || nooCrew.communityStats.activeThisMonth} hard mfers started this month
+    </p>
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      aria-label="Download on the App Store"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-20 md:h-24 w-auto mx-auto"
+      />
+    </a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="relative px-4 py-16" style="background: rgba(18, 20, 19, 0.4);">
+  <div class="relative max-w-5xl w-full mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12" style="color: var(--color-alabaster);">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-6">
+      {nooCrew.faqs.map((faq) => (
+        <div class="p-6" style="background: rgba(241, 237, 233, 0.05); border-radius: 8px;">
+          <h3 class="text-xl font-bold mb-3" style="color: var(--color-jade);">
+            {faq.question}
+          </h3>
+          <p style="color: var(--color-faded-khaki);">
+            {faq.answer}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- CTA #3 (BOTTOM - FOMO/URGENCY) -->
+<section id="bottom-cta" class="relative px-4 py-24" style="background: linear-gradient(135deg, rgba(18, 20, 19, 0.95), rgba(0, 208, 156, 0.2));">
+  <div class="relative max-w-4xl w-full mx-auto text-center">
+    <h3 class="text-4xl sm:text-6xl font-extrabold mb-6" style="color: var(--color-alabaster);">
+      The Noo Crew is Transforming<br>
+      While Everyone Else Makes Excuses
+    </h3>
+    <p class="text-2xl mb-8" style="color: var(--color-faded-khaki);">
+      Which side are you on?
+    </p>
+    <a
+      href="https://apps.apple.com/us/app/noolife-10-week-habit-plan/id6754310402"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block transition-all duration-300 hover:scale-110 hover:brightness-110 active:scale-95"
+      aria-label="Download on the App Store"
+    >
+      <Image
+        src={downloadIOS}
+        alt="Download on the App Store"
+        class="h-24 md:h-28 w-auto mx-auto"
+      />
+    </a>
+    <p class="text-sm mt-6" style="color: var(--color-faded-khaki); opacity: 0.8;">
+      Earn your Noo Crew status. Complete 66 days. No shortcuts.
+    </p>
+  </div>
+</section>
+
+<style>
+  /* Elite/exclusive design touches */
+  section {
+    animation: fadeIn 0.8s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Glow effect for elite badges */
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 10px rgba(0, 208, 156, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 208, 156, 0.6);
+    }
+  }
+</style>
